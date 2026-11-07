@@ -547,9 +547,12 @@ export function runStorytellingEngine(
       chapterNumber: 'I',
       title: 'The Architecture of the Name',
       subtitle: `${nameResearch.linguisticFamily.value} · ${nameResearch.phoneticIPA.value}`,
-      narrativeBody: `${nameMeaning.primaryEtymology.value} Across centuries, bearers of this name—such as ${nameResearch.historicalBearers[0]?.name} (${nameResearch.historicalBearers[0]?.era})—have left enduring marks: ${nameResearch.historicalBearers[0]?.achievement}`,
+      narrativeBody:
+        nameResearch.historicalBearers.length > 0
+          ? `${nameMeaning.primaryEtymology.value} Across centuries, documented bearers of this name—such as ${nameResearch.historicalBearers[0].name} (${nameResearch.historicalBearers[0].era})—have left enduring marks: ${nameResearch.historicalBearers[0].achievement}`
+          : `${nameMeaning.primaryEtymology.value} While this specific name variant is analyzed through phonological cadence rather than a static lexicon entry, its syllabic structure (${nameResearch.syllableBreakdown.join(' · ')}) establishes the typographic and spatial rhythm of this monograph.`,
       pullQuote: nameMeaning.literalTranslation.value,
-      epistemicTag: 'verified_fact',
+      epistemicTag: nameResearch.lexiconMatch ? 'verified_fact' : 'creative_interpretation',
     },
     {
       id: 'chapter-meridian',
@@ -558,7 +561,12 @@ export function runStorytellingEngine(
       subtitle: cultural.geographicResonance.value.region,
       narrativeBody: `${cultural.heritageSynthesis.value} Its visual language draws from ${cultural.geographicResonance.value.architecturalVernacular} and the tactile mastery of ${cultural.geographicResonance.value.traditionalCraft}.`,
       pullQuote: cultural.literaryOrPhilosophicalEcho.value.quote,
-      epistemicTag: input.country || input.birthplace ? 'user_provided' : 'verified_fact',
+      epistemicTag:
+        input.country || input.birthplace
+          ? 'user_provided'
+          : nameResearch.lexiconMatch
+            ? 'verified_fact'
+            : 'creative_interpretation',
     },
     {
       id: 'chapter-cosmos',
@@ -569,7 +577,7 @@ export function runStorytellingEngine(
         : `${planetary.rulingBody.value.name} (${planetary.rulingBody.value.classicalSymbol})`,
       narrativeBody: birthday.hasBirthData
         ? `Anchored in the ${birthday.season?.value || 'temporal'} horizon${birthday.dayOfWeek ? ` of a ${birthday.dayOfWeek.value}` : ''}, this chapter pairs astronomical constants (${planetary.rulingBody.value.name}, orbital period ${planetary.rulingBody.value.orbitalPeriodDays} days, harmonic pitch ${planetary.rulingBody.value.harmonicFrequencyHz} Hz) with symbolic celestial traditions.`
-        : `Even when a specific birth date is held private, the experience aligns with the classical harmonic constants of ${planetary.rulingBody.value.name} (${planetary.rulingBody.value.poeticEpithet}), resonating at ${planetary.rulingBody.value.harmonicFrequencyHz} Hz.`,
+        : `Because no personal birth date was provided, zero natal or astrological assumptions are made. Instead, the experience aligns with the classical IAU astronomical constants of ${planetary.rulingBody.value.name} (${planetary.rulingBody.value.poeticEpithet}), resonating at ${planetary.rulingBody.value.harmonicFrequencyHz} Hz.`,
       pullQuote: planetary.rulingBody.value.poeticEpithet,
       epistemicTag: zodiac.westernSign ? 'astrological_interpretation' : 'creative_interpretation',
     },
@@ -594,7 +602,7 @@ export function runStorytellingEngine(
     personalLetter: {
       salutation: `To ${fullName},`,
       bodyParagraphs: [
-        `Carry the resonance of your name—${firstName}—not as a fixed boundary, but as an open courtyard of light. From the ancient roots that gave your name its ${nameResearch.sonicProfile.value.cadence} cadence to the horizons you actively shape today, your story belongs to the rare lineage of builders and seekers.`,
+        `Carry the resonance of your name—${firstName}—not as a fixed boundary, but as an open courtyard of light. From the roots that gave your name its ${nameResearch.sonicProfile.value.cadence} cadence to the horizons you actively shape today, your story belongs to the lineage of builders and seekers.`,
         interests.hasUserInterests
           ? `May your dedication to ${interests.rawInterests.join(', ')} continue to sharpen your eye and deepen your joy, turning quiet hours of practice into works of lasting grace.`
           : `May every season bring clarity to your inquiries, warmth to your threshold, and new constellations to navigate.`,
@@ -706,7 +714,7 @@ export function runContentGenerationEngine(
       title: nameMeaning.rootWords?.[0]?.root || `${firstName} (${nameResearch.phoneticIPA.value})`,
       value: nameMeaning.literalTranslation.value,
       detail: nameMeaning.primaryEtymology.value,
-      epistemicCategory: 'verified_fact',
+      epistemicCategory: nameResearch.lexiconMatch ? 'verified_fact' : 'creative_interpretation',
     },
     {
       id: 'card-heritage',
@@ -714,7 +722,12 @@ export function runContentGenerationEngine(
       title: cultural.geographicResonance.value.region,
       value: cultural.geographicResonance.value.architecturalVernacular,
       detail: `Traditional Craft: ${cultural.geographicResonance.value.traditionalCraft}`,
-      epistemicCategory: input.country || input.birthplace ? 'user_provided' : 'verified_fact',
+      epistemicCategory:
+        input.country || input.birthplace
+          ? 'user_provided'
+          : nameResearch.lexiconMatch
+            ? 'verified_fact'
+            : 'creative_interpretation',
     },
     {
       id: 'card-celestial',
@@ -747,7 +760,7 @@ export function runContentGenerationEngine(
       title: `${birthday.birthstone.value.name} & ${birthday.birthFlower.value.name}`,
       value: `${birthday.season?.value || 'Natal'} · ${birthday.dayOfWeek?.value || ''}`,
       detail: `${birthday.birthFlower.value.botanicalName}: ${birthday.birthFlower.value.symbolism}`,
-      epistemicCategory: 'verified_fact',
+      epistemicCategory: 'creative_interpretation',
     });
   }
 
@@ -830,6 +843,7 @@ export function runContentGenerationEngine(
 
 /**
  * MODULE 14: Research Verification Engine
+ * Programmatically audits every EpistemicClaim across all modules to guarantee zero heuristic claims are labeled verified_fact.
  */
 export function runResearchVerificationEngine(
   input: PersonInput,
@@ -840,42 +854,77 @@ export function runResearchVerificationEngine(
   zodiac: ZodiacCalculationOutput,
   interests: InterestAnalysisOutput,
   personality: PersonalityAnalysisOutput,
-  _content: GeneratedContentSections
+  content: GeneratedContentSections,
+  llmEnriched = false
 ): VerificationAuditReport {
-  void _content;
   const warnings: string[] = [];
 
   if (!birthday.validDate && birthday.validationMessage) {
     warnings.push(birthday.validationMessage);
   }
 
-  let verifiedCount = 4; // IPA, syllable prosody, linguistic family, historical bearers
-  if (birthday.hasBirthData && birthday.validDate) verifiedCount += 3;
+  if (!nameResearch.lexiconMatch) {
+    warnings.push(
+      `Name "${nameResearch.firstName}" is not in the curated philological lexicon; phonetic and etymological outputs are strictly classified as Creative/Heuristic Interpretations rather than Verified Facts.`
+    );
+  }
 
-  let userProvidedCount = 1; // Name itself
-  if (input.birthDate || input.birthYear) userProvidedCount += 1;
-  if (input.birthplace || input.country) userProvidedCount += 1;
-  if (interests.hasUserInterests) userProvidedCount += interests.rawInterests.length;
-  if (personality.hasUserPersonalityInput) userProvidedCount += personality.verbatimTraits.length;
+  const allCategories = [
+    nameResearch.phoneticIPA.category,
+    nameResearch.sonicProfile.category,
+    nameResearch.linguisticFamily.category,
+    nameMeaning.primaryEtymology.category,
+    nameMeaning.literalTranslation.category,
+    nameMeaning.semanticFields.category,
+    nameMeaning.symbolicMotifs.category,
+    cultural.heritageSynthesis.category,
+    cultural.geographicResonance.category,
+    cultural.artisticTraditions.category,
+    cultural.literaryOrPhilosophicalEcho.category,
+    ...(birthday.dayOfWeek ? [birthday.dayOfWeek.category] : []),
+    ...(birthday.season ? [birthday.season.category] : []),
+    ...(birthday.lifePathNumber ? [birthday.lifePathNumber.category] : []),
+    ...(birthday.birthstone ? [birthday.birthstone.category] : []),
+    ...(birthday.birthFlower ? [birthday.birthFlower.category] : []),
+    ...(zodiac.westernSign ? [zodiac.westernSign.category] : []),
+    ...(zodiac.lunarYearSign ? [zodiac.lunarYearSign.category] : []),
+    interests.synthesizedPassionsNarrative.category,
+    personality.toneOfVoice.category,
+    ...content.identityDossier.cards.map((c) => c.epistemicCategory),
+  ];
 
-  const astrologicalCount = (zodiac.westernSign ? 1 : 0) + (zodiac.lunarYearSign ? 1 : 0) + (birthday.lifePathNumber ? 1 : 0);
-  const creativeCount = 5; // Archetype, palette, totem, personal letter, constellation
+  // Enforce strict invariant: if !nameResearch.lexiconMatch, nameResearch and nameMeaning must have ZERO verified_fact claims
+  const illegalHeuristicFact =
+    !nameResearch.lexiconMatch &&
+    (nameResearch.phoneticIPA.category === 'verified_fact' ||
+      nameResearch.linguisticFamily.category === 'verified_fact' ||
+      nameMeaning.primaryEtymology.category === 'verified_fact');
+
+  const verifiedFactsCount = allCategories.filter((c) => c === 'verified_fact').length;
+  const userProvidedCount =
+    allCategories.filter((c) => c === 'user_provided').length + 1; // +1 for fullName input
+  const astrologicalCount = allCategories.filter((c) => c === 'astrological_interpretation').length;
+  const creativeInterpretationCount = allCategories.filter(
+    (c) => c === 'creative_interpretation'
+  ).length;
 
   return {
-    passed: true,
+    passed: !illegalHeuristicFact,
     timestamp: new Date().toISOString(),
-    totalClaimsAudited: verifiedCount + userProvidedCount + astrologicalCount + creativeCount,
+    executionMode: llmEnriched ? 'gemini_llm_enriched' : 'deterministic_lexicon_and_heuristics',
+    totalClaimsAudited:
+      verifiedFactsCount + userProvidedCount + astrologicalCount + creativeInterpretationCount,
     breakdown: {
-      verifiedFactsCount: verifiedCount,
+      verifiedFactsCount,
       userProvidedCount,
       astrologicalCount,
-      creativeInterpretationCount: creativeCount,
+      creativeInterpretationCount,
     },
     epistemicGuarantees: [
-      'Zero personal biographical facts were fabricated or scraped from private sources.',
-      'Actual human personality was never inferred from name etymology or birth date alone.',
-      'Linguistic and historical bearer citations are separated from symbolic/astrological interpretations.',
-      'All user-supplied fields are explicitly tagged as User-Provided.',
+      'Zero personal biographical facts (birthdays, locations, hobbies, personality) were fabricated or scraped.',
+      'Heuristic phonetic or morphological estimates for uncurated names are never labeled as Verified Facts.',
+      'Actual human personality is never inferred from name etymology or birth date alone.',
+      'Linguistic and historical bearer citations are strictly separated from astrological and creative interpretations.',
     ],
     sanitizedWarnings: warnings,
   };

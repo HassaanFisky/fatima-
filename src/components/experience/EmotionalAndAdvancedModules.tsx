@@ -682,11 +682,13 @@ export function EasterEggVaultModule({ experience }: ModuleProps) {
   const [unlocked, setUnlocked] = useState(false);
 
   const handleSealClick = () => {
-    const next = sealClicks + 1;
-    setSealClicks(next);
-    if (next >= 3) {
-      setUnlocked(true);
-    }
+    setSealClicks((prev) => {
+      const next = prev + 1;
+      if (next >= 3) {
+        setUnlocked(true);
+      }
+      return next;
+    });
   };
 
   const handleCipherChange = (val: string) => {

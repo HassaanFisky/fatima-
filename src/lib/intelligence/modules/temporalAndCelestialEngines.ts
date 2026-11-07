@@ -249,13 +249,13 @@ export function runBirthdayIntelligenceEngine(input: PersonInput): BirthdayIntel
       },
       birthstone: {
         value: BIRTHSTONES_BY_MONTH[check.month],
-        category: 'verified_fact',
-        source: 'Gemological Institute Traditional Mineral Registry',
+        category: 'creative_interpretation',
+        source: 'Traditional Gemological & Cultural Lore',
       },
       birthFlower: {
         value: BIRTH_FLOWERS_BY_MONTH[check.month],
-        category: 'verified_fact',
-        source: 'Royal Botanic Gardens Horticultural Lore',
+        category: 'creative_interpretation',
+        source: 'Traditional Botanical & Horticultural Symbolism',
       },
       historicalEventsOnDay: HISTORICAL_MILESTONES_BY_MONTH[check.month] || [],
     };

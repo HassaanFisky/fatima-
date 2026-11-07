@@ -183,43 +183,28 @@ export default function StudioDashboard({
     };
   }, [activeTab, currentExperience]);
 
-  const applyQuickPreset = (preset: 'fatima' | 'alexander' | 'maya') => {
+  const applyQuickPreset = (preset: 'fatima' | 'kenjiro' | 'elena' | 'clear') => {
+    // Always clear all optional personal/biographical fields first — never invent personal attributes
+    setBirthDate('');
+    setBirthYear('');
+    setBirthTime('');
+    setBirthplace('');
+    setCountry('');
+    setInterestsInput('');
+    setHobbiesInput('');
+    setPersonalPreferences('');
+    setPersonalityInfo('');
+    setAdditionalInfo('');
+    setPreferredVisualDirection('auto');
+
     if (preset === 'fatima') {
-      setFullName('Fatima Al-Zahra');
-      setBirthDate('1999-10-14');
-      setBirthYear('1999');
-      setBirthTime('06:30');
-      setBirthplace('Fez');
-      setCountry('Morocco');
-      setInterestsInput('Sacred Architecture, Astrolabe Geometry, Classical Arabic Poetry');
-      setHobbiesInput('Calligraphy, Botanical Gardens, Archival Bookbinding');
-      setPersonalPreferences('Warm vellum parchment, Fez cobalt lapis, burnished brass');
-      setPersonalityInfo('Luminous, contemplative, discerning, devoted to timeless scholarship');
-      setPreferredVisualDirection('editorial_monograph');
-    } else if (preset === 'alexander') {
-      setFullName('Alexander von Humboldt');
-      setBirthDate('1992-09-14');
-      setBirthYear('1992');
-      setBirthTime('08:15');
-      setBirthplace('Berlin');
-      setCountry('Germany');
-      setInterestsInput('Alpine Biogeography, Topographic Cartography, Natural Philosophy');
-      setHobbiesInput('Botanical Pressing, Barometric Observation, Expedition Sketching');
-      setPersonalPreferences('Herbarium linen, cypress green, volcanic basalt');
-      setPersonalityInfo('Observant, polymathic, adventurous, sees nature as an interconnected web');
-      setPreferredVisualDirection('botanical_sanctuary');
+      setFullName('Fatima');
+    } else if (preset === 'kenjiro') {
+      setFullName('Kenjiro');
+    } else if (preset === 'elena') {
+      setFullName('Elena');
     } else {
-      setFullName('Maya Lin');
-      setBirthDate('1996-05-04');
-      setBirthYear('1996');
-      setBirthTime('19:45');
-      setBirthplace('Athens');
-      setCountry('United States');
-      setInterestsInput('Environmental Land Art, Acoustic Sculpture, Poetics of Memory');
-      setHobbiesInput('Ceramic Glazing, Star Lore, Landscape Architecture');
-      setPersonalPreferences('Twilight saffron, rosewood, alabaster stone');
-      setPersonalityInfo('Intimate, lyrical, grounded, attentive to silence and landform');
-      setPreferredVisualDirection('ethereal_storybook');
+      setFullName('');
     }
   };
 
@@ -548,28 +533,35 @@ export default function StudioDashboard({
                     </p>
                   </div>
 
-                  {/* Quick Sample Presets */}
+                  {/* Name-Only Quick Fill Buttons (Zero Fabricated Biography) */}
                   <div className="flex flex-wrap gap-2">
                     <button
                       type="button"
                       onClick={() => applyQuickPreset('fatima')}
                       className="px-2.5 py-1.5 text-[11px] font-mono uppercase border border-white/20 hover:border-[#C89D54] text-white/80"
                     >
-                      Preset: Fatima
+                      Name-Only: Fatima
                     </button>
                     <button
                       type="button"
-                      onClick={() => applyQuickPreset('alexander')}
+                      onClick={() => applyQuickPreset('kenjiro')}
                       className="px-2.5 py-1.5 text-[11px] font-mono uppercase border border-white/20 hover:border-[#C89D54] text-white/80"
                     >
-                      Preset: Alexander
+                      Name-Only: Kenjiro
                     </button>
                     <button
                       type="button"
-                      onClick={() => applyQuickPreset('maya')}
+                      onClick={() => applyQuickPreset('elena')}
                       className="px-2.5 py-1.5 text-[11px] font-mono uppercase border border-white/20 hover:border-[#C89D54] text-white/80"
                     >
-                      Preset: Maya
+                      Name-Only: Elena
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => applyQuickPreset('clear')}
+                      className="px-2.5 py-1.5 text-[11px] font-mono uppercase border border-white/20 hover:border-white text-white/60"
+                    >
+                      Clear Form
                     </button>
                   </div>
                 </div>
@@ -904,7 +896,7 @@ export default function StudioDashboard({
                           {step.title}
                         </span>
                         <span className="font-mono text-[10px] text-emerald-400 uppercase">
-                          {step.status} ({step.durationMs}ms)
+                          {step.status} · {step.executionNature} ({step.durationMs}ms)
                         </span>
                       </div>
                       <p className="text-xs text-white/65 mt-1 leading-relaxed">{step.summary}</p>

@@ -40,6 +40,7 @@ export interface PersonInput {
   preferredVisualDirection?: ArchetypeId | 'auto';
   additionalInfo?: string;
   visibility?: 'public' | 'unlisted' | 'private';
+  privacyConsentConfirmed?: boolean;
 }
 
 export type ArchetypeId =
@@ -80,6 +81,7 @@ export interface NameResearchOutput {
   normalizedName: string;
   firstName: string;
   surname?: string;
+  lexiconMatch: boolean;
   phoneticIPA: EpistemicClaim<string>;
   syllableCount: number;
   syllableBreakdown: string[];
@@ -392,6 +394,7 @@ export interface GeneratedContentSections {
 export interface VerificationAuditReport {
   passed: boolean;
   timestamp: string;
+  executionMode: 'deterministic_lexicon_and_heuristics' | 'gemini_llm_enriched';
   totalClaimsAudited: number;
   breakdown: {
     verifiedFactsCount: number;
@@ -408,11 +411,20 @@ export interface VerificationAuditReport {
  */
 export type PipelineStepStatus = 'pending' | 'running' | 'completed' | 'skipped' | 'error';
 
+export type PipelineExecutionNature =
+  | 'real_validation'
+  | 'curated_lexicon_lookup'
+  | 'deterministic_heuristic'
+  | 'astronomical_calculation'
+  | 'llm_enrichment'
+  | 'system_synthesis';
+
 export interface PipelineStepLog {
   stepNumber: number;
   code: string;
   title: string;
   status: PipelineStepStatus;
+  executionNature: PipelineExecutionNature;
   durationMs: number;
   summary: string;
   artifactPreview?: string;
@@ -424,10 +436,12 @@ export interface PipelineStepLog {
 export interface PersonalizedExperience {
   id: string;
   slug: string;
+  ownerId: string;
   createdAt: string;
   updatedAt: string;
   version: number;
   visibility: 'public' | 'unlisted' | 'private';
+  storageSource?: 'supabase' | 'local_fallback';
   input: PersonInput;
   intelligence: {
     nameResearch: NameResearchOutput;

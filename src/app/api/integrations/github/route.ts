@@ -1,71 +1,106 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { execFile } from 'child_process';
-import { promisify } from 'util';
 import { getExperienceBySlug, saveExperience } from '@/lib/storage/experienceStore';
 import { generateExportBundle } from '@/lib/export/codeGenerator';
+import { checkEndpointRateLimit, resolveRequestOwnerId } from '@/lib/security/sessionAndAuth';
 
-const execFileAsync = promisify(execFile);
-
-async function runGhCommand(args: string[]): Promise<{ ok: boolean; stdout: string; stderr: string }> {
-  try {
-    const { stdout, stderr } = await execFileAsync('gh', args, {
-      timeout: 15000,
-      env: process.env,
-    });
-    return { ok: true, stdout: stdout.trim(), stderr: stderr.trim() };
-  } catch (err: unknown) {
-    const e = err as { stdout?: string; stderr?: string; message?: string };
-    return {
-      ok: false,
-      stdout: (e.stdout || '').trim(),
-      stderr: (e.stderr || e.message || 'gh command failed').trim(),
-    };
+function getServerGitHubToken(customToken?: string): string | null {
+  if (customToken && customToken.trim().length > 0) {
+    return customToken.trim();
   }
+  return process.env.GH_TOKEN || process.env.GITHUB_TOKEN || null;
+}
+
+function buildGitHubHeaders(token: string): Record<string, string> {
+  return {
+    Authorization: `Bearer ${token}`,
+    Accept: 'application/vnd.github+json',
+    'Content-Type': 'application/json',
+    'X-GitHub-Api-Version': '2022-11-28',
+  };
 }
 
 export async function GET() {
-  const userRes = await runGhCommand(['api', 'user', '--jq', '.login + "|" + .html_url']);
-  const reposRes = await runGhCommand([
-    'repo',
-    'list',
-    '--limit',
-    '10',
-    '--json',
-    'name,nameWithOwner,isPrivate,url,updatedAt',
-  ]);
+  const token = getServerGitHubToken();
+  if (!token) {
+    return NextResponse.json({
+      ok: true,
+      connected: false,
+      provider: 'github-rest-api',
+      message: 'No server GitHub token found. Provide a GitHub Personal Access Token or connect the GitHub plugin.',
+      repositories: [],
+    });
+  }
 
-  if (userRes.ok && userRes.stdout) {
-    const [login, profileUrl] = userRes.stdout.split('|');
-    let repositories: unknown[] = [];
-    try {
-      repositories = JSON.parse(reposRes.stdout || '[]');
-    } catch {
-      repositories = [];
+  try {
+    const headers = buildGitHubHeaders(token);
+    const [userRes, reposRes] = await Promise.all([
+      fetch('https://api.github.com/user', { headers }),
+      fetch('https://api.github.com/user/repos?sort=updated&per_page=12', { headers }),
+    ]);
+
+    if (!userRes.ok) {
+      return NextResponse.json({
+        ok: true,
+        connected: false,
+        provider: 'github-rest-api',
+        message: `GitHub token returned HTTP ${userRes.status}.`,
+        repositories: [],
+      });
     }
+
+    const userData = (await userRes.json()) as {
+      login: string;
+      html_url: string;
+      name?: string;
+    };
+    const reposData = reposRes.ok
+      ? ((await reposRes.json()) as Array<{
+          name: string;
+          full_name: string;
+          private: boolean;
+          html_url: string;
+          updated_at: string;
+        }>)
+      : [];
 
     return NextResponse.json({
       ok: true,
       connected: true,
-      provider: 'github-oauth-proxy',
+      provider: 'github-rest-api',
       account: {
-        login,
-        profileUrl,
+        login: userData.login,
+        name: userData.name || userData.login,
+        profileUrl: userData.html_url,
       },
-      repositories,
+      repositories: reposData.map((r) => ({
+        name: r.name,
+        nameWithOwner: r.full_name,
+        isPrivate: r.private,
+        url: r.html_url,
+        updatedAt: r.updated_at,
+      })),
+    });
+  } catch (error) {
+    return NextResponse.json({
+      ok: false,
+      connected: false,
+      error: error instanceof Error ? error.message : 'GitHub status check failed',
+      repositories: [],
     });
   }
-
-  return NextResponse.json({
-    ok: true,
-    connected: false,
-    provider: 'github-oauth-proxy',
-    message: 'GitHub session can be authenticated via connected GitHub plugin or Personal Access Token.',
-    repositories: [],
-  });
 }
 
 export async function POST(req: NextRequest) {
   try {
+    const rate = checkEndpointRateLimit(req, 'github_publish', 10);
+    if (!rate.allowed) {
+      return NextResponse.json(
+        { ok: false, error: 'Rate limit exceeded for GitHub publishing.' },
+        { status: 429, headers: rate.headers }
+      );
+    }
+
+    const session = resolveRequestOwnerId(req);
     const body = await req.json();
     const {
       slug,
@@ -73,12 +108,14 @@ export async function POST(req: NextRequest) {
       visibility = 'public',
       explicitConfirmation = false,
       customToken,
+      targetSubdirectory,
     } = body as {
       slug: string;
       repoName: string;
       visibility?: 'public' | 'private';
       explicitConfirmation?: boolean;
       customToken?: string;
+      targetSubdirectory?: string;
     };
 
     if (!explicitConfirmation) {
@@ -88,170 +125,174 @@ export async function POST(req: NextRequest) {
           error:
             'Explicit confirmation is required before creating or pushing to a GitHub repository.',
         },
-        { status: 400 }
+        { status: 400, headers: rate.headers }
       );
     }
 
     if (!slug || !repoName) {
       return NextResponse.json(
         { ok: false, error: 'Both experience slug and target repository name are required.' },
-        { status: 400 }
+        { status: 400, headers: rate.headers }
       );
     }
 
-    const exp = await getExperienceBySlug(slug);
-    if (!exp) {
-      return NextResponse.json({ ok: false, error: 'Experience not found.' }, { status: 404 });
+    // Security guard: never allow overwriting or modifying HassaanFisky/for-fatima (Requirement 15)
+    if (repoName.toLowerCase().includes('for-fatima')) {
+      return NextResponse.json(
+        {
+          ok: false,
+          error:
+            'Protection Guard: Modifying or overwriting HassaanFisky/for-fatima is strictly prohibited. Specify a separate repository.',
+        },
+        { status: 403, headers: rate.headers }
+      );
     }
 
-    const bundle = generateExportBundle(exp);
+    const exp = await getExperienceBySlug(slug, session.ownerId);
+    if (!exp) {
+      return NextResponse.json(
+        { ok: false, error: 'Experience not found or access denied.' },
+        { status: 404, headers: rate.headers }
+      );
+    }
+
+    const token = getServerGitHubToken(customToken);
+    if (!token) {
+      return NextResponse.json(
+        {
+          ok: false,
+          error:
+            'No GitHub OAuth session or Personal Access Token available on the server.',
+        },
+        { status: 401, headers: rate.headers }
+      );
+    }
+
+    const headers = buildGitHubHeaders(token);
+    const userResp = await fetch('https://api.github.com/user', { headers });
+    if (!userResp.ok) {
+      return NextResponse.json(
+        { ok: false, error: `GitHub authentication failed (HTTP ${userResp.status}).` },
+        { status: 401, headers: rate.headers }
+      );
+    }
+
+    const userData = (await userResp.json()) as { login: string };
+    const owner = userData.login;
     const cleanRepoName = repoName.trim().replace(/[^a-zA-Z0-9._/-]/g, '-');
+    const shortName = cleanRepoName.includes('/')
+      ? cleanRepoName.split('/')[1]
+      : cleanRepoName;
+    const fullRepo = `${owner}/${shortName}`;
 
-    // If user supplied a PAT token or we use connected gh CLI:
-    if (customToken) {
-      const headers = {
-        Authorization: `Bearer ${customToken}`,
-        Accept: 'application/vnd.github+json',
-        'Content-Type': 'application/json',
-      };
+    // Check if repository already exists
+    const repoCheckResp = await fetch(`https://api.github.com/repos/${fullRepo}`, {
+      headers,
+    });
 
-      const userResp = await fetch('https://api.github.com/user', { headers });
-      if (!userResp.ok) {
-        return NextResponse.json(
-          { ok: false, error: 'GitHub token authentication failed (HTTP ' + userResp.status + ').' },
-          { status: 401 }
-        );
-      }
-      const userData = (await userResp.json()) as { login: string };
-      const owner = userData.login;
-      const shortName = cleanRepoName.includes('/') ? cleanRepoName.split('/')[1] : cleanRepoName;
-
-      // Create repo if needed
-      await fetch('https://api.github.com/user/repos', {
+    let repoCreated = false;
+    if (repoCheckResp.status === 404) {
+      const createResp = await fetch('https://api.github.com/user/repos', {
         method: 'POST',
         headers,
         body: JSON.stringify({
           name: shortName,
           private: visibility === 'private',
-          description: `Personalized Digital Experience for ${exp.input.fullName}`,
+          description: `Personalized Digital Experience for ${exp.input.fullName} (Generated by Atelier Engine)`,
           auto_init: true,
         }),
       });
 
-      // Push index.html and README.md via GitHub Contents API
-      for (const file of bundle.files) {
-        const contentBase64 = Buffer.from(file.content, 'utf-8').toString('base64');
-        await fetch(
-          `https://api.github.com/repos/${owner}/${shortName}/contents/${file.path}`,
-          {
-            method: 'PUT',
-            headers,
-            body: JSON.stringify({
-              message: `feat: publish personalized experience for ${exp.input.fullName}`,
-              content: contentBase64,
-            }),
-          }
-        );
-      }
-
-      const repoUrl = `https://github.com/${owner}/${shortName}`;
-      exp.deploymentHistory = {
-        ...exp.deploymentHistory,
-        githubRepoUrl: repoUrl,
-        lastPublishedAt: new Date().toISOString(),
-      };
-      await saveExperience(exp);
-
-      return NextResponse.json({
-        ok: true,
-        repoUrl,
-        visibility,
-        filesPushed: bundle.files.map((f) => f.path),
-      });
-    }
-
-    // Connected `gh` CLI path
-    const userRes = await runGhCommand(['api', 'user', '--jq', '.login']);
-    if (!userRes.ok || !userRes.stdout) {
-      return NextResponse.json(
-        {
-          ok: false,
-          error:
-            'No active GitHub OAuth session detected on server. Provide a GitHub Personal Access Token or connect the GitHub plugin.',
-        },
-        { status: 401 }
-      );
-    }
-
-    const owner = userRes.stdout.trim();
-    const fullRepo = cleanRepoName.includes('/') ? cleanRepoName : `${owner}/${cleanRepoName}`;
-
-    // Check if repo exists
-    const checkRepo = await runGhCommand(['repo', 'view', fullRepo, '--json', 'url']);
-    if (!checkRepo.ok) {
-      const createRes = await runGhCommand([
-        'repo',
-        'create',
-        fullRepo,
-        visibility === 'private' ? '--private' : '--public',
-        '--description',
-        `Personalized Digital Experience for ${exp.input.fullName}`,
-      ]);
-      if (!createRes.ok) {
+      if (!createResp.ok) {
+        const errBody = await createResp.text();
         return NextResponse.json(
           {
             ok: false,
-            error: `GitHub repository creation restricted by token scope: ${createRes.stderr}`,
+            error: `GitHub repository creation returned HTTP ${createResp.status}: ${errBody}`,
           },
-          { status: 403 }
+          { status: createResp.status, headers: rate.headers }
         );
       }
+      repoCreated = true;
+      // Wait briefly for GitHub to initialize default branch
+      await new Promise((r) => setTimeout(r, 1200));
     }
 
-    // Push files via gh api
+    const bundle = generateExportBundle(exp);
+    const prefix = targetSubdirectory
+      ? `${targetSubdirectory.replace(/^\/+|\/+$/g, '')}/`
+      : '';
+
     const pushedFiles: string[] = [];
+    let lastCommitSha = '';
+
     for (const file of bundle.files) {
-      const b64 = Buffer.from(file.content, 'utf-8').toString('base64');
-      // Check existing sha if file exists
-      const existingFile = await runGhCommand([
-        'api',
-        `repos/${fullRepo}/contents/${file.path}`,
-        '--jq',
-        '.sha',
-      ]);
-      const args = [
-        'api',
-        '--method',
-        'PUT',
-        `repos/${fullRepo}/contents/${file.path}`,
-        '-f',
-        `message=feat(${exp.slug}): publish generated experience file ${file.path}`,
-        '-f',
-        `content=${b64}`,
-      ];
-      if (existingFile.ok && existingFile.stdout && existingFile.stdout.length > 10) {
-        args.push('-f', `sha=${existingFile.stdout}`);
+      const targetPath = `${prefix}${file.path}`;
+      const contentBase64 = Buffer.from(file.content, 'utf-8').toString('base64');
+
+      // Check if file already exists to include its current blob sha
+      let existingSha: string | undefined;
+      const existingCheck = await fetch(
+        `https://api.github.com/repos/${fullRepo}/contents/${targetPath}`,
+        { headers }
+      );
+      if (existingCheck.ok) {
+        const existingJson = (await existingCheck.json()) as { sha?: string };
+        existingSha = existingJson.sha;
       }
-      const putRes = await runGhCommand(args);
-      if (putRes.ok) {
-        pushedFiles.push(file.path);
+
+      const putResp = await fetch(
+        `https://api.github.com/repos/${fullRepo}/contents/${targetPath}`,
+        {
+          method: 'PUT',
+          headers,
+          body: JSON.stringify({
+            message: `feat(${exp.slug}): publish ${targetPath} for ${exp.input.fullName}`,
+            content: contentBase64,
+            ...(existingSha ? { sha: existingSha } : {}),
+          }),
+        }
+      );
+
+      if (!putResp.ok) {
+        const putErr = await putResp.text();
+        return NextResponse.json(
+          {
+            ok: false,
+            repoCreated,
+            error: `Failed pushing ${targetPath} to ${fullRepo} (HTTP ${putResp.status}): ${putErr}`,
+          },
+          { status: putResp.status, headers: rate.headers }
+        );
       }
+
+      const putData = (await putResp.json()) as { commit?: { sha?: string } };
+      if (putData.commit?.sha) {
+        lastCommitSha = putData.commit.sha;
+      }
+      pushedFiles.push(targetPath);
     }
 
     const repoUrl = `https://github.com/${fullRepo}`;
     exp.deploymentHistory = {
       ...exp.deploymentHistory,
       githubRepoUrl: repoUrl,
+      githubLastCommitSha: lastCommitSha,
       lastPublishedAt: new Date().toISOString(),
     };
     await saveExperience(exp);
 
-    return NextResponse.json({
-      ok: true,
-      repoUrl,
-      visibility,
-      filesPushed: pushedFiles,
-    });
+    return NextResponse.json(
+      {
+        ok: true,
+        repoCreated,
+        repoUrl,
+        lastCommitSha,
+        visibility,
+        filesPushed: pushedFiles,
+      },
+      { headers: rate.headers }
+    );
   } catch (error) {
     return NextResponse.json(
       {

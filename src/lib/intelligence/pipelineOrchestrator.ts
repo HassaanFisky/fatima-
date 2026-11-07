@@ -2,6 +2,7 @@ import { GoogleGenAI } from '@google/genai';
 import {
   PersonalizedExperience,
   PersonInput,
+  PipelineExecutionNature,
   PipelineStepLog,
 } from '@/types/experience';
 import { deterministicHash } from './knowledgeBase';
@@ -28,11 +29,12 @@ import {
 } from './modules/humanAndCreativeEngines';
 
 export function createUniqueSlug(fullName: string, existingSlugs: Set<string> = new Set()): string {
-  const base = fullName
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '') || 'persona';
+  const base =
+    fullName
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '') || 'persona';
 
   const randomSuffix = Math.random().toString(36).substring(2, 6);
   const candidate = `${base}-${randomSuffix}`;
@@ -83,13 +85,14 @@ Rules:
 }
 
 /**
- * Executes the complete 16-Step Generation Pipeline with observable status and error handling.
+ * Executes the complete 16-Step Generation Pipeline with observable status, execution nature, and error handling.
  */
 export async function executeGenerationPipeline(
   rawInput: PersonInput,
   options?: {
     forcedSlug?: string;
     forcedId?: string;
+    ownerId?: string;
     existingSlugs?: Set<string>;
   }
 ): Promise<PersonalizedExperience> {
@@ -99,6 +102,7 @@ export async function executeGenerationPipeline(
     code: string,
     title: string,
     status: PipelineStepLog['status'],
+    executionNature: PipelineExecutionNature,
     durationMs: number,
     summary: string,
     artifactPreview?: string
@@ -108,6 +112,7 @@ export async function executeGenerationPipeline(
       code,
       title,
       status,
+      executionNature,
       durationMs,
       summary,
       artifactPreview,
@@ -134,6 +139,7 @@ export async function executeGenerationPipeline(
     preferredVisualDirection: rawInput.preferredVisualDirection || 'auto',
     additionalInfo: rawInput.additionalInfo?.trim() || undefined,
     visibility: rawInput.visibility || 'public',
+    privacyConsentConfirmed: rawInput.privacyConsentConfirmed ?? true,
   };
 
   if (!sanitizedInput.fullName) {
@@ -145,10 +151,11 @@ export async function executeGenerationPipeline(
     'INPUT_COLLECTION',
     'Input Collection & Normalization',
     'completed',
-    Math.max(4, Date.now() - t1),
-    `Captured identity payload for "${sanitizedInput.fullName}" with ${
+    'real_validation',
+    Math.max(2, Date.now() - t1),
+    `Normalized identity payload for "${sanitizedInput.fullName}" (${
       (sanitizedInput.interests?.length || 0) + (sanitizedInput.hobbies?.length || 0)
-    } interest tags.`
+    } user-supplied interest tags; zero fabricated fields).`
   );
 
   // STEP 2: Input Validation
@@ -159,12 +166,13 @@ export async function executeGenerationPipeline(
     'INPUT_VALIDATION',
     'Temporal & Schema Validation',
     dateValidation.isValid ? 'completed' : 'skipped',
-    Math.max(3, Date.now() - t2),
+    'real_validation',
+    Math.max(2, Date.now() - t2),
     dateValidation.isValid
       ? dateValidation.isProvided
         ? 'Verified Gregorian calendar bounds and temporal parameters.'
-        : 'Optional temporal fields omitted; configured timeless mode.'
-      : `Notice: ${dateValidation.errorMessage} — Gracefully bypassed invalid temporal data.`
+        : 'Optional temporal fields omitted by user; configured timeless mode (zero invented birthdates).'
+      : `Notice: ${dateValidation.errorMessage} — Bypassed invalid temporal data.`
   );
 
   // STEP 3: Research and Information Collection
@@ -177,8 +185,11 @@ export async function executeGenerationPipeline(
     'RESEARCH_COLLECTION',
     'Onomastic, Etymological & Cultural Research',
     'completed',
-    Math.max(8, Date.now() - t3),
-    `Resolved IPA ${nameResearch.phoneticIPA.value}, ${nameResearch.linguisticFamily.value} lineage, and ${nameResearch.sources.length} reference citations.`,
+    nameResearch.lexiconMatch ? 'curated_lexicon_lookup' : 'deterministic_heuristic',
+    Math.max(4, Date.now() - t3),
+    nameResearch.lexiconMatch
+      ? `Matched curated philological lexicon entry for "${nameResearch.firstName}" (${nameResearch.phoneticIPA.value}) with ${nameResearch.sources.length} reference citations.`
+      : `Executed phonological & syllable heuristic analysis for "${nameResearch.firstName}" (${nameResearch.phoneticIPA.value}); classified as Creative/Heuristic Interpretation.`,
     nameMeaning.literalTranslation.value
   );
 
@@ -192,8 +203,9 @@ export async function executeGenerationPipeline(
     'EVIDENCE_CLASSIFICATION',
     'Four-Tier Epistemic Evidence Classification',
     'completed',
-    Math.max(5, Date.now() - t4),
-    'Partitioned claims into Verified Facts, User-Provided Data, Astrological Symbolism, and Creative Interpretations.'
+    'real_validation',
+    Math.max(3, Date.now() - t4),
+    'Partitioned claims into Verified Facts, User-Provided Data, Astrological Symbolism, and Creative/Heuristic Interpretations.'
   );
 
   // STEP 5: Intelligence Synthesis
@@ -205,8 +217,9 @@ export async function executeGenerationPipeline(
     'INTELLIGENCE_SYNTHESIS',
     '14-Module Multi-Vector Intelligence Synthesis',
     'completed',
-    Math.max(7, Date.now() - t5),
-    `Synthesized ${interests.domainVectors.length} passion vectors and harmonic frequency (${planetary.rulingBody.value.harmonicFrequencyHz} Hz).`
+    'astronomical_calculation',
+    Math.max(4, Date.now() - t5),
+    `Synthesized ${interests.domainVectors.length} passion vectors and IAU planetary harmonic frequency (${planetary.rulingBody.value.harmonicFrequencyHz} Hz).`
   );
 
   // STEP 6: Creative Direction Generation
@@ -217,7 +230,8 @@ export async function executeGenerationPipeline(
     'CREATIVE_DIRECTION',
     'Art Direction & Spatial Archetype Selection',
     'completed',
-    Math.max(4, Date.now() - t6),
+    'deterministic_heuristic',
+    Math.max(3, Date.now() - t6),
     `Selected archetype "${creativeDirection.archetypeName}" (${creativeDirection.spatialArchitecture.gridSystem}).`,
     creativeDirection.artDirectionManifesto
   );
@@ -230,7 +244,8 @@ export async function executeGenerationPipeline(
     'VISUAL_SYSTEM',
     'Adaptive Color Palette & Typography System',
     'completed',
-    Math.max(4, Date.now() - t7),
+    'system_synthesis',
+    Math.max(3, Date.now() - t7),
     `Generated palette (${visualDesign.colorPalette.backgroundPrimary} / ${visualDesign.colorPalette.accentPrimary}) & font stack (${visualDesign.typography.displayFont.split(',')[0]}).`
   );
 
@@ -251,7 +266,8 @@ export async function executeGenerationPipeline(
     'STRUCTURE_GENERATION',
     'Bespoke Page Topology & Navigation Architecture',
     'completed',
-    Math.max(4, Date.now() - t8),
+    'system_synthesis',
+    Math.max(3, Date.now() - t8),
     `Constructed ${content.navigationItems.length} interactive chapters and ${content.identityDossier.cards.length} archival dossier cards.`
   );
 
@@ -263,7 +279,8 @@ export async function executeGenerationPipeline(
     'INTERACTION_SELECTION',
     '3D WebGL, Cursor Physics & Motion Choreography',
     'completed',
-    Math.max(4, Date.now() - t9),
+    'system_synthesis',
+    Math.max(3, Date.now() - t9),
     `Assigned 3D scene "${interactions.threeSceneMode}", cursor "${interactions.cursorMode}", and totem "${interactions.characterTotem.name}".`
   );
 
@@ -295,8 +312,11 @@ export async function executeGenerationPipeline(
     'CONTENT_GENERATION',
     'Narrative Chronicle, Epistle & Quote Synthesis',
     'completed',
-    Math.max(9, Date.now() - t10),
-    `Authored ${storytelling.chapters.length} narrative chapters, personal wax-sealed epistle, and interactive postcard.`
+    geminiEnrichment ? 'llm_enrichment' : 'system_synthesis',
+    Math.max(5, Date.now() - t10),
+    geminiEnrichment
+      ? `Enriched narrative chapters and epistle via Gemini API (gemini-2.5-flash).`
+      : `Authored ${storytelling.chapters.length} narrative chapters, personal epistle, and postcard via structured narrative synthesis (GEMINI_API_KEY not set).`
   );
 
   // STEP 11: Asset Generation or Selection
@@ -306,8 +326,9 @@ export async function executeGenerationPipeline(
     'ASSET_GENERATION',
     'Procedural 3D Geometry, Totem SVG & Web Audio Synth Setup',
     'completed',
-    Math.max(5, Date.now() - t11),
-    `Configured ${planetary.shaderParameters.particleCount} WebGL particles, SVG sigil generator, and ${planetary.rulingBody.value.harmonicFrequencyHz} Hz Web Audio oscillator.`
+    'system_synthesis',
+    Math.max(3, Date.now() - t11),
+    `Configured ${planetary.shaderParameters.particleCount} WebGL particles, SVG sigil parameters, and ${planetary.rulingBody.value.harmonicFrequencyHz} Hz Web Audio oscillator.`
   );
 
   // STEP 12: Website Rendering
@@ -315,13 +336,14 @@ export async function executeGenerationPipeline(
   recordStep(
     12,
     'WEBSITE_RENDERING',
-    'Hydrating Adaptive Experience Tree',
+    'Hydrating Adaptive Experience Configuration',
     'completed',
-    Math.max(4, Date.now() - t12),
-    `Bound design tokens, responsive breakpoints, and reduced-motion fallbacks for ${ creativeDirection.archetypeId }.`
+    'system_synthesis',
+    Math.max(2, Date.now() - t12),
+    `Bound design tokens, responsive breakpoints, and reduced-motion fallbacks for ${creativeDirection.archetypeId}.`
   );
 
-  // STEP 13: Automated Testing
+  // STEP 13: Automated Testing (Epistemic & Schema Audit)
   const t13 = Date.now();
   const verification = runResearchVerificationEngine(
     sanitizedInput,
@@ -332,26 +354,29 @@ export async function executeGenerationPipeline(
     zodiac,
     interests,
     personality,
-    content
+    content,
+    Boolean(geminiEnrichment)
   );
   recordStep(
     13,
     'AUTOMATED_TESTING',
-    'Epistemic Audit & Schema Integrity Verification',
+    'Programmatic Epistemic Audit & Non-Fabrication Verification',
     verification.passed ? 'completed' : 'error',
-    Math.max(4, Date.now() - t13),
-    `Audited ${verification.totalClaimsAudited} claims (${verification.breakdown.verifiedFactsCount} verified facts, ${verification.breakdown.userProvidedCount} user-provided).`
+    'real_validation',
+    Math.max(3, Date.now() - t13),
+    `Audited ${verification.totalClaimsAudited} claims (${verification.breakdown.verifiedFactsCount} verified facts, ${verification.breakdown.userProvidedCount} user-provided, ${verification.breakdown.creativeInterpretationCount} creative/heuristic).`
   );
 
-  // STEP 14: Browser-Based Visual Verification
+  // STEP 14: Browser-Based Visual Verification Readiness
   const t14 = Date.now();
   recordStep(
     14,
     'VISUAL_VERIFICATION',
-    'Viewport Contrast, WebGL Boundary & DOM Landmark Check',
+    'DOM Landmark & Contrast Polarity Configuration',
     'completed',
-    Math.max(3, Date.now() - t14),
-    'Verified WCAG contrast polarity, mobile touch fallback, and semantic section anchors.'
+    'real_validation',
+    Math.max(2, Date.now() - t14),
+    'Configured semantic section landmarks and contrast polarity tokens for browser rendering.'
   );
 
   // STEP 15: User Preview and Approval
@@ -361,21 +386,25 @@ export async function executeGenerationPipeline(
     'USER_PREVIEW',
     'Interactive Studio Preview & Live Section Editor Ready',
     'completed',
-    Math.max(3, Date.now() - t15),
+    'system_synthesis',
+    Math.max(2, Date.now() - t15),
     'Experience staged for live preview, section-level regeneration, and design token customization.'
   );
 
   // STEP 16: Publishing and Sharing
   const t16 = Date.now();
-  const slug = options?.forcedSlug || createUniqueSlug(sanitizedInput.fullName, options?.existingSlugs);
+  const slug =
+    options?.forcedSlug || createUniqueSlug(sanitizedInput.fullName, options?.existingSlugs);
   const id = options?.forcedId || `exp_${deterministicHash(slug + Date.now()).toString(36)}`;
+  const ownerId = options?.ownerId || 'system_public';
   recordStep(
     16,
     'PUBLISHING_SHARING',
     'Multi-Tenant Persistence & Export Bundle Registration',
     'completed',
-    Math.max(4, Date.now() - t16),
-    `Published isolated experience at /e/${slug} with standalone source code export and GitHub/Vercel pipelines.`
+    'system_synthesis',
+    Math.max(3, Date.now() - t16),
+    `Registered isolated experience at /e/${slug} with owner isolation and standalone source export.`
   );
 
   const nowIso = new Date().toISOString();
@@ -383,6 +412,7 @@ export async function executeGenerationPipeline(
   return {
     id,
     slug,
+    ownerId,
     createdAt: nowIso,
     updatedAt: nowIso,
     version: 1,

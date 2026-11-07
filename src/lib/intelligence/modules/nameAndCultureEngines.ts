@@ -25,33 +25,33 @@ const LINGUISTIC_ROOT_PATTERNS: Array<{
 }> = [
   {
     pattern: /(^al-|fati|zah|nur|amir|zayn|hassan|hussein|layla|mariam|tariq|omar|ayesha|salma|khalid|yasmin|nadia)/i,
-    family: 'Semitic / Classical Arabic & Persianate',
-    region: 'Mediterranean, Levant & Maghreb Synthesis',
+    family: 'Semitic / Classical Arabic & Persianate (Heuristic Pattern Match)',
+    region: 'Mediterranean, Levant & Maghreb Cultural Sphere',
     coords: { lat: 33.8869, lng: 35.5131 },
     etymologyNote:
-      'Rooted in Classical Arabic triliteral morphology, where consonantal roots carry layered meanings of illumination, discernment, and ethical nobility.',
+      'Heuristic phonological match suggesting Classical Arabic or Persianate onomastic morphology. Note: This is an algorithmic pattern estimate, not a verified dictionary entry.',
     motifs: ['Octagonal Star Tessellation', 'Calligraphic Reed Pen Trajectory', 'Courtyard Astrolabe', 'Muqarnas Vault'],
     vernacular: 'Courtyard Riads, Stone Arcades & Geometric Mashrabiya Screens',
     craft: 'Brass Astrolabe Engraving, Glazed Ceramic Mosaic & Calligraphic Illumination',
   },
   {
     pattern: /(ken|jiro|hiro|taka|yuki|haru|saki|ren|akira|kaori|hana|ryu|sora|mei)/i,
-    family: 'Japonic / East Asian Morphographic',
-    region: 'Kyoto & Pacific Archipelago',
+    family: 'Japonic / East Asian Morphographic (Heuristic Pattern Match)',
+    region: 'Kyoto & Pacific Archipelago Cultural Sphere',
     coords: { lat: 35.0116, lng: 135.7681 },
     etymologyNote:
-      'Structured around harmonic syllabic morae and Sino-Japanese characters emphasizing balance between natural phenomena and structural clarity.',
+      'Heuristic phonological match suggesting Japonic syllabic morae. Note: Without user-supplied kanji, exact character meanings cannot be verified as fact.',
     motifs: ['Hinoki Timber Interlock', 'Enso Calligraphic Arc', 'Monochromatic Ink Wash', 'Raked Stone Horizon'],
     vernacular: 'Sukiya Timber Pavilion & Minimalist Architectural Concrete',
     craft: 'Kigumi Wood Joinery, Washi Fibre Laying & Urushi Lacquer',
   },
   {
     pattern: /(elen|alex|soph|theo|niko|chlo|ari|leo|kasp|sebast|clara|luc|jul|valen|matteo|dante)/i,
-    family: 'Indo-European / Greco-Latin Classical',
-    region: 'Mediterranean & European Classical Atelier',
+    family: 'Indo-European / Greco-Latin Classical (Heuristic Pattern Match)',
+    region: 'Mediterranean & European Classical Sphere',
     coords: { lat: 43.7696, lng: 11.2558 },
     etymologyNote:
-      'Descended from Classical Hellenic and Latin roots celebrating solar optics, civic harmony, and philosophical inquiry.',
+      'Heuristic phonological match suggesting Classical Hellenic or Latin onomastic stems. Classified as creative/heuristic interpretation.',
     motifs: ['Golden Ratio Spiral', 'Astrolabe Armillary Sphere', 'Botanical Acanthus Scroll', 'Roman Epigraphic Serif'],
     vernacular: 'Renaissance Loggia, Palladian Proportion & Neoclassical Rotunda',
     craft: 'Intaglio Copperplate Engraving, Letterpress Typography & Optical Glasswork',
@@ -60,6 +60,7 @@ const LINGUISTIC_ROOT_PATTERNS: Array<{
 
 /**
  * MODULE 1: Name Research Engine
+ * Strictly separates verified lexicon entries from heuristic phonetic analysis.
  */
 export function runNameResearchEngine(input: PersonInput): NameResearchOutput {
   const rawFull = input.fullName.trim() || 'Anonymous Voyager';
@@ -69,6 +70,8 @@ export function runNameResearchEngine(input: PersonInput): NameResearchOutput {
   const lowerFirst = firstName.toLowerCase().replace(/[^a-z]/g, '');
 
   const curated = CURATED_NAME_LEXICON[lowerFirst];
+  const isLexiconMatch = Boolean(curated);
+
   const syllables = splitIntoSyllables(firstName);
   const vowels = (firstName.match(/[aeiouy]/gi) || []).map((v) => v.toLowerCase());
   const uniqueVowels = Array.from(new Set(vowels));
@@ -81,7 +84,8 @@ export function runNameResearchEngine(input: PersonInput): NameResearchOutput {
     'balanced',
     'percussive',
   ];
-  const openVowelRatio = vowels.filter((v) => ['a', 'o', 'u'].includes(v)).length / Math.max(1, firstName.length);
+  const openVowelRatio =
+    vowels.filter((v) => ['a', 'o', 'u'].includes(v)).length / Math.max(1, firstName.length);
   const acousticWarmth = Math.min(96, Math.max(48, Math.round(55 + openVowelRatio * 85)));
 
   const matchedPattern = LINGUISTIC_ROOT_PATTERNS.find((p) => p.pattern.test(rawFull));
@@ -90,70 +94,84 @@ export function runNameResearchEngine(input: PersonInput): NameResearchOutput {
     normalizedName: rawFull,
     firstName,
     surname,
-    phoneticIPA: {
-      value: curated ? curated.ipa : generateIPAForName(firstName),
-      category: 'verified_fact',
-      source: 'International Phonetic Alphabet (IPA) Transcription Standard',
-      confidence: curated ? 0.99 : 0.88,
-    },
+    lexiconMatch: isLexiconMatch,
+    phoneticIPA: isLexiconMatch
+      ? {
+          value: curated.ipa,
+          category: 'verified_fact',
+          source: 'Oxford Dictionary of First Names (Documented IPA Transcription)',
+          confidence: 0.98,
+        }
+      : {
+          value: generateIPAForName(firstName),
+          category: 'creative_interpretation',
+          source: 'Heuristic Grapheme-to-Phoneme Approximation (Unverified)',
+          confidence: 0.45,
+          notes:
+            'Algorithmic phonetic approximation; not a verified dictionary transcription.',
+        },
     syllableCount: syllables.length,
     syllableBreakdown: syllables,
     sonicProfile: {
       value: {
-        cadence: curated ? 'lyrical' : cadences[hash % cadences.length],
+        cadence: isLexiconMatch ? 'lyrical' : cadences[hash % cadences.length],
         dominantVowels: uniqueVowels.length > 0 ? uniqueVowels : ['a', 'e'],
         acousticWarmth,
         rhythmPattern: syllables.map((_, idx) => (idx === 0 ? '—' : '◡')).join(' '),
       },
-      category: 'verified_fact',
-      source: 'Phonological Prosody & Syllable Weight Analysis',
-      confidence: 0.94,
+      category: 'creative_interpretation',
+      source: 'Prosodic Cadence & Vowel-Weight Heuristic Model (Creative Synthesis)',
+      notes: 'Artistic sound-symbolism model used to guide visual and typographic rhythm.',
     },
-    linguisticFamily: {
-      value: curated
-        ? curated.linguisticFamily
-        : matchedPattern
-          ? matchedPattern.family
-          : 'Cosmopolitan Indo-European & Global Lexicon',
-      category: 'verified_fact',
-      source: 'Oxford Dictionary of First Names',
-      confidence: curated ? 0.98 : 0.85,
-    },
-    scriptVariations: curated
+    linguisticFamily: isLexiconMatch
+      ? {
+          value: curated.linguisticFamily,
+          category: 'verified_fact',
+          source: 'Oxford Dictionary of First Names & Comparative Philology',
+          confidence: 0.98,
+        }
+      : {
+          value: matchedPattern
+            ? matchedPattern.family
+            : 'Unverified Global Onomastic Stem (Heuristic Classification)',
+          category: 'creative_interpretation',
+          source: 'Heuristic Morphological Pattern Matcher (Unverified)',
+          confidence: 0.5,
+          notes:
+            'Name not present in curated verified lexicon; linguistic family is a heuristic estimate and not claimed as verified fact.',
+        },
+    scriptVariations: isLexiconMatch
       ? curated.scriptVariations
       : [
           {
             scriptName: 'Monumental Epigraphic Capitals',
             representation: firstName.toUpperCase(),
-            note: 'Classical Roman lapidary proportion based on geometric squares and circles',
+            note: 'Geometric display capitals (Typographic rendering)',
           },
           {
-            scriptName: 'Phonetic Cadence Notation',
+            scriptName: 'Prosodic Syllable Division',
             representation: syllables.join(' · '),
-            note: 'Prosodic syllabic division for typographic rhythm',
+            note: 'Heuristic syllable segmentation for visual pacing',
           },
           {
             scriptName: 'Monogram Cipher',
             representation: parts.map((p) => p[0]?.toUpperCase()).join('·'),
-            note: 'Architectural seal combining primary initials',
+            note: 'Typographic seal combining initials',
           },
         ],
-    historicalBearers: curated
-      ? curated.historicalBearers
+    // Never invent fake historical bearers when name is not in the curated verified lexicon
+    historicalBearers: isLexiconMatch ? curated.historicalBearers : [],
+    sources: isLexiconMatch
+      ? GLOBAL_VERIFIED_SOURCES
       : [
-          {
-            name: `${firstName} (Historical Onomastic Lineage)`,
-            era: 'Classical to Modern Era',
-            achievement: `Recorded across archival registries, scholarly manuscripts, and civic chronicles as a name borne by artisans, thinkers, and navigators.`,
-            source: 'Oxford Reference Onomastic Archive',
-          },
+          GLOBAL_VERIFIED_SOURCES[3], // IAU Astronomical constants are always real mathematical constants
         ],
-    sources: GLOBAL_VERIFIED_SOURCES,
   };
 }
 
 /**
  * MODULE 2: Name Meaning Engine
+ * Never labels heuristic name meaning analysis as verified_fact.
  */
 export function runNameMeaningEngine(
   input: PersonInput,
@@ -189,7 +207,7 @@ export function runNameMeaningEngine(
         source: 'Visual Iconography Engine',
       },
       epistemicDisclaimer:
-        'Etymological roots reflect historical linguistic evolution and never prescribe or determine an individual’s personal character.',
+        'Etymological roots reflect historical linguistic evolution of the word itself and never prescribe or determine an individual’s personal character or biography.',
     };
   }
 
@@ -197,36 +215,27 @@ export function runNameMeaningEngine(
     primaryEtymology: {
       value: matchedPattern
         ? matchedPattern.etymologyNote
-        : `The name "${nameResearch.firstName}" carries a ${nameResearch.syllableCount}-syllable phonetic architecture (${nameResearch.phoneticIPA.value}) rooted in classical onomastic traditions denoting clarity of presence, discernment, and enduring resonance.`,
-      category: 'verified_fact',
-      source: 'Comparative Onomastics & Linguistic Morphology',
-      confidence: 0.87,
+        : `Heuristic structural analysis: "${nameResearch.firstName}" unfolds across ${nameResearch.syllableCount} syllables (${nameResearch.phoneticIPA.value}). Because this specific name variant is not in the curated philological database, no unverified dictionary etymology is fabricated.`,
+      category: 'creative_interpretation',
+      source: 'Heuristic Prosodic & Morphological Analysis (Non-Factual)',
+      confidence: 0.5,
     },
     literalTranslation: {
-      value: `Bearer of luminous presence and ${nameResearch.sonicProfile.value.cadence} cadence`,
+      value: `Poetic Resonance of ${nameResearch.firstName} (Creative Typographic Interpretation)`,
       category: 'creative_interpretation',
-      source: 'Poetic Onomastic Synthesis',
+      source: 'Poetic Onomastic Synthesis (Creative Interpretation)',
     },
     rootWords: [
       {
         root: nameResearch.syllableBreakdown[0] || nameResearch.firstName,
-        language: nameResearch.linguisticFamily.value,
-        meaning: 'Primary stem establishing phonetic anchor and historical lineage',
+        language: 'Heuristic Phonetic Stem (Unverified)',
+        meaning: 'Primary acoustic anchor used for visual rhythm',
       },
-      ...(nameResearch.surname
-        ? [
-            {
-              root: nameResearch.surname,
-              language: 'Hereditary Family Line',
-              meaning: 'Genealogical and geographic continuity across generations',
-            },
-          ]
-        : []),
     ],
     semanticFields: {
       value: ['Architectural Clarity', 'Harmonic Cadence', 'Intellectual Curiosity', 'Timeless Craft'],
       category: 'creative_interpretation',
-      source: 'Semantic Field Mapping',
+      source: 'Creative Semantic Field Mapping',
     },
     symbolicMotifs: {
       value: matchedPattern
@@ -236,7 +245,7 @@ export function runNameMeaningEngine(
       source: 'Visual Motif Synthesis',
     },
     epistemicDisclaimer:
-      'Linguistic etymology documents historical word origins only; personal identity is shaped by lived experience, choices, and values.',
+      'No verified dictionary entry matched this exact name string; all etymological and symbolic themes are explicitly labeled as Creative Interpretations rather than Verified Facts.',
   };
 }
 
@@ -259,16 +268,18 @@ export function runCulturalContextEngine(
 
   if (curated) {
     const regionLabel = userPlaceText
-      ? `${userPlaceText} & ${curated.originRegion}`
-      : curated.originRegion;
+      ? `${userPlaceText} (User-Provided) & ${curated.originRegion} (Historical Name Origin)`
+      : `${curated.originRegion} (Historical Linguistic Origin of Name — Not Personal Location)`;
 
     return {
       heritageSynthesis: {
         value: userPlaceText
-          ? `Bridging the lived geography of ${userPlaceText} with the deep historical resonance of ${curated.originRegion}, this synthesis honors both personal place and the architectural, mathematical, and poetic traditions associated with the name ${curated.canonical}.`
-          : `Rooted in the cultural and scholarly heritage of ${curated.originRegion}, drawing visual inspiration from ${curated.architecturalVernacular} and ${curated.traditionalCraft}.`,
+          ? `Combines the user-provided location (${userPlaceText}) with the documented historical linguistic origin of the name ${curated.canonical} (${curated.originRegion}).`
+          : `Reflects the historical linguistic heritage of the name "${curated.canonical}" in ${curated.originRegion} (${curated.architecturalVernacular} and ${curated.traditionalCraft}). No personal residence or birthplace is assumed.`,
         category: userPlaceText ? 'user_provided' : 'verified_fact',
-        source: userPlaceText ? 'User-Provided Geography + Cultural Atlas' : 'UNESCO Cultural Heritage Synthesis',
+        source: userPlaceText
+          ? 'User-Provided Location + Historical Linguistic Atlas'
+          : 'Historical Onomastic & Architectural Reference',
       },
       geographicResonance: {
         value: {
@@ -279,15 +290,15 @@ export function runCulturalContextEngine(
             : curated.architecturalVernacular,
           traditionalCraft: matchedAtlas ? matchedAtlas.traditionalCraft : curated.traditionalCraft,
         },
-        category: 'verified_fact',
-        source: 'Architectural & Material Culture Atlas',
+        category: userPlaceText ? 'user_provided' : 'verified_fact',
+        source: 'Historical Architectural & Material Culture Atlas',
       },
       artisticTraditions: {
         value: matchedAtlas
           ? Array.from(new Set([...curated.artisticTraditions, ...matchedAtlas.artisticTraditions]))
           : curated.artisticTraditions,
         category: 'verified_fact',
-        source: 'Art Historical Reference',
+        source: 'UNESCO & Art Historical Reference',
       },
       colorHeritage: matchedAtlas ? matchedAtlas.palette : curated.colorHeritage,
       literaryOrPhilosophicalEcho: {
@@ -298,43 +309,70 @@ export function runCulturalContextEngine(
     };
   }
 
-  const fallbackAtlas = matchedAtlas || {
-    region: userPlaceText || 'Cosmopolitan Meridian (Global Atelier)',
-    coordinates: { lat: 38.7223, lng: -9.1393 },
-    architecturalVernacular: 'Modernist Stone Pavilion & Timber Courtyard',
-    traditionalCraft: 'Archival Bookbinding, Precision Cartography & Ceramic Glazing',
-    artisticTraditions: ['Geometric Abstraction', 'Editorial Typography', 'Natural Philosophy Illustration'],
-    palette: [
-      { name: 'Obsidian Ink', hex: '#141619', culturalOrigin: 'Archival carbon ink' },
-      { name: 'Raw Linen Vellum', hex: '#F5F2EB', culturalOrigin: 'Unbleached cotton rag paper' },
-      { name: 'Ochre Terracotta', hex: '#C87D55', culturalOrigin: 'Natural earth mineral pigment' },
-    ],
-  };
+  // Non-curated name: only mark as user_provided if user provided a country/birthplace, otherwise creative_interpretation!
+  if (matchedAtlas && userPlaceText) {
+    return {
+      heritageSynthesis: {
+        value: `Anchored in the user-provided geography of ${userPlaceText} (${matchedAtlas.region}), drawing inspiration from ${matchedAtlas.architecturalVernacular}.`,
+        category: 'user_provided',
+        source: 'User-Provided Country/Birthplace + Cultural Atlas',
+      },
+      geographicResonance: {
+        value: {
+          region: `${userPlaceText} (${matchedAtlas.region})`,
+          coordinates: matchedAtlas.coordinates,
+          architecturalVernacular: matchedAtlas.architecturalVernacular,
+          traditionalCraft: matchedAtlas.traditionalCraft,
+        },
+        category: 'user_provided',
+        source: 'User-Provided Geography',
+      },
+      artisticTraditions: {
+        value: matchedAtlas.artisticTraditions,
+        category: 'verified_fact',
+        source: 'Regional Material Culture Compendium',
+      },
+      colorHeritage: matchedAtlas.palette,
+      literaryOrPhilosophicalEcho: {
+        value: {
+          quote: 'Every name is a vessel of memory and an open horizon waiting to be inscribed by lived days.',
+          attribution: 'Atelier Editorial Notebooks',
+          tradition: 'Humanist Literary Reflection',
+        },
+        category: 'creative_interpretation',
+        source: 'Atelier Literary Anthology',
+      },
+    };
+  }
 
   return {
     heritageSynthesis: {
       value: userPlaceText
-        ? `Anchored in the user-provided geography of ${userPlaceText}, woven together with the ${nameResearch.linguisticFamily.value} heritage of the name ${nameResearch.normalizedName}.`
-        : `A cosmopolitan dialogue uniting ${nameResearch.linguisticFamily.value} linguistic roots with timeless architectural proportion and material craft.`,
+        ? `Anchored in the user-provided location of ${userPlaceText}, paired with a cosmopolitan architectural design direction.`
+        : `No geographic location was provided by the user; this experience adopts an open cosmopolitan architectural aesthetic without assuming any personal nationality or birthplace.`,
       category: userPlaceText ? 'user_provided' : 'creative_interpretation',
-      source: userPlaceText ? 'User Input + Cultural Atlas' : 'Cross-Cultural Design Synthesis',
+      source: userPlaceText ? 'User-Provided Location' : 'Cosmopolitan Creative Direction (Zero Location Inference)',
     },
     geographicResonance: {
       value: {
-        region: fallbackAtlas.region,
-        coordinates: fallbackAtlas.coordinates,
-        architecturalVernacular: fallbackAtlas.architecturalVernacular,
-        traditionalCraft: fallbackAtlas.traditionalCraft,
+        region: userPlaceText || 'Unspecified Personal Location (Cosmopolitan Atelier)',
+        coordinates: { lat: 0.0, lng: 0.0 },
+        architecturalVernacular: 'Modernist Stone Pavilion & Timber Courtyard',
+        traditionalCraft: 'Archival Bookbinding, Precision Cartography & Ceramic Glazing',
       },
-      category: userPlaceText ? 'user_provided' : 'verified_fact',
-      source: 'Global Architectural Vernacular Index',
+      category: userPlaceText ? 'user_provided' : 'creative_interpretation',
+      source: userPlaceText ? 'User-Provided Location' : 'Creative Architectural Direction',
     },
     artisticTraditions: {
-      value: fallbackAtlas.artisticTraditions,
-      category: 'verified_fact',
-      source: 'World Material Culture Compendium',
+      value: ['Geometric Abstraction', 'Editorial Typography', 'Natural Philosophy Illustration'],
+      category: 'creative_interpretation',
+      source: 'Atelier Creative Synthesis',
     },
-    colorHeritage: fallbackAtlas.palette,
+    colorHeritage: [
+      { name: 'Obsidian Ink', hex: '#141619', culturalOrigin: 'Archival carbon ink' },
+      { name: 'Raw Linen Vellum', hex: '#F5F2EB', culturalOrigin: 'Unbleached cotton rag paper' },
+      { name: 'Ochre Terracotta', hex: '#C87D55', culturalOrigin: 'Natural earth mineral pigment' },
+    ],
     literaryOrPhilosophicalEcho: {
       value: {
         quote: 'Every name is a vessel of memory and an open horizon waiting to be inscribed by lived days.',

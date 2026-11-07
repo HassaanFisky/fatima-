@@ -1,44 +1,30 @@
 {
-  "fatima-al-qarawiyyin": {
+  "fatima": {
     "id": "exp_seed_fatima",
-    "slug": "fatima-al-qarawiyyin",
-    "createdAt": "2026-11-07T05:38:27.391Z",
-    "updatedAt": "2026-11-07T05:38:27.391Z",
+    "slug": "fatima",
+    "ownerId": "system_public",
+    "createdAt": "2026-11-07T06:19:14.692Z",
+    "updatedAt": "2026-11-07T06:21:28.232Z",
     "version": 1,
     "visibility": "public",
     "input": {
       "fullName": "Fatima",
-      "birthDate": "1998-10-14",
-      "birthYear": 1998,
-      "birthTime": "06:42",
-      "birthplace": "Lahore / Fez",
-      "country": "Morocco",
-      "interests": [
-        "Sacred Architecture",
-        "Celestial Cartography",
-        "Classical Poetry",
-        "Botanical Gardens"
-      ],
-      "hobbies": [
-        "Calligraphy",
-        "Stargazing",
-        "Archival Bookbinding"
-      ],
-      "personalPreferences": "Warm parchment, lapis lazuli, brass astrolabes, courtyard serenity",
-      "personalityInfo": "Contemplative, luminous, deeply appreciative of historical craft and quiet wisdom",
-      "preferredVisualDirection": "editorial_monograph",
-      "additionalInfo": "Dedicated to the timeless pursuit of knowledge, grace, and architectural beauty.",
-      "visibility": "public"
+      "interests": [],
+      "hobbies": [],
+      "preferredVisualDirection": "auto",
+      "visibility": "public",
+      "privacyConsentConfirmed": true
     },
     "intelligence": {
       "nameResearch": {
         "normalizedName": "Fatima",
         "firstName": "Fatima",
+        "lexiconMatch": true,
         "phoneticIPA": {
           "value": "/ˈfɑːtɪmə/",
           "category": "verified_fact",
-          "source": "International Phonetic Alphabet (IPA) Transcription Standard",
-          "confidence": 0.99
+          "source": "Oxford Dictionary of First Names (Documented IPA Transcription)",
+          "confidence": 0.98
         },
         "syllableCount": 3,
         "syllableBreakdown": [
@@ -56,14 +42,14 @@
             "acousticWarmth": 83,
             "rhythmPattern": "— ◡ ◡"
           },
-          "category": "verified_fact",
-          "source": "Phonological Prosody & Syllable Weight Analysis",
-          "confidence": 0.94
+          "category": "creative_interpretation",
+          "source": "Prosodic Cadence & Vowel-Weight Heuristic Model (Creative Synthesis)",
+          "notes": "Artistic sound-symbolism model used to guide visual and typographic rhythm."
         },
         "linguisticFamily": {
           "value": "Semitic / Classical Arabic",
           "category": "verified_fact",
-          "source": "Oxford Dictionary of First Names",
+          "source": "Oxford Dictionary of First Names & Comparative Philology",
           "confidence": 0.98
         },
         "scriptVariations": [
@@ -177,53 +163,51 @@
           "category": "creative_interpretation",
           "source": "Visual Iconography Engine"
         },
-        "epistemicDisclaimer": "Etymological roots reflect historical linguistic evolution and never prescribe or determine an individual’s personal character."
+        "epistemicDisclaimer": "Etymological roots reflect historical linguistic evolution of the word itself and never prescribe or determine an individual’s personal character or biography."
       },
       "culturalContext": {
         "heritageSynthesis": {
-          "value": "Bridging the lived geography of Lahore / Fez, Morocco with the deep historical resonance of Maghreb & Arabian Peninsula (Fez / Hejaz), this synthesis honors both personal place and the architectural, mathematical, and poetic traditions associated with the name Fatima.",
-          "category": "user_provided",
-          "source": "User-Provided Geography + Cultural Atlas"
+          "value": "Reflects the historical linguistic heritage of the name \"Fatima\" in Maghreb & Arabian Peninsula (Fez / Hejaz) (Hispano-Moorish Courtyard & Marinid Geometric Pavilions and Zellij glazed terracotta mosaic work & brass astrolabe engraving). No personal residence or birthplace is assumed.",
+          "category": "verified_fact",
+          "source": "Historical Onomastic & Architectural Reference"
         },
         "geographicResonance": {
           "value": {
-            "region": "Lahore / Fez, Morocco & Maghreb & Arabian Peninsula (Fez / Hejaz)",
+            "region": "Maghreb & Arabian Peninsula (Fez / Hejaz) (Historical Linguistic Origin of Name — Not Personal Location)",
             "coordinates": {
-              "lat": 31.7917,
-              "lng": -7.0926
+              "lat": 34.0331,
+              "lng": -5.0003
             },
-            "architecturalVernacular": "Riad Courtyards, Muqarnas Vaulting & Cedar Mashrabiya & Hispano-Moorish Courtyard & Marinid Geometric Pavilions",
-            "traditionalCraft": "Fez Zellij Geometry & Tadelakt Lime Plaster"
+            "architecturalVernacular": "Hispano-Moorish Courtyard & Marinid Geometric Pavilions",
+            "traditionalCraft": "Zellij glazed terracotta mosaic work & brass astrolabe engraving"
           },
           "category": "verified_fact",
-          "source": "Architectural & Material Culture Atlas"
+          "source": "Historical Architectural & Material Culture Atlas"
         },
         "artisticTraditions": {
           "value": [
             "Sacred Geometric Tessellation",
             "Maghribi Illuminated Manuscripts",
-            "Andalusian Courtyard Acoustics",
-            "Andalusian Modal Music",
-            "Maghribi Calligraphy"
+            "Andalusian Courtyard Acoustics"
           ],
           "category": "verified_fact",
-          "source": "Art Historical Reference"
+          "source": "UNESCO & Art Historical Reference"
         },
         "colorHeritage": [
           {
-            "name": "Majorelle Ultramarine",
+            "name": "Fez Cobalt Lapis",
             "hex": "#1D3557",
-            "culturalOrigin": "Mineral cobalt pigment of Moroccan gardens"
+            "culturalOrigin": "Mineral cobalt glaze of Fez ceramic artisans"
           },
           {
-            "name": "Marrakesh Terracotta",
-            "hex": "#C86D51",
-            "culturalOrigin": "Sun-baked Atlas clay ramparts"
+            "name": "Al-Qarawiyyin Brass",
+            "hex": "#D4A359",
+            "culturalOrigin": "Engraved medieval celestial astrolabes"
           },
           {
-            "name": "Saffron Filigree",
-            "hex": "#E9C46A",
-            "culturalOrigin": "Taliouine saffron threads and brass lanterns"
+            "name": "Atlas Cedar Parchment",
+            "hex": "#F6F1E7",
+            "culturalOrigin": "Vellum folios preserved in Moroccan libraries"
           }
         ],
         "literaryOrPhilosophicalEcho": {
@@ -237,108 +221,30 @@
         }
       },
       "birthday": {
-        "hasBirthData": true,
+        "hasBirthData": false,
         "validDate": true,
-        "dayOfWeek": {
-          "value": "Wednesday",
-          "category": "verified_fact",
-          "source": "Gregorian Perpetual Calendar Calculation",
-          "confidence": 1
-        },
-        "season": {
-          "value": "Autumn",
-          "category": "verified_fact",
-          "source": "Solar Meteorological Calendar",
-          "confidence": 1
-        },
-        "dayOfYear": 287,
-        "lifePathNumber": {
-          "value": {
-            "number": 33,
-            "archetypeTitle": "The Compassionate Teacher",
-            "interpretation": "Master-number symbolic cadence centered on wisdom transmission and creative elevation."
-          },
-          "category": "astrological_interpretation",
-          "source": "Pythagorean Arithmology / Symbolic Numerology"
-        },
-        "birthstone": {
-          "value": {
-            "name": "Iridescent Opal & Tourmaline",
-            "hexColor": "#729EA1",
-            "mineralFamily": "Hydrated Silica"
-          },
-          "category": "verified_fact",
-          "source": "Gemological Institute Traditional Mineral Registry"
-        },
-        "birthFlower": {
-          "value": {
-            "name": "Calendula Marigold",
-            "botanicalName": "Calendula officinalis",
-            "symbolism": "Solar warmth and autumnal craftsmanship"
-          },
-          "category": "verified_fact",
-          "source": "Royal Botanic Gardens Horticultural Lore"
-        },
-        "historicalEventsOnDay": [
-          {
-            "year": 859,
-            "event": "Foundation of Al-Qarawiyyin Mosque and University in Fez by Fatima al-Fihri.",
-            "source": "UNESCO World Heritage Centre"
-          }
-        ]
+        "validationMessage": "No birth date provided; temporal and zodiac modules gracefully operating in timeless mode.",
+        "historicalEventsOnDay": []
       },
       "zodiac": {
-        "computed": true,
-        "westernSign": {
-          "value": {
-            "sign": "Libra",
-            "symbol": "The Golden Scales",
-            "unicodeGlyph": "♎",
-            "element": "Air",
-            "modality": "Cardinal",
-            "polarity": "Diurnal",
-            "decan": 2,
-            "dateRange": "Sep 23 – Oct 22",
-            "symbolicThemes": [
-              "Classical Proportion",
-              "Aesthetic Equilibrium",
-              "Harmonic Justice"
-            ]
-          },
-          "category": "astrological_interpretation",
-          "source": "Tropical Ecliptic Solar Longitude (Symbolic Astrological Tradition)"
-        },
-        "lunarYearSign": {
-          "value": {
-            "animal": "Tiger",
-            "element": "Earth",
-            "yinYang": "Yang",
-            "symbolicQualities": [
-              "Earth Tiger",
-              "Yang Polarity",
-              "East Asian Sexagenary Cycle"
-            ]
-          },
-          "category": "astrological_interpretation",
-          "source": "Traditional East Asian Sexagenary Calendar (Symbolic Interpretation)"
-        }
+        "computed": false
       },
       "planetary": {
         "rulingBody": {
           "value": {
-            "name": "Venus (Hesperus / Zuhrah)",
-            "classicalSymbol": "♀",
-            "orbitalPeriodDays": 224.7,
-            "axialTiltDegrees": 177.36,
-            "albedo": 0.77,
-            "dominantSpectrumHex": "#D4A359",
-            "secondarySpectrumHex": "#254E70",
-            "harmonicFrequencyHz": 221.23,
+            "name": "Luna (Selene / Qamar)",
+            "classicalSymbol": "☽",
+            "orbitalPeriodDays": 27.32,
+            "axialTiltDegrees": 6.68,
+            "albedo": 0.12,
+            "dominantSpectrumHex": "#E2E8F0",
+            "secondarySpectrumHex": "#475569",
+            "harmonicFrequencyHz": 210.42,
             "ringSystem": false,
-            "moonCount": 0,
-            "poeticEpithet": "The Morning & Evening Star of Harmonic Proportion"
+            "moonCount": 1,
+            "poeticEpithet": "The Silver Mirror of Tides and Archival Memory"
           },
-          "category": "astrological_interpretation",
+          "category": "creative_interpretation",
           "source": "IAU Planetary Ephemeris Constants (Orbital Period, Tilt, Albedo) + Classical Celestial Symbolism"
         },
         "shaderParameters": {
@@ -350,86 +256,49 @@
         }
       },
       "interests": {
-        "hasUserInterests": true,
-        "rawInterests": [
-          "Sacred Architecture",
-          "Celestial Cartography",
-          "Classical Poetry",
-          "Botanical Gardens",
-          "Calligraphy",
-          "Stargazing",
-          "Archival Bookbinding"
-        ],
+        "hasUserInterests": false,
+        "rawInterests": [],
         "domainVectors": [
           {
-            "domain": "Sonic Arts & Musical Harmonics",
-            "weight": 82,
+            "domain": "Architectural & Spatial Contemplation",
+            "weight": 84,
             "matchedKeywords": [
-              "Classical Poetry"
+              "Default Curated Vector"
             ],
-            "visualMetaphor": "Resonant Acoustic Chamber & Standing Wave Geometry",
-            "interactiveFeatureSuggestion": "Web Audio Harmonic Chime Synthesizer"
+            "visualMetaphor": "Tessellated Courtyard & Light Aperture",
+            "interactiveFeatureSuggestion": "Interactive 3D Geometric Totem & Constellation Canvas"
           },
           {
-            "domain": "Computational Systems & Engineering",
-            "weight": 82,
+            "domain": "Literary & Historical Inquiry",
+            "weight": 78,
             "matchedKeywords": [
-              "Sacred Architecture"
+              "Onomastic Archive"
             ],
-            "visualMetaphor": "Algorithmic Lattice & Precision Polyhedron",
-            "interactiveFeatureSuggestion": "Interactive 3D Wireframe Totem & Node Network"
-          },
-          {
-            "domain": "Natural Philosophy, Botany & Ecology",
-            "weight": 82,
-            "matchedKeywords": [
-              "Botanical Gardens"
-            ],
-            "visualMetaphor": "Herbarium Specimen & Celestial Meridian",
-            "interactiveFeatureSuggestion": "Organic Particle Field & Star Alignment Mini-Game"
-          },
-          {
-            "domain": "Visual Craft, Literature & Editorial Arts",
-            "weight": 98,
-            "matchedKeywords": [
-              "Celestial Cartography",
-              "Classical Poetry",
-              "Calligraphy"
-            ],
-            "visualMetaphor": "Aldine Monograph & Chiaroscuro Atelier",
-            "interactiveFeatureSuggestion": "Interactive Editorial Dossier & Digital Postcard"
+            "visualMetaphor": "Illuminated Folio & Epigraphic Chronicle",
+            "interactiveFeatureSuggestion": "Personal Wax-Sealed Letter & Postcard Studio"
           }
         ],
         "synthesizedPassionsNarrative": {
-          "value": "Explicitly shaped around Fatima’s stated pursuits—Sacred Architecture, Celestial Cartography, Classical Poetry, Botanical Gardens, Calligraphy, Stargazing, Archival Bookbinding—translating these lived passions into spatial rhythm, interactive motifs, and narrative chapters.",
-          "category": "user_provided",
-          "source": "User-Provided Interests & Hobbies"
+          "value": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos.",
+          "category": "creative_interpretation",
+          "source": "Atelier Default Thematic Vector"
         }
       },
       "personality": {
-        "hasUserPersonalityInput": true,
-        "verbatimTraits": [
-          "Contemplative",
-          "luminous",
-          "deeply appreciative of historical craft and quiet wisdom — Warm parchment",
-          "lapis lazuli",
-          "brass astrolabes",
-          "courtyard serenity — Dedicated to the timeless pursuit of knowledge",
-          "grace",
-          "and architectural beauty"
-        ],
+        "hasUserPersonalityInput": false,
+        "verbatimTraits": [],
         "toneOfVoice": {
           "value": {
-            "warmth": 92,
-            "formality": 85,
-            "kineticEnergy": 65,
-            "introspection": 82,
-            "editorialStyle": "Architectural & Scholarly Precision"
+            "warmth": 75,
+            "formality": 68,
+            "kineticEnergy": 62,
+            "introspection": 78,
+            "editorialStyle": "Poetic Editorial Monograph (Neutral & Respectful)"
           },
-          "category": "user_provided",
-          "source": "Direct User-Provided Personality & Preference Notes"
+          "category": "creative_interpretation",
+          "source": "Default Editorial Voice (Zero Name-Based Personality Inference)"
         },
-        "strictNonInferenceNotice": "All personal disposition descriptors in this experience are derived exclusively from the information explicitly supplied by the user."
+        "strictNonInferenceNotice": "No personal character traits were provided by the user. In compliance with epistemic integrity rules, this platform never infers actual human personality from a name or birth date alone."
       },
       "creativeDirection": {
         "archetypeId": "editorial_monograph",
@@ -462,7 +331,7 @@
             "chapterNumber": "I",
             "title": "The Architecture of the Name",
             "subtitle": "Semitic / Classical Arabic · /ˈfɑːtɪmə/",
-            "narrativeBody": "Derived from the Classical Arabic triliteral root f-ṭ-m (ف-ط-م), denoting discernment, separation from the transient, and luminous intellectual clarity. Across centuries, bearers of this name—such as Fatima al-Fihri (c. 800 – 880 CE)—have left enduring marks: Founded Al-Qarawiyyin in Fez, Morocco in 859 CE—recognized by UNESCO and Guinness World Records as the oldest continuously operating degree-granting university in the world.",
+            "narrativeBody": "Derived from the Classical Arabic triliteral root f-ṭ-m (ف-ط-م), denoting discernment, separation from the transient, and luminous intellectual clarity. Across centuries, documented bearers of this name—such as Fatima al-Fihri (c. 800 – 880 CE)—have left enduring marks: Founded Al-Qarawiyyin in Fez, Morocco in 859 CE—recognized by UNESCO and Guinness World Records as the oldest continuously operating degree-granting university in the world.",
             "pullQuote": "One who abstains; the shining or captivating one who weans toward wisdom",
             "epistemicTag": "verified_fact"
           },
@@ -470,35 +339,35 @@
             "id": "chapter-meridian",
             "chapterNumber": "II",
             "title": "Cultural & Geographic Meridian",
-            "subtitle": "Lahore / Fez, Morocco & Maghreb & Arabian Peninsula (Fez / Hejaz)",
-            "narrativeBody": "Bridging the lived geography of Lahore / Fez, Morocco with the deep historical resonance of Maghreb & Arabian Peninsula (Fez / Hejaz), this synthesis honors both personal place and the architectural, mathematical, and poetic traditions associated with the name Fatima. Its visual language draws from Riad Courtyards, Muqarnas Vaulting & Cedar Mashrabiya & Hispano-Moorish Courtyard & Marinid Geometric Pavilions and the tactile mastery of Fez Zellij Geometry & Tadelakt Lime Plaster.",
+            "subtitle": "Maghreb & Arabian Peninsula (Fez / Hejaz) (Historical Linguistic Origin of Name — Not Personal Location)",
+            "narrativeBody": "Reflects the historical linguistic heritage of the name \"Fatima\" in Maghreb & Arabian Peninsula (Fez / Hejaz) (Hispano-Moorish Courtyard & Marinid Geometric Pavilions and Zellij glazed terracotta mosaic work & brass astrolabe engraving). No personal residence or birthplace is assumed. Its visual language draws from Hispano-Moorish Courtyard & Marinid Geometric Pavilions and the tactile mastery of Zellij glazed terracotta mosaic work & brass astrolabe engraving.",
             "pullQuote": "Knowledge is a sanctuary built stone by stone so that every seeker may find light within its courtyard.",
-            "epistemicTag": "user_provided"
+            "epistemicTag": "verified_fact"
           },
           {
             "id": "chapter-cosmos",
             "chapterNumber": "III",
-            "title": "Temporal & Celestial Ephemeris",
-            "subtitle": "Libra (♎) · Venus (Hesperus / Zuhrah)",
-            "narrativeBody": "Anchored in the Autumn horizon of a Wednesday, this chapter pairs astronomical constants (Venus (Hesperus / Zuhrah), orbital period 224.7 days, harmonic pitch 221.23 Hz) with symbolic celestial traditions.",
-            "pullQuote": "The Morning & Evening Star of Harmonic Proportion",
-            "epistemicTag": "astrological_interpretation"
+            "title": "Celestial & Harmonic Resonance",
+            "subtitle": "Luna (Selene / Qamar) (☽)",
+            "narrativeBody": "Because no personal birth date was provided, zero natal or astrological assumptions are made. Instead, the experience aligns with the classical IAU astronomical constants of Luna (Selene / Qamar) (The Silver Mirror of Tides and Archival Memory), resonating at 210.42 Hz.",
+            "pullQuote": "The Silver Mirror of Tides and Archival Memory",
+            "epistemicTag": "creative_interpretation"
           },
           {
             "id": "chapter-passions",
             "chapterNumber": "IV",
             "title": "Living Horizons & Personal Craft",
-            "subtitle": "Sacred Architecture · Celestial Cartography · Classical Poetry · Botanical Gardens",
-            "narrativeBody": "Explicitly shaped around Fatima’s stated pursuits—Sacred Architecture, Celestial Cartography, Classical Poetry, Botanical Gardens, Calligraphy, Stargazing, Archival Bookbinding—translating these lived passions into spatial rhythm, interactive motifs, and narrative chapters. Additional personal notes: \"Dedicated to the timeless pursuit of knowledge, grace, and architectural beauty.\".",
+            "subtitle": "Curiosity, Contemplation & Creative Agency",
+            "narrativeBody": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos. ",
             "pullQuote": "“Identity is not prescribed by origin; it is composed day by day through attention, craft, and generosity.”",
-            "epistemicTag": "user_provided"
+            "epistemicTag": "creative_interpretation"
           }
         ],
         "personalLetter": {
           "salutation": "To Fatima,",
           "bodyParagraphs": [
-            "Carry the resonance of your name—Fatima—not as a fixed boundary, but as an open courtyard of light. From the ancient roots that gave your name its lyrical cadence to the horizons you actively shape today, your story belongs to the rare lineage of builders and seekers.",
-            "May your dedication to Sacred Architecture, Celestial Cartography, Classical Poetry, Botanical Gardens, Calligraphy, Stargazing, Archival Bookbinding continue to sharpen your eye and deepen your joy, turning quiet hours of practice into works of lasting grace.",
+            "Carry the resonance of your name—Fatima—not as a fixed boundary, but as an open courtyard of light. From the roots that gave your name its lyrical cadence to the horizons you actively shape today, your story belongs to the lineage of builders and seekers.",
+            "May every season bring clarity to your inquiries, warmth to your threshold, and new constellations to navigate.",
             "This digital monograph was crafted specifically for you—a living artifact celebrating both the history behind your name and the unwritten chapters ahead."
           ],
           "valediction": "With enduring admiration and scholarly craft,",
@@ -623,46 +492,38 @@
             {
               "id": "card-heritage",
               "label": "02 / CULTURAL MERIDIAN",
-              "title": "Lahore / Fez, Morocco & Maghreb & Arabian Peninsula (Fez / Hejaz)",
-              "value": "Riad Courtyards, Muqarnas Vaulting & Cedar Mashrabiya & Hispano-Moorish Courtyard & Marinid Geometric Pavilions",
-              "detail": "Traditional Craft: Fez Zellij Geometry & Tadelakt Lime Plaster",
-              "epistemicCategory": "user_provided"
+              "title": "Maghreb & Arabian Peninsula (Fez / Hejaz) (Historical Linguistic Origin of Name — Not Personal Location)",
+              "value": "Hispano-Moorish Courtyard & Marinid Geometric Pavilions",
+              "detail": "Traditional Craft: Zellij glazed terracotta mosaic work & brass astrolabe engraving",
+              "epistemicCategory": "verified_fact"
             },
             {
               "id": "card-celestial",
               "label": "03 / CELESTIAL EPHEMERIS",
-              "title": "Libra ♎",
-              "value": "♀ · 221.23 Hz",
-              "detail": "Element: Air · Modality: Cardinal · Ruler: Venus (Hesperus / Zuhrah)",
-              "epistemicCategory": "astrological_interpretation"
+              "title": "Luna (Selene / Qamar)",
+              "value": "☽ · 210.42 Hz",
+              "detail": "Orbital Period: 27.32 days · Axial Tilt: 6.68°",
+              "epistemicCategory": "creative_interpretation"
             },
             {
               "id": "card-passions",
               "label": "04 / PERSONAL VECTORS",
-              "title": "Stated Pursuits & Craft",
-              "value": "Sacred Architecture · Celestial Cartography · Classical Poetry",
-              "detail": "Explicitly shaped around Fatima’s stated pursuits—Sacred Architecture, Celestial Cartography, Classical Poetry, Botanical Gardens, Calligraphy, Stargazing, Archival Bookbinding—translating these lived passions into spatial rhythm, interactive motifs, and narrative chapters.",
-              "epistemicCategory": "user_provided"
-            },
-            {
-              "id": "card-botanical-mineral",
-              "label": "05 / NATAL CORRESPONDENCE",
-              "title": "Iridescent Opal & Tourmaline & Calendula Marigold",
-              "value": "Autumn · Wednesday",
-              "detail": "Calendula officinalis: Solar warmth and autumnal craftsmanship",
-              "epistemicCategory": "verified_fact"
+              "title": "Universal Humanist Vectors",
+              "value": "Architecture · Poetics · Cosmos",
+              "detail": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos.",
+              "epistemicCategory": "creative_interpretation"
             }
           ]
         },
         "interactivePostcard": {
-          "stampCode": "ATL-FAT-221",
-          "originLabel": "Lahore / Fez, Morocco & Maghreb & Arabian Peninsula (Fez / Hejaz)",
+          "stampCode": "ATL-FAT-210",
+          "originLabel": "Maghreb & Arabian Peninsula (Fez / Hejaz) (Historical Linguistic Origin of Name — Not Personal Location)",
           "destinationLabel": "Sanctuary of Fatima",
           "defaultMessage": "May the architecture of your days reflect the clarity and luminous depth embedded within the name Fatima.",
           "prompts": [
             "A reflection on Fatima’s lyrical cadence...",
-            "From the meridian of Lahore / Fez, Morocco & Maghreb & Arabian Peninsula (Fez / Hejaz)...",
-            "Under the harmonic frequency of 221.23 Hz..."
+            "From the meridian of Maghreb & Arabian Peninsula (Fez / Hejaz) (Historical Linguistic Origin of Name — Not Personal Location)...",
+            "Under the harmonic frequency of 210.42 Hz..."
           ]
         },
         "miniGameConfig": {
@@ -678,17 +539,17 @@
             },
             {
               "id": "node-2",
-              "label": "βMeridian (31.8°N)",
+              "label": "βMeridian (34.0°N)",
               "x": 38,
               "y": 28,
-              "unlockedInsight": "Heritage Craft: Fez Zellij Geometry & Tadelakt Lime Plaster"
+              "unlockedInsight": "Heritage Craft: Zellij glazed terracotta mosaic work & brass astrolabe engraving"
             },
             {
               "id": "node-3",
-              "label": "γHarmonic (221.23 Hz)",
+              "label": "γHarmonic (210.42 Hz)",
               "x": 56,
               "y": 70,
-              "unlockedInsight": "Celestial Body: Venus (Hesperus / Zuhrah)"
+              "unlockedInsight": "Celestial Body: Luna (Selene / Qamar)"
             },
             {
               "id": "node-4",
@@ -716,19 +577,20 @@
       },
       "verification": {
         "passed": true,
-        "timestamp": "2026-11-07T05:38:27.390Z",
-        "totalClaimsAudited": 33,
+        "timestamp": "2026-11-07T06:19:14.692Z",
+        "executionMode": "deterministic_lexicon_and_heuristics",
+        "totalClaimsAudited": 18,
         "breakdown": {
-          "verifiedFactsCount": 7,
-          "userProvidedCount": 18,
-          "astrologicalCount": 3,
-          "creativeInterpretationCount": 5
+          "verifiedFactsCount": 10,
+          "userProvidedCount": 1,
+          "astrologicalCount": 0,
+          "creativeInterpretationCount": 7
         },
         "epistemicGuarantees": [
-          "Zero personal biographical facts were fabricated or scraped from private sources.",
-          "Actual human personality was never inferred from name etymology or birth date alone.",
-          "Linguistic and historical bearer citations are separated from symbolic/astrological interpretations.",
-          "All user-supplied fields are explicitly tagged as User-Provided."
+          "Zero personal biographical facts (birthdays, locations, hobbies, personality) were fabricated or scraped.",
+          "Heuristic phonetic or morphological estimates for uncurated names are never labeled as Verified Facts.",
+          "Actual human personality is never inferred from name etymology or birth date alone.",
+          "Linguistic and historical bearer citations are strictly separated from astrological and creative interpretations."
         ],
         "sanitizedWarnings": []
       }
@@ -739,24 +601,27 @@
         "code": "INPUT_COLLECTION",
         "title": "Input Collection & Normalization",
         "status": "completed",
-        "durationMs": 4,
-        "summary": "Captured identity payload for \"Fatima\" with 7 interest tags."
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Normalized identity payload for \"Fatima\" (0 user-supplied interest tags; zero fabricated fields)."
       },
       {
         "stepNumber": 2,
         "code": "INPUT_VALIDATION",
         "title": "Temporal & Schema Validation",
         "status": "completed",
-        "durationMs": 3,
-        "summary": "Verified Gregorian calendar bounds and temporal parameters."
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Optional temporal fields omitted by user; configured timeless mode (zero invented birthdates)."
       },
       {
         "stepNumber": 3,
         "code": "RESEARCH_COLLECTION",
         "title": "Onomastic, Etymological & Cultural Research",
         "status": "completed",
-        "durationMs": 8,
-        "summary": "Resolved IPA /ˈfɑːtɪmə/, Semitic / Classical Arabic lineage, and 4 reference citations.",
+        "executionNature": "curated_lexicon_lookup",
+        "durationMs": 4,
+        "summary": "Matched curated philological lexicon entry for \"Fatima\" (/ˈfɑːtɪmə/) with 4 reference citations.",
         "artifactPreview": "One who abstains; the shining or captivating one who weans toward wisdom"
       },
       {
@@ -764,23 +629,26 @@
         "code": "EVIDENCE_CLASSIFICATION",
         "title": "Four-Tier Epistemic Evidence Classification",
         "status": "completed",
-        "durationMs": 5,
-        "summary": "Partitioned claims into Verified Facts, User-Provided Data, Astrological Symbolism, and Creative Interpretations."
+        "executionNature": "real_validation",
+        "durationMs": 3,
+        "summary": "Partitioned claims into Verified Facts, User-Provided Data, Astrological Symbolism, and Creative/Heuristic Interpretations."
       },
       {
         "stepNumber": 5,
         "code": "INTELLIGENCE_SYNTHESIS",
         "title": "14-Module Multi-Vector Intelligence Synthesis",
         "status": "completed",
-        "durationMs": 7,
-        "summary": "Synthesized 4 passion vectors and harmonic frequency (221.23 Hz)."
+        "executionNature": "astronomical_calculation",
+        "durationMs": 4,
+        "summary": "Synthesized 2 passion vectors and IAU planetary harmonic frequency (210.42 Hz)."
       },
       {
         "stepNumber": 6,
         "code": "CREATIVE_DIRECTION",
         "title": "Art Direction & Spatial Archetype Selection",
         "status": "completed",
-        "durationMs": 4,
+        "executionNature": "deterministic_heuristic",
+        "durationMs": 3,
         "summary": "Selected archetype \"Illuminated Architectural Monograph\" (editorial-split).",
         "artifactPreview": "Inspired by rare folio manuscripts, courtyard stone arcades, and precision brass astrolabes—combining warm parchment surfaces with deep lapis ink and burnished gold accents."
       },
@@ -789,7 +657,8 @@
         "code": "VISUAL_SYSTEM",
         "title": "Adaptive Color Palette & Typography System",
         "status": "completed",
-        "durationMs": 4,
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
         "summary": "Generated palette (#F7F3EB / #B67B32) & font stack (\"Cormorant Garamond\")."
       },
       {
@@ -797,15 +666,17 @@
         "code": "STRUCTURE_GENERATION",
         "title": "Bespoke Page Topology & Navigation Architecture",
         "status": "completed",
-        "durationMs": 4,
-        "summary": "Constructed 7 interactive chapters and 5 archival dossier cards."
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Constructed 7 interactive chapters and 4 archival dossier cards."
       },
       {
         "stepNumber": 9,
         "code": "INTERACTION_SELECTION",
         "title": "3D WebGL, Cursor Physics & Motion Choreography",
         "status": "completed",
-        "durationMs": 4,
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
         "summary": "Assigned 3D scene \"orbital_sanctuary\", cursor \"magnetic_ring\", and totem \"The Meridian Astrolabe of Al-Qarawiyyin\"."
       },
       {
@@ -813,47 +684,53 @@
         "code": "CONTENT_GENERATION",
         "title": "Narrative Chronicle, Epistle & Quote Synthesis",
         "status": "completed",
-        "durationMs": 9,
-        "summary": "Authored 4 narrative chapters, personal wax-sealed epistle, and interactive postcard."
+        "executionNature": "system_synthesis",
+        "durationMs": 5,
+        "summary": "Authored 4 narrative chapters, personal epistle, and postcard via structured narrative synthesis (GEMINI_API_KEY not set)."
       },
       {
         "stepNumber": 11,
         "code": "ASSET_GENERATION",
         "title": "Procedural 3D Geometry, Totem SVG & Web Audio Synth Setup",
         "status": "completed",
-        "durationMs": 5,
-        "summary": "Configured 1113 WebGL particles, SVG sigil generator, and 221.23 Hz Web Audio oscillator."
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Configured 1113 WebGL particles, SVG sigil parameters, and 210.42 Hz Web Audio oscillator."
       },
       {
         "stepNumber": 12,
         "code": "WEBSITE_RENDERING",
-        "title": "Hydrating Adaptive Experience Tree",
+        "title": "Hydrating Adaptive Experience Configuration",
         "status": "completed",
-        "durationMs": 4,
+        "executionNature": "system_synthesis",
+        "durationMs": 2,
         "summary": "Bound design tokens, responsive breakpoints, and reduced-motion fallbacks for editorial_monograph."
       },
       {
         "stepNumber": 13,
         "code": "AUTOMATED_TESTING",
-        "title": "Epistemic Audit & Schema Integrity Verification",
+        "title": "Programmatic Epistemic Audit & Non-Fabrication Verification",
         "status": "completed",
-        "durationMs": 4,
-        "summary": "Audited 33 claims (7 verified facts, 18 user-provided)."
+        "executionNature": "real_validation",
+        "durationMs": 3,
+        "summary": "Audited 18 claims (10 verified facts, 1 user-provided, 7 creative/heuristic)."
       },
       {
         "stepNumber": 14,
         "code": "VISUAL_VERIFICATION",
-        "title": "Viewport Contrast, WebGL Boundary & DOM Landmark Check",
+        "title": "DOM Landmark & Contrast Polarity Configuration",
         "status": "completed",
-        "durationMs": 3,
-        "summary": "Verified WCAG contrast polarity, mobile touch fallback, and semantic section anchors."
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Configured semantic section landmarks and contrast polarity tokens for browser rendering."
       },
       {
         "stepNumber": 15,
         "code": "USER_PREVIEW",
         "title": "Interactive Studio Preview & Live Section Editor Ready",
         "status": "completed",
-        "durationMs": 3,
+        "executionNature": "system_synthesis",
+        "durationMs": 2,
         "summary": "Experience staged for live preview, section-level regeneration, and design token customization."
       },
       {
@@ -861,52 +738,44 @@
         "code": "PUBLISHING_SHARING",
         "title": "Multi-Tenant Persistence & Export Bundle Registration",
         "status": "completed",
-        "durationMs": 4,
-        "summary": "Published isolated experience at /e/fatima-al-qarawiyyin with standalone source code export and GitHub/Vercel pipelines."
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Registered isolated experience at /e/fatima with owner isolation and standalone source export."
       }
-    ]
+    ],
+    "storageSource": "local_fallback",
+    "deploymentHistory": {
+      "githubRepoUrl": "https://github.com/HassaanFisky/atelier-exported-persona-demo",
+      "githubLastCommitSha": "54df7c2d99053ba73c4605fdd2fa6deb86aa46cf",
+      "lastPublishedAt": "2026-11-07T06:21:28.232Z"
+    }
   },
-  "kenjiro-takahashi": {
+  "kenjiro": {
     "id": "exp_seed_kenjiro",
-    "slug": "kenjiro-takahashi",
-    "createdAt": "2026-11-07T05:38:27.391Z",
-    "updatedAt": "2026-11-07T05:38:27.391Z",
+    "slug": "kenjiro",
+    "ownerId": "system_public",
+    "createdAt": "2026-11-07T06:19:14.692Z",
+    "updatedAt": "2026-11-07T06:19:14.692Z",
     "version": 1,
     "visibility": "public",
     "input": {
-      "fullName": "Kenjiro Takahashi",
-      "birthDate": "1994-11-08",
-      "birthYear": 1994,
-      "birthTime": "21:15",
-      "birthplace": "Kyoto",
-      "country": "Japan",
-      "interests": [
-        "Kinetic Typography",
-        "Modular Synthesizers",
-        "Timber Architecture",
-        "Computational Design"
-      ],
-      "hobbies": [
-        "Analog Photography",
-        "Ceramics",
-        "Acoustic Field Recording"
-      ],
-      "personalPreferences": "Sumi ink obsidian, raw hinoki wood, vermilion seals, structural precision",
-      "personalityInfo": "Disciplined, curious, experimental, balances technical rigor with Zen spatial stillness",
-      "preferredVisualDirection": "kinetic_atelier",
-      "additionalInfo": "Exploring the threshold between digital shaders and traditional Japanese joinery.",
-      "visibility": "public"
+      "fullName": "Kenjiro",
+      "interests": [],
+      "hobbies": [],
+      "preferredVisualDirection": "auto",
+      "visibility": "public",
+      "privacyConsentConfirmed": true
     },
     "intelligence": {
       "nameResearch": {
-        "normalizedName": "Kenjiro Takahashi",
+        "normalizedName": "Kenjiro",
         "firstName": "Kenjiro",
-        "surname": "Takahashi",
+        "lexiconMatch": true,
         "phoneticIPA": {
           "value": "/keɲdʑiɾoː/",
           "category": "verified_fact",
-          "source": "International Phonetic Alphabet (IPA) Transcription Standard",
-          "confidence": 0.99
+          "source": "Oxford Dictionary of First Names (Documented IPA Transcription)",
+          "confidence": 0.98
         },
         "syllableCount": 3,
         "syllableBreakdown": [
@@ -925,14 +794,14 @@
             "acousticWarmth": 67,
             "rhythmPattern": "— ◡ ◡"
           },
-          "category": "verified_fact",
-          "source": "Phonological Prosody & Syllable Weight Analysis",
-          "confidence": 0.94
+          "category": "creative_interpretation",
+          "source": "Prosodic Cadence & Vowel-Weight Heuristic Model (Creative Synthesis)",
+          "notes": "Artistic sound-symbolism model used to guide visual and typographic rhythm."
         },
         "linguisticFamily": {
           "value": "Japonic / Sino-Japanese Kanji Compound",
           "category": "verified_fact",
-          "source": "Oxford Dictionary of First Names",
+          "source": "Oxford Dictionary of First Names & Comparative Philology",
           "confidence": 0.98
         },
         "scriptVariations": [
@@ -1046,54 +915,51 @@
           "category": "creative_interpretation",
           "source": "Visual Iconography Engine"
         },
-        "epistemicDisclaimer": "Etymological roots reflect historical linguistic evolution and never prescribe or determine an individual’s personal character."
+        "epistemicDisclaimer": "Etymological roots reflect historical linguistic evolution of the word itself and never prescribe or determine an individual’s personal character or biography."
       },
       "culturalContext": {
         "heritageSynthesis": {
-          "value": "Bridging the lived geography of Kyoto, Japan with the deep historical resonance of Kyoto & Kansai Archipelago, Japan, this synthesis honors both personal place and the architectural, mathematical, and poetic traditions associated with the name Kenjiro.",
-          "category": "user_provided",
-          "source": "User-Provided Geography + Cultural Atlas"
+          "value": "Reflects the historical linguistic heritage of the name \"Kenjiro\" in Kyoto & Kansai Archipelago, Japan (Sukiya-zukuri Timber Pavilion & Modernist Brutalist Concrete and Kigumi wood joinery without nails & Urushi lacquerware). No personal residence or birthplace is assumed.",
+          "category": "verified_fact",
+          "source": "Historical Onomastic & Architectural Reference"
         },
         "geographicResonance": {
           "value": {
-            "region": "Kyoto, Japan & Kyoto & Kansai Archipelago, Japan",
+            "region": "Kyoto & Kansai Archipelago, Japan (Historical Linguistic Origin of Name — Not Personal Location)",
             "coordinates": {
-              "lat": 36.2048,
-              "lng": 138.2529
+              "lat": 35.0116,
+              "lng": 135.7681
             },
-            "architecturalVernacular": "Sukiya Timber Joinery & Metabolist Concrete Geometry & Sukiya-zukuri Timber Pavilion & Modernist Brutalist Concrete",
-            "traditionalCraft": "Kintsugi Gold-Joined Ceramics & Washi Papermaking"
+            "architecturalVernacular": "Sukiya-zukuri Timber Pavilion & Modernist Brutalist Concrete",
+            "traditionalCraft": "Kigumi wood joinery without nails & Urushi lacquerware"
           },
           "category": "verified_fact",
-          "source": "Architectural & Material Culture Atlas"
+          "source": "Historical Architectural & Material Culture Atlas"
         },
         "artisticTraditions": {
           "value": [
             "Ma (Negative Space Composition)",
             "Kinetic Light Projection",
-            "Sumi-e Monochromatic Ink",
-            "Wabi-Sabi Imperfection",
-            "Ukiyo-e Woodblock Composition",
-            "Ma Spatial Silence"
+            "Sumi-e Monochromatic Ink"
           ],
           "category": "verified_fact",
-          "source": "Art Historical Reference"
+          "source": "UNESCO & Art Historical Reference"
         },
         "colorHeritage": [
           {
-            "name": "Aizome Indigo",
-            "hex": "#1B3B5A",
-            "culturalOrigin": "Fermented polygonum indigo dye"
+            "name": "Sumi Ink Obsidian",
+            "hex": "#0F1115",
+            "culturalOrigin": "Pine-soot calligraphic inkstone"
           },
           {
-            "name": "Hinoki Cypress",
-            "hex": "#D8C3A5",
-            "culturalOrigin": "Unfinished Japanese temple timber"
+            "name": "Shikkui Plaster White",
+            "hex": "#F3F2EE",
+            "culturalOrigin": "Traditional lime-hemp architectural wall finish"
           },
           {
-            "name": "Beni Vermilion",
-            "hex": "#D1493F",
-            "culturalOrigin": "Safflower petal pigment"
+            "name": "Shu Vermilion Seal",
+            "hex": "#D94E34",
+            "culturalOrigin": "Cinnabar artist signature stamp (Hanko)"
           }
         ],
         "literaryOrPhilosophicalEcho": {
@@ -1107,91 +973,13 @@
         }
       },
       "birthday": {
-        "hasBirthData": true,
+        "hasBirthData": false,
         "validDate": true,
-        "dayOfWeek": {
-          "value": "Tuesday",
-          "category": "verified_fact",
-          "source": "Gregorian Perpetual Calendar Calculation",
-          "confidence": 1
-        },
-        "season": {
-          "value": "Autumn",
-          "category": "verified_fact",
-          "source": "Solar Meteorological Calendar",
-          "confidence": 1
-        },
-        "dayOfYear": 312,
-        "lifePathNumber": {
-          "value": {
-            "number": 33,
-            "archetypeTitle": "The Compassionate Teacher",
-            "interpretation": "Master-number symbolic cadence centered on wisdom transmission and creative elevation."
-          },
-          "category": "astrological_interpretation",
-          "source": "Pythagorean Arithmology / Symbolic Numerology"
-        },
-        "birthstone": {
-          "value": {
-            "name": "Imperial Topaz & Citrine",
-            "hexColor": "#D48C2A",
-            "mineralFamily": "Fluorosilicate"
-          },
-          "category": "verified_fact",
-          "source": "Gemological Institute Traditional Mineral Registry"
-        },
-        "birthFlower": {
-          "value": {
-            "name": "Chrysanthemum",
-            "botanicalName": "Chrysanthemum indicum",
-            "symbolism": "Longevity, structural radial harmony, and candor"
-          },
-          "category": "verified_fact",
-          "source": "Royal Botanic Gardens Horticultural Lore"
-        },
-        "historicalEventsOnDay": [
-          {
-            "year": 1867,
-            "event": "Birth of Marie Skłodowska-Curie in Warsaw, pioneer of radioactivity and first person awarded two Nobel Prizes.",
-            "source": "Institut Curie / Nobel Foundation"
-          }
-        ]
+        "validationMessage": "No birth date provided; temporal and zodiac modules gracefully operating in timeless mode.",
+        "historicalEventsOnDay": []
       },
       "zodiac": {
-        "computed": true,
-        "westernSign": {
-          "value": {
-            "sign": "Scorpio",
-            "symbol": "The Alchemical Phoenix & Scorpion",
-            "unicodeGlyph": "♏",
-            "element": "Water",
-            "modality": "Fixed",
-            "polarity": "Nocturnal",
-            "decan": 1,
-            "dateRange": "Oct 23 – Nov 21",
-            "symbolicThemes": [
-              "Subterranean Depth",
-              "Transformative Alchemy",
-              "Magnetic Focus"
-            ]
-          },
-          "category": "astrological_interpretation",
-          "source": "Tropical Ecliptic Solar Longitude (Symbolic Astrological Tradition)"
-        },
-        "lunarYearSign": {
-          "value": {
-            "animal": "Dog",
-            "element": "Wood",
-            "yinYang": "Yang",
-            "symbolicQualities": [
-              "Wood Dog",
-              "Yang Polarity",
-              "East Asian Sexagenary Cycle"
-            ]
-          },
-          "category": "astrological_interpretation",
-          "source": "Traditional East Asian Sexagenary Calendar (Symbolic Interpretation)"
-        }
+        "computed": false
       },
       "planetary": {
         "rulingBody": {
@@ -1208,88 +996,61 @@
             "moonCount": 2,
             "poeticEpithet": "The Ochre Forge of Kinetic Resolve"
           },
-          "category": "astrological_interpretation",
+          "category": "creative_interpretation",
           "source": "IAU Planetary Ephemeris Constants (Orbital Period, Tilt, Albedo) + Classical Celestial Symbolism"
         },
         "shaderParameters": {
           "orbitSpeed": 0.31,
-          "particleCount": 973,
-          "turbulence": 0.35,
-          "bloomIntensity": 0.78,
-          "wireframeRatio": 0.58
+          "particleCount": 1063,
+          "turbulence": 0.25,
+          "bloomIntensity": 0.53,
+          "wireframeRatio": 0.28
         }
       },
       "interests": {
-        "hasUserInterests": true,
-        "rawInterests": [
-          "Kinetic Typography",
-          "Modular Synthesizers",
-          "Timber Architecture",
-          "Computational Design",
-          "Analog Photography",
-          "Ceramics",
-          "Acoustic Field Recording"
-        ],
+        "hasUserInterests": false,
+        "rawInterests": [],
         "domainVectors": [
           {
-            "domain": "Sonic Arts & Musical Harmonics",
-            "weight": 82,
+            "domain": "Architectural & Spatial Contemplation",
+            "weight": 84,
             "matchedKeywords": [
-              "Modular Synthesizers"
+              "Default Curated Vector"
             ],
-            "visualMetaphor": "Resonant Acoustic Chamber & Standing Wave Geometry",
-            "interactiveFeatureSuggestion": "Web Audio Harmonic Chime Synthesizer"
+            "visualMetaphor": "Tessellated Courtyard & Light Aperture",
+            "interactiveFeatureSuggestion": "Interactive 3D Geometric Totem & Constellation Canvas"
           },
           {
-            "domain": "Computational Systems & Engineering",
-            "weight": 92,
+            "domain": "Literary & Historical Inquiry",
+            "weight": 78,
             "matchedKeywords": [
-              "Timber Architecture",
-              "Computational Design"
+              "Onomastic Archive"
             ],
-            "visualMetaphor": "Algorithmic Lattice & Precision Polyhedron",
-            "interactiveFeatureSuggestion": "Interactive 3D Wireframe Totem & Node Network"
-          },
-          {
-            "domain": "Visual Craft, Literature & Editorial Arts",
-            "weight": 92,
-            "matchedKeywords": [
-              "Analog Photography",
-              "Ceramics"
-            ],
-            "visualMetaphor": "Aldine Monograph & Chiaroscuro Atelier",
-            "interactiveFeatureSuggestion": "Interactive Editorial Dossier & Digital Postcard"
+            "visualMetaphor": "Illuminated Folio & Epigraphic Chronicle",
+            "interactiveFeatureSuggestion": "Personal Wax-Sealed Letter & Postcard Studio"
           }
         ],
         "synthesizedPassionsNarrative": {
-          "value": "Explicitly shaped around Kenjiro Takahashi’s stated pursuits—Kinetic Typography, Modular Synthesizers, Timber Architecture, Computational Design, Analog Photography, Ceramics, Acoustic Field Recording—translating these lived passions into spatial rhythm, interactive motifs, and narrative chapters.",
-          "category": "user_provided",
-          "source": "User-Provided Interests & Hobbies"
+          "value": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos.",
+          "category": "creative_interpretation",
+          "source": "Atelier Default Thematic Vector"
         }
       },
       "personality": {
-        "hasUserPersonalityInput": true,
-        "verbatimTraits": [
-          "Disciplined",
-          "curious",
-          "experimental",
-          "balances technical rigor with Zen spatial stillness — Sumi ink obsidian",
-          "raw hinoki wood",
-          "vermilion seals",
-          "structural precision — Exploring the threshold between digital shaders and traditional Japanese joinery"
-        ],
+        "hasUserPersonalityInput": false,
+        "verbatimTraits": [],
         "toneOfVoice": {
           "value": {
-            "warmth": 76,
-            "formality": 85,
-            "kineticEnergy": 88,
-            "introspection": 82,
-            "editorialStyle": "Architectural & Scholarly Precision"
+            "warmth": 75,
+            "formality": 68,
+            "kineticEnergy": 62,
+            "introspection": 78,
+            "editorialStyle": "Poetic Editorial Monograph (Neutral & Respectful)"
           },
-          "category": "user_provided",
-          "source": "Direct User-Provided Personality & Preference Notes"
+          "category": "creative_interpretation",
+          "source": "Default Editorial Voice (Zero Name-Based Personality Inference)"
         },
-        "strictNonInferenceNotice": "All personal disposition descriptors in this experience are derived exclusively from the information explicitly supplied by the user."
+        "strictNonInferenceNotice": "No personal character traits were provided by the user. In compliance with epistemic integrity rules, this platform never infers actual human personality from a name or birth date alone."
       },
       "creativeDirection": {
         "archetypeId": "kinetic_atelier",
@@ -1313,7 +1074,7 @@
         }
       },
       "storytelling": {
-        "heroHeadline": "Kenjiro Takahashi",
+        "heroHeadline": "Kenjiro",
         "heroSubheadline": " healthy, clear-minded, or resolute second son / pillar of harmony — An Interactive Monograph of Origin, Cosmos & Living Craft.",
         "prologueManifesto": "Every name is an architectural vessel before it is spoken. In the Japonic / Sino-Japanese Kanji Compound tradition, \"Kenjiro\" (/keɲdʑiɾoː/) unfolds across 3 syllables with a lyrical cadence. This digital sanctuary weaves verified historical etymology, cultural geography, and personal pursuits into an art-directed living chronicle.",
         "chapters": [
@@ -1322,7 +1083,7 @@
             "chapterNumber": "I",
             "title": "The Architecture of the Name",
             "subtitle": "Japonic / Sino-Japanese Kanji Compound · /keɲdʑiɾoː/",
-            "narrativeBody": "Constructed from Sino-Japanese morphographic characters—commonly 健 (ken: vigorous, structurally sound, clear) or 賢 (ken: wise, sagacious) paired with 二郎 / 次郎 (jirō: second son or successor of light). Across centuries, bearers of this name—such as Kenjiro Takayanagi (1899 – 1990)—have left enduring marks: Japanese engineering pioneer who built the world’s first all-electronic television receiver in 1926, displaying the katakana character イ.",
+            "narrativeBody": "Constructed from Sino-Japanese morphographic characters—commonly 健 (ken: vigorous, structurally sound, clear) or 賢 (ken: wise, sagacious) paired with 二郎 / 次郎 (jirō: second son or successor of light). Across centuries, documented bearers of this name—such as Kenjiro Takayanagi (1899 – 1990)—have left enduring marks: Japanese engineering pioneer who built the world’s first all-electronic television receiver in 1926, displaying the katakana character イ.",
             "pullQuote": " healthy, clear-minded, or resolute second son / pillar of harmony",
             "epistemicTag": "verified_fact"
           },
@@ -1330,35 +1091,35 @@
             "id": "chapter-meridian",
             "chapterNumber": "II",
             "title": "Cultural & Geographic Meridian",
-            "subtitle": "Kyoto, Japan & Kyoto & Kansai Archipelago, Japan",
-            "narrativeBody": "Bridging the lived geography of Kyoto, Japan with the deep historical resonance of Kyoto & Kansai Archipelago, Japan, this synthesis honors both personal place and the architectural, mathematical, and poetic traditions associated with the name Kenjiro. Its visual language draws from Sukiya Timber Joinery & Metabolist Concrete Geometry & Sukiya-zukuri Timber Pavilion & Modernist Brutalist Concrete and the tactile mastery of Kintsugi Gold-Joined Ceramics & Washi Papermaking.",
+            "subtitle": "Kyoto & Kansai Archipelago, Japan (Historical Linguistic Origin of Name — Not Personal Location)",
+            "narrativeBody": "Reflects the historical linguistic heritage of the name \"Kenjiro\" in Kyoto & Kansai Archipelago, Japan (Sukiya-zukuri Timber Pavilion & Modernist Brutalist Concrete and Kigumi wood joinery without nails & Urushi lacquerware). No personal residence or birthplace is assumed. Its visual language draws from Sukiya-zukuri Timber Pavilion & Modernist Brutalist Concrete and the tactile mastery of Kigumi wood joinery without nails & Urushi lacquerware.",
             "pullQuote": "Between two pillars of cedar, it is the silent interval of air that holds the temple aloft.",
-            "epistemicTag": "user_provided"
+            "epistemicTag": "verified_fact"
           },
           {
             "id": "chapter-cosmos",
             "chapterNumber": "III",
-            "title": "Temporal & Celestial Ephemeris",
-            "subtitle": "Scorpio (♏) · Mars (Ares / Mirrikh)",
-            "narrativeBody": "Anchored in the Autumn horizon of a Tuesday, this chapter pairs astronomical constants (Mars (Ares / Mirrikh), orbital period 686.98 days, harmonic pitch 144.72 Hz) with symbolic celestial traditions.",
+            "title": "Celestial & Harmonic Resonance",
+            "subtitle": "Mars (Ares / Mirrikh) (♂)",
+            "narrativeBody": "Because no personal birth date was provided, zero natal or astrological assumptions are made. Instead, the experience aligns with the classical IAU astronomical constants of Mars (Ares / Mirrikh) (The Ochre Forge of Kinetic Resolve), resonating at 144.72 Hz.",
             "pullQuote": "The Ochre Forge of Kinetic Resolve",
-            "epistemicTag": "astrological_interpretation"
+            "epistemicTag": "creative_interpretation"
           },
           {
             "id": "chapter-passions",
             "chapterNumber": "IV",
             "title": "Living Horizons & Personal Craft",
-            "subtitle": "Kinetic Typography · Modular Synthesizers · Timber Architecture · Computational Design",
-            "narrativeBody": "Explicitly shaped around Kenjiro Takahashi’s stated pursuits—Kinetic Typography, Modular Synthesizers, Timber Architecture, Computational Design, Analog Photography, Ceramics, Acoustic Field Recording—translating these lived passions into spatial rhythm, interactive motifs, and narrative chapters. Additional personal notes: \"Exploring the threshold between digital shaders and traditional Japanese joinery.\".",
+            "subtitle": "Curiosity, Contemplation & Creative Agency",
+            "narrativeBody": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos. ",
             "pullQuote": "“Identity is not prescribed by origin; it is composed day by day through attention, craft, and generosity.”",
-            "epistemicTag": "user_provided"
+            "epistemicTag": "creative_interpretation"
           }
         ],
         "personalLetter": {
-          "salutation": "To Kenjiro Takahashi,",
+          "salutation": "To Kenjiro,",
           "bodyParagraphs": [
-            "Carry the resonance of your name—Kenjiro—not as a fixed boundary, but as an open courtyard of light. From the ancient roots that gave your name its lyrical cadence to the horizons you actively shape today, your story belongs to the rare lineage of builders and seekers.",
-            "May your dedication to Kinetic Typography, Modular Synthesizers, Timber Architecture, Computational Design, Analog Photography, Ceramics, Acoustic Field Recording continue to sharpen your eye and deepen your joy, turning quiet hours of practice into works of lasting grace.",
+            "Carry the resonance of your name—Kenjiro—not as a fixed boundary, but as an open courtyard of light. From the roots that gave your name its lyrical cadence to the horizons you actively shape today, your story belongs to the lineage of builders and seekers.",
+            "May every season bring clarity to your inquiries, warmth to your threshold, and new constellations to navigate.",
             "This digital monograph was crafted specifically for you—a living artifact celebrating both the history behind your name and the unwritten chapters ahead."
           ],
           "valediction": "With enduring admiration and scholarly craft,",
@@ -1386,7 +1147,7 @@
           "textSecondary": "#B8BCC4",
           "textMuted": "#6E7582",
           "accentPrimary": "#D94E34",
-          "accentSecondary": "#D8C3A5",
+          "accentSecondary": "#0F1115",
           "accentTertiary": "#5C9EAD",
           "borderSubtle": "rgba(243, 242, 238, 0.14)"
         },
@@ -1410,7 +1171,7 @@
           "name": "Kigumi Polyhedral Totem",
           "symbolism": "Interlocking geometric planes held in tension without fasteners.",
           "primaryColor": "#D94E34",
-          "secondaryColor": "#D8C3A5",
+          "secondaryColor": "#0F1115",
           "interactiveBehavior": "Responds to cursor orbital tilt, harmonic audio resonance, and click inspection"
         },
         "enabledModules": {
@@ -1470,7 +1231,7 @@
           }
         ],
         "identityDossier": {
-          "sectionTitle": "Archival Dossier — Kenjiro Takahashi",
+          "sectionTitle": "Archival Dossier — Kenjiro",
           "cards": [
             {
               "id": "card-etymology",
@@ -1483,45 +1244,37 @@
             {
               "id": "card-heritage",
               "label": "02 / CULTURAL MERIDIAN",
-              "title": "Kyoto, Japan & Kyoto & Kansai Archipelago, Japan",
-              "value": "Sukiya Timber Joinery & Metabolist Concrete Geometry & Sukiya-zukuri Timber Pavilion & Modernist Brutalist Concrete",
-              "detail": "Traditional Craft: Kintsugi Gold-Joined Ceramics & Washi Papermaking",
-              "epistemicCategory": "user_provided"
+              "title": "Kyoto & Kansai Archipelago, Japan (Historical Linguistic Origin of Name — Not Personal Location)",
+              "value": "Sukiya-zukuri Timber Pavilion & Modernist Brutalist Concrete",
+              "detail": "Traditional Craft: Kigumi wood joinery without nails & Urushi lacquerware",
+              "epistemicCategory": "verified_fact"
             },
             {
               "id": "card-celestial",
               "label": "03 / CELESTIAL EPHEMERIS",
-              "title": "Scorpio ♏",
+              "title": "Mars (Ares / Mirrikh)",
               "value": "♂ · 144.72 Hz",
-              "detail": "Element: Water · Modality: Fixed · Ruler: Mars (Ares / Mirrikh)",
-              "epistemicCategory": "astrological_interpretation"
+              "detail": "Orbital Period: 686.98 days · Axial Tilt: 25.19°",
+              "epistemicCategory": "creative_interpretation"
             },
             {
               "id": "card-passions",
               "label": "04 / PERSONAL VECTORS",
-              "title": "Stated Pursuits & Craft",
-              "value": "Kinetic Typography · Modular Synthesizers · Timber Architecture",
-              "detail": "Explicitly shaped around Kenjiro Takahashi’s stated pursuits—Kinetic Typography, Modular Synthesizers, Timber Architecture, Computational Design, Analog Photography, Ceramics, Acoustic Field Recording—translating these lived passions into spatial rhythm, interactive motifs, and narrative chapters.",
-              "epistemicCategory": "user_provided"
-            },
-            {
-              "id": "card-botanical-mineral",
-              "label": "05 / NATAL CORRESPONDENCE",
-              "title": "Imperial Topaz & Citrine & Chrysanthemum",
-              "value": "Autumn · Tuesday",
-              "detail": "Chrysanthemum indicum: Longevity, structural radial harmony, and candor",
-              "epistemicCategory": "verified_fact"
+              "title": "Universal Humanist Vectors",
+              "value": "Architecture · Poetics · Cosmos",
+              "detail": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos.",
+              "epistemicCategory": "creative_interpretation"
             }
           ]
         },
         "interactivePostcard": {
           "stampCode": "ATL-KEN-145",
-          "originLabel": "Kyoto, Japan & Kyoto & Kansai Archipelago, Japan",
-          "destinationLabel": "Sanctuary of Kenjiro Takahashi",
+          "originLabel": "Kyoto & Kansai Archipelago, Japan (Historical Linguistic Origin of Name — Not Personal Location)",
+          "destinationLabel": "Sanctuary of Kenjiro",
           "defaultMessage": "May the architecture of your days reflect the clarity and luminous depth embedded within the name Kenjiro.",
           "prompts": [
             "A reflection on Kenjiro’s lyrical cadence...",
-            "From the meridian of Kyoto, Japan & Kyoto & Kansai Archipelago, Japan...",
+            "From the meridian of Kyoto & Kansai Archipelago, Japan (Historical Linguistic Origin of Name — Not Personal Location)...",
             "Under the harmonic frequency of 144.72 Hz..."
           ]
         },
@@ -1538,10 +1291,10 @@
             },
             {
               "id": "node-2",
-              "label": "βMeridian (36.2°N)",
+              "label": "βMeridian (35.0°N)",
               "x": 38,
               "y": 28,
-              "unlockedInsight": "Heritage Craft: Kintsugi Gold-Joined Ceramics & Washi Papermaking"
+              "unlockedInsight": "Heritage Craft: Kigumi wood joinery without nails & Urushi lacquerware"
             },
             {
               "id": "node-3",
@@ -1570,25 +1323,26 @@
         "easterEgg": {
           "triggerHint": "Click the Monograph Seal 3 times or type \"KENJIRO\" in the Cipher Vault",
           "secretKeyphrase": "KENJIRO",
-          "revealedArtifactTitle": "Secret Archival Colophon — Folio № 173",
-          "revealedMessage": "In 859 CE, Fatima al-Fihri demonstrated that a single individual’s vision can found an institution that illuminates centuries. This hidden colophon honors Kenjiro Takahashi’s unique place in the living archive."
+          "revealedArtifactTitle": "Secret Archival Colophon — Folio № 263",
+          "revealedMessage": "In 859 CE, Fatima al-Fihri demonstrated that a single individual’s vision can found an institution that illuminates centuries. This hidden colophon honors Kenjiro’s unique place in the living archive."
         }
       },
       "verification": {
         "passed": true,
-        "timestamp": "2026-11-07T05:38:27.391Z",
-        "totalClaimsAudited": 32,
+        "timestamp": "2026-11-07T06:19:14.692Z",
+        "executionMode": "deterministic_lexicon_and_heuristics",
+        "totalClaimsAudited": 18,
         "breakdown": {
-          "verifiedFactsCount": 7,
-          "userProvidedCount": 17,
-          "astrologicalCount": 3,
-          "creativeInterpretationCount": 5
+          "verifiedFactsCount": 10,
+          "userProvidedCount": 1,
+          "astrologicalCount": 0,
+          "creativeInterpretationCount": 7
         },
         "epistemicGuarantees": [
-          "Zero personal biographical facts were fabricated or scraped from private sources.",
-          "Actual human personality was never inferred from name etymology or birth date alone.",
-          "Linguistic and historical bearer citations are separated from symbolic/astrological interpretations.",
-          "All user-supplied fields are explicitly tagged as User-Provided."
+          "Zero personal biographical facts (birthdays, locations, hobbies, personality) were fabricated or scraped.",
+          "Heuristic phonetic or morphological estimates for uncurated names are never labeled as Verified Facts.",
+          "Actual human personality is never inferred from name etymology or birth date alone.",
+          "Linguistic and historical bearer citations are strictly separated from astrological and creative interpretations."
         ],
         "sanitizedWarnings": []
       }
@@ -1599,24 +1353,27 @@
         "code": "INPUT_COLLECTION",
         "title": "Input Collection & Normalization",
         "status": "completed",
-        "durationMs": 4,
-        "summary": "Captured identity payload for \"Kenjiro Takahashi\" with 7 interest tags."
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Normalized identity payload for \"Kenjiro\" (0 user-supplied interest tags; zero fabricated fields)."
       },
       {
         "stepNumber": 2,
         "code": "INPUT_VALIDATION",
         "title": "Temporal & Schema Validation",
         "status": "completed",
-        "durationMs": 3,
-        "summary": "Verified Gregorian calendar bounds and temporal parameters."
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Optional temporal fields omitted by user; configured timeless mode (zero invented birthdates)."
       },
       {
         "stepNumber": 3,
         "code": "RESEARCH_COLLECTION",
         "title": "Onomastic, Etymological & Cultural Research",
         "status": "completed",
-        "durationMs": 8,
-        "summary": "Resolved IPA /keɲdʑiɾoː/, Japonic / Sino-Japanese Kanji Compound lineage, and 4 reference citations.",
+        "executionNature": "curated_lexicon_lookup",
+        "durationMs": 4,
+        "summary": "Matched curated philological lexicon entry for \"Kenjiro\" (/keɲdʑiɾoː/) with 4 reference citations.",
         "artifactPreview": " healthy, clear-minded, or resolute second son / pillar of harmony"
       },
       {
@@ -1624,23 +1381,26 @@
         "code": "EVIDENCE_CLASSIFICATION",
         "title": "Four-Tier Epistemic Evidence Classification",
         "status": "completed",
-        "durationMs": 5,
-        "summary": "Partitioned claims into Verified Facts, User-Provided Data, Astrological Symbolism, and Creative Interpretations."
+        "executionNature": "real_validation",
+        "durationMs": 3,
+        "summary": "Partitioned claims into Verified Facts, User-Provided Data, Astrological Symbolism, and Creative/Heuristic Interpretations."
       },
       {
         "stepNumber": 5,
         "code": "INTELLIGENCE_SYNTHESIS",
         "title": "14-Module Multi-Vector Intelligence Synthesis",
         "status": "completed",
-        "durationMs": 7,
-        "summary": "Synthesized 3 passion vectors and harmonic frequency (144.72 Hz)."
+        "executionNature": "astronomical_calculation",
+        "durationMs": 4,
+        "summary": "Synthesized 2 passion vectors and IAU planetary harmonic frequency (144.72 Hz)."
       },
       {
         "stepNumber": 6,
         "code": "CREATIVE_DIRECTION",
         "title": "Art Direction & Spatial Archetype Selection",
         "status": "completed",
-        "durationMs": 4,
+        "executionNature": "deterministic_heuristic",
+        "durationMs": 3,
         "summary": "Selected archetype \"Kinetic Spatial Atelier\" (asymmetric-12).",
         "artifactPreview": "Rooted in Japanese Ma (negative space), timber joinery, and sculptural 3D kinetic typography—stark obsidian ink contrasted with plaster white and vermilion seal stamps."
       },
@@ -1649,7 +1409,8 @@
         "code": "VISUAL_SYSTEM",
         "title": "Adaptive Color Palette & Typography System",
         "status": "completed",
-        "durationMs": 4,
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
         "summary": "Generated palette (#0E1013 / #D94E34) & font stack (\"Space Grotesk\")."
       },
       {
@@ -1657,15 +1418,17 @@
         "code": "STRUCTURE_GENERATION",
         "title": "Bespoke Page Topology & Navigation Architecture",
         "status": "completed",
-        "durationMs": 4,
-        "summary": "Constructed 7 interactive chapters and 5 archival dossier cards."
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Constructed 7 interactive chapters and 4 archival dossier cards."
       },
       {
         "stepNumber": 9,
         "code": "INTERACTION_SELECTION",
         "title": "3D WebGL, Cursor Physics & Motion Choreography",
         "status": "completed",
-        "durationMs": 4,
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
         "summary": "Assigned 3D scene \"kinetic_monogram\", cursor \"editorial_crosshair\", and totem \"Kigumi Polyhedral Totem\"."
       },
       {
@@ -1673,47 +1436,53 @@
         "code": "CONTENT_GENERATION",
         "title": "Narrative Chronicle, Epistle & Quote Synthesis",
         "status": "completed",
-        "durationMs": 9,
-        "summary": "Authored 4 narrative chapters, personal wax-sealed epistle, and interactive postcard."
+        "executionNature": "system_synthesis",
+        "durationMs": 5,
+        "summary": "Authored 4 narrative chapters, personal epistle, and postcard via structured narrative synthesis (GEMINI_API_KEY not set)."
       },
       {
         "stepNumber": 11,
         "code": "ASSET_GENERATION",
         "title": "Procedural 3D Geometry, Totem SVG & Web Audio Synth Setup",
         "status": "completed",
-        "durationMs": 5,
-        "summary": "Configured 973 WebGL particles, SVG sigil generator, and 144.72 Hz Web Audio oscillator."
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Configured 1063 WebGL particles, SVG sigil parameters, and 144.72 Hz Web Audio oscillator."
       },
       {
         "stepNumber": 12,
         "code": "WEBSITE_RENDERING",
-        "title": "Hydrating Adaptive Experience Tree",
+        "title": "Hydrating Adaptive Experience Configuration",
         "status": "completed",
-        "durationMs": 4,
+        "executionNature": "system_synthesis",
+        "durationMs": 2,
         "summary": "Bound design tokens, responsive breakpoints, and reduced-motion fallbacks for kinetic_atelier."
       },
       {
         "stepNumber": 13,
         "code": "AUTOMATED_TESTING",
-        "title": "Epistemic Audit & Schema Integrity Verification",
+        "title": "Programmatic Epistemic Audit & Non-Fabrication Verification",
         "status": "completed",
-        "durationMs": 4,
-        "summary": "Audited 32 claims (7 verified facts, 17 user-provided)."
+        "executionNature": "real_validation",
+        "durationMs": 3,
+        "summary": "Audited 18 claims (10 verified facts, 1 user-provided, 7 creative/heuristic)."
       },
       {
         "stepNumber": 14,
         "code": "VISUAL_VERIFICATION",
-        "title": "Viewport Contrast, WebGL Boundary & DOM Landmark Check",
+        "title": "DOM Landmark & Contrast Polarity Configuration",
         "status": "completed",
-        "durationMs": 3,
-        "summary": "Verified WCAG contrast polarity, mobile touch fallback, and semantic section anchors."
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Configured semantic section landmarks and contrast polarity tokens for browser rendering."
       },
       {
         "stepNumber": 15,
         "code": "USER_PREVIEW",
         "title": "Interactive Studio Preview & Live Section Editor Ready",
         "status": "completed",
-        "durationMs": 3,
+        "executionNature": "system_synthesis",
+        "durationMs": 2,
         "summary": "Experience staged for live preview, section-level regeneration, and design token customization."
       },
       {
@@ -1721,52 +1490,39 @@
         "code": "PUBLISHING_SHARING",
         "title": "Multi-Tenant Persistence & Export Bundle Registration",
         "status": "completed",
-        "durationMs": 4,
-        "summary": "Published isolated experience at /e/kenjiro-takahashi with standalone source code export and GitHub/Vercel pipelines."
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Registered isolated experience at /e/kenjiro with owner isolation and standalone source export."
       }
-    ]
+    ],
+    "storageSource": "local_fallback"
   },
-  "elena-rostova": {
+  "elena": {
     "id": "exp_seed_elena",
-    "slug": "elena-rostova",
-    "createdAt": "2026-11-07T05:38:27.392Z",
-    "updatedAt": "2026-11-07T05:38:27.392Z",
+    "slug": "elena",
+    "ownerId": "system_public",
+    "createdAt": "2026-11-07T06:19:14.693Z",
+    "updatedAt": "2026-11-07T06:19:14.693Z",
     "version": 1,
     "visibility": "public",
     "input": {
-      "fullName": "Elena Rostova",
-      "birthDate": "2001-03-24",
-      "birthYear": 2001,
-      "birthTime": "04:50",
-      "birthplace": "Venice",
-      "country": "Italy",
-      "interests": [
-        "Astrophysics",
-        "Chamber Violin",
-        "Renaissance Optics",
-        "Marine Ecology"
-      ],
-      "hobbies": [
-        "Telescope Making",
-        "Oil Glazing",
-        "Alpine Botanical Sketching"
-      ],
-      "personalPreferences": "Nocturnal indigo, solar amber, copperplate celestial charts",
-      "personalityInfo": "Poetic, radiant, observant, drawn to the intersection of music and orbital mechanics",
-      "preferredVisualDirection": "celestial_observatory",
-      "additionalInfo": "Mapping the harmonic resonance of planetary orbits through strings and light.",
-      "visibility": "public"
+      "fullName": "Elena",
+      "interests": [],
+      "hobbies": [],
+      "preferredVisualDirection": "auto",
+      "visibility": "public",
+      "privacyConsentConfirmed": true
     },
     "intelligence": {
       "nameResearch": {
-        "normalizedName": "Elena Rostova",
+        "normalizedName": "Elena",
         "firstName": "Elena",
-        "surname": "Rostova",
+        "lexiconMatch": true,
         "phoneticIPA": {
           "value": "/ɛˈleɪnə/",
           "category": "verified_fact",
-          "source": "International Phonetic Alphabet (IPA) Transcription Standard",
-          "confidence": 0.99
+          "source": "Oxford Dictionary of First Names (Documented IPA Transcription)",
+          "confidence": 0.98
         },
         "syllableCount": 3,
         "syllableBreakdown": [
@@ -1784,14 +1540,14 @@
             "acousticWarmth": 72,
             "rhythmPattern": "— ◡ ◡"
           },
-          "category": "verified_fact",
-          "source": "Phonological Prosody & Syllable Weight Analysis",
-          "confidence": 0.94
+          "category": "creative_interpretation",
+          "source": "Prosodic Cadence & Vowel-Weight Heuristic Model (Creative Synthesis)",
+          "notes": "Artistic sound-symbolism model used to guide visual and typographic rhythm."
         },
         "linguisticFamily": {
           "value": "Indo-European / Hellenic & Pan-European",
           "category": "verified_fact",
-          "source": "Oxford Dictionary of First Names",
+          "source": "Oxford Dictionary of First Names & Comparative Philology",
           "confidence": 0.98
         },
         "scriptVariations": [
@@ -1905,54 +1661,51 @@
           "category": "creative_interpretation",
           "source": "Visual Iconography Engine"
         },
-        "epistemicDisclaimer": "Etymological roots reflect historical linguistic evolution and never prescribe or determine an individual’s personal character."
+        "epistemicDisclaimer": "Etymological roots reflect historical linguistic evolution of the word itself and never prescribe or determine an individual’s personal character or biography."
       },
       "culturalContext": {
         "heritageSynthesis": {
-          "value": "Bridging the lived geography of Venice, Italy with the deep historical resonance of Mediterranean Basin & Eastern European Steppes, this synthesis honors both personal place and the architectural, mathematical, and poetic traditions associated with the name Elena.",
-          "category": "user_provided",
-          "source": "User-Provided Geography + Cultural Atlas"
+          "value": "Reflects the historical linguistic heritage of the name \"Elena\" in Mediterranean Basin & Eastern European Steppes (Venetian Palladian Loggia & Neoclassical Observatory and Murano optical glass blowing & copperplate intaglio printmaking). No personal residence or birthplace is assumed.",
+          "category": "verified_fact",
+          "source": "Historical Onomastic & Architectural Reference"
         },
         "geographicResonance": {
           "value": {
-            "region": "Venice, Italy & Mediterranean Basin & Eastern European Steppes",
+            "region": "Mediterranean Basin & Eastern European Steppes (Historical Linguistic Origin of Name — Not Personal Location)",
             "coordinates": {
-              "lat": 41.8719,
-              "lng": 12.5674
+              "lat": 41.9028,
+              "lng": 12.4964
             },
-            "architecturalVernacular": "Renaissance Palazzo, Palladian Portico & Rationalist Stone & Venetian Palladian Loggia & Neoclassical Observatory",
-            "traditionalCraft": "Pietra Dura Stone Inlay & Bodoni Lead Typography"
+            "architecturalVernacular": "Venetian Palladian Loggia & Neoclassical Observatory",
+            "traditionalCraft": "Murano optical glass blowing & copperplate intaglio printmaking"
           },
           "category": "verified_fact",
-          "source": "Architectural & Material Culture Atlas"
+          "source": "Historical Architectural & Material Culture Atlas"
         },
         "artisticTraditions": {
           "value": [
             "Chiaroscuro Lighting",
             "Renaissance Polyphony",
-            "Botanical Illustration",
-            "Linear Perspective",
-            "Futurist Kineticism",
-            "Venetian Colorito"
+            "Botanical Illustration"
           ],
           "category": "verified_fact",
-          "source": "Art Historical Reference"
+          "source": "UNESCO & Art Historical Reference"
         },
         "colorHeritage": [
           {
-            "name": "Siena Burnt Earth",
-            "hex": "#A44A3F",
-            "culturalOrigin": "Iron-oxide earth pigment of Tuscany"
+            "name": "Venetian Terracotta",
+            "hex": "#B85D43",
+            "culturalOrigin": "Kiln-fired clay rooftops of the Veneto"
           },
           {
-            "name": "Carrara Statuario",
-            "hex": "#F6F5F2",
-            "culturalOrigin": "Quarried Apuan marble"
+            "name": "Paduan Vellum",
+            "hex": "#FBF8F3",
+            "culturalOrigin": "17th-century philosophical treatise paper"
           },
           {
-            "name": "Florentine Cypress",
-            "hex": "#2D4739",
-            "culturalOrigin": "Umbrian and Tuscan hillside groves"
+            "name": "Adriatic Ultramarine",
+            "hex": "#264653",
+            "culturalOrigin": "Ground lapis pigment of Venetian ateliers"
           }
         ],
         "literaryOrPhilosophicalEcho": {
@@ -1966,178 +1719,84 @@
         }
       },
       "birthday": {
-        "hasBirthData": true,
+        "hasBirthData": false,
         "validDate": true,
-        "dayOfWeek": {
-          "value": "Saturday",
-          "category": "verified_fact",
-          "source": "Gregorian Perpetual Calendar Calculation",
-          "confidence": 1
-        },
-        "season": {
-          "value": "Spring",
-          "category": "verified_fact",
-          "source": "Solar Meteorological Calendar",
-          "confidence": 1
-        },
-        "dayOfYear": 83,
-        "lifePathNumber": {
-          "value": {
-            "number": 3,
-            "archetypeTitle": "The Lyrical Polymath",
-            "interpretation": "Symbolic cadence of expressive synthesis, visual storytelling, and narrative wit."
-          },
-          "category": "astrological_interpretation",
-          "source": "Pythagorean Arithmology / Symbolic Numerology"
-        },
-        "birthstone": {
-          "value": {
-            "name": "Beryl Aquamarine",
-            "hexColor": "#5DA9B8",
-            "mineralFamily": "Cyclosilicate Beryl"
-          },
-          "category": "verified_fact",
-          "source": "Gemological Institute Traditional Mineral Registry"
-        },
-        "birthFlower": {
-          "value": {
-            "name": "Jonquil Daffodil",
-            "botanicalName": "Narcissus jonquilla",
-            "symbolism": "Vernal renewal and clarity of vision"
-          },
-          "category": "verified_fact",
-          "source": "Royal Botanic Gardens Horticultural Lore"
-        },
-        "historicalEventsOnDay": [
-          {
-            "year": 1879,
-            "event": "Birth of Albert Einstein in Ulm, whose relativistic physics reshaped humanity’s conception of spacetime.",
-            "source": "Nobel Foundation Archives"
-          }
-        ]
+        "validationMessage": "No birth date provided; temporal and zodiac modules gracefully operating in timeless mode.",
+        "historicalEventsOnDay": []
       },
       "zodiac": {
-        "computed": true,
-        "westernSign": {
-          "value": {
-            "sign": "Aries",
-            "symbol": "The Golden Ram",
-            "unicodeGlyph": "♈",
-            "element": "Fire",
-            "modality": "Cardinal",
-            "polarity": "Diurnal",
-            "decan": 3,
-            "dateRange": "Mar 21 – Apr 19",
-            "symbolicThemes": [
-              "Vernal Ignition",
-              "Courageous First Stroke",
-              "Kinetic Momentum"
-            ]
-          },
-          "category": "astrological_interpretation",
-          "source": "Tropical Ecliptic Solar Longitude (Symbolic Astrological Tradition)"
-        },
-        "lunarYearSign": {
-          "value": {
-            "animal": "Serpent",
-            "element": "Metal",
-            "yinYang": "Yin",
-            "symbolicQualities": [
-              "Metal Serpent",
-              "Yin Polarity",
-              "East Asian Sexagenary Cycle"
-            ]
-          },
-          "category": "astrological_interpretation",
-          "source": "Traditional East Asian Sexagenary Calendar (Symbolic Interpretation)"
-        }
+        "computed": false
       },
       "planetary": {
         "rulingBody": {
           "value": {
-            "name": "Mars (Ares / Mirrikh)",
-            "classicalSymbol": "♂",
-            "orbitalPeriodDays": 686.98,
-            "axialTiltDegrees": 25.19,
-            "albedo": 0.17,
-            "dominantSpectrumHex": "#C1493D",
-            "secondarySpectrumHex": "#3D2622",
-            "harmonicFrequencyHz": 144.72,
-            "ringSystem": false,
-            "moonCount": 2,
-            "poeticEpithet": "The Ochre Forge of Kinetic Resolve"
+            "name": "Saturn (Kronos / Zuhal)",
+            "classicalSymbol": "♄",
+            "orbitalPeriodDays": 10759.22,
+            "axialTiltDegrees": 26.73,
+            "albedo": 0.499,
+            "dominantSpectrumHex": "#C2B280",
+            "secondarySpectrumHex": "#2B2D42",
+            "harmonicFrequencyHz": 147.85,
+            "ringSystem": true,
+            "moonCount": 146,
+            "poeticEpithet": "The Ringed Geometer of Time and Monumental Structure"
           },
-          "category": "astrological_interpretation",
+          "category": "creative_interpretation",
           "source": "IAU Planetary Ephemeris Constants (Orbital Period, Tilt, Albedo) + Classical Celestial Symbolism"
         },
         "shaderParameters": {
-          "orbitSpeed": 0.3,
-          "particleCount": 1182,
-          "turbulence": 0.19,
-          "bloomIntensity": 0.52,
-          "wireframeRatio": 0.27
+          "orbitSpeed": 0.26,
+          "particleCount": 1238,
+          "turbulence": 0.25,
+          "bloomIntensity": 0.58,
+          "wireframeRatio": 0.43
         }
       },
       "interests": {
-        "hasUserInterests": true,
-        "rawInterests": [
-          "Astrophysics",
-          "Chamber Violin",
-          "Renaissance Optics",
-          "Marine Ecology",
-          "Telescope Making",
-          "Oil Glazing",
-          "Alpine Botanical Sketching"
-        ],
+        "hasUserInterests": false,
+        "rawInterests": [],
         "domainVectors": [
           {
-            "domain": "Sonic Arts & Musical Harmonics",
-            "weight": 82,
+            "domain": "Architectural & Spatial Contemplation",
+            "weight": 84,
             "matchedKeywords": [
-              "Chamber Violin"
+              "Default Curated Vector"
             ],
-            "visualMetaphor": "Resonant Acoustic Chamber & Standing Wave Geometry",
-            "interactiveFeatureSuggestion": "Web Audio Harmonic Chime Synthesizer"
+            "visualMetaphor": "Tessellated Courtyard & Light Aperture",
+            "interactiveFeatureSuggestion": "Interactive 3D Geometric Totem & Constellation Canvas"
           },
           {
-            "domain": "Computational Systems & Engineering",
-            "weight": 92,
+            "domain": "Literary & Historical Inquiry",
+            "weight": 78,
             "matchedKeywords": [
-              "Astrophysics",
-              "Renaissance Optics"
+              "Onomastic Archive"
             ],
-            "visualMetaphor": "Algorithmic Lattice & Precision Polyhedron",
-            "interactiveFeatureSuggestion": "Interactive 3D Wireframe Totem & Node Network"
+            "visualMetaphor": "Illuminated Folio & Epigraphic Chronicle",
+            "interactiveFeatureSuggestion": "Personal Wax-Sealed Letter & Postcard Studio"
           }
         ],
         "synthesizedPassionsNarrative": {
-          "value": "Explicitly shaped around Elena Rostova’s stated pursuits—Astrophysics, Chamber Violin, Renaissance Optics, Marine Ecology, Telescope Making, Oil Glazing, Alpine Botanical Sketching—translating these lived passions into spatial rhythm, interactive motifs, and narrative chapters.",
-          "category": "user_provided",
-          "source": "User-Provided Interests & Hobbies"
+          "value": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos.",
+          "category": "creative_interpretation",
+          "source": "Atelier Default Thematic Vector"
         }
       },
       "personality": {
-        "hasUserPersonalityInput": true,
-        "verbatimTraits": [
-          "Poetic",
-          "radiant",
-          "observant",
-          "drawn to the intersection of music and orbital mechanics — Nocturnal indigo",
-          "solar amber",
-          "copperplate celestial charts — Mapping the harmonic resonance of planetary orbits through strings and light"
-        ],
+        "hasUserPersonalityInput": false,
+        "verbatimTraits": [],
         "toneOfVoice": {
           "value": {
-            "warmth": 92,
-            "formality": 64,
-            "kineticEnergy": 65,
-            "introspection": 82,
-            "editorialStyle": "Warm Humanist Narrative"
+            "warmth": 75,
+            "formality": 68,
+            "kineticEnergy": 62,
+            "introspection": 78,
+            "editorialStyle": "Poetic Editorial Monograph (Neutral & Respectful)"
           },
-          "category": "user_provided",
-          "source": "Direct User-Provided Personality & Preference Notes"
+          "category": "creative_interpretation",
+          "source": "Default Editorial Voice (Zero Name-Based Personality Inference)"
         },
-        "strictNonInferenceNotice": "All personal disposition descriptors in this experience are derived exclusively from the information explicitly supplied by the user."
+        "strictNonInferenceNotice": "No personal character traits were provided by the user. In compliance with epistemic integrity rules, this platform never infers actual human personality from a name or birth date alone."
       },
       "creativeDirection": {
         "archetypeId": "celestial_observatory",
@@ -2161,7 +1820,7 @@
         }
       },
       "storytelling": {
-        "heroHeadline": "Elena Rostova",
+        "heroHeadline": "Elena",
         "heroSubheadline": "Torch of dawn; shining sunbeam or coronal light — An Interactive Monograph of Origin, Cosmos & Living Craft.",
         "prologueManifesto": "Every name is an architectural vessel before it is spoken. In the Indo-European / Hellenic & Pan-European tradition, \"Elena\" (/ɛˈleɪnə/) unfolds across 3 syllables with a lyrical cadence. This digital sanctuary weaves verified historical etymology, cultural geography, and personal pursuits into an art-directed living chronicle.",
         "chapters": [
@@ -2170,7 +1829,7 @@
             "chapterNumber": "I",
             "title": "The Architecture of the Name",
             "subtitle": "Indo-European / Hellenic & Pan-European · /ɛˈleɪnə/",
-            "narrativeBody": "Pan-European cognate of the Ancient Greek Ἑλένη (Helénē), linked to ἑλένη (\"torch\" or \"coronal flare\") and სέλας (sélas, \"celestial radiance\" or \"aurora\"). Across centuries, bearers of this name—such as Elena Cornaro Piscopia (1646 – 1684)—have left enduring marks: Venetian philosopher, mathematician, and musician who in 1678 became the first woman in history to receive a doctoral degree from a university (University of Padua).",
+            "narrativeBody": "Pan-European cognate of the Ancient Greek Ἑλένη (Helénē), linked to ἑλένη (\"torch\" or \"coronal flare\") and სέλας (sélas, \"celestial radiance\" or \"aurora\"). Across centuries, documented bearers of this name—such as Elena Cornaro Piscopia (1646 – 1684)—have left enduring marks: Venetian philosopher, mathematician, and musician who in 1678 became the first woman in history to receive a doctoral degree from a university (University of Padua).",
             "pullQuote": "Torch of dawn; shining sunbeam or coronal light",
             "epistemicTag": "verified_fact"
           },
@@ -2178,35 +1837,35 @@
             "id": "chapter-meridian",
             "chapterNumber": "II",
             "title": "Cultural & Geographic Meridian",
-            "subtitle": "Venice, Italy & Mediterranean Basin & Eastern European Steppes",
-            "narrativeBody": "Bridging the lived geography of Venice, Italy with the deep historical resonance of Mediterranean Basin & Eastern European Steppes, this synthesis honors both personal place and the architectural, mathematical, and poetic traditions associated with the name Elena. Its visual language draws from Renaissance Palazzo, Palladian Portico & Rationalist Stone & Venetian Palladian Loggia & Neoclassical Observatory and the tactile mastery of Pietra Dura Stone Inlay & Bodoni Lead Typography.",
+            "subtitle": "Mediterranean Basin & Eastern European Steppes (Historical Linguistic Origin of Name — Not Personal Location)",
+            "narrativeBody": "Reflects the historical linguistic heritage of the name \"Elena\" in Mediterranean Basin & Eastern European Steppes (Venetian Palladian Loggia & Neoclassical Observatory and Murano optical glass blowing & copperplate intaglio printmaking). No personal residence or birthplace is assumed. Its visual language draws from Venetian Palladian Loggia & Neoclassical Observatory and the tactile mastery of Murano optical glass blowing & copperplate intaglio printmaking.",
             "pullQuote": "Light is the first geometer; before the hand draws a line, the dawn has already measured the horizon.",
-            "epistemicTag": "user_provided"
+            "epistemicTag": "verified_fact"
           },
           {
             "id": "chapter-cosmos",
             "chapterNumber": "III",
-            "title": "Temporal & Celestial Ephemeris",
-            "subtitle": "Aries (♈) · Mars (Ares / Mirrikh)",
-            "narrativeBody": "Anchored in the Spring horizon of a Saturday, this chapter pairs astronomical constants (Mars (Ares / Mirrikh), orbital period 686.98 days, harmonic pitch 144.72 Hz) with symbolic celestial traditions.",
-            "pullQuote": "The Ochre Forge of Kinetic Resolve",
-            "epistemicTag": "astrological_interpretation"
+            "title": "Celestial & Harmonic Resonance",
+            "subtitle": "Saturn (Kronos / Zuhal) (♄)",
+            "narrativeBody": "Because no personal birth date was provided, zero natal or astrological assumptions are made. Instead, the experience aligns with the classical IAU astronomical constants of Saturn (Kronos / Zuhal) (The Ringed Geometer of Time and Monumental Structure), resonating at 147.85 Hz.",
+            "pullQuote": "The Ringed Geometer of Time and Monumental Structure",
+            "epistemicTag": "creative_interpretation"
           },
           {
             "id": "chapter-passions",
             "chapterNumber": "IV",
             "title": "Living Horizons & Personal Craft",
-            "subtitle": "Astrophysics · Chamber Violin · Renaissance Optics · Marine Ecology",
-            "narrativeBody": "Explicitly shaped around Elena Rostova’s stated pursuits—Astrophysics, Chamber Violin, Renaissance Optics, Marine Ecology, Telescope Making, Oil Glazing, Alpine Botanical Sketching—translating these lived passions into spatial rhythm, interactive motifs, and narrative chapters. Additional personal notes: \"Mapping the harmonic resonance of planetary orbits through strings and light.\".",
+            "subtitle": "Curiosity, Contemplation & Creative Agency",
+            "narrativeBody": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos. ",
             "pullQuote": "“Identity is not prescribed by origin; it is composed day by day through attention, craft, and generosity.”",
-            "epistemicTag": "user_provided"
+            "epistemicTag": "creative_interpretation"
           }
         ],
         "personalLetter": {
-          "salutation": "To Elena Rostova,",
+          "salutation": "To Elena,",
           "bodyParagraphs": [
-            "Carry the resonance of your name—Elena—not as a fixed boundary, but as an open courtyard of light. From the ancient roots that gave your name its lyrical cadence to the horizons you actively shape today, your story belongs to the rare lineage of builders and seekers.",
-            "May your dedication to Astrophysics, Chamber Violin, Renaissance Optics, Marine Ecology, Telescope Making, Oil Glazing, Alpine Botanical Sketching continue to sharpen your eye and deepen your joy, turning quiet hours of practice into works of lasting grace.",
+            "Carry the resonance of your name—Elena—not as a fixed boundary, but as an open courtyard of light. From the roots that gave your name its lyrical cadence to the horizons you actively shape today, your story belongs to the lineage of builders and seekers.",
+            "May every season bring clarity to your inquiries, warmth to your threshold, and new constellations to navigate.",
             "This digital monograph was crafted specifically for you—a living artifact celebrating both the history behind your name and the unwritten chapters ahead."
           ],
           "valediction": "With enduring admiration and scholarly craft,",
@@ -2234,7 +1893,7 @@
           "textSecondary": "#CBD5E1",
           "textMuted": "#7E8FA6",
           "accentPrimary": "#E09F3E",
-          "accentSecondary": "#4EA8DE",
+          "accentSecondary": "#B85D43",
           "accentTertiary": "#C86D51",
           "borderSubtle": "rgba(224, 159, 62, 0.22)"
         },
@@ -2258,7 +1917,7 @@
           "name": "Armillary Sphere of the Ecliptic",
           "symbolism": "An interlocking celestial cage mapping solar longitude and personal time.",
           "primaryColor": "#E09F3E",
-          "secondaryColor": "#4EA8DE",
+          "secondaryColor": "#B85D43",
           "interactiveBehavior": "Responds to cursor orbital tilt, harmonic audio resonance, and click inspection"
         },
         "enabledModules": {
@@ -2318,7 +1977,7 @@
           }
         ],
         "identityDossier": {
-          "sectionTitle": "Archival Dossier — Elena Rostova",
+          "sectionTitle": "Archival Dossier — Elena",
           "cards": [
             {
               "id": "card-etymology",
@@ -2331,1591 +1990,9 @@
             {
               "id": "card-heritage",
               "label": "02 / CULTURAL MERIDIAN",
-              "title": "Venice, Italy & Mediterranean Basin & Eastern European Steppes",
-              "value": "Renaissance Palazzo, Palladian Portico & Rationalist Stone & Venetian Palladian Loggia & Neoclassical Observatory",
-              "detail": "Traditional Craft: Pietra Dura Stone Inlay & Bodoni Lead Typography",
-              "epistemicCategory": "user_provided"
-            },
-            {
-              "id": "card-celestial",
-              "label": "03 / CELESTIAL EPHEMERIS",
-              "title": "Aries ♈",
-              "value": "♂ · 144.72 Hz",
-              "detail": "Element: Fire · Modality: Cardinal · Ruler: Mars (Ares / Mirrikh)",
-              "epistemicCategory": "astrological_interpretation"
-            },
-            {
-              "id": "card-passions",
-              "label": "04 / PERSONAL VECTORS",
-              "title": "Stated Pursuits & Craft",
-              "value": "Astrophysics · Chamber Violin · Renaissance Optics",
-              "detail": "Explicitly shaped around Elena Rostova’s stated pursuits—Astrophysics, Chamber Violin, Renaissance Optics, Marine Ecology, Telescope Making, Oil Glazing, Alpine Botanical Sketching—translating these lived passions into spatial rhythm, interactive motifs, and narrative chapters.",
-              "epistemicCategory": "user_provided"
-            },
-            {
-              "id": "card-botanical-mineral",
-              "label": "05 / NATAL CORRESPONDENCE",
-              "title": "Beryl Aquamarine & Jonquil Daffodil",
-              "value": "Spring · Saturday",
-              "detail": "Narcissus jonquilla: Vernal renewal and clarity of vision",
-              "epistemicCategory": "verified_fact"
-            }
-          ]
-        },
-        "interactivePostcard": {
-          "stampCode": "ATL-ELE-145",
-          "originLabel": "Venice, Italy & Mediterranean Basin & Eastern European Steppes",
-          "destinationLabel": "Sanctuary of Elena Rostova",
-          "defaultMessage": "May the architecture of your days reflect the clarity and luminous depth embedded within the name Elena.",
-          "prompts": [
-            "A reflection on Elena’s lyrical cadence...",
-            "From the meridian of Venice, Italy & Mediterranean Basin & Eastern European Steppes...",
-            "Under the harmonic frequency of 144.72 Hz..."
-          ]
-        },
-        "miniGameConfig": {
-          "title": "Meridian Star Alignment — Elena’s Constellation",
-          "instruction": "Connect the 5 celestial nodes in sequence to synthesize the geometric sigil and unlock the archival inscription.",
-          "targetNodes": [
-            {
-              "id": "node-1",
-              "label": "αRoot (E)",
-              "x": 20,
-              "y": 65,
-              "unlockedInsight": "Phonetic Anchor: /ɛˈleɪnə/"
-            },
-            {
-              "id": "node-2",
-              "label": "βMeridian (41.9°N)",
-              "x": 38,
-              "y": 28,
-              "unlockedInsight": "Heritage Craft: Pietra Dura Stone Inlay & Bodoni Lead Typography"
-            },
-            {
-              "id": "node-3",
-              "label": "γHarmonic (144.72 Hz)",
-              "x": 56,
-              "y": 70,
-              "unlockedInsight": "Celestial Body: Mars (Ares / Mirrikh)"
-            },
-            {
-              "id": "node-4",
-              "label": "δMotif (Solar Corona Eclipse)",
-              "x": 74,
-              "y": 24,
-              "unlockedInsight": "Primary Symbol: Solar Corona Eclipse"
-            },
-            {
-              "id": "node-5",
-              "label": "ωApex (Elena)",
-              "x": 86,
-              "y": 54,
-              "unlockedInsight": "Meaning: Torch of dawn; shining sunbeam or coronal light"
-            }
-          ],
-          "completionRewardQuote": "Light is the first geometer; before the hand draws a line, the dawn has already measured the horizon."
-        },
-        "easterEgg": {
-          "triggerHint": "Click the Monograph Seal 3 times or type \"ELENA\" in the Cipher Vault",
-          "secretKeyphrase": "ELENA",
-          "revealedArtifactTitle": "Secret Archival Colophon — Folio № 682",
-          "revealedMessage": "In 859 CE, Fatima al-Fihri demonstrated that a single individual’s vision can found an institution that illuminates centuries. This hidden colophon honors Elena Rostova’s unique place in the living archive."
-        }
-      },
-      "verification": {
-        "passed": true,
-        "timestamp": "2026-11-07T05:38:27.392Z",
-        "totalClaimsAudited": 31,
-        "breakdown": {
-          "verifiedFactsCount": 7,
-          "userProvidedCount": 16,
-          "astrologicalCount": 3,
-          "creativeInterpretationCount": 5
-        },
-        "epistemicGuarantees": [
-          "Zero personal biographical facts were fabricated or scraped from private sources.",
-          "Actual human personality was never inferred from name etymology or birth date alone.",
-          "Linguistic and historical bearer citations are separated from symbolic/astrological interpretations.",
-          "All user-supplied fields are explicitly tagged as User-Provided."
-        ],
-        "sanitizedWarnings": []
-      }
-    },
-    "pipelineLogs": [
-      {
-        "stepNumber": 1,
-        "code": "INPUT_COLLECTION",
-        "title": "Input Collection & Normalization",
-        "status": "completed",
-        "durationMs": 4,
-        "summary": "Captured identity payload for \"Elena Rostova\" with 7 interest tags."
-      },
-      {
-        "stepNumber": 2,
-        "code": "INPUT_VALIDATION",
-        "title": "Temporal & Schema Validation",
-        "status": "completed",
-        "durationMs": 3,
-        "summary": "Verified Gregorian calendar bounds and temporal parameters."
-      },
-      {
-        "stepNumber": 3,
-        "code": "RESEARCH_COLLECTION",
-        "title": "Onomastic, Etymological & Cultural Research",
-        "status": "completed",
-        "durationMs": 8,
-        "summary": "Resolved IPA /ɛˈleɪnə/, Indo-European / Hellenic & Pan-European lineage, and 4 reference citations.",
-        "artifactPreview": "Torch of dawn; shining sunbeam or coronal light"
-      },
-      {
-        "stepNumber": 4,
-        "code": "EVIDENCE_CLASSIFICATION",
-        "title": "Four-Tier Epistemic Evidence Classification",
-        "status": "completed",
-        "durationMs": 5,
-        "summary": "Partitioned claims into Verified Facts, User-Provided Data, Astrological Symbolism, and Creative Interpretations."
-      },
-      {
-        "stepNumber": 5,
-        "code": "INTELLIGENCE_SYNTHESIS",
-        "title": "14-Module Multi-Vector Intelligence Synthesis",
-        "status": "completed",
-        "durationMs": 7,
-        "summary": "Synthesized 2 passion vectors and harmonic frequency (144.72 Hz)."
-      },
-      {
-        "stepNumber": 6,
-        "code": "CREATIVE_DIRECTION",
-        "title": "Art Direction & Spatial Archetype Selection",
-        "status": "completed",
-        "durationMs": 4,
-        "summary": "Selected archetype \"Nocturnal Celestial Observatory\" (radial-observatory).",
-        "artifactPreview": "Set in deep obsidian-indigo twilight illuminated by amber starlight, orbital mechanics, and copperplate ecliptic charts."
-      },
-      {
-        "stepNumber": 7,
-        "code": "VISUAL_SYSTEM",
-        "title": "Adaptive Color Palette & Typography System",
-        "status": "completed",
-        "durationMs": 4,
-        "summary": "Generated palette (#0B101B / #E09F3E) & font stack (\"Playfair Display\")."
-      },
-      {
-        "stepNumber": 8,
-        "code": "STRUCTURE_GENERATION",
-        "title": "Bespoke Page Topology & Navigation Architecture",
-        "status": "completed",
-        "durationMs": 4,
-        "summary": "Constructed 7 interactive chapters and 5 archival dossier cards."
-      },
-      {
-        "stepNumber": 9,
-        "code": "INTERACTION_SELECTION",
-        "title": "3D WebGL, Cursor Physics & Motion Choreography",
-        "status": "completed",
-        "durationMs": 4,
-        "summary": "Assigned 3D scene \"celestial_vault\", cursor \"stardust_trail\", and totem \"Armillary Sphere of the Ecliptic\"."
-      },
-      {
-        "stepNumber": 10,
-        "code": "CONTENT_GENERATION",
-        "title": "Narrative Chronicle, Epistle & Quote Synthesis",
-        "status": "completed",
-        "durationMs": 9,
-        "summary": "Authored 4 narrative chapters, personal wax-sealed epistle, and interactive postcard."
-      },
-      {
-        "stepNumber": 11,
-        "code": "ASSET_GENERATION",
-        "title": "Procedural 3D Geometry, Totem SVG & Web Audio Synth Setup",
-        "status": "completed",
-        "durationMs": 5,
-        "summary": "Configured 1182 WebGL particles, SVG sigil generator, and 144.72 Hz Web Audio oscillator."
-      },
-      {
-        "stepNumber": 12,
-        "code": "WEBSITE_RENDERING",
-        "title": "Hydrating Adaptive Experience Tree",
-        "status": "completed",
-        "durationMs": 4,
-        "summary": "Bound design tokens, responsive breakpoints, and reduced-motion fallbacks for celestial_observatory."
-      },
-      {
-        "stepNumber": 13,
-        "code": "AUTOMATED_TESTING",
-        "title": "Epistemic Audit & Schema Integrity Verification",
-        "status": "completed",
-        "durationMs": 4,
-        "summary": "Audited 31 claims (7 verified facts, 16 user-provided)."
-      },
-      {
-        "stepNumber": 14,
-        "code": "VISUAL_VERIFICATION",
-        "title": "Viewport Contrast, WebGL Boundary & DOM Landmark Check",
-        "status": "completed",
-        "durationMs": 3,
-        "summary": "Verified WCAG contrast polarity, mobile touch fallback, and semantic section anchors."
-      },
-      {
-        "stepNumber": 15,
-        "code": "USER_PREVIEW",
-        "title": "Interactive Studio Preview & Live Section Editor Ready",
-        "status": "completed",
-        "durationMs": 3,
-        "summary": "Experience staged for live preview, section-level regeneration, and design token customization."
-      },
-      {
-        "stepNumber": 16,
-        "code": "PUBLISHING_SHARING",
-        "title": "Multi-Tenant Persistence & Export Bundle Registration",
-        "status": "completed",
-        "durationMs": 4,
-        "summary": "Published isolated experience at /e/elena-rostova with standalone source code export and GitHub/Vercel pipelines."
-      }
-    ]
-  },
-  "alexander-von-humboldt-5x4r": {
-    "id": "exp_ix38rp",
-    "slug": "alexander-von-humboldt-5x4r",
-    "createdAt": "2026-11-07T05:38:27.417Z",
-    "updatedAt": "2026-11-07T05:38:27.481Z",
-    "version": 2,
-    "visibility": "public",
-    "input": {
-      "fullName": "Alexander von Humboldt",
-      "birthDate": "1991-09-14",
-      "birthYear": 1991,
-      "birthplace": "Berlin",
-      "country": "Germany",
-      "interests": [
-        "Botany",
-        "Cartography",
-        "Geophysics"
-      ],
-      "hobbies": [
-        "Mountain Climbing",
-        "Scientific Illustration"
-      ],
-      "personalityInfo": "Observant, empirical, deeply curious about global ecosystems",
-      "preferredVisualDirection": "botanical_sanctuary",
-      "visibility": "public"
-    },
-    "intelligence": {
-      "nameResearch": {
-        "normalizedName": "Alexander von Humboldt",
-        "firstName": "Alexander",
-        "surname": "von Humboldt",
-        "phoneticIPA": {
-          "value": "/ˌælɪɡˈzɑːndər/",
-          "category": "verified_fact",
-          "source": "International Phonetic Alphabet (IPA) Transcription Standard",
-          "confidence": 0.99
-        },
-        "syllableCount": 4,
-        "syllableBreakdown": [
-          "A",
-          "le",
-          "xan",
-          "der"
-        ],
-        "sonicProfile": {
-          "value": {
-            "cadence": "lyrical",
-            "dominantVowels": [
-              "a",
-              "e"
-            ],
-            "acousticWarmth": 74,
-            "rhythmPattern": "— ◡ ◡ ◡"
-          },
-          "category": "verified_fact",
-          "source": "Phonological Prosody & Syllable Weight Analysis",
-          "confidence": 0.94
-        },
-        "linguisticFamily": {
-          "value": "Indo-European / Ancient Greek",
-          "category": "verified_fact",
-          "source": "Oxford Dictionary of First Names",
-          "confidence": 0.98
-        },
-        "scriptVariations": [
-          {
-            "scriptName": "Classical Greek",
-            "representation": "ΑΛΕΞΑΝΔΡΟΣ",
-            "note": "Attic monumental inscription"
-          },
-          {
-            "scriptName": "Latin Imperial",
-            "representation": "ALEXANDER",
-            "note": "Trajanic Roman capitals"
-          }
-        ],
-        "historicalBearers": [
-          {
-            "name": "Alexander von Humboldt",
-            "era": "1769 – 1859",
-            "achievement": "Prussian polymath, geographer, and naturalist who laid the foundations of biogeography and first conceived of nature as an interconnected global web (Kosmos).",
-            "source": "Royal Society Archives / Humboldt-Universität zu Berlin"
-          },
-          {
-            "name": "Alexander Fleming",
-            "era": "1881 – 1955",
-            "achievement": "Scottish physician and microbiologist who discovered penicillin in 1928, transforming modern medicine.",
-            "source": "Nobel Prize Foundation"
-          }
-        ],
-        "sources": [
-          {
-            "id": "src-oxford-names",
-            "title": "A Dictionary of First Names (Oxford University Press)",
-            "domain": "oxfordreference.com",
-            "url": "https://www.oxfordreference.com/display/10.1093/acref/9780198610601.001.0001/acref-9780198610601",
-            "category": "linguistic",
-            "verified": true
-          },
-          {
-            "id": "src-britannica",
-            "title": "Encyclopædia Britannica Biographical & Cultural Archive",
-            "domain": "britannica.com",
-            "url": "https://www.britannica.com",
-            "category": "historical",
-            "verified": true
-          },
-          {
-            "id": "src-unesco",
-            "title": "UNESCO World Heritage & Intangible Cultural Heritage Lists",
-            "domain": "unesco.org",
-            "url": "https://whc.unesco.org",
-            "category": "cultural",
-            "verified": true
-          },
-          {
-            "id": "src-iau-ephemeris",
-            "title": "International Astronomical Union (IAU) Planetary & Ecliptic Reference",
-            "domain": "iau.org",
-            "url": "https://www.iau.org",
-            "category": "astronomical",
-            "verified": true
-          }
-        ]
-      },
-      "nameMeaning": {
-        "primaryEtymology": {
-          "value": "Compound Ancient Greek name Ἀλέξανδρος (Aléxandros), uniting ἀλέξω (aléxō, \"to ward off, defend, safeguard\") with ἀνήρ/ἀνδρός (anḗr/andrós, \"human, citizen, voyager\").",
-          "category": "verified_fact",
-          "source": "Oxford Dictionary of First Names & Classical Philology Lexicon",
-          "confidence": 0.98
-        },
-        "literalTranslation": {
-          "value": "Defender of humankind; protector of the agora",
-          "category": "verified_fact",
-          "source": "Comparative Onomastic Etymology",
-          "confidence": 0.97
-        },
-        "rootWords": [
-          {
-            "root": "ἀλέξω (aléxō)",
-            "language": "Ancient Greek",
-            "meaning": "To defend, shelter, or stand as bulwark"
-          },
-          {
-            "root": "ἀνδρός (andrós)",
-            "language": "Ancient Greek",
-            "meaning": "Of humanity, civic fellowship"
-          }
-        ],
-        "semanticFields": {
-          "value": [
-            "Cartographic Exploration",
-            "Natural History",
-            "Civic Architecture",
-            "Polymathic Inquiry"
-          ],
-          "category": "creative_interpretation",
-          "source": "Atelier Semantic Synthesis"
-        },
-        "symbolicMotifs": {
-          "value": [
-            "Compass Rose",
-            "Isothermal Contour Lines",
-            "Doric Fluting",
-            "Celestial Armillary"
-          ],
-          "category": "creative_interpretation",
-          "source": "Visual Iconography Engine"
-        },
-        "epistemicDisclaimer": "Etymological roots reflect historical linguistic evolution and never prescribe or determine an individual’s personal character."
-      },
-      "culturalContext": {
-        "heritageSynthesis": {
-          "value": "Bridging the lived geography of Berlin, Germany with the deep historical resonance of Aegean & Mediterranean Classical World, this synthesis honors both personal place and the architectural, mathematical, and poetic traditions associated with the name Alexander.",
-          "category": "user_provided",
-          "source": "User-Provided Geography + Cultural Atlas"
-        },
-        "geographicResonance": {
-          "value": {
-            "region": "Berlin, Germany & Aegean & Mediterranean Classical World",
-            "coordinates": {
-              "lat": 37.9838,
-              "lng": 23.7275
-            },
-            "architecturalVernacular": "Neoclassical Natural History Museum & Expedition Cartography Studio",
-            "traditionalCraft": "Copperplate topographic engraving & botanical press archiving"
-          },
-          "category": "verified_fact",
-          "source": "Architectural & Material Culture Atlas"
-        },
-        "artisticTraditions": {
-          "value": [
-            "Humboldtian Infographics",
-            "Enlightenment Cartography",
-            "Architectural Elevation Drawing"
-          ],
-          "category": "verified_fact",
-          "source": "Art Historical Reference"
-        },
-        "colorHeritage": [
-          {
-            "name": "Chimborazo Slate",
-            "hex": "#1E293B",
-            "culturalOrigin": "Andean volcanic basalt studied by Humboldt"
-          },
-          {
-            "name": "Cartographic Brass",
-            "hex": "#C89D54",
-            "culturalOrigin": "19th-century sextant and barometer housings"
-          },
-          {
-            "name": "Herbarium Linen",
-            "hex": "#F4F1EA",
-            "culturalOrigin": "Archivalrag paper for botanical specimens"
-          }
-        ],
-        "literaryOrPhilosophicalEcho": {
-          "value": {
-            "quote": "In this great chain of causes and effects, no single fact can be considered in isolation from the whole of nature.",
-            "attribution": "Alexander von Humboldt, Cosmos (1845)",
-            "tradition": "Natural Philosophy & Biogeography"
-          },
-          "category": "verified_fact",
-          "source": "Natural Philosophy & Biogeography"
-        }
-      },
-      "birthday": {
-        "hasBirthData": true,
-        "validDate": true,
-        "dayOfWeek": {
-          "value": "Saturday",
-          "category": "verified_fact",
-          "source": "Gregorian Perpetual Calendar Calculation",
-          "confidence": 1
-        },
-        "season": {
-          "value": "Autumn",
-          "category": "verified_fact",
-          "source": "Solar Meteorological Calendar",
-          "confidence": 1
-        },
-        "dayOfYear": 257,
-        "lifePathNumber": {
-          "value": {
-            "number": 7,
-            "archetypeTitle": "The Contemplative Scholar",
-            "interpretation": "Symbolic cadence of deep archival inquiry, philosophical precision, and quiet observation."
-          },
-          "category": "astrological_interpretation",
-          "source": "Pythagorean Arithmology / Symbolic Numerology"
-        },
-        "birthstone": {
-          "value": {
-            "name": "Kashmir Sapphire",
-            "hexColor": "#1E3F7A",
-            "mineralFamily": "Aluminum Oxide Corundum"
-          },
-          "category": "verified_fact",
-          "source": "Gemological Institute Traditional Mineral Registry"
-        },
-        "birthFlower": {
-          "value": {
-            "name": "Morning Glory & Aster",
-            "botanicalName": "Symphyotrichum novi-belgii",
-            "symbolism": "Star-like patience and scholarly reflection"
-          },
-          "category": "verified_fact",
-          "source": "Royal Botanic Gardens Horticultural Lore"
-        },
-        "historicalEventsOnDay": [
-          {
-            "year": 1977,
-            "event": "Voyager 1 launches Carrying the Golden Record—an interstellar time capsule of Earth’s music, greetings, and science.",
-            "source": "JPL / NASA Archive"
-          }
-        ]
-      },
-      "zodiac": {
-        "computed": true,
-        "westernSign": {
-          "value": {
-            "sign": "Virgo",
-            "symbol": "The Astrea Maiden of Wheat",
-            "unicodeGlyph": "♍",
-            "element": "Earth",
-            "modality": "Mutable",
-            "polarity": "Nocturnal",
-            "decan": 2,
-            "dateRange": "Aug 23 – Sep 22",
-            "symbolicThemes": [
-              "Editorial Precision",
-              "Botanical Taxonomy",
-              "Refined Discernment"
-            ]
-          },
-          "category": "astrological_interpretation",
-          "source": "Tropical Ecliptic Solar Longitude (Symbolic Astrological Tradition)"
-        },
-        "lunarYearSign": {
-          "value": {
-            "animal": "Ram",
-            "element": "Metal",
-            "yinYang": "Yin",
-            "symbolicQualities": [
-              "Metal Ram",
-              "Yin Polarity",
-              "East Asian Sexagenary Cycle"
-            ]
-          },
-          "category": "astrological_interpretation",
-          "source": "Traditional East Asian Sexagenary Calendar (Symbolic Interpretation)"
-        }
-      },
-      "planetary": {
-        "rulingBody": {
-          "value": {
-            "name": "Mercury (Hermes / Utarid)",
-            "classicalSymbol": "☿",
-            "orbitalPeriodDays": 87.97,
-            "axialTiltDegrees": 0.03,
-            "albedo": 0.068,
-            "dominantSpectrumHex": "#94A3B8",
-            "secondarySpectrumHex": "#38BDF8",
-            "harmonicFrequencyHz": 141.27,
-            "ringSystem": false,
-            "moonCount": 0,
-            "poeticEpithet": "The Swift Meridian of Language, Optics, and Synthesis"
-          },
-          "category": "astrological_interpretation",
-          "source": "IAU Planetary Ephemeris Constants (Orbital Period, Tilt, Albedo) + Classical Celestial Symbolism"
-        },
-        "shaderParameters": {
-          "orbitSpeed": 0.35,
-          "particleCount": 1217,
-          "turbulence": 0.29,
-          "bloomIntensity": 0.52,
-          "wireframeRatio": 0.62
-        }
-      },
-      "interests": {
-        "hasUserInterests": true,
-        "rawInterests": [
-          "Botany",
-          "Cartography",
-          "Geophysics",
-          "Mountain Climbing",
-          "Scientific Illustration"
-        ],
-        "domainVectors": [
-          {
-            "domain": "Computational Systems & Engineering",
-            "weight": 92,
-            "matchedKeywords": [
-              "Geophysics",
-              "Mountain Climbing"
-            ],
-            "visualMetaphor": "Algorithmic Lattice & Precision Polyhedron",
-            "interactiveFeatureSuggestion": "Interactive 3D Wireframe Totem & Node Network"
-          },
-          {
-            "domain": "Natural Philosophy, Botany & Ecology",
-            "weight": 82,
-            "matchedKeywords": [
-              "Botany"
-            ],
-            "visualMetaphor": "Herbarium Specimen & Celestial Meridian",
-            "interactiveFeatureSuggestion": "Organic Particle Field & Star Alignment Mini-Game"
-          },
-          {
-            "domain": "Visual Craft, Literature & Editorial Arts",
-            "weight": 82,
-            "matchedKeywords": [
-              "Cartography"
-            ],
-            "visualMetaphor": "Aldine Monograph & Chiaroscuro Atelier",
-            "interactiveFeatureSuggestion": "Interactive Editorial Dossier & Digital Postcard"
-          },
-          {
-            "domain": "Kinetic Movement & Culinary Craft",
-            "weight": 82,
-            "matchedKeywords": [
-              "Mountain Climbing"
-            ],
-            "visualMetaphor": "Kinetic Trajectory & Artisanal Vessel",
-            "interactiveFeatureSuggestion": "Magnetic Cursor Physics & Interactive Surprises"
-          }
-        ],
-        "synthesizedPassionsNarrative": {
-          "value": "Explicitly shaped around Alexander von Humboldt’s stated pursuits—Botany, Cartography, Geophysics, Mountain Climbing, Scientific Illustration—translating these lived passions into spatial rhythm, interactive motifs, and narrative chapters.",
-          "category": "user_provided",
-          "source": "User-Provided Interests & Hobbies"
-        }
-      },
-      "personality": {
-        "hasUserPersonalityInput": true,
-        "verbatimTraits": [
-          "Observant",
-          "empirical",
-          "deeply curious about global ecosystems"
-        ],
-        "toneOfVoice": {
-          "value": {
-            "warmth": 76,
-            "formality": 64,
-            "kineticEnergy": 88,
-            "introspection": 82,
-            "editorialStyle": "Kinetic Avant-Garde Atelier"
-          },
-          "category": "user_provided",
-          "source": "Direct User-Provided Personality & Preference Notes"
-        },
-        "strictNonInferenceNotice": "All personal disposition descriptors in this experience are derived exclusively from the information explicitly supplied by the user."
-      },
-      "creativeDirection": {
-        "archetypeId": "swiss_brutalist_grid",
-        "archetypeName": "Neo-Swiss Architectural Grid",
-        "artDirectionManifesto": "Inspired by Basel and Zurich typographic posters, exposed structural grids, and Bauhaus constructive geometry.",
-        "moodKeywords": [
-          "Constructive Clarity",
-          "Modular Grid",
-          "Objective Typography",
-          "Tectonic Form"
-        ],
-        "spatialArchitecture": {
-          "gridSystem": "swiss-modular",
-          "whitespaceRatio": "generous",
-          "sectionRhythm": "Organic specimen cards paired with lyrical field observations and particle spores"
-        },
-        "lightingAndAtmosphere": {
-          "themePolarity": "stark-monochrome",
-          "grainOpacity": 0.035,
-          "ambientGlowIntensity": 0.4
-        }
-      },
-      "storytelling": {
-        "heroHeadline": "Alexander von Humboldt",
-        "heroSubheadline": "Defender of humankind; protector of the agora — An Interactive Monograph of Origin, Cosmos & Living Craft.",
-        "prologueManifesto": "In the quiet interval between spoken cadence and written monument, \"Alexander\" emerges with a lyrical rhythm—honoring both historical lineage and the open horizon of lived craft.",
-        "chapters": [
-          {
-            "id": "chapter-origin",
-            "chapterNumber": "I",
-            "title": "The Architecture of the Name",
-            "subtitle": "Indo-European / Ancient Greek · /ˌælɪɡˈzɑːndər/",
-            "narrativeBody": "Compound Ancient Greek name Ἀλέξανδρος (Aléxandros), uniting ἀλέξω (aléxō, \"to ward off, defend, safeguard\") with ἀνήρ/ἀνδρός (anḗr/andrós, \"human, citizen, voyager\"). Across centuries, bearers of this name—such as Alexander von Humboldt (1769 – 1859)—have left enduring marks: Prussian polymath, geographer, and naturalist who laid the foundations of biogeography and first conceived of nature as an interconnected global web (Kosmos).",
-            "pullQuote": "Defender of humankind; protector of the agora",
-            "epistemicTag": "verified_fact"
-          },
-          {
-            "id": "chapter-meridian",
-            "chapterNumber": "II",
-            "title": "Cultural & Geographic Meridian",
-            "subtitle": "Berlin, Germany & Aegean & Mediterranean Classical World",
-            "narrativeBody": "Bridging the lived geography of Berlin, Germany with the deep historical resonance of Aegean & Mediterranean Classical World, this synthesis honors both personal place and the architectural, mathematical, and poetic traditions associated with the name Alexander. Its visual language draws from Neoclassical Natural History Museum & Expedition Cartography Studio and the tactile mastery of Copperplate topographic engraving & botanical press archiving.",
-            "pullQuote": "In this great chain of causes and effects, no single fact can be considered in isolation from the whole of nature.",
-            "epistemicTag": "user_provided"
-          },
-          {
-            "id": "chapter-cosmos",
-            "chapterNumber": "III",
-            "title": "Temporal & Celestial Ephemeris",
-            "subtitle": "Virgo (♍) · Mercury (Hermes / Utarid)",
-            "narrativeBody": "Anchored in the Autumn horizon of a Saturday, this chapter pairs astronomical constants (Mercury (Hermes / Utarid), orbital period 87.97 days, harmonic pitch 141.27 Hz) with symbolic celestial traditions.",
-            "pullQuote": "The Swift Meridian of Language, Optics, and Synthesis",
-            "epistemicTag": "astrological_interpretation"
-          },
-          {
-            "id": "chapter-passions",
-            "chapterNumber": "IV",
-            "title": "Living Horizons & Personal Craft",
-            "subtitle": "Botany · Cartography · Geophysics · Mountain Climbing",
-            "narrativeBody": "Explicitly shaped around Alexander von Humboldt’s stated pursuits—Botany, Cartography, Geophysics, Mountain Climbing, Scientific Illustration—translating these lived passions into spatial rhythm, interactive motifs, and narrative chapters. ",
-            "pullQuote": "“Identity is not prescribed by origin; it is composed day by day through attention, craft, and generosity.”",
-            "epistemicTag": "user_provided"
-          }
-        ],
-        "personalLetter": {
-          "salutation": "To Alexander von Humboldt,",
-          "bodyParagraphs": [
-            "Carry the resonance of your name—Alexander—not as a fixed boundary, but as an open courtyard of light. From the ancient roots that gave your name its lyrical cadence to the horizons you actively shape today, your story belongs to the rare lineage of builders and seekers.",
-            "May your dedication to Botany, Cartography, Geophysics, Mountain Climbing, Scientific Illustration continue to sharpen your eye and deepen your joy, turning quiet hours of practice into works of lasting grace.",
-            "This digital monograph was crafted specifically for you—a living artifact celebrating both the history behind your name and the unwritten chapters ahead."
-          ],
-          "valediction": "With enduring admiration and scholarly craft,",
-          "signature": "The Atelier Digital Monograph Engine"
-        },
-        "curatedQuotes": [
-          {
-            "text": "In this great chain of causes and effects, no single fact can be considered in isolation from the whole of nature.",
-            "author": "Alexander von Humboldt, Cosmos (1845)",
-            "context": "Natural Philosophy & Biogeography"
-          },
-          {
-            "text": "What we call the beginning is often the end, and to make an end is to make a beginning.",
-            "author": "Poetics of Time & Architecture",
-            "context": "Editorial Reflection"
-          }
-        ]
-      },
-      "visualDesign": {
-        "colorPalette": {
-          "backgroundPrimary": "#F2F0EC",
-          "backgroundElevated": "#E5E2DC",
-          "surfaceGlass": "rgba(242, 240, 236, 0.9)",
-          "textPrimary": "#111215",
-          "textSecondary": "#32353D",
-          "textMuted": "#686D78",
-          "accentPrimary": "#C83E2B",
-          "accentSecondary": "#1D4E89",
-          "accentTertiary": "#D49A2A",
-          "borderSubtle": "rgba(17, 18, 21, 0.2)"
-        },
-        "typography": {
-          "displayFont": "\"Space Grotesk\", -apple-system, sans-serif",
-          "serifFont": "\"Cormorant Garamond\", Georgia, serif",
-          "sansFont": "\"Inter\", -apple-system, sans-serif",
-          "monoFont": "\"JetBrains Mono\", monospace",
-          "displayTracking": "-0.04em",
-          "heroScaleRem": 5.4
-        },
-        "borderRadiusToken": "0px",
-        "borderTreatment": "soft-organic",
-        "backgroundTreatment": "topographic- contours"
-      },
-      "interactions": {
-        "threeSceneMode": "bauhaus_totem",
-        "cursorMode": "editorial_crosshair",
-        "characterTotem": {
-          "type": "architectural_monolith",
-          "name": "Constructivist Axonometric Monolith",
-          "symbolism": "Primary geometric solids balanced in dynamic equilibrium.",
-          "primaryColor": "#2E6F40",
-          "secondaryColor": "#B85D43",
-          "interactiveBehavior": "Responds to cursor orbital tilt, harmonic audio resonance, and click inspection"
-        },
-        "enabledModules": {
-          "threeHeroCanvas": true,
-          "magneticCursor": true,
-          "tiltCards": true,
-          "personalLetterEnvelope": true,
-          "digitalPostcardStudio": true,
-          "harmonicAudioSynth": true,
-          "constellationMiniGame": true,
-          "epistemicProvenanceModal": true,
-          "easterEggCipher": true
-        },
-        "motionProfile": {
-          "entranceStyle": "cinematic-curtain",
-          "scrollParallaxIntensity": 0.35,
-          "springStiffness": 110,
-          "springDamping": 18
-        }
-      },
-      "content": {
-        "navigationItems": [
-          {
-            "id": "hero",
-            "label": "Sanctuary",
-            "index": "00"
-          },
-          {
-            "id": "dossier",
-            "label": "Dossier",
-            "index": "01"
-          },
-          {
-            "id": "chronicle",
-            "label": "Chronicle",
-            "index": "02"
-          },
-          {
-            "id": "totem",
-            "label": "3D Totem & Harmonics",
-            "index": "03"
-          },
-          {
-            "id": "constellation",
-            "label": "Constellation",
-            "index": "04"
-          },
-          {
-            "id": "epistle",
-            "label": "Epistle & Postcard",
-            "index": "05"
-          },
-          {
-            "id": "provenance",
-            "label": "Epistemic Audit",
-            "index": "06"
-          }
-        ],
-        "identityDossier": {
-          "sectionTitle": "Archival Dossier — Alexander von Humboldt",
-          "cards": [
-            {
-              "id": "card-etymology",
-              "label": "01 / ONOMASTIC ROOT",
-              "title": "ἀλέξω (aléxō)",
-              "value": "Defender of humankind; protector of the agora",
-              "detail": "Compound Ancient Greek name Ἀλέξανδρος (Aléxandros), uniting ἀλέξω (aléxō, \"to ward off, defend, safeguard\") with ἀνήρ/ἀνδρός (anḗr/andrós, \"human, citizen, voyager\").",
-              "epistemicCategory": "verified_fact"
-            },
-            {
-              "id": "card-heritage",
-              "label": "02 / CULTURAL MERIDIAN",
-              "title": "Berlin, Germany & Aegean & Mediterranean Classical World",
-              "value": "Neoclassical Natural History Museum & Expedition Cartography Studio",
-              "detail": "Traditional Craft: Copperplate topographic engraving & botanical press archiving",
-              "epistemicCategory": "user_provided"
-            },
-            {
-              "id": "card-celestial",
-              "label": "03 / CELESTIAL EPHEMERIS",
-              "title": "Virgo ♍",
-              "value": "☿ · 141.27 Hz",
-              "detail": "Element: Earth · Modality: Mutable · Ruler: Mercury (Hermes / Utarid)",
-              "epistemicCategory": "astrological_interpretation"
-            },
-            {
-              "id": "card-passions",
-              "label": "04 / PERSONAL VECTORS",
-              "title": "Stated Pursuits & Craft",
-              "value": "Botany · Cartography · Geophysics",
-              "detail": "Explicitly shaped around Alexander von Humboldt’s stated pursuits—Botany, Cartography, Geophysics, Mountain Climbing, Scientific Illustration—translating these lived passions into spatial rhythm, interactive motifs, and narrative chapters.",
-              "epistemicCategory": "user_provided"
-            },
-            {
-              "id": "card-botanical-mineral",
-              "label": "05 / NATAL CORRESPONDENCE",
-              "title": "Kashmir Sapphire & Morning Glory & Aster",
-              "value": "Autumn · Saturday",
-              "detail": "Symphyotrichum novi-belgii: Star-like patience and scholarly reflection",
-              "epistemicCategory": "verified_fact"
-            }
-          ]
-        },
-        "interactivePostcard": {
-          "stampCode": "ATL-ALE-141",
-          "originLabel": "Berlin, Germany & Aegean & Mediterranean Classical World",
-          "destinationLabel": "Sanctuary of Alexander von Humboldt",
-          "defaultMessage": "May the architecture of your days reflect the clarity and luminous depth embedded within the name Alexander.",
-          "prompts": [
-            "A reflection on Alexander’s lyrical cadence...",
-            "From the meridian of Berlin, Germany & Aegean & Mediterranean Classical World...",
-            "Under the harmonic frequency of 141.27 Hz..."
-          ]
-        },
-        "miniGameConfig": {
-          "title": "Meridian Star Alignment — Alexander’s Constellation",
-          "instruction": "Connect the 5 celestial nodes in sequence to synthesize the geometric sigil and unlock the archival inscription.",
-          "targetNodes": [
-            {
-              "id": "node-1",
-              "label": "αRoot (A)",
-              "x": 20,
-              "y": 65,
-              "unlockedInsight": "Phonetic Anchor: /ˌælɪɡˈzɑːndər/"
-            },
-            {
-              "id": "node-2",
-              "label": "βMeridian (38.0°N)",
-              "x": 38,
-              "y": 28,
-              "unlockedInsight": "Heritage Craft: Copperplate topographic engraving & botanical press archiving"
-            },
-            {
-              "id": "node-3",
-              "label": "γHarmonic (141.27 Hz)",
-              "x": 56,
-              "y": 70,
-              "unlockedInsight": "Celestial Body: Mercury (Hermes / Utarid)"
-            },
-            {
-              "id": "node-4",
-              "label": "δMotif (Compass Rose)",
-              "x": 74,
-              "y": 24,
-              "unlockedInsight": "Primary Symbol: Compass Rose"
-            },
-            {
-              "id": "node-5",
-              "label": "ωApex (Alexander)",
-              "x": 86,
-              "y": 54,
-              "unlockedInsight": "Meaning: Defender of humankind; protector of the agora"
-            }
-          ],
-          "completionRewardQuote": "In this great chain of causes and effects, no single fact can be considered in isolation from the whole of nature."
-        },
-        "easterEgg": {
-          "triggerHint": "Click the Monograph Seal 3 times or type \"ALEXANDER\" in the Cipher Vault",
-          "secretKeyphrase": "ALEXANDER",
-          "revealedArtifactTitle": "Secret Archival Colophon — Folio № 717",
-          "revealedMessage": "In 859 CE, Fatima al-Fihri demonstrated that a single individual’s vision can found an institution that illuminates centuries. This hidden colophon honors Alexander von Humboldt’s unique place in the living archive."
-        }
-      },
-      "verification": {
-        "passed": true,
-        "timestamp": "2026-11-07T05:38:27.417Z",
-        "totalClaimsAudited": 26,
-        "breakdown": {
-          "verifiedFactsCount": 7,
-          "userProvidedCount": 11,
-          "astrologicalCount": 3,
-          "creativeInterpretationCount": 5
-        },
-        "epistemicGuarantees": [
-          "Zero personal biographical facts were fabricated or scraped from private sources.",
-          "Actual human personality was never inferred from name etymology or birth date alone.",
-          "Linguistic and historical bearer citations are separated from symbolic/astrological interpretations.",
-          "All user-supplied fields are explicitly tagged as User-Provided."
-        ],
-        "sanitizedWarnings": []
-      }
-    },
-    "pipelineLogs": [
-      {
-        "stepNumber": 1,
-        "code": "INPUT_COLLECTION",
-        "title": "Input Collection & Normalization",
-        "status": "completed",
-        "durationMs": 4,
-        "summary": "Captured identity payload for \"Alexander von Humboldt\" with 5 interest tags."
-      },
-      {
-        "stepNumber": 2,
-        "code": "INPUT_VALIDATION",
-        "title": "Temporal & Schema Validation",
-        "status": "completed",
-        "durationMs": 3,
-        "summary": "Verified Gregorian calendar bounds and temporal parameters."
-      },
-      {
-        "stepNumber": 3,
-        "code": "RESEARCH_COLLECTION",
-        "title": "Onomastic, Etymological & Cultural Research",
-        "status": "completed",
-        "durationMs": 8,
-        "summary": "Resolved IPA /ˌælɪɡˈzɑːndər/, Indo-European / Ancient Greek lineage, and 4 reference citations.",
-        "artifactPreview": "Defender of humankind; protector of the agora"
-      },
-      {
-        "stepNumber": 4,
-        "code": "EVIDENCE_CLASSIFICATION",
-        "title": "Four-Tier Epistemic Evidence Classification",
-        "status": "completed",
-        "durationMs": 5,
-        "summary": "Partitioned claims into Verified Facts, User-Provided Data, Astrological Symbolism, and Creative Interpretations."
-      },
-      {
-        "stepNumber": 5,
-        "code": "INTELLIGENCE_SYNTHESIS",
-        "title": "14-Module Multi-Vector Intelligence Synthesis",
-        "status": "completed",
-        "durationMs": 7,
-        "summary": "Synthesized 4 passion vectors and harmonic frequency (141.27 Hz)."
-      },
-      {
-        "stepNumber": 6,
-        "code": "CREATIVE_DIRECTION",
-        "title": "Art Direction & Spatial Archetype Selection",
-        "status": "completed",
-        "durationMs": 4,
-        "summary": "Selected archetype \"Naturalist Herbarium & Sanctuary\" (flowing-manuscript).",
-        "artifactPreview": "Modeled after 19th-century botanical expeditions, pressed flora folios, and sunlit glasshouses—featuring alabaster linen, cypress green, and terracotta clay."
-      },
-      {
-        "stepNumber": 7,
-        "code": "VISUAL_SYSTEM",
-        "title": "Adaptive Color Palette & Typography System",
-        "status": "completed",
-        "durationMs": 4,
-        "summary": "Generated palette (#F4F5F0 / #2E6F40) & font stack (\"Cormorant Garamond\")."
-      },
-      {
-        "stepNumber": 8,
-        "code": "STRUCTURE_GENERATION",
-        "title": "Bespoke Page Topology & Navigation Architecture",
-        "status": "completed",
-        "durationMs": 4,
-        "summary": "Constructed 7 interactive chapters and 5 archival dossier cards."
-      },
-      {
-        "stepNumber": 9,
-        "code": "INTERACTION_SELECTION",
-        "title": "3D WebGL, Cursor Physics & Motion Choreography",
-        "status": "completed",
-        "durationMs": 4,
-        "summary": "Assigned 3D scene \"botanical_particles\", cursor \"ambient_spotlight\", and totem \"The Perennial Herbarium Seal\"."
-      },
-      {
-        "stepNumber": 10,
-        "code": "CONTENT_GENERATION",
-        "title": "Narrative Chronicle, Epistle & Quote Synthesis",
-        "status": "completed",
-        "durationMs": 9,
-        "summary": "Authored 4 narrative chapters, personal wax-sealed epistle, and interactive postcard."
-      },
-      {
-        "stepNumber": 11,
-        "code": "ASSET_GENERATION",
-        "title": "Procedural 3D Geometry, Totem SVG & Web Audio Synth Setup",
-        "status": "completed",
-        "durationMs": 5,
-        "summary": "Configured 1217 WebGL particles, SVG sigil generator, and 141.27 Hz Web Audio oscillator."
-      },
-      {
-        "stepNumber": 12,
-        "code": "WEBSITE_RENDERING",
-        "title": "Hydrating Adaptive Experience Tree",
-        "status": "completed",
-        "durationMs": 4,
-        "summary": "Bound design tokens, responsive breakpoints, and reduced-motion fallbacks for botanical_sanctuary."
-      },
-      {
-        "stepNumber": 13,
-        "code": "AUTOMATED_TESTING",
-        "title": "Epistemic Audit & Schema Integrity Verification",
-        "status": "completed",
-        "durationMs": 4,
-        "summary": "Audited 26 claims (7 verified facts, 11 user-provided)."
-      },
-      {
-        "stepNumber": 14,
-        "code": "VISUAL_VERIFICATION",
-        "title": "Viewport Contrast, WebGL Boundary & DOM Landmark Check",
-        "status": "completed",
-        "durationMs": 3,
-        "summary": "Verified WCAG contrast polarity, mobile touch fallback, and semantic section anchors."
-      },
-      {
-        "stepNumber": 15,
-        "code": "USER_PREVIEW",
-        "title": "Interactive Studio Preview & Live Section Editor Ready",
-        "status": "completed",
-        "durationMs": 3,
-        "summary": "Experience staged for live preview, section-level regeneration, and design token customization."
-      },
-      {
-        "stepNumber": 16,
-        "code": "PUBLISHING_SHARING",
-        "title": "Multi-Tenant Persistence & Export Bundle Registration",
-        "status": "completed",
-        "durationMs": 4,
-        "summary": "Published isolated experience at /e/alexander-von-humboldt-5x4r with standalone source code export and GitHub/Vercel pipelines."
-      }
-    ]
-  },
-  "maya-angelou-mlvu": {
-    "id": "exp_1eynncw",
-    "slug": "maya-angelou-mlvu",
-    "createdAt": "2026-11-07T05:38:27.435Z",
-    "updatedAt": "2026-11-07T05:38:27.435Z",
-    "version": 1,
-    "visibility": "public",
-    "input": {
-      "fullName": "Maya Angelou",
-      "birthDate": "2023-02-30",
-      "interests": [],
-      "hobbies": [],
-      "preferredVisualDirection": "auto",
-      "visibility": "public"
-    },
-    "intelligence": {
-      "nameResearch": {
-        "normalizedName": "Maya Angelou",
-        "firstName": "Maya",
-        "surname": "Angelou",
-        "phoneticIPA": {
-          "value": "/ˈmɑːjə/",
-          "category": "verified_fact",
-          "source": "International Phonetic Alphabet (IPA) Transcription Standard",
-          "confidence": 0.99
-        },
-        "syllableCount": 1,
-        "syllableBreakdown": [
-          "Maya"
-        ],
-        "sonicProfile": {
-          "value": {
-            "cadence": "lyrical",
-            "dominantVowels": [
-              "a",
-              "y"
-            ],
-            "acousticWarmth": 96,
-            "rhythmPattern": "—"
-          },
-          "category": "verified_fact",
-          "source": "Phonological Prosody & Syllable Weight Analysis",
-          "confidence": 0.94
-        },
-        "linguisticFamily": {
-          "value": "Cross-Linguistic (Sanskrit, Hellenic, Mesoamerican, Semitic)",
-          "category": "verified_fact",
-          "source": "Oxford Dictionary of First Names",
-          "confidence": 0.98
-        },
-        "scriptVariations": [
-          {
-            "scriptName": "Devanagari",
-            "representation": "माया",
-            "note": "Classical Sanskrit script"
-          },
-          {
-            "scriptName": "Greek",
-            "representation": "ΜΑΙΑ",
-            "note": "Star name in the Taurus constellation"
-          },
-          {
-            "scriptName": "Latin",
-            "representation": "MAYA",
-            "note": "Modern geometric display capitals"
-          }
-        ],
-        "historicalBearers": [
-          {
-            "name": "Maya Angelou",
-            "era": "1928 – 2014",
-            "achievement": "Acclaimed American poet, memoirist, and civil rights luminary whose work elevated spoken cadence and autobiographical literature.",
-            "source": "Library of Congress / National Endowment for the Arts"
-          },
-          {
-            "name": "Maya Lin",
-            "era": "b. 1959",
-            "achievement": "Architect and environmental sculptor renowned for minimalist topological monuments and earthworks.",
-            "source": "Smithsonian American Art Museum"
-          }
-        ],
-        "sources": [
-          {
-            "id": "src-oxford-names",
-            "title": "A Dictionary of First Names (Oxford University Press)",
-            "domain": "oxfordreference.com",
-            "url": "https://www.oxfordreference.com/display/10.1093/acref/9780198610601.001.0001/acref-9780198610601",
-            "category": "linguistic",
-            "verified": true
-          },
-          {
-            "id": "src-britannica",
-            "title": "Encyclopædia Britannica Biographical & Cultural Archive",
-            "domain": "britannica.com",
-            "url": "https://www.britannica.com",
-            "category": "historical",
-            "verified": true
-          },
-          {
-            "id": "src-unesco",
-            "title": "UNESCO World Heritage & Intangible Cultural Heritage Lists",
-            "domain": "unesco.org",
-            "url": "https://whc.unesco.org",
-            "category": "cultural",
-            "verified": true
-          },
-          {
-            "id": "src-iau-ephemeris",
-            "title": "International Astronomical Union (IAU) Planetary & Ecliptic Reference",
-            "domain": "iau.org",
-            "url": "https://www.iau.org",
-            "category": "astronomical",
-            "verified": true
-          }
-        ]
-      },
-      "nameMeaning": {
-        "primaryEtymology": {
-          "value": "A polysemous global name appearing independently across major linguistic families: in Sanskrit (माया, Māyā) signifying the creative power that renders the cosmos perceptible; in Greek/Roman antiquity (Maia) denoting the vernal goddess of growth and the Pleiades cluster; and in Hebrew/Arabic roots linked to flowing springs.",
-          "category": "verified_fact",
-          "source": "Oxford Dictionary of First Names & Classical Philology Lexicon",
-          "confidence": 0.98
-        },
-        "literalTranslation": {
-          "value": "Creative illusion and wisdom (Sanskrit); maternal spring (Greek/Latin); gentle water (Semitic)",
-          "category": "verified_fact",
-          "source": "Comparative Onomastic Etymology",
-          "confidence": 0.97
-        },
-        "rootWords": [
-          {
-            "root": "माया (Māyā)",
-            "language": "Sanskrit",
-            "meaning": "Artistic manifestation, cosmic measurement, creative wonder"
-          },
-          {
-            "root": "Μαῖα (Maîa)",
-            "language": "Ancient Greek",
-            "meaning": "Nursing mother of spring; brightest star of the Pleiades"
-          }
-        ],
-        "semanticFields": {
-          "value": [
-            "Poetic Rhythm",
-            "Vernal Botany",
-            "Cosmic Weaving",
-            "Luminous Illusion"
-          ],
-          "category": "creative_interpretation",
-          "source": "Atelier Semantic Synthesis"
-        },
-        "symbolicMotifs": {
-          "value": [
-            "Seven Sisters (Pleiades)",
-            "Lotus Mandala",
-            "Flowing Water Ripple",
-            "Woven Tapestry"
-          ],
-          "category": "creative_interpretation",
-          "source": "Visual Iconography Engine"
-        },
-        "epistemicDisclaimer": "Etymological roots reflect historical linguistic evolution and never prescribe or determine an individual’s personal character."
-      },
-      "culturalContext": {
-        "heritageSynthesis": {
-          "value": "Rooted in the cultural and scholarly heritage of Multicultural Confluence (South Asia, Mediterranean & Americas), drawing visual inspiration from Topological Earthwork Pavilion & Stepwell Sanctuary and Hand-loomed silk ikat & carved stone bas-relief.",
-          "category": "verified_fact",
-          "source": "UNESCO Cultural Heritage Synthesis"
-        },
-        "geographicResonance": {
-          "value": {
-            "region": "Multicultural Confluence (South Asia, Mediterranean & Americas)",
-            "coordinates": {
-              "lat": 25.3176,
-              "lng": 82.9739
-            },
-            "architecturalVernacular": "Topological Earthwork Pavilion & Stepwell Sanctuary",
-            "traditionalCraft": "Hand-loomed silk ikat & carved stone bas-relief"
-          },
-          "category": "verified_fact",
-          "source": "Architectural & Material Culture Atlas"
-        },
-        "artisticTraditions": {
-          "value": [
-            "Environmental Land Art",
-            "Lyrical Spoken Word",
-            "Astronomical Star Lore"
-          ],
-          "category": "verified_fact",
-          "source": "Art Historical Reference"
-        },
-        "colorHeritage": [
-          {
-            "name": "Pleiades Indigo",
-            "hex": "#1B263B",
-            "culturalOrigin": "Deep night sky surrounding the Taurus cluster"
-          },
-          {
-            "name": "Marigold Ochre",
-            "hex": "#E09F3E",
-            "culturalOrigin": "Natural botanical dye of South Asian textiles"
-          },
-          {
-            "name": "Alabaster Mist",
-            "hex": "#F8F9FA",
-            "culturalOrigin": "Polished marble and morning river fog"
-          }
-        ],
-        "literaryOrPhilosophicalEcho": {
-          "value": {
-            "quote": "Everything in the universe has a rhythm, everything dances.",
-            "attribution": "Maya Angelou",
-            "tradition": "Contemporary Poetics"
-          },
-          "category": "verified_fact",
-          "source": "Contemporary Poetics"
-        }
-      },
-      "birthday": {
-        "hasBirthData": false,
-        "validDate": false,
-        "validationMessage": "Day 30 is invalid for 2023-02 (maximum days in that month: 28).",
-        "historicalEventsOnDay": []
-      },
-      "zodiac": {
-        "computed": false
-      },
-      "planetary": {
-        "rulingBody": {
-          "value": {
-            "name": "Saturn (Kronos / Zuhal)",
-            "classicalSymbol": "♄",
-            "orbitalPeriodDays": 10759.22,
-            "axialTiltDegrees": 26.73,
-            "albedo": 0.499,
-            "dominantSpectrumHex": "#C2B280",
-            "secondarySpectrumHex": "#2B2D42",
-            "harmonicFrequencyHz": 147.85,
-            "ringSystem": true,
-            "moonCount": 146,
-            "poeticEpithet": "The Ringed Geometer of Time and Monumental Structure"
-          },
-          "category": "creative_interpretation",
-          "source": "IAU Planetary Ephemeris Constants (Orbital Period, Tilt, Albedo) + Classical Celestial Symbolism"
-        },
-        "shaderParameters": {
-          "orbitSpeed": 0.22,
-          "particleCount": 1204,
-          "turbulence": 0.16,
-          "bloomIntensity": 0.69,
-          "wireframeRatio": 0.49
-        }
-      },
-      "interests": {
-        "hasUserInterests": false,
-        "rawInterests": [],
-        "domainVectors": [
-          {
-            "domain": "Architectural & Spatial Contemplation",
-            "weight": 84,
-            "matchedKeywords": [
-              "Default Curated Vector"
-            ],
-            "visualMetaphor": "Tessellated Courtyard & Light Aperture",
-            "interactiveFeatureSuggestion": "Interactive 3D Geometric Totem & Constellation Canvas"
-          },
-          {
-            "domain": "Literary & Historical Inquiry",
-            "weight": 78,
-            "matchedKeywords": [
-              "Onomastic Archive"
-            ],
-            "visualMetaphor": "Illuminated Folio & Epigraphic Chronicle",
-            "interactiveFeatureSuggestion": "Personal Wax-Sealed Letter & Postcard Studio"
-          }
-        ],
-        "synthesizedPassionsNarrative": {
-          "value": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos.",
-          "category": "creative_interpretation",
-          "source": "Atelier Default Thematic Vector"
-        }
-      },
-      "personality": {
-        "hasUserPersonalityInput": false,
-        "verbatimTraits": [],
-        "toneOfVoice": {
-          "value": {
-            "warmth": 75,
-            "formality": 68,
-            "kineticEnergy": 62,
-            "introspection": 78,
-            "editorialStyle": "Poetic Editorial Monograph (Neutral & Respectful)"
-          },
-          "category": "creative_interpretation",
-          "source": "Default Editorial Voice (Zero Name-Based Personality Inference)"
-        },
-        "strictNonInferenceNotice": "No personal character traits were provided by the user. In compliance with epistemic integrity rules, this platform never infers actual human personality from a name or birth date alone."
-      },
-      "creativeDirection": {
-        "archetypeId": "ethereal_storybook",
-        "archetypeName": "Twilight Poetic Chronicle",
-        "artDirectionManifesto": "An intimate literary salon bathed in warm twilight saffron, rosewood, and candlelit parchment—crafted for deeply emotional storytelling and letters.",
-        "moodKeywords": [
-          "Intimate Poetics",
-          "Candlelit Salon",
-          "Lyrical Cadence",
-          "Living Memory"
-        ],
-        "spatialArchitecture": {
-          "gridSystem": "flowing-manuscript",
-          "whitespaceRatio": "generous",
-          "sectionRhythm": "Chaptered literary promenade leading to an interactive wax-sealed epistle"
-        },
-        "lightingAndAtmosphere": {
-          "themePolarity": "twilight-saffron",
-          "grainOpacity": 0.035,
-          "ambientGlowIntensity": 0.4
-        }
-      },
-      "storytelling": {
-        "heroHeadline": "Maya Angelou",
-        "heroSubheadline": "Creative illusion and wisdom (Sanskrit); maternal spring (Greek/Latin); gentle water (Semitic) — An Interactive Monograph of Origin, Cosmos & Living Craft.",
-        "prologueManifesto": "Every name is an architectural vessel before it is spoken. In the Cross-Linguistic (Sanskrit, Hellenic, Mesoamerican, Semitic) tradition, \"Maya\" (/ˈmɑːjə/) unfolds across 1 syllables with a lyrical cadence. This digital sanctuary weaves verified historical etymology, cultural geography, and personal pursuits into an art-directed living chronicle.",
-        "chapters": [
-          {
-            "id": "chapter-origin",
-            "chapterNumber": "I",
-            "title": "The Architecture of the Name",
-            "subtitle": "Cross-Linguistic (Sanskrit, Hellenic, Mesoamerican, Semitic) · /ˈmɑːjə/",
-            "narrativeBody": "A polysemous global name appearing independently across major linguistic families: in Sanskrit (माया, Māyā) signifying the creative power that renders the cosmos perceptible; in Greek/Roman antiquity (Maia) denoting the vernal goddess of growth and the Pleiades cluster; and in Hebrew/Arabic roots linked to flowing springs. Across centuries, bearers of this name—such as Maya Angelou (1928 – 2014)—have left enduring marks: Acclaimed American poet, memoirist, and civil rights luminary whose work elevated spoken cadence and autobiographical literature.",
-            "pullQuote": "Creative illusion and wisdom (Sanskrit); maternal spring (Greek/Latin); gentle water (Semitic)",
-            "epistemicTag": "verified_fact"
-          },
-          {
-            "id": "chapter-meridian",
-            "chapterNumber": "II",
-            "title": "Cultural & Geographic Meridian",
-            "subtitle": "Multicultural Confluence (South Asia, Mediterranean & Americas)",
-            "narrativeBody": "Rooted in the cultural and scholarly heritage of Multicultural Confluence (South Asia, Mediterranean & Americas), drawing visual inspiration from Topological Earthwork Pavilion & Stepwell Sanctuary and Hand-loomed silk ikat & carved stone bas-relief. Its visual language draws from Topological Earthwork Pavilion & Stepwell Sanctuary and the tactile mastery of Hand-loomed silk ikat & carved stone bas-relief.",
-            "pullQuote": "Everything in the universe has a rhythm, everything dances.",
-            "epistemicTag": "verified_fact"
-          },
-          {
-            "id": "chapter-cosmos",
-            "chapterNumber": "III",
-            "title": "Celestial & Harmonic Resonance",
-            "subtitle": "Saturn (Kronos / Zuhal) (♄)",
-            "narrativeBody": "Even when a specific birth date is held private, the experience aligns with the classical harmonic constants of Saturn (Kronos / Zuhal) (The Ringed Geometer of Time and Monumental Structure), resonating at 147.85 Hz.",
-            "pullQuote": "The Ringed Geometer of Time and Monumental Structure",
-            "epistemicTag": "creative_interpretation"
-          },
-          {
-            "id": "chapter-passions",
-            "chapterNumber": "IV",
-            "title": "Living Horizons & Personal Craft",
-            "subtitle": "Curiosity, Contemplation & Creative Agency",
-            "narrativeBody": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos. ",
-            "pullQuote": "“Identity is not prescribed by origin; it is composed day by day through attention, craft, and generosity.”",
-            "epistemicTag": "creative_interpretation"
-          }
-        ],
-        "personalLetter": {
-          "salutation": "To Maya Angelou,",
-          "bodyParagraphs": [
-            "Carry the resonance of your name—Maya—not as a fixed boundary, but as an open courtyard of light. From the ancient roots that gave your name its lyrical cadence to the horizons you actively shape today, your story belongs to the rare lineage of builders and seekers.",
-            "May every season bring clarity to your inquiries, warmth to your threshold, and new constellations to navigate.",
-            "This digital monograph was crafted specifically for you—a living artifact celebrating both the history behind your name and the unwritten chapters ahead."
-          ],
-          "valediction": "With enduring admiration and scholarly craft,",
-          "signature": "The Atelier Digital Monograph Engine"
-        },
-        "curatedQuotes": [
-          {
-            "text": "Everything in the universe has a rhythm, everything dances.",
-            "author": "Maya Angelou",
-            "context": "Contemporary Poetics"
-          },
-          {
-            "text": "What we call the beginning is often the end, and to make an end is to make a beginning.",
-            "author": "Poetics of Time & Architecture",
-            "context": "Editorial Reflection"
-          }
-        ]
-      },
-      "visualDesign": {
-        "colorPalette": {
-          "backgroundPrimary": "#191414",
-          "backgroundElevated": "#241D1D",
-          "surfaceGlass": "rgba(36, 29, 29, 0.82)",
-          "textPrimary": "#F9F4EE",
-          "textSecondary": "#D8C9BC",
-          "textMuted": "#9A897C",
-          "accentPrimary": "#DDA15E",
-          "accentSecondary": "#1B263B",
-          "accentTertiary": "#7F9EB2",
-          "borderSubtle": "rgba(221, 161, 94, 0.22)"
-        },
-        "typography": {
-          "displayFont": "\"Playfair Display\", Georgia, serif",
-          "serifFont": "\"Cormorant Garamond\", Georgia, serif",
-          "sansFont": "\"Plus Jakarta Sans\", -apple-system, sans-serif",
-          "monoFont": "\"JetBrains Mono\", monospace",
-          "displayTracking": "-0.02em",
-          "heroScaleRem": 4.8
-        },
-        "borderRadiusToken": "24px",
-        "borderTreatment": "soft-organic",
-        "backgroundTreatment": "organic-paper"
-      },
-      "interactions": {
-        "threeSceneMode": "orbital_sanctuary",
-        "cursorMode": "stardust_trail",
-        "characterTotem": {
-          "type": "kinetic_polyhedron",
-          "name": "The Lantern of Correspondence",
-          "symbolism": "Faceted amber prism refracting memory and written fellowship.",
-          "primaryColor": "#DDA15E",
-          "secondaryColor": "#1B263B",
-          "interactiveBehavior": "Responds to cursor orbital tilt, harmonic audio resonance, and click inspection"
-        },
-        "enabledModules": {
-          "threeHeroCanvas": true,
-          "magneticCursor": true,
-          "tiltCards": true,
-          "personalLetterEnvelope": true,
-          "digitalPostcardStudio": true,
-          "harmonicAudioSynth": true,
-          "constellationMiniGame": true,
-          "epistemicProvenanceModal": true,
-          "easterEggCipher": true
-        },
-        "motionProfile": {
-          "entranceStyle": "cinematic-curtain",
-          "scrollParallaxIntensity": 0.35,
-          "springStiffness": 110,
-          "springDamping": 18
-        }
-      },
-      "content": {
-        "navigationItems": [
-          {
-            "id": "hero",
-            "label": "Sanctuary",
-            "index": "00"
-          },
-          {
-            "id": "dossier",
-            "label": "Dossier",
-            "index": "01"
-          },
-          {
-            "id": "chronicle",
-            "label": "Chronicle",
-            "index": "02"
-          },
-          {
-            "id": "totem",
-            "label": "3D Totem & Harmonics",
-            "index": "03"
-          },
-          {
-            "id": "constellation",
-            "label": "Constellation",
-            "index": "04"
-          },
-          {
-            "id": "epistle",
-            "label": "Epistle & Postcard",
-            "index": "05"
-          },
-          {
-            "id": "provenance",
-            "label": "Epistemic Audit",
-            "index": "06"
-          }
-        ],
-        "identityDossier": {
-          "sectionTitle": "Archival Dossier — Maya Angelou",
-          "cards": [
-            {
-              "id": "card-etymology",
-              "label": "01 / ONOMASTIC ROOT",
-              "title": "माया (Māyā)",
-              "value": "Creative illusion and wisdom (Sanskrit); maternal spring (Greek/Latin); gentle water (Semitic)",
-              "detail": "A polysemous global name appearing independently across major linguistic families: in Sanskrit (माया, Māyā) signifying the creative power that renders the cosmos perceptible; in Greek/Roman antiquity (Maia) denoting the vernal goddess of growth and the Pleiades cluster; and in Hebrew/Arabic roots linked to flowing springs.",
-              "epistemicCategory": "verified_fact"
-            },
-            {
-              "id": "card-heritage",
-              "label": "02 / CULTURAL MERIDIAN",
-              "title": "Multicultural Confluence (South Asia, Mediterranean & Americas)",
-              "value": "Topological Earthwork Pavilion & Stepwell Sanctuary",
-              "detail": "Traditional Craft: Hand-loomed silk ikat & carved stone bas-relief",
+              "title": "Mediterranean Basin & Eastern European Steppes (Historical Linguistic Origin of Name — Not Personal Location)",
+              "value": "Venetian Palladian Loggia & Neoclassical Observatory",
+              "detail": "Traditional Craft: Murano optical glass blowing & copperplate intaglio printmaking",
               "epistemicCategory": "verified_fact"
             },
             {
@@ -3937,33 +2014,33 @@
           ]
         },
         "interactivePostcard": {
-          "stampCode": "ATL-MAY-148",
-          "originLabel": "Multicultural Confluence (South Asia, Mediterranean & Americas)",
-          "destinationLabel": "Sanctuary of Maya Angelou",
-          "defaultMessage": "May the architecture of your days reflect the clarity and luminous depth embedded within the name Maya.",
+          "stampCode": "ATL-ELE-148",
+          "originLabel": "Mediterranean Basin & Eastern European Steppes (Historical Linguistic Origin of Name — Not Personal Location)",
+          "destinationLabel": "Sanctuary of Elena",
+          "defaultMessage": "May the architecture of your days reflect the clarity and luminous depth embedded within the name Elena.",
           "prompts": [
-            "A reflection on Maya’s lyrical cadence...",
-            "From the meridian of Multicultural Confluence (South Asia, Mediterranean & Americas)...",
+            "A reflection on Elena’s lyrical cadence...",
+            "From the meridian of Mediterranean Basin & Eastern European Steppes (Historical Linguistic Origin of Name — Not Personal Location)...",
             "Under the harmonic frequency of 147.85 Hz..."
           ]
         },
         "miniGameConfig": {
-          "title": "Meridian Star Alignment — Maya’s Constellation",
+          "title": "Meridian Star Alignment — Elena’s Constellation",
           "instruction": "Connect the 5 celestial nodes in sequence to synthesize the geometric sigil and unlock the archival inscription.",
           "targetNodes": [
             {
               "id": "node-1",
-              "label": "αRoot (Maya)",
+              "label": "αRoot (E)",
               "x": 20,
               "y": 65,
-              "unlockedInsight": "Phonetic Anchor: /ˈmɑːjə/"
+              "unlockedInsight": "Phonetic Anchor: /ɛˈleɪnə/"
             },
             {
               "id": "node-2",
-              "label": "βMeridian (25.3°N)",
+              "label": "βMeridian (41.9°N)",
               "x": 38,
               "y": 28,
-              "unlockedInsight": "Heritage Craft: Hand-loomed silk ikat & carved stone bas-relief"
+              "unlockedInsight": "Heritage Craft: Murano optical glass blowing & copperplate intaglio printmaking"
             },
             {
               "id": "node-3",
@@ -3974,47 +2051,46 @@
             },
             {
               "id": "node-4",
-              "label": "δMotif (Seven Sisters (Pleiades))",
+              "label": "δMotif (Solar Corona Eclipse)",
               "x": 74,
               "y": 24,
-              "unlockedInsight": "Primary Symbol: Seven Sisters (Pleiades)"
+              "unlockedInsight": "Primary Symbol: Solar Corona Eclipse"
             },
             {
               "id": "node-5",
-              "label": "ωApex (Maya)",
+              "label": "ωApex (Elena)",
               "x": 86,
               "y": 54,
-              "unlockedInsight": "Meaning: Creative illusion and wisdom (Sanskrit); maternal spring (Greek/Latin); gentle water (Semitic)"
+              "unlockedInsight": "Meaning: Torch of dawn; shining sunbeam or coronal light"
             }
           ],
-          "completionRewardQuote": "Everything in the universe has a rhythm, everything dances."
+          "completionRewardQuote": "Light is the first geometer; before the hand draws a line, the dawn has already measured the horizon."
         },
         "easterEgg": {
-          "triggerHint": "Click the Monograph Seal 3 times or type \"MAYA\" in the Cipher Vault",
-          "secretKeyphrase": "MAYA",
-          "revealedArtifactTitle": "Secret Archival Colophon — Folio № 404",
-          "revealedMessage": "In 859 CE, Fatima al-Fihri demonstrated that a single individual’s vision can found an institution that illuminates centuries. This hidden colophon honors Maya Angelou’s unique place in the living archive."
+          "triggerHint": "Click the Monograph Seal 3 times or type \"ELENA\" in the Cipher Vault",
+          "secretKeyphrase": "ELENA",
+          "revealedArtifactTitle": "Secret Archival Colophon — Folio № 738",
+          "revealedMessage": "In 859 CE, Fatima al-Fihri demonstrated that a single individual’s vision can found an institution that illuminates centuries. This hidden colophon honors Elena’s unique place in the living archive."
         }
       },
       "verification": {
         "passed": true,
-        "timestamp": "2026-11-07T05:38:27.435Z",
-        "totalClaimsAudited": 11,
+        "timestamp": "2026-11-07T06:19:14.693Z",
+        "executionMode": "deterministic_lexicon_and_heuristics",
+        "totalClaimsAudited": 18,
         "breakdown": {
-          "verifiedFactsCount": 4,
-          "userProvidedCount": 2,
+          "verifiedFactsCount": 10,
+          "userProvidedCount": 1,
           "astrologicalCount": 0,
-          "creativeInterpretationCount": 5
+          "creativeInterpretationCount": 7
         },
         "epistemicGuarantees": [
-          "Zero personal biographical facts were fabricated or scraped from private sources.",
-          "Actual human personality was never inferred from name etymology or birth date alone.",
-          "Linguistic and historical bearer citations are separated from symbolic/astrological interpretations.",
-          "All user-supplied fields are explicitly tagged as User-Provided."
+          "Zero personal biographical facts (birthdays, locations, hobbies, personality) were fabricated or scraped.",
+          "Heuristic phonetic or morphological estimates for uncurated names are never labeled as Verified Facts.",
+          "Actual human personality is never inferred from name etymology or birth date alone.",
+          "Linguistic and historical bearer citations are strictly separated from astrological and creative interpretations."
         ],
-        "sanitizedWarnings": [
-          "Day 30 is invalid for 2023-02 (maximum days in that month: 28)."
-        ]
+        "sanitizedWarnings": []
       }
     },
     "pipelineLogs": [
@@ -4023,65 +2099,73 @@
         "code": "INPUT_COLLECTION",
         "title": "Input Collection & Normalization",
         "status": "completed",
-        "durationMs": 4,
-        "summary": "Captured identity payload for \"Maya Angelou\" with 0 interest tags."
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Normalized identity payload for \"Elena\" (0 user-supplied interest tags; zero fabricated fields)."
       },
       {
         "stepNumber": 2,
         "code": "INPUT_VALIDATION",
         "title": "Temporal & Schema Validation",
-        "status": "skipped",
-        "durationMs": 3,
-        "summary": "Notice: Day 30 is invalid for 2023-02 (maximum days in that month: 28). — Gracefully bypassed invalid temporal data."
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Optional temporal fields omitted by user; configured timeless mode (zero invented birthdates)."
       },
       {
         "stepNumber": 3,
         "code": "RESEARCH_COLLECTION",
         "title": "Onomastic, Etymological & Cultural Research",
         "status": "completed",
-        "durationMs": 8,
-        "summary": "Resolved IPA /ˈmɑːjə/, Cross-Linguistic (Sanskrit, Hellenic, Mesoamerican, Semitic) lineage, and 4 reference citations.",
-        "artifactPreview": "Creative illusion and wisdom (Sanskrit); maternal spring (Greek/Latin); gentle water (Semitic)"
+        "executionNature": "curated_lexicon_lookup",
+        "durationMs": 4,
+        "summary": "Matched curated philological lexicon entry for \"Elena\" (/ɛˈleɪnə/) with 4 reference citations.",
+        "artifactPreview": "Torch of dawn; shining sunbeam or coronal light"
       },
       {
         "stepNumber": 4,
         "code": "EVIDENCE_CLASSIFICATION",
         "title": "Four-Tier Epistemic Evidence Classification",
         "status": "completed",
-        "durationMs": 5,
-        "summary": "Partitioned claims into Verified Facts, User-Provided Data, Astrological Symbolism, and Creative Interpretations."
+        "executionNature": "real_validation",
+        "durationMs": 3,
+        "summary": "Partitioned claims into Verified Facts, User-Provided Data, Astrological Symbolism, and Creative/Heuristic Interpretations."
       },
       {
         "stepNumber": 5,
         "code": "INTELLIGENCE_SYNTHESIS",
         "title": "14-Module Multi-Vector Intelligence Synthesis",
         "status": "completed",
-        "durationMs": 7,
-        "summary": "Synthesized 2 passion vectors and harmonic frequency (147.85 Hz)."
+        "executionNature": "astronomical_calculation",
+        "durationMs": 4,
+        "summary": "Synthesized 2 passion vectors and IAU planetary harmonic frequency (147.85 Hz)."
       },
       {
         "stepNumber": 6,
         "code": "CREATIVE_DIRECTION",
         "title": "Art Direction & Spatial Archetype Selection",
         "status": "completed",
-        "durationMs": 4,
-        "summary": "Selected archetype \"Twilight Poetic Chronicle\" (flowing-manuscript).",
-        "artifactPreview": "An intimate literary salon bathed in warm twilight saffron, rosewood, and candlelit parchment—crafted for deeply emotional storytelling and letters."
+        "executionNature": "deterministic_heuristic",
+        "durationMs": 3,
+        "summary": "Selected archetype \"Nocturnal Celestial Observatory\" (radial-observatory).",
+        "artifactPreview": "Set in deep obsidian-indigo twilight illuminated by amber starlight, orbital mechanics, and copperplate ecliptic charts."
       },
       {
         "stepNumber": 7,
         "code": "VISUAL_SYSTEM",
         "title": "Adaptive Color Palette & Typography System",
         "status": "completed",
-        "durationMs": 4,
-        "summary": "Generated palette (#191414 / #DDA15E) & font stack (\"Playfair Display\")."
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Generated palette (#0B101B / #E09F3E) & font stack (\"Playfair Display\")."
       },
       {
         "stepNumber": 8,
         "code": "STRUCTURE_GENERATION",
         "title": "Bespoke Page Topology & Navigation Architecture",
         "status": "completed",
-        "durationMs": 4,
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
         "summary": "Constructed 7 interactive chapters and 4 archival dossier cards."
       },
       {
@@ -4089,55 +2173,62 @@
         "code": "INTERACTION_SELECTION",
         "title": "3D WebGL, Cursor Physics & Motion Choreography",
         "status": "completed",
-        "durationMs": 4,
-        "summary": "Assigned 3D scene \"orbital_sanctuary\", cursor \"stardust_trail\", and totem \"The Lantern of Correspondence\"."
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Assigned 3D scene \"celestial_vault\", cursor \"stardust_trail\", and totem \"Armillary Sphere of the Ecliptic\"."
       },
       {
         "stepNumber": 10,
         "code": "CONTENT_GENERATION",
         "title": "Narrative Chronicle, Epistle & Quote Synthesis",
         "status": "completed",
-        "durationMs": 9,
-        "summary": "Authored 4 narrative chapters, personal wax-sealed epistle, and interactive postcard."
+        "executionNature": "system_synthesis",
+        "durationMs": 5,
+        "summary": "Authored 4 narrative chapters, personal epistle, and postcard via structured narrative synthesis (GEMINI_API_KEY not set)."
       },
       {
         "stepNumber": 11,
         "code": "ASSET_GENERATION",
         "title": "Procedural 3D Geometry, Totem SVG & Web Audio Synth Setup",
         "status": "completed",
-        "durationMs": 5,
-        "summary": "Configured 1204 WebGL particles, SVG sigil generator, and 147.85 Hz Web Audio oscillator."
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Configured 1238 WebGL particles, SVG sigil parameters, and 147.85 Hz Web Audio oscillator."
       },
       {
         "stepNumber": 12,
         "code": "WEBSITE_RENDERING",
-        "title": "Hydrating Adaptive Experience Tree",
+        "title": "Hydrating Adaptive Experience Configuration",
         "status": "completed",
-        "durationMs": 4,
-        "summary": "Bound design tokens, responsive breakpoints, and reduced-motion fallbacks for ethereal_storybook."
+        "executionNature": "system_synthesis",
+        "durationMs": 2,
+        "summary": "Bound design tokens, responsive breakpoints, and reduced-motion fallbacks for celestial_observatory."
       },
       {
         "stepNumber": 13,
         "code": "AUTOMATED_TESTING",
-        "title": "Epistemic Audit & Schema Integrity Verification",
+        "title": "Programmatic Epistemic Audit & Non-Fabrication Verification",
         "status": "completed",
-        "durationMs": 4,
-        "summary": "Audited 11 claims (4 verified facts, 2 user-provided)."
+        "executionNature": "real_validation",
+        "durationMs": 3,
+        "summary": "Audited 18 claims (10 verified facts, 1 user-provided, 7 creative/heuristic)."
       },
       {
         "stepNumber": 14,
         "code": "VISUAL_VERIFICATION",
-        "title": "Viewport Contrast, WebGL Boundary & DOM Landmark Check",
+        "title": "DOM Landmark & Contrast Polarity Configuration",
         "status": "completed",
-        "durationMs": 3,
-        "summary": "Verified WCAG contrast polarity, mobile touch fallback, and semantic section anchors."
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Configured semantic section landmarks and contrast polarity tokens for browser rendering."
       },
       {
         "stepNumber": 15,
         "code": "USER_PREVIEW",
         "title": "Interactive Studio Preview & Live Section Editor Ready",
         "status": "completed",
-        "durationMs": 3,
+        "executionNature": "system_synthesis",
+        "durationMs": 2,
         "summary": "Experience staged for live preview, section-level regeneration, and design token customization."
       },
       {
@@ -4145,9 +2236,11 @@
         "code": "PUBLISHING_SHARING",
         "title": "Multi-Tenant Persistence & Export Bundle Registration",
         "status": "completed",
-        "durationMs": 4,
-        "summary": "Published isolated experience at /e/maya-angelou-mlvu with standalone source code export and GitHub/Vercel pipelines."
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Registered isolated experience at /e/elena with owner isolation and standalone source export."
       }
-    ]
+    ],
+    "storageSource": "local_fallback"
   }
 }

@@ -1,22 +1,49 @@
 import { NextRequest, NextResponse } from 'next/server';
 import {
+  canMutateExperience,
   deleteExperienceBySlug,
   getExperienceBySlug,
+  getRawExperienceMetaBySlug,
   saveExperience,
 } from '@/lib/storage/experienceStore';
+import {
+  attachOwnerSessionCookie,
+  checkEndpointRateLimit,
+  resolveRequestOwnerId,
+} from '@/lib/security/sessionAndAuth';
 import { ARCHETYPE_BLUEPRINTS } from '@/lib/intelligence/modules/humanAndCreativeEngines';
 import { ArchetypeId } from '@/types/experience';
 
 export async function GET(
-  _req: NextRequest,
+  req: NextRequest,
   context: { params: Promise<{ slug: string }> }
 ) {
   const { slug } = await context.params;
-  const exp = await getExperienceBySlug(slug);
+  const session = resolveRequestOwnerId(req);
+  const meta = await getRawExperienceMetaBySlug(slug);
+
+  if (!meta.exists) {
+    return NextResponse.json({ ok: false, error: 'Experience not found' }, { status: 404 });
+  }
+
+  if (
+    meta.visibility === 'private' &&
+    meta.ownerId !== 'system_public' &&
+    meta.ownerId !== session.ownerId
+  ) {
+    return NextResponse.json(
+      { ok: false, error: 'Forbidden: This experience is private to its creator.' },
+      { status: 403 }
+    );
+  }
+
+  const exp = await getExperienceBySlug(slug, session.ownerId);
   if (!exp) {
     return NextResponse.json({ ok: false, error: 'Experience not found' }, { status: 404 });
   }
-  return NextResponse.json({ ok: true, experience: exp });
+
+  const res = NextResponse.json({ ok: true, experience: exp });
+  return attachOwnerSessionCookie(res, session.signedToken);
 }
 
 export async function PATCH(
@@ -24,8 +51,30 @@ export async function PATCH(
   context: { params: Promise<{ slug: string }> }
 ) {
   try {
+    const rate = checkEndpointRateLimit(req, 'experiences_patch', 30);
+    if (!rate.allowed) {
+      return NextResponse.json(
+        { ok: false, error: 'Rate limit exceeded.' },
+        { status: 429, headers: rate.headers }
+      );
+    }
+
     const { slug } = await context.params;
-    const existing = await getExperienceBySlug(slug);
+    const session = resolveRequestOwnerId(req);
+    const meta = await getRawExperienceMetaBySlug(slug);
+
+    if (!meta.exists) {
+      return NextResponse.json({ ok: false, error: 'Experience not found' }, { status: 404 });
+    }
+
+    if (!canMutateExperience(meta.ownerId, session.ownerId)) {
+      return NextResponse.json(
+        { ok: false, error: 'Forbidden: Only the owner of this experience can modify it.' },
+        { status: 403, headers: rate.headers }
+      );
+    }
+
+    const existing = await getExperienceBySlug(slug, session.ownerId);
     if (!existing) {
       return NextResponse.json({ ok: false, error: 'Experience not found' }, { status: 404 });
     }
@@ -108,7 +157,8 @@ export async function PATCH(
     updated.version = (updated.version || 1) + 1;
     const saved = await saveExperience(updated);
 
-    return NextResponse.json({ ok: true, experience: saved });
+    const res = NextResponse.json({ ok: true, experience: saved }, { headers: rate.headers });
+    return attachOwnerSessionCookie(res, session.signedToken);
   } catch (error) {
     return NextResponse.json(
       { ok: false, error: error instanceof Error ? error.message : 'Failed to update experience' },
@@ -118,12 +168,21 @@ export async function PATCH(
 }
 
 export async function DELETE(
-  _req: NextRequest,
+  req: NextRequest,
   context: { params: Promise<{ slug: string }> }
 ) {
   const { slug } = await context.params;
-  const deleted = await deleteExperienceBySlug(slug);
-  if (!deleted) {
+  const session = resolveRequestOwnerId(req);
+  const result = await deleteExperienceBySlug(slug, session.ownerId);
+
+  if (result.forbidden) {
+    return NextResponse.json(
+      { ok: false, error: 'Forbidden: Only the owner of this experience can delete it.' },
+      { status: 403 }
+    );
+  }
+
+  if (!result.deleted) {
     return NextResponse.json({ ok: false, error: 'Experience not found' }, { status: 404 });
   }
   return NextResponse.json({ ok: true, deletedSlug: slug });
