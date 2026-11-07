@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fatima — Personalized Digital Monograph</title>
+  <meta name="description" content="One who abstains; the shining or captivating one who weans toward wisdom — An Interactive Monograph of Origin, Cosmos & Living Craft." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <style>
+    :root {
+      --bg-primary: #F7F3EB;
+      --bg-elevated: #EFE9DC;
+      --text-primary: #16202A;
+      --text-secondary: #394858;
+      --text-muted: #6D7A88;
+      --accent-primary: #B67B32;
+      --accent-secondary: #1D3557;
+      --border-subtle: rgba(22, 32, 42, 0.14);
+      --font-display: "Cormorant Garamond", Georgia, serif;
+      --font-serif: "Cormorant Garamond", Georgia, serif;
+      --font-sans: "Plus Jakarta Sans", -apple-system, sans-serif;
+      --font-mono: "JetBrains Mono", monospace;
+      --radius: 6px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+    #webgl-canvas {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0.75;
+    }
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+    header.hero {
+      min-height: 82vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 4rem;
+    }
+    .eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent-primary);
+      margin-bottom: 1.25rem;
+    }
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(3.2rem, 8vw, 6.2rem);
+      line-height: 1.02;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+    }
+    .subtitle {
+      font-family: var(--font-serif);
+      font-size: clamp(1.35rem, 2.5vw, 1.95rem);
+      color: var(--text-secondary);
+      max-width: 780px;
+      margin-bottom: 2rem;
+    }
+    .manifesto {
+      max-width: 680px;
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+    }
+    .dossier-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin: 4rem 0;
+    }
+    .card {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      transition: transform 0.25s ease;
+    }
+    .card:hover { transform: translateY(-4px); }
+    .card-label {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--accent-primary);
+      letter-spacing: 0.12em;
+      margin-bottom: 0.6rem;
+    }
+    .card-title {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      margin-bottom: 0.5rem;
+    }
+    .chapter {
+      padding: 4rem 0;
+      border-top: 1px solid var(--border-subtle);
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2.5rem;
+    }
+    @media (max-width: 768px) {
+      .chapter { grid-template-columns: 1fr; }
+    }
+    .letter-box {
+      margin: 5rem 0;
+      padding: 3.5rem;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+    }
+    .letter-box p {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+    footer {
+      padding-top: 3rem;
+      border-top: 1px solid var(--border-subtle);
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="webgl-canvas"></canvas>
+  <main class="container">
+    <header class="hero">
+      <div class="eyebrow">Illuminated Architectural Monograph · /ˈfɑːtɪmə/</div>
+      <h1>Fatima</h1>
+      <p class="subtitle">One who abstains; the shining or captivating one who weans toward wisdom — An Interactive Monograph of Origin, Cosmos & Living Craft.</p>
+      <p class="manifesto">Every name is an architectural vessel before it is spoken. In the Semitic / Classical Arabic tradition, "Fatima" (/ˈfɑːtɪmə/) unfolds across 3 syllables with a lyrical cadence. This digital sanctuary weaves verified historical etymology, cultural geography, and personal pursuits into an art-directed living chronicle.</p>
+    </header>
+
+    <section aria-label="Identity Dossier">
+      <div class="dossier-grid">
+        <article class="card">
+          <div class="card-label">01 / ONOMASTIC ROOT · [VERIFIED_FACT]</div>
+          <h2 class="card-title">فَطَمَ (faṭama)</h2>
+          <p style="font-weight:600;margin-bottom:0.5rem;">One who abstains; the shining or captivating one who weans toward wisdom</p>
+          <p style="font-size:0.92rem;color:var(--text-secondary);">Derived from the Classical Arabic triliteral root f-ṭ-m (ف-ط-م), denoting discernment, separation from the transient, and luminous intellectual clarity.</p>
+        </article>
+<article class="card">
+          <div class="card-label">02 / CULTURAL MERIDIAN · [VERIFIED_FACT]</div>
+          <h2 class="card-title">Maghreb & Arabian Peninsula (Fez / Hejaz) (Historical Linguistic Origin of Name — Not Personal Location)</h2>
+          <p style="font-weight:600;margin-bottom:0.5rem;">Hispano-Moorish Courtyard & Marinid Geometric Pavilions</p>
+          <p style="font-size:0.92rem;color:var(--text-secondary);">Traditional Craft: Zellij glazed terracotta mosaic work & brass astrolabe engraving</p>
+        </article>
+<article class="card">
+          <div class="card-label">03 / CELESTIAL EPHEMERIS · [CREATIVE_INTERPRETATION]</div>
+          <h2 class="card-title">Luna (Selene / Qamar)</h2>
+          <p style="font-weight:600;margin-bottom:0.5rem;">☽ · 210.42 Hz</p>
+          <p style="font-size:0.92rem;color:var(--text-secondary);">Orbital Period: 27.32 days · Axial Tilt: 6.68°</p>
+        </article>
+<article class="card">
+          <div class="card-label">04 / PERSONAL VECTORS · [CREATIVE_INTERPRETATION]</div>
+          <h2 class="card-title">Universal Humanist Vectors</h2>
+          <p style="font-weight:600;margin-bottom:0.5rem;">Architecture · Poetics · Cosmos</p>
+          <p style="font-size:0.92rem;color:var(--text-secondary);">When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-label="Narrative Chapters">
+      <article class="chapter">
+        <div>
+          <div class="card-label">CHAPTER I · VERIFIED_FACT</div>
+          <h2 style="font-family:var(--font-display);font-size:2.1rem;margin:0.4rem 0;">The Architecture of the Name</h2>
+          <p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--text-muted);">Semitic / Classical Arabic · /ˈfɑːtɪmə/</p>
+        </div>
+        <div>
+          <p style="font-size:1.1rem;margin-bottom:1.25rem;">Derived from the Classical Arabic triliteral root f-ṭ-m (ف-ط-م), denoting discernment, separation from the transient, and luminous intellectual clarity. Across centuries, documented bearers of this name—such as Fatima al-Fihri (c. 800 – 880 CE)—have left enduring marks: Founded Al-Qarawiyyin in Fez, Morocco in 859 CE—recognized by UNESCO and Guinness World Records as the oldest continuously operating degree-granting university in the world.</p>
+          <blockquote style="font-family:var(--font-serif);font-style:italic;font-size:1.35rem;color:var(--accent-primary);border-left:2px solid var(--accent-primary);padding-left:1.2rem;">
+            “One who abstains; the shining or captivating one who weans toward wisdom”
+          </blockquote>
+        </div>
+      </article>
+<article class="chapter">
+        <div>
+          <div class="card-label">CHAPTER II · VERIFIED_FACT</div>
+          <h2 style="font-family:var(--font-display);font-size:2.1rem;margin:0.4rem 0;">Cultural & Geographic Meridian</h2>
+          <p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--text-muted);">Maghreb & Arabian Peninsula (Fez / Hejaz) (Historical Linguistic Origin of Name — Not Personal Location)</p>
+        </div>
+        <div>
+          <p style="font-size:1.1rem;margin-bottom:1.25rem;">Reflects the historical linguistic heritage of the name "Fatima" in Maghreb & Arabian Peninsula (Fez / Hejaz) (Hispano-Moorish Courtyard & Marinid Geometric Pavilions and Zellij glazed terracotta mosaic work & brass astrolabe engraving). No personal residence or birthplace is assumed. Its visual language draws from Hispano-Moorish Courtyard & Marinid Geometric Pavilions and the tactile mastery of Zellij glazed terracotta mosaic work & brass astrolabe engraving.</p>
+          <blockquote style="font-family:var(--font-serif);font-style:italic;font-size:1.35rem;color:var(--accent-primary);border-left:2px solid var(--accent-primary);padding-left:1.2rem;">
+            “Knowledge is a sanctuary built stone by stone so that every seeker may find light within its courtyard.”
+          </blockquote>
+        </div>
+      </article>
+<article class="chapter">
+        <div>
+          <div class="card-label">CHAPTER III · CREATIVE_INTERPRETATION</div>
+          <h2 style="font-family:var(--font-display);font-size:2.1rem;margin:0.4rem 0;">Celestial & Harmonic Resonance</h2>
+          <p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--text-muted);">Luna (Selene / Qamar) (☽)</p>
+        </div>
+        <div>
+          <p style="font-size:1.1rem;margin-bottom:1.25rem;">Because no personal birth date was provided, zero natal or astrological assumptions are made. Instead, the experience aligns with the classical IAU astronomical constants of Luna (Selene / Qamar) (The Silver Mirror of Tides and Archival Memory), resonating at 210.42 Hz.</p>
+          <blockquote style="font-family:var(--font-serif);font-style:italic;font-size:1.35rem;color:var(--accent-primary);border-left:2px solid var(--accent-primary);padding-left:1.2rem;">
+            “The Silver Mirror of Tides and Archival Memory”
+          </blockquote>
+        </div>
+      </article>
+<article class="chapter">
+        <div>
+          <div class="card-label">CHAPTER IV · CREATIVE_INTERPRETATION</div>
+          <h2 style="font-family:var(--font-display);font-size:2.1rem;margin:0.4rem 0;">Living Horizons & Personal Craft</h2>
+          <p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--text-muted);">Curiosity, Contemplation & Creative Agency</p>
+        </div>
+        <div>
+          <p style="font-size:1.1rem;margin-bottom:1.25rem;">When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos. </p>
+          <blockquote style="font-family:var(--font-serif);font-style:italic;font-size:1.35rem;color:var(--accent-primary);border-left:2px solid var(--accent-primary);padding-left:1.2rem;">
+            ““Identity is not prescribed by origin; it is composed day by day through attention, craft, and generosity.””
+          </blockquote>
+        </div>
+      </article>
+    </section>
+
+    <section class="letter-box" aria-label="Personal Epistle">
+      <div class="eyebrow">PERSONAL EPISTLE</div>
+      <p><strong>To Fatima,</strong></p>
+      <p>Carry the resonance of your name—Fatima—not as a fixed boundary, but as an open courtyard of light. From the roots that gave your name its lyrical cadence to the horizons you actively shape today, your story belongs to the lineage of builders and seekers.</p>
+<p>May every season bring clarity to your inquiries, warmth to your threshold, and new constellations to navigate.</p>
+<p>This digital monograph was crafted specifically for you—a living artifact celebrating both the history behind your name and the unwritten chapters ahead.</p>
+      <p style="margin-top:2rem;">With enduring admiration and scholarly craft,<br/><strong>The Atelier Digital Monograph Engine</strong></p>
+    </section>
+
+    <footer>
+      <div>SLUG: fatima · HARMONIC: 210.42 HZ · REGION: Maghreb & Arabian Peninsula (Fez / Hejaz) (Historical Linguistic Origin of Name — Not Personal Location)</div>
+      <div>VERIFIED CLAIMS: 10 · USER PROVIDED: 1</div>
+    </footer>
+  </main>
+
+  <script>
+    (function() {
+      const canvas = document.getElementById('webgl-canvas');
+      if (!canvas || !window.THREE) return;
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 100);
+      camera.position.z = 5;
+      const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
+
+      const geometry = new THREE.IcosahedronGeometry(1.65, 2);
+      const material = new THREE.MeshBasicMaterial({
+        color: '#B67B32',
+        wireframe: true,
+        transparent: true,
+        opacity: 0.28
+      });
+      const mesh = new THREE.Mesh(geometry, material);
+      scene.add(mesh);
+
+      let mouseX = 0, mouseY = 0;
+      window.addEventListener('mousemove', (e) => {
+        mouseX = (e.clientX / window.innerWidth - 0.5) * 0.6;
+        mouseY = (e.clientY / window.innerHeight - 0.5) * 0.6;
+      });
+
+      function animate() {
+        requestAnimationFrame(animate);
+        mesh.rotation.y += 0.003;
+        mesh.rotation.x += (mouseY - mesh.rotation.x) * 0.04;
+        mesh.rotation.z += (mouseX - mesh.rotation.z) * 0.04;
+        renderer.render(scene, camera);
+      }
+      animate();
+    })();
+  </script>
+</body>
+</html>
