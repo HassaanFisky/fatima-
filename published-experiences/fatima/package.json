@@ -1,0 +1,9 @@
+{
+  "name": "persona-fatima",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personalized Digital Experience for Fatima (Illuminated Architectural Monograph)",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}
