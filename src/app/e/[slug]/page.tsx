@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { getExperienceBySlug } from '@/lib/storage/experienceStore';
+import PortraitView from '@/components/portrait/PortraitView';
 import ExperienceRenderer from '@/components/experience/ExperienceRenderer';
 
 interface PageProps {
@@ -17,6 +18,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: 'Experience Not Found — Atelier Persona Engine',
     };
   }
+  const pt = exp.intelligence.portrait;
+  if (pt) return { title: `${pt.title.en} — Atelier`, description: pt.opening.en.slice(0, 160) };
   return {
     title: `${exp.intelligence.storytelling.heroHeadline} — Personalized Digital Experience`,
     description: exp.intelligence.storytelling.heroSubheadline,
@@ -29,6 +32,10 @@ export default async function ExperienceStandalonePage({ params }: PageProps) {
 
   if (!exp) {
     notFound();
+  }
+
+  if (exp.intelligence.portrait) {
+    return <PortraitView portrait={exp.intelligence.portrait} name={exp.input.fullName} />;
   }
 
   return (

@@ -456,6 +456,7 @@ export interface PersonalizedExperience {
     storytelling: StorytellingOutput;
     visualDesign: VisualDesignSystem;
     interactions: InteractionConfig;
+    portrait?: import('@/lib/portrait/portrait').Portrait;
     content: GeneratedContentSections;
     verification: VerificationAuditReport;
   };

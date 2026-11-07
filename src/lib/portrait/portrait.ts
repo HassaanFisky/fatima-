@@ -1,0 +1,178 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { GoogleGenAI } from '@google/genai';
+
+export type Lang = 'en' | 'ur';
+export interface Bi { en: string; ur: string }
+
+export const FONTS = [
+  'Cormorant Garamond', 'Instrument Serif', 'Playfair Display', 'Space Grotesk', 'Newsreader',
+  'Fraunces', 'Syne', 'Bricolage Grotesque', 'DM Serif Display', 'Unbounded', 'Manrope',
+] as const;
+export const COMPOSITIONS = ['orbit', 'stack', 'split', 'ribbon', 'scatter'] as const;
+export const BACKDROPS = ['rings', 'dots', 'waves', 'stripes', 'blobs'] as const;
+export const BODIES = ['blob', 'drop', 'star', 'arch', 'moon', 'leaf'] as const;
+export const EYES = ['dots', 'sleepy', 'wide', 'spark', 'wink'] as const;
+export const ACCESSORIES = ['none', 'crown', 'halo', 'antenna', 'scarf', 'sprout'] as const;
+export const MOTIONS = ['float', 'bounce', 'sway', 'spin'] as const;
+export const REVEALS = ['rise', 'fade', 'blur', 'slide'] as const;
+
+export interface Portrait {
+  language: 'en+ur';
+  ageGiven: number | null;
+  title: Bi;
+  opening: Bi;
+  sections: { heading: Bi; body: Bi }[];
+  mirror: Bi;
+  closing: Bi;
+  visual: {
+    concept: string;
+    composition: (typeof COMPOSITIONS)[number];
+    backdrop: (typeof BACKDROPS)[number];
+    palette: { bg: string; surface: string; ink: string; accent: string; accent2: string };
+    fontDisplay: (typeof FONTS)[number];
+    fontBody: (typeof FONTS)[number];
+    reveal: (typeof REVEALS)[number];
+    character: {
+      name: string;
+      body: (typeof BODIES)[number];
+      eyes: (typeof EYES)[number];
+      accessory: (typeof ACCESSORIES)[number];
+      motion: (typeof MOTIONS)[number];
+      line: Bi;
+    };
+  };
+  model: string;
+  generatedAt: string;
+}
+
+export class PortraitUnavailableError extends Error {}
+
+const LENSES = [
+  'the quiet architecture of how they decide things',
+  'the gap between how they appear and how they feel',
+  'how they love, argue and forgive',
+  'the private ambitions they rarely say aloud',
+  'how they treat silence, time and rest',
+  'the way they carry responsibility',
+  'how curiosity shows up in small daily habits',
+  'what they protect most fiercely',
+];
+
+const pick = <T,>(arr: readonly T[], v: unknown, d: T): T => (arr.includes(v as T) ? (v as T) : d);
+const hex = (v: unknown, d: string) => (typeof v === 'string' && /^#[0-9a-fA-F]{6}$/.test(v) ? v : d);
+const str = (v: unknown, max = 1600) => (typeof v === 'string' ? v.trim().slice(0, max) : '');
+const bi = (v: unknown, max?: number): Bi => {
+  const o = (v ?? {}) as Record<string, unknown>;
+  return { en: str(o.en, max), ur: str(o.ur, max) };
+};
+
+function luminance(h: string) {
+  const n = parseInt(h.slice(1), 16);
+  const c = [(n >> 16) & 255, (n >> 8) & 255, n & 255].map((x) => {
+    const s = x / 255;
+    return s <= 0.03928 ? s / 12.92 : ((s + 0.055) / 1.055) ** 2.4;
+  });
+  return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2];
+}
+const contrast = (a: string, b: string) => {
+  const [x, y] = [luminance(a), luminance(b)].sort((p, q) => q - p);
+  return (x + 0.05) / (y + 0.05);
+};
+
+/** Validates raw model JSON into a Portrait. Throws if text content is missing. Guarantees readable contrast. */
+export function sanitizePortrait(raw: unknown, age: number | null, model: string): Portrait {
+  const r = (raw ?? {}) as Record<string, any>;
+  const sections = (Array.isArray(r.sections) ? r.sections : [])
+    .map((s: any) => ({ heading: bi(s?.heading, 80), body: bi(s?.body, 1800) }))
+    .filter((s: any) => s.heading.en && s.body.en && s.body.ur)
+    .slice(0, 9);
+  const opening = bi(r.opening, 600);
+  if (sections.length < 5 || !opening.en || !opening.ur) throw new Error('Model returned an incomplete portrait');
+  const v = r.visual ?? {};
+  const p = v.palette ?? {};
+  const bg = hex(p.bg, '#14110f');
+  let ink = hex(p.ink, '#f4efe6');
+  if (contrast(bg, ink) < 7) ink = luminance(bg) < 0.4 ? '#f6f2ea' : '#17140f';
+  let accent = hex(p.accent, '#e0a458');
+  if (contrast(bg, accent) < 3) accent = luminance(bg) < 0.4 ? '#f0c987' : '#7a3b12';
+  const c = v.character ?? {};
+  return {
+    language: 'en+ur',
+    ageGiven: age,
+    title: bi(r.title, 120),
+    opening,
+    sections,
+    mirror: bi(r.mirror, 400),
+    closing: bi(r.closing, 700),
+    visual: {
+      concept: str(v.concept, 300),
+      composition: pick(COMPOSITIONS, v.composition, 'stack'),
+      backdrop: pick(BACKDROPS, v.backdrop, 'rings'),
+      palette: { bg, surface: hex(p.surface, bg), ink, accent, accent2: hex(p.accent2, accent) },
+      fontDisplay: pick(FONTS, v.fontDisplay, 'Fraunces'),
+      fontBody: pick(FONTS, v.fontBody, 'Manrope'),
+      reveal: pick(REVEALS, v.reveal, 'rise'),
+      character: {
+        name: str(c.name, 40) || 'Companion',
+        body: pick(BODIES, c.body, 'blob'),
+        eyes: pick(EYES, c.eyes, 'dots'),
+        accessory: pick(ACCESSORIES, c.accessory, 'none'),
+        motion: pick(MOTIONS, c.motion, 'float'),
+        line: bi(c.line, 200),
+      },
+    },
+    model,
+    generatedAt: new Date().toISOString(),
+  };
+}
+
+export const PORTRAIT_MODEL = process.env.PORTRAIT_MODEL || 'gemini-2.5-pro';
+
+export function buildPrompt(name: string, age: number | null) {
+  const lens = [...LENSES].sort(() => Math.random() - 0.5).slice(0, 3).join('; ');
+  const nonce = Math.random().toString(36).slice(2, 8);
+  return `You are a rare writer: part psychologist, part novelist, part linguist, part art director.
+Write a personality portrait of a person known only by their name${age ? ` and age (${age})` : ''}.
+NAME: ${name}
+${age ? `AGE: ${age} (use only as life-stage context, never invent events)` : 'AGE: not given'}
+Quietly draw on: the name's sound, origins and cultural associations (only what you genuinely know; if unsure, stay soft and never claim facts), life-stage psychology, personality science and behavioural patterns.
+
+VOICE: second person ("you"). Warm, precise, literary, surprising. Each section must contain concrete, relatable behaviours and inner contradictions ("You say you don't mind, and then remember for three years"). Short and long sentences mixed.
+DEPTH: cover nature, emotional patterns, thinking style, strengths, contradictions, relationships, communication, ambitions, and one lesser-obvious trait. 7 sections, 90-140 words each.
+FORBIDDEN: invented memories, events, jobs, family, places, biography; horoscope clichés ("you are a natural leader", "deep down", "sometimes you"); mentioning AI, analysis, methodology, name meaning lookups, psychology jargon, frameworks, or that you only know a name. Do not open sections with the same word. Phrase insights as recognisable tendencies, not facts.
+VARIATION: this is run ${nonce}; take a fresh angle each time. Emphasize: ${lens}.
+LANGUAGES: every text field has "en" (natural English, simple words) and "ur" (natural conversational ROMAN URDU in Latin letters, like a friend would write — not translated word by word, not Hindi-Sanskritised, not Urdu script).
+VISUAL IDENTITY: invent a distinct art direction that visibly expresses THIS portrait's temperament (not generic). Pick a palette with real contrast (bg vs ink readable), avoid default purple gradients. Design a fictional companion character embodying their nature.
+
+Return ONLY JSON:
+{"title":{en,ur} (3-6 words, evocative, includes no more than the first name),
+"opening":{en,ur} (2-3 sentences that make them feel seen),
+"sections":[{"heading":{en,ur} (2-4 words),"body":{en,ur}} x7],
+"mirror":{en,ur} (one memorable sentence to screenshot),
+"closing":{en,ur} (warm, 2 sentences),
+"visual":{"concept":"one sentence art direction","composition":one of ${COMPOSITIONS.join('|')},"backdrop":one of ${BACKDROPS.join('|')},
+"palette":{"bg","surface","ink","accent","accent2"} (hex #rrggbb),"fontDisplay":one of ${FONTS.join('|')},"fontBody":one of ${FONTS.join('|')},"reveal":one of ${REVEALS.join('|')},
+"character":{"name":"invented fictional name","body":one of ${BODIES.join('|')},"eyes":one of ${EYES.join('|')},"accessory":one of ${ACCESSORIES.join('|')},"motion":one of ${MOTIONS.join('|')},"line":{en,ur} (what the character says to them, one short line)}}}`;
+}
+
+export async function generatePortrait(name: string, age: number | null): Promise<Portrait> {
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) throw new PortraitUnavailableError('GEMINI_API_KEY is not configured');
+  const ai = new GoogleGenAI({ apiKey });
+  let lastErr: unknown;
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const res = await ai.models.generateContent({
+        model: PORTRAIT_MODEL,
+        contents: buildPrompt(name, age),
+        config: { responseMimeType: 'application/json', temperature: 1.0 },
+      });
+      const text = res.text;
+      if (!text) throw new Error('Empty model response');
+      return sanitizePortrait(JSON.parse(text), age, PORTRAIT_MODEL);
+    } catch (e) {
+      lastErr = e;
+    }
+  }
+  throw lastErr instanceof Error ? lastErr : new Error('Portrait generation failed');
+}
