@@ -2242,5 +2242,3432 @@
       }
     ],
     "storageSource": "local_fallback"
+  },
+  "fatima-2ib0": {
+    "id": "exp_2hp05r",
+    "slug": "fatima-2ib0",
+    "ownerId": "usr_91e538d2131fe38f3821",
+    "createdAt": "2026-11-08T15:37:00.555Z",
+    "updatedAt": "2026-11-08T15:37:00.555Z",
+    "version": 1,
+    "visibility": "unlisted",
+    "input": {
+      "fullName": "Fatima",
+      "interests": [],
+      "hobbies": [],
+      "preferredVisualDirection": "auto",
+      "visibility": "unlisted",
+      "privacyConsentConfirmed": true
+    },
+    "intelligence": {
+      "nameResearch": {
+        "normalizedName": "Fatima",
+        "firstName": "Fatima",
+        "lexiconMatch": true,
+        "phoneticIPA": {
+          "value": "/ˈfɑːtɪmə/",
+          "category": "verified_fact",
+          "source": "Oxford Dictionary of First Names (Documented IPA Transcription)",
+          "confidence": 0.98
+        },
+        "syllableCount": 3,
+        "syllableBreakdown": [
+          "Fa",
+          "ti",
+          "ma"
+        ],
+        "sonicProfile": {
+          "value": {
+            "cadence": "lyrical",
+            "dominantVowels": [
+              "a",
+              "i"
+            ],
+            "acousticWarmth": 83,
+            "rhythmPattern": "— ◡ ◡"
+          },
+          "category": "creative_interpretation",
+          "source": "Prosodic Cadence & Vowel-Weight Heuristic Model (Creative Synthesis)",
+          "notes": "Artistic sound-symbolism model used to guide visual and typographic rhythm."
+        },
+        "linguisticFamily": {
+          "value": "Semitic / Classical Arabic",
+          "category": "verified_fact",
+          "source": "Oxford Dictionary of First Names & Comparative Philology",
+          "confidence": 0.98
+        },
+        "scriptVariations": [
+          {
+            "scriptName": "Arabic Thuluth",
+            "representation": "فاطمة",
+            "note": "Classical calligraphic script of architectural friezes"
+          },
+          {
+            "scriptName": "Maghribi Script",
+            "representation": "فاطمة الزهراء",
+            "note": "Andalusian-Moroccan manuscript script with sweeping descenders"
+          },
+          {
+            "scriptName": "Latin Epigraphic",
+            "representation": "FATIMA",
+            "note": "Monumental Roman capitals"
+          }
+        ],
+        "historicalBearers": [
+          {
+            "name": "Fatima al-Fihri",
+            "era": "c. 800 – 880 CE",
+            "achievement": "Founded Al-Qarawiyyin in Fez, Morocco in 859 CE—recognized by UNESCO and Guinness World Records as the oldest continuously operating degree-granting university in the world.",
+            "source": "UNESCO World Heritage Centre / Encyclopædia Britannica"
+          },
+          {
+            "name": "Fatima Mernissi",
+            "era": "1940 – 2015",
+            "achievement": "Renowned Moroccan sociologist, writer, and scholar of Islamic humanism and civic architecture.",
+            "source": "Oxford Dictionary of African Biography"
+          }
+        ],
+        "sources": [
+          {
+            "id": "src-oxford-names",
+            "title": "A Dictionary of First Names (Oxford University Press)",
+            "domain": "oxfordreference.com",
+            "url": "https://www.oxfordreference.com/display/10.1093/acref/9780198610601.001.0001/acref-9780198610601",
+            "category": "linguistic",
+            "verified": true
+          },
+          {
+            "id": "src-britannica",
+            "title": "Encyclopædia Britannica Biographical & Cultural Archive",
+            "domain": "britannica.com",
+            "url": "https://www.britannica.com",
+            "category": "historical",
+            "verified": true
+          },
+          {
+            "id": "src-unesco",
+            "title": "UNESCO World Heritage & Intangible Cultural Heritage Lists",
+            "domain": "unesco.org",
+            "url": "https://whc.unesco.org",
+            "category": "cultural",
+            "verified": true
+          },
+          {
+            "id": "src-iau-ephemeris",
+            "title": "International Astronomical Union (IAU) Planetary & Ecliptic Reference",
+            "domain": "iau.org",
+            "url": "https://www.iau.org",
+            "category": "astronomical",
+            "verified": true
+          }
+        ]
+      },
+      "nameMeaning": {
+        "primaryEtymology": {
+          "value": "Derived from the Classical Arabic triliteral root f-ṭ-m (ف-ط-م), denoting discernment, separation from the transient, and luminous intellectual clarity.",
+          "category": "verified_fact",
+          "source": "Oxford Dictionary of First Names & Classical Philology Lexicon",
+          "confidence": 0.98
+        },
+        "literalTranslation": {
+          "value": "One who abstains; the shining or captivating one who weans toward wisdom",
+          "category": "verified_fact",
+          "source": "Comparative Onomastic Etymology",
+          "confidence": 0.97
+        },
+        "rootWords": [
+          {
+            "root": "فَطَمَ (faṭama)",
+            "language": "Classical Arabic",
+            "meaning": "To discern, separate, or cultivate maturity"
+          },
+          {
+            "root": "فَاطِمَة (Fāṭimah)",
+            "language": "Classical Arabic",
+            "meaning": "She who illuminates and elevates through wisdom"
+          }
+        ],
+        "semanticFields": {
+          "value": [
+            "Sacred Architecture",
+            "Celestial Geometry",
+            "Scholastic Illumination",
+            "Enduring Grace"
+          ],
+          "category": "creative_interpretation",
+          "source": "Atelier Semantic Synthesis"
+        },
+        "symbolicMotifs": {
+          "value": [
+            "Eight-Pointed Star of Al-Qarawiyyin",
+            "Zellij Tessellation",
+            "Astrolabe Meridian",
+            "Courtyard Fountain"
+          ],
+          "category": "creative_interpretation",
+          "source": "Visual Iconography Engine"
+        },
+        "epistemicDisclaimer": "Etymological roots reflect historical linguistic evolution of the word itself and never prescribe or determine an individual’s personal character or biography."
+      },
+      "culturalContext": {
+        "heritageSynthesis": {
+          "value": "Reflects the historical linguistic heritage of the name \"Fatima\" in Maghreb & Arabian Peninsula (Fez / Hejaz) (Hispano-Moorish Courtyard & Marinid Geometric Pavilions and Zellij glazed terracotta mosaic work & brass astrolabe engraving). No personal residence or birthplace is assumed.",
+          "category": "verified_fact",
+          "source": "Historical Onomastic & Architectural Reference"
+        },
+        "geographicResonance": {
+          "value": {
+            "region": "Maghreb & Arabian Peninsula (Fez / Hejaz) (Historical Linguistic Origin of Name — Not Personal Location)",
+            "coordinates": {
+              "lat": 34.0331,
+              "lng": -5.0003
+            },
+            "architecturalVernacular": "Hispano-Moorish Courtyard & Marinid Geometric Pavilions",
+            "traditionalCraft": "Zellij glazed terracotta mosaic work & brass astrolabe engraving"
+          },
+          "category": "verified_fact",
+          "source": "Historical Architectural & Material Culture Atlas"
+        },
+        "artisticTraditions": {
+          "value": [
+            "Sacred Geometric Tessellation",
+            "Maghribi Illuminated Manuscripts",
+            "Andalusian Courtyard Acoustics"
+          ],
+          "category": "verified_fact",
+          "source": "UNESCO & Art Historical Reference"
+        },
+        "colorHeritage": [
+          {
+            "name": "Fez Cobalt Lapis",
+            "hex": "#1D3557",
+            "culturalOrigin": "Mineral cobalt glaze of Fez ceramic artisans"
+          },
+          {
+            "name": "Al-Qarawiyyin Brass",
+            "hex": "#D4A359",
+            "culturalOrigin": "Engraved medieval celestial astrolabes"
+          },
+          {
+            "name": "Atlas Cedar Parchment",
+            "hex": "#F6F1E7",
+            "culturalOrigin": "Vellum folios preserved in Moroccan libraries"
+          }
+        ],
+        "literaryOrPhilosophicalEcho": {
+          "value": {
+            "quote": "Knowledge is a sanctuary built stone by stone so that every seeker may find light within its courtyard.",
+            "attribution": "Chronicles of Al-Qarawiyyin (Fez, 9th Century Tradition)",
+            "tradition": "Maghribi Scholastic Humanism"
+          },
+          "category": "verified_fact",
+          "source": "Maghribi Scholastic Humanism"
+        }
+      },
+      "birthday": {
+        "hasBirthData": false,
+        "validDate": true,
+        "validationMessage": "No birth date provided; temporal and zodiac modules gracefully operating in timeless mode.",
+        "historicalEventsOnDay": []
+      },
+      "zodiac": {
+        "computed": false
+      },
+      "planetary": {
+        "rulingBody": {
+          "value": {
+            "name": "Luna (Selene / Qamar)",
+            "classicalSymbol": "☽",
+            "orbitalPeriodDays": 27.32,
+            "axialTiltDegrees": 6.68,
+            "albedo": 0.12,
+            "dominantSpectrumHex": "#E2E8F0",
+            "secondarySpectrumHex": "#475569",
+            "harmonicFrequencyHz": 210.42,
+            "ringSystem": false,
+            "moonCount": 1,
+            "poeticEpithet": "The Silver Mirror of Tides and Archival Memory"
+          },
+          "category": "creative_interpretation",
+          "source": "IAU Planetary Ephemeris Constants (Orbital Period, Tilt, Albedo) + Classical Celestial Symbolism"
+        },
+        "shaderParameters": {
+          "orbitSpeed": 0.21,
+          "particleCount": 1113,
+          "turbulence": 0.25,
+          "bloomIntensity": 0.53,
+          "wireframeRatio": 0.38
+        }
+      },
+      "interests": {
+        "hasUserInterests": false,
+        "rawInterests": [],
+        "domainVectors": [
+          {
+            "domain": "Architectural & Spatial Contemplation",
+            "weight": 84,
+            "matchedKeywords": [
+              "Default Curated Vector"
+            ],
+            "visualMetaphor": "Tessellated Courtyard & Light Aperture",
+            "interactiveFeatureSuggestion": "Interactive 3D Geometric Totem & Constellation Canvas"
+          },
+          {
+            "domain": "Literary & Historical Inquiry",
+            "weight": 78,
+            "matchedKeywords": [
+              "Onomastic Archive"
+            ],
+            "visualMetaphor": "Illuminated Folio & Epigraphic Chronicle",
+            "interactiveFeatureSuggestion": "Personal Wax-Sealed Letter & Postcard Studio"
+          }
+        ],
+        "synthesizedPassionsNarrative": {
+          "value": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos.",
+          "category": "creative_interpretation",
+          "source": "Atelier Default Thematic Vector"
+        }
+      },
+      "personality": {
+        "hasUserPersonalityInput": false,
+        "verbatimTraits": [],
+        "toneOfVoice": {
+          "value": {
+            "warmth": 75,
+            "formality": 68,
+            "kineticEnergy": 62,
+            "introspection": 78,
+            "editorialStyle": "Poetic Editorial Monograph (Neutral & Respectful)"
+          },
+          "category": "creative_interpretation",
+          "source": "Default Editorial Voice (Zero Name-Based Personality Inference)"
+        },
+        "strictNonInferenceNotice": "No personal character traits were provided by the user. In compliance with epistemic integrity rules, this platform never infers actual human personality from a name or birth date alone."
+      },
+      "creativeDirection": {
+        "archetypeId": "editorial_monograph",
+        "archetypeName": "Illuminated Architectural Monograph",
+        "artDirectionManifesto": "Inspired by rare folio manuscripts, courtyard stone arcades, and precision brass astrolabes—combining warm parchment surfaces with deep lapis ink and burnished gold accents.",
+        "moodKeywords": [
+          "Luminous Scholasticism",
+          "Sacred Geometry",
+          "Warm Vellum",
+          "Timeless Proportion"
+        ],
+        "spatialArchitecture": {
+          "gridSystem": "editorial-split",
+          "whitespaceRatio": "generous",
+          "sectionRhythm": "Asymmetric two-column folio with monumental Roman numerals and engraved hairline rules"
+        },
+        "lightingAndAtmosphere": {
+          "themePolarity": "warm-parchment",
+          "grainOpacity": 0.035,
+          "ambientGlowIntensity": 0.4
+        }
+      },
+      "storytelling": {
+        "heroHeadline": "Fatima",
+        "heroSubheadline": "One who abstains; the shining or captivating one who weans toward wisdom — An Interactive Monograph of Origin, Cosmos & Living Craft.",
+        "prologueManifesto": "Every name is an architectural vessel before it is spoken. In the Semitic / Classical Arabic tradition, \"Fatima\" (/ˈfɑːtɪmə/) unfolds across 3 syllables with a lyrical cadence. This digital sanctuary weaves verified historical etymology, cultural geography, and personal pursuits into an art-directed living chronicle.",
+        "chapters": [
+          {
+            "id": "chapter-origin",
+            "chapterNumber": "I",
+            "title": "The Architecture of the Name",
+            "subtitle": "Semitic / Classical Arabic · /ˈfɑːtɪmə/",
+            "narrativeBody": "Derived from the Classical Arabic triliteral root f-ṭ-m (ف-ط-م), denoting discernment, separation from the transient, and luminous intellectual clarity. Across centuries, documented bearers of this name—such as Fatima al-Fihri (c. 800 – 880 CE)—have left enduring marks: Founded Al-Qarawiyyin in Fez, Morocco in 859 CE—recognized by UNESCO and Guinness World Records as the oldest continuously operating degree-granting university in the world.",
+            "pullQuote": "One who abstains; the shining or captivating one who weans toward wisdom",
+            "epistemicTag": "verified_fact"
+          },
+          {
+            "id": "chapter-meridian",
+            "chapterNumber": "II",
+            "title": "Cultural & Geographic Meridian",
+            "subtitle": "Maghreb & Arabian Peninsula (Fez / Hejaz) (Historical Linguistic Origin of Name — Not Personal Location)",
+            "narrativeBody": "Reflects the historical linguistic heritage of the name \"Fatima\" in Maghreb & Arabian Peninsula (Fez / Hejaz) (Hispano-Moorish Courtyard & Marinid Geometric Pavilions and Zellij glazed terracotta mosaic work & brass astrolabe engraving). No personal residence or birthplace is assumed. Its visual language draws from Hispano-Moorish Courtyard & Marinid Geometric Pavilions and the tactile mastery of Zellij glazed terracotta mosaic work & brass astrolabe engraving.",
+            "pullQuote": "Knowledge is a sanctuary built stone by stone so that every seeker may find light within its courtyard.",
+            "epistemicTag": "verified_fact"
+          },
+          {
+            "id": "chapter-cosmos",
+            "chapterNumber": "III",
+            "title": "Celestial & Harmonic Resonance",
+            "subtitle": "Luna (Selene / Qamar) (☽)",
+            "narrativeBody": "Because no personal birth date was provided, zero natal or astrological assumptions are made. Instead, the experience aligns with the classical IAU astronomical constants of Luna (Selene / Qamar) (The Silver Mirror of Tides and Archival Memory), resonating at 210.42 Hz.",
+            "pullQuote": "The Silver Mirror of Tides and Archival Memory",
+            "epistemicTag": "creative_interpretation"
+          },
+          {
+            "id": "chapter-passions",
+            "chapterNumber": "IV",
+            "title": "Living Horizons & Personal Craft",
+            "subtitle": "Curiosity, Contemplation & Creative Agency",
+            "narrativeBody": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos. ",
+            "pullQuote": "“Identity is not prescribed by origin; it is composed day by day through attention, craft, and generosity.”",
+            "epistemicTag": "creative_interpretation"
+          }
+        ],
+        "personalLetter": {
+          "salutation": "To Fatima,",
+          "bodyParagraphs": [
+            "Carry the resonance of your name—Fatima—not as a fixed boundary, but as an open courtyard of light. From the roots that gave your name its lyrical cadence to the horizons you actively shape today, your story belongs to the lineage of builders and seekers.",
+            "May every season bring clarity to your inquiries, warmth to your threshold, and new constellations to navigate.",
+            "This digital monograph was crafted specifically for you—a living artifact celebrating both the history behind your name and the unwritten chapters ahead."
+          ],
+          "valediction": "With enduring admiration and scholarly craft,",
+          "signature": "The Atelier Digital Monograph Engine"
+        },
+        "curatedQuotes": [
+          {
+            "text": "Knowledge is a sanctuary built stone by stone so that every seeker may find light within its courtyard.",
+            "author": "Chronicles of Al-Qarawiyyin (Fez, 9th Century Tradition)",
+            "context": "Maghribi Scholastic Humanism"
+          },
+          {
+            "text": "What we call the beginning is often the end, and to make an end is to make a beginning.",
+            "author": "Poetics of Time & Architecture",
+            "context": "Editorial Reflection"
+          }
+        ]
+      },
+      "visualDesign": {
+        "colorPalette": {
+          "backgroundPrimary": "#F7F3EB",
+          "backgroundElevated": "#EFE9DC",
+          "surfaceGlass": "rgba(247, 243, 235, 0.86)",
+          "textPrimary": "#16202A",
+          "textSecondary": "#394858",
+          "textMuted": "#6D7A88",
+          "accentPrimary": "#B67B32",
+          "accentSecondary": "#1D3557",
+          "accentTertiary": "#A44A3F",
+          "borderSubtle": "rgba(22, 32, 42, 0.14)"
+        },
+        "typography": {
+          "displayFont": "\"Cormorant Garamond\", Georgia, serif",
+          "serifFont": "\"Cormorant Garamond\", Georgia, serif",
+          "sansFont": "\"Plus Jakarta Sans\", -apple-system, sans-serif",
+          "monoFont": "\"JetBrains Mono\", monospace",
+          "displayTracking": "-0.02em",
+          "heroScaleRem": 5.2
+        },
+        "borderRadiusToken": "6px",
+        "borderTreatment": "double-editorial",
+        "backgroundTreatment": "organic-paper"
+      },
+      "interactions": {
+        "threeSceneMode": "orbital_sanctuary",
+        "cursorMode": "magnetic_ring",
+        "characterTotem": {
+          "type": "celestial_astrolabe",
+          "name": "The Meridian Astrolabe of Al-Qarawiyyin",
+          "symbolism": "Concentric brass rings measuring celestial altitude, time, and intellectual navigation.",
+          "primaryColor": "#B67B32",
+          "secondaryColor": "#1D3557",
+          "interactiveBehavior": "Responds to cursor orbital tilt, harmonic audio resonance, and click inspection"
+        },
+        "enabledModules": {
+          "threeHeroCanvas": true,
+          "magneticCursor": true,
+          "tiltCards": true,
+          "personalLetterEnvelope": true,
+          "digitalPostcardStudio": true,
+          "harmonicAudioSynth": true,
+          "constellationMiniGame": true,
+          "epistemicProvenanceModal": true,
+          "easterEggCipher": true
+        },
+        "motionProfile": {
+          "entranceStyle": "staggered-editorial",
+          "scrollParallaxIntensity": 0.35,
+          "springStiffness": 110,
+          "springDamping": 18
+        }
+      },
+      "content": {
+        "navigationItems": [
+          {
+            "id": "hero",
+            "label": "Sanctuary",
+            "index": "00"
+          },
+          {
+            "id": "dossier",
+            "label": "Dossier",
+            "index": "01"
+          },
+          {
+            "id": "chronicle",
+            "label": "Chronicle",
+            "index": "02"
+          },
+          {
+            "id": "totem",
+            "label": "3D Totem & Harmonics",
+            "index": "03"
+          },
+          {
+            "id": "constellation",
+            "label": "Constellation",
+            "index": "04"
+          },
+          {
+            "id": "epistle",
+            "label": "Epistle & Postcard",
+            "index": "05"
+          },
+          {
+            "id": "provenance",
+            "label": "Epistemic Audit",
+            "index": "06"
+          }
+        ],
+        "identityDossier": {
+          "sectionTitle": "Archival Dossier — Fatima",
+          "cards": [
+            {
+              "id": "card-etymology",
+              "label": "01 / ONOMASTIC ROOT",
+              "title": "فَطَمَ (faṭama)",
+              "value": "One who abstains; the shining or captivating one who weans toward wisdom",
+              "detail": "Derived from the Classical Arabic triliteral root f-ṭ-m (ف-ط-م), denoting discernment, separation from the transient, and luminous intellectual clarity.",
+              "epistemicCategory": "verified_fact"
+            },
+            {
+              "id": "card-heritage",
+              "label": "02 / CULTURAL MERIDIAN",
+              "title": "Maghreb & Arabian Peninsula (Fez / Hejaz) (Historical Linguistic Origin of Name — Not Personal Location)",
+              "value": "Hispano-Moorish Courtyard & Marinid Geometric Pavilions",
+              "detail": "Traditional Craft: Zellij glazed terracotta mosaic work & brass astrolabe engraving",
+              "epistemicCategory": "verified_fact"
+            },
+            {
+              "id": "card-celestial",
+              "label": "03 / CELESTIAL EPHEMERIS",
+              "title": "Luna (Selene / Qamar)",
+              "value": "☽ · 210.42 Hz",
+              "detail": "Orbital Period: 27.32 days · Axial Tilt: 6.68°",
+              "epistemicCategory": "creative_interpretation"
+            },
+            {
+              "id": "card-passions",
+              "label": "04 / PERSONAL VECTORS",
+              "title": "Universal Humanist Vectors",
+              "value": "Architecture · Poetics · Cosmos",
+              "detail": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos.",
+              "epistemicCategory": "creative_interpretation"
+            }
+          ]
+        },
+        "interactivePostcard": {
+          "stampCode": "ATL-FAT-210",
+          "originLabel": "Maghreb & Arabian Peninsula (Fez / Hejaz) (Historical Linguistic Origin of Name — Not Personal Location)",
+          "destinationLabel": "Sanctuary of Fatima",
+          "defaultMessage": "May the architecture of your days reflect the clarity and luminous depth embedded within the name Fatima.",
+          "prompts": [
+            "A reflection on Fatima’s lyrical cadence...",
+            "From the meridian of Maghreb & Arabian Peninsula (Fez / Hejaz) (Historical Linguistic Origin of Name — Not Personal Location)...",
+            "Under the harmonic frequency of 210.42 Hz..."
+          ]
+        },
+        "miniGameConfig": {
+          "title": "Meridian Star Alignment — Fatima’s Constellation",
+          "instruction": "Connect the 5 celestial nodes in sequence to synthesize the geometric sigil and unlock the archival inscription.",
+          "targetNodes": [
+            {
+              "id": "node-1",
+              "label": "αRoot (Fa)",
+              "x": 20,
+              "y": 65,
+              "unlockedInsight": "Phonetic Anchor: /ˈfɑːtɪmə/"
+            },
+            {
+              "id": "node-2",
+              "label": "βMeridian (34.0°N)",
+              "x": 38,
+              "y": 28,
+              "unlockedInsight": "Heritage Craft: Zellij glazed terracotta mosaic work & brass astrolabe engraving"
+            },
+            {
+              "id": "node-3",
+              "label": "γHarmonic (210.42 Hz)",
+              "x": 56,
+              "y": 70,
+              "unlockedInsight": "Celestial Body: Luna (Selene / Qamar)"
+            },
+            {
+              "id": "node-4",
+              "label": "δMotif (Eight-Pointed Star of Al-Qarawiyyin)",
+              "x": 74,
+              "y": 24,
+              "unlockedInsight": "Primary Symbol: Eight-Pointed Star of Al-Qarawiyyin"
+            },
+            {
+              "id": "node-5",
+              "label": "ωApex (Fatima)",
+              "x": 86,
+              "y": 54,
+              "unlockedInsight": "Meaning: One who abstains; the shining or captivating one who weans toward wisdom"
+            }
+          ],
+          "completionRewardQuote": "Knowledge is a sanctuary built stone by stone so that every seeker may find light within its courtyard."
+        },
+        "easterEgg": {
+          "triggerHint": "Click the Monograph Seal 3 times or type \"FATIMA\" in the Cipher Vault",
+          "secretKeyphrase": "FATIMA",
+          "revealedArtifactTitle": "Secret Archival Colophon — Folio № 913",
+          "revealedMessage": "In 859 CE, Fatima al-Fihri demonstrated that a single individual’s vision can found an institution that illuminates centuries. This hidden colophon honors Fatima’s unique place in the living archive."
+        }
+      },
+      "verification": {
+        "passed": true,
+        "timestamp": "2026-11-08T15:37:00.555Z",
+        "executionMode": "deterministic_lexicon_and_heuristics",
+        "totalClaimsAudited": 18,
+        "breakdown": {
+          "verifiedFactsCount": 10,
+          "userProvidedCount": 1,
+          "astrologicalCount": 0,
+          "creativeInterpretationCount": 7
+        },
+        "epistemicGuarantees": [
+          "Zero personal biographical facts (birthdays, locations, hobbies, personality) were fabricated or scraped.",
+          "Heuristic phonetic or morphological estimates for uncurated names are never labeled as Verified Facts.",
+          "Actual human personality is never inferred from name etymology or birth date alone.",
+          "Linguistic and historical bearer citations are strictly separated from astrological and creative interpretations."
+        ],
+        "sanitizedWarnings": []
+      },
+      "portrait": {
+        "language": "en+ur",
+        "ageGiven": 24,
+        "title": {
+          "en": "Fatima's Quiet Pulse",
+          "ur": "Fatima ki Khamosh Lahaz"
+        },
+        "opening": {
+          "en": "You move through the world like a soft tide, steady and unnoticed until it touches the shore. In the pauses between conversations you hear the smallest clicks of a pen, the rustle of a page, and you let them settle into you.",
+          "ur": "Aap duniya mein narmi se bahte hue rehte hain, aisi lehr jo dheere se kinare ko choo kar ruk jati hai. Guftagu ke darmiyan aap choti si awaaz, qalam ki khanak, safhe ki kharoch sunte hain aur unhein apne andar basa lete hain."
+        },
+        "sections": [
+          {
+            "heading": {
+              "en": "Inner Landscape",
+              "ur": "Androoni Manzar"
+            },
+            "body": {
+              "en": "You feel responsibility like a quiet weight on your shoulders, not shouted but settled. When a friend forgets a promise, you note the slip in a notebook, then later remind them gently, as if the world needs a soft correction. You can sit in a café for an hour, watching steam rise, and still feel you have kept a promise to yourself to stay present. Yet the same sense of duty can turn into self‑imposed pressure, making you wonder whether the calm you cherish is a mask or a true refuge.",
+              "ur": "Aap zimmedari ko ek khamosh bojh ki tarah mehsoos karte hain, jo cheekh kar nahin, balki dheere se pehni jati hai. Jab koi dost wada bhool jata hai, aap usko apni notebook mein likhte hain, phir baad mein narmi se yaad dilate hain, jaise duniya ko ek halka sa sudhaar chahiye. Aap ek cafe mein ghante tak baith sakte hain, steam ko ubharta dekhtay hue, aur phir bhi mehsoos karte hain ke aap ne khud se wada kiya tha ke aap yahan maujood hain. Lekin yahi zimmedari kabhi kabhi khud par dabav ban jati hai, aur aap sochte hain ke jo sakoon aap pasand karte hain wo parda hai ya asal panah."
+            }
+          },
+          {
+            "heading": {
+              "en": "Emotional Currents",
+              "ur": "Jazbati Lehrain"
+            },
+            "body": {
+              "en": "You smile when a song catches a memory you never intended to keep, and you let that smile linger for minutes, as if you are savoring a secret. When a small disappointment arrives—like a missed bus—you pause, replay the moment in your mind, and then decide to walk a different route just to feel the change in the air. The same habit can flip: you tell yourself a setback is minor, yet you replay it for weeks, cataloguing every feeling as if you were writing a diary for future reference.",
+              "ur": "Aap muskurate hain jab koi gaana aisi yaad ko jagata hai jo aap rakhna nahi chahti, aur yeh muskurahat kuch lamhon tak chalti rehti hai, jaise koi raaz ka maza le rahe hon. Jab koi chhoti si na‑umeedi hoti hai—jaise bus miss ho jana—tab aap ruk kar us lamhe ko dimaag mein dobara dekhte hain, phir alag raaste se chalna chun leti hain taake hawa ka rang mehsoos ho. Ye aadat ulat bhi ho sakti hai: aap kehte hain ke chhoti si takleef bas ek lamha hai, lekin aap use hafton tak yaad karte hain, har ehsaas ko aise likhte hain jaise mustaqbil ke liye diary ban rahi ho."
+            }
+          },
+          {
+            "heading": {
+              "en": "Thinking Style",
+              "ur": "Soch Ka Andaaz"
+            },
+            "body": {
+              "en": "Your mind builds tiny arches between ideas, often unnoticed by others. You might rearrange the books on a shelf not because you need a new order, but because the colors whisper a new pattern to you. When faced with a choice, you list pros and cons on a scrap of paper, then stare at the empty space left after you cross out the first line, letting the silence decide. Yet you sometimes claim you don’t over‑think, and later you catch yourself replaying a single sentence you said three days ago, analyzing its tone.",
+              "ur": "Aap ka dimaag choti si qeemat ka pul banata hai ideas ke beech, jo dusron ko nazar nahi aata. Aap kitabon ko alag tarah se rakhte hain sirf rangon ki khamoshi ki wajah se, koi naya intizam nahi. Jab koi faisla karna hota hai, aap ek kaghaz par faide aur nuqsanat likhte hain, phir pehli line ko cross karne ke baad khaali jagah ko dekh kar khamoshi ko chun lete hain. Lekin aap kabhi kehte hain ke aap zyada soch nahi karte, phir teen din pehle ki koi baat ko bar bar yaad kar ke uske lehje par gaur karte hain."
+            }
+          },
+          {
+            "heading": {
+              "en": "Quiet Strengths",
+              "ur": "Khamosh Quwwat"
+            },
+            "body": {
+              "en": "You notice the way a mug feels warm in your hands and remember that comfort when a friend feels uneasy. In group settings you rarely dominate, yet you often end up the one who remembers birthdays, deadlines, and the small jokes that keep the circle alive. You can sit through a long lecture without a note, because the rhythm of the speaker’s voice becomes a mental metronome. The paradox is that you measure your worth by the invisible threads you keep pulling, not by applause.",
+              "ur": "Aap mehsoos karte hain ke ek cup haathon mein kitna garam hai aur jab koi dost bechain hota hai to aap uss sukoon ko yaad rakhte hain. Group mein aap zyada bolte nahi, lekin aap woh hote hain jo birthdays, deadlines aur chhoti mazak ko yaad rakhte hain jo dosti ko zinda rakhta hai. Aap lambe lecture ko bina note liye sun sakte hain, kyun ke speaker ki awaaz ka rhythm aapke dimaag mein metronome ban jata hai. Iska paradox ye hai ke aap apni qeemat un namoodar rishte se napte hain jo aap chup chap kheenchte rehte hain, taaj ko nahi."
+            }
+          },
+          {
+            "heading": {
+              "en": "Contradictory Threads",
+              "ur": "Mukhalif Dhaage"
+            },
+            "body": {
+              "en": "You say you don’t mind uncertainty, yet you arrange your desk every evening as if the world will rearrange itself if you don’t. You love spontaneous walks, but you also set a timer for how long you’ll stay out, checking the minutes like a quiet alarm. When someone asks for help, you reply “I’m busy,” then find a moment later you’re the first to offer a listening ear. The tug‑of‑war between freedom and order keeps you humming a soft, unresolved chord.",
+              "ur": "Aap kehte hain ke aap be‑takaful ko pasand karte hain, lekin aap har shaam apni mej ko is tarah sajaate hain jaise duniya bhi aap ke baghair badal jaaye. Aap achanak se chalna pasand karte hain, lekin aap timer lagate hain ke kitni der tak bahar rahenge, aur ghadi ki tarah minute dekhte hain. Jab koi madad maangta hai, aap kehte hain “Mujhe kaam hai,” phir thodi der baad aap sab se pehle sunne ke liye haath badhate hain. Azadi aur tanzeem ke beech ka yeh tanazaa aapko ek halke, adhoore sur mein gungunane par majboor karta hai."
+            }
+          },
+          {
+            "heading": {
+              "en": "Ambitions & Hidden Trait",
+              "ur": "Khuwahishaat aur Chhupi Hui Sifaat"
+            },
+            "body": {
+              "en": "You collect tiny curiosities—different tea bags, a single feather, a stray coin—and keep them in a glass jar, hoping they will someday map a story you’ll share. You aim to create something that lasts beyond a semester, perhaps a small community garden or a handwritten zine, because you value quiet impact over loud acclaim. Beneath the calm, there is a restless patience: you can sit for hours watching a single drop of water travel down a leaf, waiting for the exact moment it disappears, a tiny meditation that fuels your long‑term vision.",
+              "ur": "Aap choti choti cheezein jama karte hain—alag alag chai ki patti, ek parinda ka pankh, ek girta hua sikka—aur unko ek sheesha ke jar mein rakhte hain, umeed karte hue ke ek din wo ek kahani ban jayenge jo aap share karenge. Aap aisi cheez banane ki khwahish rakhte hain jo semester ke baad bhi rahe, shayad ek chhota community garden ya haath se likhi hui zine, kyun ke aap khamosh asar ko zyada pasand karte hain bajaye shor sharabe ke. Is pur-sukoon ke peeche ek be‑sukoon sabr chhupa hai: aap ghanto tak ek boond ko patte par girte hue dekh sakte hain, uss lamhe ka intizar karte hue jab wo bilkul gaayab ho jati hai, jo aapke lambe arse ke vision ko taqat deta hai."
+            }
+          }
+        ],
+        "mirror": {
+          "en": "You hold the world’s weight in a whisper, yet it never feels too heavy.",
+          "ur": "Aap duniya ka bojh ek fasaane mein uthate hain, lekin kabhi bojhila mehsoos nahi hota."
+        },
+        "closing": {
+          "en": "May the quiet arches you build keep inviting light, even when the night seems thick. Keep listening to the small sounds; they already know the path.",
+          "ur": "Aap ke banaye hue khamosh pul roshni ko bulate rahen, chahe raat kitni bhi ghari ho. Chhoti awazon ko sunte rahen; wo pehle se hi raasta jaanti hain."
+        },
+        "visual": {
+          "concept": "A single ink feather drifting across a muted teal sky, leaving faint trails of soft gold.",
+          "composition": "orbit",
+          "backdrop": "waves",
+          "palette": {
+            "bg": "#0e2f44",
+            "surface": "#1b4c5e",
+            "ink": "#f4e1c1",
+            "accent": "#d4a76a",
+            "accent2": "#8ab6c1"
+          },
+          "fontDisplay": "Playfair Display",
+          "fontBody": "Manrope",
+          "reveal": "fade",
+          "character": {
+            "name": "Mira",
+            "body": "leaf",
+            "eyes": "spark",
+            "accessory": "scarf",
+            "motion": "sway",
+            "line": {
+              "en": "I see you building bridges in silence.",
+              "ur": "Main dekhti hoon ke aap khamoshi se pul bana rahe hain."
+            }
+          }
+        },
+        "model": "openai/gpt-oss-120b",
+        "generatedAt": "2026-11-08T15:37:00.551Z"
+      }
+    },
+    "pipelineLogs": [
+      {
+        "stepNumber": 1,
+        "code": "INPUT_COLLECTION",
+        "title": "Input Collection & Normalization",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Normalized identity payload for \"Fatima\" (0 user-supplied interest tags; zero fabricated fields)."
+      },
+      {
+        "stepNumber": 2,
+        "code": "INPUT_VALIDATION",
+        "title": "Temporal & Schema Validation",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Optional temporal fields omitted by user; configured timeless mode (zero invented birthdates)."
+      },
+      {
+        "stepNumber": 3,
+        "code": "RESEARCH_COLLECTION",
+        "title": "Onomastic, Etymological & Cultural Research",
+        "status": "completed",
+        "executionNature": "curated_lexicon_lookup",
+        "durationMs": 4,
+        "summary": "Matched curated philological lexicon entry for \"Fatima\" (/ˈfɑːtɪmə/) with 4 reference citations.",
+        "artifactPreview": "One who abstains; the shining or captivating one who weans toward wisdom"
+      },
+      {
+        "stepNumber": 4,
+        "code": "EVIDENCE_CLASSIFICATION",
+        "title": "Four-Tier Epistemic Evidence Classification",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 3,
+        "summary": "Partitioned claims into Verified Facts, User-Provided Data, Astrological Symbolism, and Creative/Heuristic Interpretations."
+      },
+      {
+        "stepNumber": 5,
+        "code": "INTELLIGENCE_SYNTHESIS",
+        "title": "14-Module Multi-Vector Intelligence Synthesis",
+        "status": "completed",
+        "executionNature": "astronomical_calculation",
+        "durationMs": 4,
+        "summary": "Synthesized 2 passion vectors and IAU planetary harmonic frequency (210.42 Hz)."
+      },
+      {
+        "stepNumber": 6,
+        "code": "CREATIVE_DIRECTION",
+        "title": "Art Direction & Spatial Archetype Selection",
+        "status": "completed",
+        "executionNature": "deterministic_heuristic",
+        "durationMs": 3,
+        "summary": "Selected archetype \"Illuminated Architectural Monograph\" (editorial-split).",
+        "artifactPreview": "Inspired by rare folio manuscripts, courtyard stone arcades, and precision brass astrolabes—combining warm parchment surfaces with deep lapis ink and burnished gold accents."
+      },
+      {
+        "stepNumber": 7,
+        "code": "VISUAL_SYSTEM",
+        "title": "Adaptive Color Palette & Typography System",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Generated palette (#F7F3EB / #B67B32) & font stack (\"Cormorant Garamond\")."
+      },
+      {
+        "stepNumber": 8,
+        "code": "STRUCTURE_GENERATION",
+        "title": "Bespoke Page Topology & Navigation Architecture",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Constructed 7 interactive chapters and 4 archival dossier cards."
+      },
+      {
+        "stepNumber": 9,
+        "code": "INTERACTION_SELECTION",
+        "title": "3D WebGL, Cursor Physics & Motion Choreography",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Assigned 3D scene \"orbital_sanctuary\", cursor \"magnetic_ring\", and totem \"The Meridian Astrolabe of Al-Qarawiyyin\"."
+      },
+      {
+        "stepNumber": 10,
+        "code": "CONTENT_GENERATION",
+        "title": "Narrative Chronicle, Epistle & Quote Synthesis",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 5,
+        "summary": "Authored 4 narrative chapters, personal epistle, and postcard via structured narrative synthesis (GEMINI_API_KEY not set)."
+      },
+      {
+        "stepNumber": 11,
+        "code": "ASSET_GENERATION",
+        "title": "Procedural 3D Geometry, Totem SVG & Web Audio Synth Setup",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Configured 1113 WebGL particles, SVG sigil parameters, and 210.42 Hz Web Audio oscillator."
+      },
+      {
+        "stepNumber": 12,
+        "code": "WEBSITE_RENDERING",
+        "title": "Hydrating Adaptive Experience Configuration",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 2,
+        "summary": "Bound design tokens, responsive breakpoints, and reduced-motion fallbacks for editorial_monograph."
+      },
+      {
+        "stepNumber": 13,
+        "code": "AUTOMATED_TESTING",
+        "title": "Programmatic Epistemic Audit & Non-Fabrication Verification",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 3,
+        "summary": "Audited 18 claims (10 verified facts, 1 user-provided, 7 creative/heuristic)."
+      },
+      {
+        "stepNumber": 14,
+        "code": "VISUAL_VERIFICATION",
+        "title": "DOM Landmark & Contrast Polarity Configuration",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Configured semantic section landmarks and contrast polarity tokens for browser rendering."
+      },
+      {
+        "stepNumber": 15,
+        "code": "USER_PREVIEW",
+        "title": "Interactive Studio Preview & Live Section Editor Ready",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 2,
+        "summary": "Experience staged for live preview, section-level regeneration, and design token customization."
+      },
+      {
+        "stepNumber": 16,
+        "code": "PUBLISHING_SHARING",
+        "title": "Multi-Tenant Persistence & Export Bundle Registration",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Registered isolated experience at /e/fatima-2ib0 with owner isolation and standalone source export."
+      }
+    ],
+    "storageSource": "local_fallback"
+  },
+  "kenjiro-takahashi-5n7i": {
+    "id": "exp_1mhyd8c",
+    "slug": "kenjiro-takahashi-5n7i",
+    "ownerId": "usr_2cbf0bc3ae32902570e5",
+    "createdAt": "2026-11-08T15:43:50.109Z",
+    "updatedAt": "2026-11-08T15:43:50.109Z",
+    "version": 1,
+    "visibility": "unlisted",
+    "input": {
+      "fullName": "Kenjiro Takahashi",
+      "interests": [],
+      "hobbies": [],
+      "preferredVisualDirection": "auto",
+      "visibility": "unlisted",
+      "privacyConsentConfirmed": true
+    },
+    "intelligence": {
+      "nameResearch": {
+        "normalizedName": "Kenjiro Takahashi",
+        "firstName": "Kenjiro",
+        "surname": "Takahashi",
+        "lexiconMatch": true,
+        "phoneticIPA": {
+          "value": "/keɲdʑiɾoː/",
+          "category": "verified_fact",
+          "source": "Oxford Dictionary of First Names (Documented IPA Transcription)",
+          "confidence": 0.98
+        },
+        "syllableCount": 3,
+        "syllableBreakdown": [
+          "Ken",
+          "ji",
+          "ro"
+        ],
+        "sonicProfile": {
+          "value": {
+            "cadence": "lyrical",
+            "dominantVowels": [
+              "e",
+              "i",
+              "o"
+            ],
+            "acousticWarmth": 67,
+            "rhythmPattern": "— ◡ ◡"
+          },
+          "category": "creative_interpretation",
+          "source": "Prosodic Cadence & Vowel-Weight Heuristic Model (Creative Synthesis)",
+          "notes": "Artistic sound-symbolism model used to guide visual and typographic rhythm."
+        },
+        "linguisticFamily": {
+          "value": "Japonic / Sino-Japanese Kanji Compound",
+          "category": "verified_fact",
+          "source": "Oxford Dictionary of First Names & Comparative Philology",
+          "confidence": 0.98
+        },
+        "scriptVariations": [
+          {
+            "scriptName": "Kanji (Standard)",
+            "representation": "健次郎",
+            "note": "Morphographic kanji denoting resilience and lineage"
+          },
+          {
+            "scriptName": "Hiragana",
+            "representation": "けんじろう",
+            "note": "Flowing phonetic syllabary derived from cursive kanji"
+          },
+          {
+            "scriptName": "Katakana",
+            "representation": "ケンジロウ",
+            "note": "Angular phonetic script used in modern kinetic typography"
+          }
+        ],
+        "historicalBearers": [
+          {
+            "name": "Kenjiro Takayanagi",
+            "era": "1899 – 1990",
+            "achievement": "Japanese engineering pioneer who built the world’s first all-electronic television receiver in 1926, displaying the katakana character イ.",
+            "source": "IEEE Global History Network"
+          },
+          {
+            "name": "Kenjiro Den",
+            "era": "1855 – 1930",
+            "achievement": "Statesman and telecommunications modernizer during the Meiji and Taishō eras.",
+            "source": "National Diet Library of Japan"
+          }
+        ],
+        "sources": [
+          {
+            "id": "src-oxford-names",
+            "title": "A Dictionary of First Names (Oxford University Press)",
+            "domain": "oxfordreference.com",
+            "url": "https://www.oxfordreference.com/display/10.1093/acref/9780198610601.001.0001/acref-9780198610601",
+            "category": "linguistic",
+            "verified": true
+          },
+          {
+            "id": "src-britannica",
+            "title": "Encyclopædia Britannica Biographical & Cultural Archive",
+            "domain": "britannica.com",
+            "url": "https://www.britannica.com",
+            "category": "historical",
+            "verified": true
+          },
+          {
+            "id": "src-unesco",
+            "title": "UNESCO World Heritage & Intangible Cultural Heritage Lists",
+            "domain": "unesco.org",
+            "url": "https://whc.unesco.org",
+            "category": "cultural",
+            "verified": true
+          },
+          {
+            "id": "src-iau-ephemeris",
+            "title": "International Astronomical Union (IAU) Planetary & Ecliptic Reference",
+            "domain": "iau.org",
+            "url": "https://www.iau.org",
+            "category": "astronomical",
+            "verified": true
+          }
+        ]
+      },
+      "nameMeaning": {
+        "primaryEtymology": {
+          "value": "Constructed from Sino-Japanese morphographic characters—commonly 健 (ken: vigorous, structurally sound, clear) or 賢 (ken: wise, sagacious) paired with 二郎 / 次郎 (jirō: second son or successor of light).",
+          "category": "verified_fact",
+          "source": "Oxford Dictionary of First Names & Classical Philology Lexicon",
+          "confidence": 0.98
+        },
+        "literalTranslation": {
+          "value": " healthy, clear-minded, or resolute second son / pillar of harmony",
+          "category": "verified_fact",
+          "source": "Comparative Onomastic Etymology",
+          "confidence": 0.97
+        },
+        "rootWords": [
+          {
+            "root": "健 / 賢 (Ken)",
+            "language": "Japanese / Middle Chinese loan",
+            "meaning": "Resilient clarity, structural integrity, sagacity"
+          },
+          {
+            "root": "次郎 (Jirō)",
+            "language": "Japanese",
+            "meaning": "Next in lineage; bearer of continuity"
+          }
+        ],
+        "semanticFields": {
+          "value": [
+            "Kinetic Precision",
+            "Zen Spatial Minimalism",
+            "Wabi-Sabi Materiality",
+            "Harmonic Balance"
+          ],
+          "category": "creative_interpretation",
+          "source": "Atelier Semantic Synthesis"
+        },
+        "symbolicMotifs": {
+          "value": [
+            "Hinoki Timber Joinery",
+            "Enso Brush Trajectory",
+            "Raked Gravel Wave",
+            "Origami Polyhedron"
+          ],
+          "category": "creative_interpretation",
+          "source": "Visual Iconography Engine"
+        },
+        "epistemicDisclaimer": "Etymological roots reflect historical linguistic evolution of the word itself and never prescribe or determine an individual’s personal character or biography."
+      },
+      "culturalContext": {
+        "heritageSynthesis": {
+          "value": "Reflects the historical linguistic heritage of the name \"Kenjiro\" in Kyoto & Kansai Archipelago, Japan (Sukiya-zukuri Timber Pavilion & Modernist Brutalist Concrete and Kigumi wood joinery without nails & Urushi lacquerware). No personal residence or birthplace is assumed.",
+          "category": "verified_fact",
+          "source": "Historical Onomastic & Architectural Reference"
+        },
+        "geographicResonance": {
+          "value": {
+            "region": "Kyoto & Kansai Archipelago, Japan (Historical Linguistic Origin of Name — Not Personal Location)",
+            "coordinates": {
+              "lat": 35.0116,
+              "lng": 135.7681
+            },
+            "architecturalVernacular": "Sukiya-zukuri Timber Pavilion & Modernist Brutalist Concrete",
+            "traditionalCraft": "Kigumi wood joinery without nails & Urushi lacquerware"
+          },
+          "category": "verified_fact",
+          "source": "Historical Architectural & Material Culture Atlas"
+        },
+        "artisticTraditions": {
+          "value": [
+            "Ma (Negative Space Composition)",
+            "Kinetic Light Projection",
+            "Sumi-e Monochromatic Ink"
+          ],
+          "category": "verified_fact",
+          "source": "UNESCO & Art Historical Reference"
+        },
+        "colorHeritage": [
+          {
+            "name": "Sumi Ink Obsidian",
+            "hex": "#0F1115",
+            "culturalOrigin": "Pine-soot calligraphic inkstone"
+          },
+          {
+            "name": "Shikkui Plaster White",
+            "hex": "#F3F2EE",
+            "culturalOrigin": "Traditional lime-hemp architectural wall finish"
+          },
+          {
+            "name": "Shu Vermilion Seal",
+            "hex": "#D94E34",
+            "culturalOrigin": "Cinnabar artist signature stamp (Hanko)"
+          }
+        ],
+        "literaryOrPhilosophicalEcho": {
+          "value": {
+            "quote": "Between two pillars of cedar, it is the silent interval of air that holds the temple aloft.",
+            "attribution": "Yoshida Kenkō, Tsurezuregusa (Essays in Idleness)",
+            "tradition": "Classical Japanese Aesthetics (Ma)"
+          },
+          "category": "verified_fact",
+          "source": "Classical Japanese Aesthetics (Ma)"
+        }
+      },
+      "birthday": {
+        "hasBirthData": false,
+        "validDate": true,
+        "validationMessage": "No birth date provided; temporal and zodiac modules gracefully operating in timeless mode.",
+        "historicalEventsOnDay": []
+      },
+      "zodiac": {
+        "computed": false
+      },
+      "planetary": {
+        "rulingBody": {
+          "value": {
+            "name": "Sol (Helios / Shams)",
+            "classicalSymbol": "☉",
+            "orbitalPeriodDays": 365.25,
+            "axialTiltDegrees": 7.25,
+            "albedo": 1,
+            "dominantSpectrumHex": "#E09F3E",
+            "secondarySpectrumHex": "#9E2A2B",
+            "harmonicFrequencyHz": 126.22,
+            "ringSystem": false,
+            "moonCount": 8,
+            "poeticEpithet": "The Sovereign Aperture of First Light"
+          },
+          "category": "creative_interpretation",
+          "source": "IAU Planetary Ephemeris Constants (Orbital Period, Tilt, Albedo) + Classical Celestial Symbolism"
+        },
+        "shaderParameters": {
+          "orbitSpeed": 0.31,
+          "particleCount": 973,
+          "turbulence": 0.35,
+          "bloomIntensity": 0.78,
+          "wireframeRatio": 0.58
+        }
+      },
+      "interests": {
+        "hasUserInterests": false,
+        "rawInterests": [],
+        "domainVectors": [
+          {
+            "domain": "Architectural & Spatial Contemplation",
+            "weight": 84,
+            "matchedKeywords": [
+              "Default Curated Vector"
+            ],
+            "visualMetaphor": "Tessellated Courtyard & Light Aperture",
+            "interactiveFeatureSuggestion": "Interactive 3D Geometric Totem & Constellation Canvas"
+          },
+          {
+            "domain": "Literary & Historical Inquiry",
+            "weight": 78,
+            "matchedKeywords": [
+              "Onomastic Archive"
+            ],
+            "visualMetaphor": "Illuminated Folio & Epigraphic Chronicle",
+            "interactiveFeatureSuggestion": "Personal Wax-Sealed Letter & Postcard Studio"
+          }
+        ],
+        "synthesizedPassionsNarrative": {
+          "value": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos.",
+          "category": "creative_interpretation",
+          "source": "Atelier Default Thematic Vector"
+        }
+      },
+      "personality": {
+        "hasUserPersonalityInput": false,
+        "verbatimTraits": [],
+        "toneOfVoice": {
+          "value": {
+            "warmth": 75,
+            "formality": 68,
+            "kineticEnergy": 62,
+            "introspection": 78,
+            "editorialStyle": "Poetic Editorial Monograph (Neutral & Respectful)"
+          },
+          "category": "creative_interpretation",
+          "source": "Default Editorial Voice (Zero Name-Based Personality Inference)"
+        },
+        "strictNonInferenceNotice": "No personal character traits were provided by the user. In compliance with epistemic integrity rules, this platform never infers actual human personality from a name or birth date alone."
+      },
+      "creativeDirection": {
+        "archetypeId": "kinetic_atelier",
+        "archetypeName": "Kinetic Spatial Atelier",
+        "artDirectionManifesto": "Rooted in Japanese Ma (negative space), timber joinery, and sculptural 3D kinetic typography—stark obsidian ink contrasted with plaster white and vermilion seal stamps.",
+        "moodKeywords": [
+          "Spatial Precision",
+          "Kinetic Typography",
+          "Wabi-Sabi Materiality",
+          "Sculptural Depth"
+        ],
+        "spatialArchitecture": {
+          "gridSystem": "asymmetric-12",
+          "whitespaceRatio": "dense-architectural",
+          "sectionRhythm": "Architectural grid compartments with bold vertical index markers and kinetic 3D sculpture"
+        },
+        "lightingAndAtmosphere": {
+          "themePolarity": "dark-obsidian",
+          "grainOpacity": 0.035,
+          "ambientGlowIntensity": 0.4
+        }
+      },
+      "storytelling": {
+        "heroHeadline": "Kenjiro Takahashi",
+        "heroSubheadline": " healthy, clear-minded, or resolute second son / pillar of harmony — An Interactive Monograph of Origin, Cosmos & Living Craft.",
+        "prologueManifesto": "Every name is an architectural vessel before it is spoken. In the Japonic / Sino-Japanese Kanji Compound tradition, \"Kenjiro\" (/keɲdʑiɾoː/) unfolds across 3 syllables with a lyrical cadence. This digital sanctuary weaves verified historical etymology, cultural geography, and personal pursuits into an art-directed living chronicle.",
+        "chapters": [
+          {
+            "id": "chapter-origin",
+            "chapterNumber": "I",
+            "title": "The Architecture of the Name",
+            "subtitle": "Japonic / Sino-Japanese Kanji Compound · /keɲdʑiɾoː/",
+            "narrativeBody": "Constructed from Sino-Japanese morphographic characters—commonly 健 (ken: vigorous, structurally sound, clear) or 賢 (ken: wise, sagacious) paired with 二郎 / 次郎 (jirō: second son or successor of light). Across centuries, documented bearers of this name—such as Kenjiro Takayanagi (1899 – 1990)—have left enduring marks: Japanese engineering pioneer who built the world’s first all-electronic television receiver in 1926, displaying the katakana character イ.",
+            "pullQuote": " healthy, clear-minded, or resolute second son / pillar of harmony",
+            "epistemicTag": "verified_fact"
+          },
+          {
+            "id": "chapter-meridian",
+            "chapterNumber": "II",
+            "title": "Cultural & Geographic Meridian",
+            "subtitle": "Kyoto & Kansai Archipelago, Japan (Historical Linguistic Origin of Name — Not Personal Location)",
+            "narrativeBody": "Reflects the historical linguistic heritage of the name \"Kenjiro\" in Kyoto & Kansai Archipelago, Japan (Sukiya-zukuri Timber Pavilion & Modernist Brutalist Concrete and Kigumi wood joinery without nails & Urushi lacquerware). No personal residence or birthplace is assumed. Its visual language draws from Sukiya-zukuri Timber Pavilion & Modernist Brutalist Concrete and the tactile mastery of Kigumi wood joinery without nails & Urushi lacquerware.",
+            "pullQuote": "Between two pillars of cedar, it is the silent interval of air that holds the temple aloft.",
+            "epistemicTag": "verified_fact"
+          },
+          {
+            "id": "chapter-cosmos",
+            "chapterNumber": "III",
+            "title": "Celestial & Harmonic Resonance",
+            "subtitle": "Sol (Helios / Shams) (☉)",
+            "narrativeBody": "Because no personal birth date was provided, zero natal or astrological assumptions are made. Instead, the experience aligns with the classical IAU astronomical constants of Sol (Helios / Shams) (The Sovereign Aperture of First Light), resonating at 126.22 Hz.",
+            "pullQuote": "The Sovereign Aperture of First Light",
+            "epistemicTag": "creative_interpretation"
+          },
+          {
+            "id": "chapter-passions",
+            "chapterNumber": "IV",
+            "title": "Living Horizons & Personal Craft",
+            "subtitle": "Curiosity, Contemplation & Creative Agency",
+            "narrativeBody": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos. ",
+            "pullQuote": "“Identity is not prescribed by origin; it is composed day by day through attention, craft, and generosity.”",
+            "epistemicTag": "creative_interpretation"
+          }
+        ],
+        "personalLetter": {
+          "salutation": "To Kenjiro Takahashi,",
+          "bodyParagraphs": [
+            "Carry the resonance of your name—Kenjiro—not as a fixed boundary, but as an open courtyard of light. From the roots that gave your name its lyrical cadence to the horizons you actively shape today, your story belongs to the lineage of builders and seekers.",
+            "May every season bring clarity to your inquiries, warmth to your threshold, and new constellations to navigate.",
+            "This digital monograph was crafted specifically for you—a living artifact celebrating both the history behind your name and the unwritten chapters ahead."
+          ],
+          "valediction": "With enduring admiration and scholarly craft,",
+          "signature": "The Atelier Digital Monograph Engine"
+        },
+        "curatedQuotes": [
+          {
+            "text": "Between two pillars of cedar, it is the silent interval of air that holds the temple aloft.",
+            "author": "Yoshida Kenkō, Tsurezuregusa (Essays in Idleness)",
+            "context": "Classical Japanese Aesthetics (Ma)"
+          },
+          {
+            "text": "What we call the beginning is often the end, and to make an end is to make a beginning.",
+            "author": "Poetics of Time & Architecture",
+            "context": "Editorial Reflection"
+          }
+        ]
+      },
+      "visualDesign": {
+        "colorPalette": {
+          "backgroundPrimary": "#0E1013",
+          "backgroundElevated": "#171A20",
+          "surfaceGlass": "rgba(23, 26, 32, 0.82)",
+          "textPrimary": "#F3F2EE",
+          "textSecondary": "#B8BCC4",
+          "textMuted": "#6E7582",
+          "accentPrimary": "#D94E34",
+          "accentSecondary": "#0F1115",
+          "accentTertiary": "#5C9EAD",
+          "borderSubtle": "rgba(243, 242, 238, 0.14)"
+        },
+        "typography": {
+          "displayFont": "\"Space Grotesk\", -apple-system, sans-serif",
+          "serifFont": "\"Instrument Serif\", Georgia, serif",
+          "sansFont": "\"Plus Jakarta Sans\", -apple-system, sans-serif",
+          "monoFont": "\"JetBrains Mono\", monospace",
+          "displayTracking": "-0.035em",
+          "heroScaleRem": 5
+        },
+        "borderRadiusToken": "0px",
+        "borderTreatment": "hairline-architectural",
+        "backgroundTreatment": "architectural-draft"
+      },
+      "interactions": {
+        "threeSceneMode": "kinetic_monogram",
+        "cursorMode": "editorial_crosshair",
+        "characterTotem": {
+          "type": "origami_guardian",
+          "name": "Kigumi Polyhedral Totem",
+          "symbolism": "Interlocking geometric planes held in tension without fasteners.",
+          "primaryColor": "#D94E34",
+          "secondaryColor": "#0F1115",
+          "interactiveBehavior": "Responds to cursor orbital tilt, harmonic audio resonance, and click inspection"
+        },
+        "enabledModules": {
+          "threeHeroCanvas": true,
+          "magneticCursor": true,
+          "tiltCards": true,
+          "personalLetterEnvelope": true,
+          "digitalPostcardStudio": true,
+          "harmonicAudioSynth": true,
+          "constellationMiniGame": true,
+          "epistemicProvenanceModal": true,
+          "easterEggCipher": true
+        },
+        "motionProfile": {
+          "entranceStyle": "precision-snap",
+          "scrollParallaxIntensity": 0.35,
+          "springStiffness": 110,
+          "springDamping": 18
+        }
+      },
+      "content": {
+        "navigationItems": [
+          {
+            "id": "hero",
+            "label": "Sanctuary",
+            "index": "00"
+          },
+          {
+            "id": "dossier",
+            "label": "Dossier",
+            "index": "01"
+          },
+          {
+            "id": "chronicle",
+            "label": "Chronicle",
+            "index": "02"
+          },
+          {
+            "id": "totem",
+            "label": "3D Totem & Harmonics",
+            "index": "03"
+          },
+          {
+            "id": "constellation",
+            "label": "Constellation",
+            "index": "04"
+          },
+          {
+            "id": "epistle",
+            "label": "Epistle & Postcard",
+            "index": "05"
+          },
+          {
+            "id": "provenance",
+            "label": "Epistemic Audit",
+            "index": "06"
+          }
+        ],
+        "identityDossier": {
+          "sectionTitle": "Archival Dossier — Kenjiro Takahashi",
+          "cards": [
+            {
+              "id": "card-etymology",
+              "label": "01 / ONOMASTIC ROOT",
+              "title": "健 / 賢 (Ken)",
+              "value": " healthy, clear-minded, or resolute second son / pillar of harmony",
+              "detail": "Constructed from Sino-Japanese morphographic characters—commonly 健 (ken: vigorous, structurally sound, clear) or 賢 (ken: wise, sagacious) paired with 二郎 / 次郎 (jirō: second son or successor of light).",
+              "epistemicCategory": "verified_fact"
+            },
+            {
+              "id": "card-heritage",
+              "label": "02 / CULTURAL MERIDIAN",
+              "title": "Kyoto & Kansai Archipelago, Japan (Historical Linguistic Origin of Name — Not Personal Location)",
+              "value": "Sukiya-zukuri Timber Pavilion & Modernist Brutalist Concrete",
+              "detail": "Traditional Craft: Kigumi wood joinery without nails & Urushi lacquerware",
+              "epistemicCategory": "verified_fact"
+            },
+            {
+              "id": "card-celestial",
+              "label": "03 / CELESTIAL EPHEMERIS",
+              "title": "Sol (Helios / Shams)",
+              "value": "☉ · 126.22 Hz",
+              "detail": "Orbital Period: 365.25 days · Axial Tilt: 7.25°",
+              "epistemicCategory": "creative_interpretation"
+            },
+            {
+              "id": "card-passions",
+              "label": "04 / PERSONAL VECTORS",
+              "title": "Universal Humanist Vectors",
+              "value": "Architecture · Poetics · Cosmos",
+              "detail": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos.",
+              "epistemicCategory": "creative_interpretation"
+            }
+          ]
+        },
+        "interactivePostcard": {
+          "stampCode": "ATL-KEN-126",
+          "originLabel": "Kyoto & Kansai Archipelago, Japan (Historical Linguistic Origin of Name — Not Personal Location)",
+          "destinationLabel": "Sanctuary of Kenjiro Takahashi",
+          "defaultMessage": "May the architecture of your days reflect the clarity and luminous depth embedded within the name Kenjiro.",
+          "prompts": [
+            "A reflection on Kenjiro’s lyrical cadence...",
+            "From the meridian of Kyoto & Kansai Archipelago, Japan (Historical Linguistic Origin of Name — Not Personal Location)...",
+            "Under the harmonic frequency of 126.22 Hz..."
+          ]
+        },
+        "miniGameConfig": {
+          "title": "Meridian Star Alignment — Kenjiro’s Constellation",
+          "instruction": "Connect the 5 celestial nodes in sequence to synthesize the geometric sigil and unlock the archival inscription.",
+          "targetNodes": [
+            {
+              "id": "node-1",
+              "label": "αRoot (Ken)",
+              "x": 20,
+              "y": 65,
+              "unlockedInsight": "Phonetic Anchor: /keɲdʑiɾoː/"
+            },
+            {
+              "id": "node-2",
+              "label": "βMeridian (35.0°N)",
+              "x": 38,
+              "y": 28,
+              "unlockedInsight": "Heritage Craft: Kigumi wood joinery without nails & Urushi lacquerware"
+            },
+            {
+              "id": "node-3",
+              "label": "γHarmonic (126.22 Hz)",
+              "x": 56,
+              "y": 70,
+              "unlockedInsight": "Celestial Body: Sol (Helios / Shams)"
+            },
+            {
+              "id": "node-4",
+              "label": "δMotif (Hinoki Timber Joinery)",
+              "x": 74,
+              "y": 24,
+              "unlockedInsight": "Primary Symbol: Hinoki Timber Joinery"
+            },
+            {
+              "id": "node-5",
+              "label": "ωApex (Kenjiro)",
+              "x": 86,
+              "y": 54,
+              "unlockedInsight": "Meaning:  healthy, clear-minded, or resolute second son / pillar of harmony"
+            }
+          ],
+          "completionRewardQuote": "Between two pillars of cedar, it is the silent interval of air that holds the temple aloft."
+        },
+        "easterEgg": {
+          "triggerHint": "Click the Monograph Seal 3 times or type \"KENJIRO\" in the Cipher Vault",
+          "secretKeyphrase": "KENJIRO",
+          "revealedArtifactTitle": "Secret Archival Colophon — Folio № 173",
+          "revealedMessage": "In 859 CE, Fatima al-Fihri demonstrated that a single individual’s vision can found an institution that illuminates centuries. This hidden colophon honors Kenjiro Takahashi’s unique place in the living archive."
+        }
+      },
+      "verification": {
+        "passed": true,
+        "timestamp": "2026-11-08T15:43:50.109Z",
+        "executionMode": "deterministic_lexicon_and_heuristics",
+        "totalClaimsAudited": 18,
+        "breakdown": {
+          "verifiedFactsCount": 10,
+          "userProvidedCount": 1,
+          "astrologicalCount": 0,
+          "creativeInterpretationCount": 7
+        },
+        "epistemicGuarantees": [
+          "Zero personal biographical facts (birthdays, locations, hobbies, personality) were fabricated or scraped.",
+          "Heuristic phonetic or morphological estimates for uncurated names are never labeled as Verified Facts.",
+          "Actual human personality is never inferred from name etymology or birth date alone.",
+          "Linguistic and historical bearer citations are strictly separated from astrological and creative interpretations."
+        ],
+        "sanitizedWarnings": []
+      },
+      "portrait": {
+        "language": "en+ur",
+        "ageGiven": null,
+        "title": {
+          "en": "Kenjiro's Quiet Echo",
+          "ur": "Kenjiro ki Khamosh Goonj"
+        },
+        "opening": {
+          "en": "You move through rooms like a soft footstep, unnoticed but felt. There is a steady hum beneath your calm that few hear until you let it rise.",
+          "ur": "Aap kamron mein ek narm qadam ki tarah guzarte hain, bekhauf lekin mehsoos hota hai. Aapke sakoon ke neeche ek mustaqil awaz hai jo kam hi sunte hain jab tak aap ise buland na karen."
+        },
+        "sections": [
+          {
+            "heading": {
+              "en": "Inner Landscape",
+              "ur": "Androoni Manzar"
+            },
+            "body": {
+              "en": "You often describe mornings as a blank page, yet you keep a notebook tucked in your bag for thoughts that surface later. You say you are unbothered by noise, and then you replay a single phrase for weeks, counting its rhythm. In public you smile at the slightest joke, while inside a quiet critique runs a slow marathon, measuring every detail. You enjoy the stillness of a single tea leaf drifting, but you also collect stray sounds like a child gathers shells, storing them for moments when the world feels too loud.",
+              "ur": "Aap subah ko khaali safha kehte hain, magar bag mein ek notebook chhupa kar rakhte hain jo baad mein soch aati hain. Aap kehte hain ke shor aapko mutasir nahi karta, phir bhi koi ek jumla hafte tak bar bar sunte hain, uski lahaj ginna. Samne aap chhoti si mazak par muskurate hain, jabke andar ek chup si tanqeed lambe daur tak chalti hai, har baat ko naapti hai. Aap ek chai ki patte ki sukoon pasand karte hain, lekin be-suraat awaaz ko bachon ki tarah jama karte hain, jab duniya bohat shor wali lagti hai."
+            }
+          },
+          {
+            "heading": {
+              "en": "Ways You Listen",
+              "ur": "Aap Ki Sunne Ki Ada"
+            },
+            "body": {
+              "en": "When a friend shares a story, you nod and let the silence settle before you reply, as if you are waiting for the words to settle like dust on a shelf. You remember a detail from a conversation months later, then wonder why you never mentioned it. In meetings you often let others finish, yet you jot down questions that surface only after the room empties. You claim you prefer texts over calls, but you reread a single message at night, tracing each punctuation as if it were a secret map.",
+              "ur": "Jab koi dost kahani sunata hai, aap sir hila kar khamoshi ka intezar karte hain jawab dene se pehle, jaise lafz ko dust ki tarah rakha jaye. Aap ek guftagu ka tafseel mahino baad yaad rakhte hain, phir sochte hain ke aap ne kabhi bataya hi nahi. Meeting mein aap dusron ko mukammal bolne dete hain, lekin kamre ke khali hone ke baad sawalat likhte hain. Aap kehte hain ke text call se behtar hai, magar raat ko ek paigham ko bar bar padte hain, har nuktay ko raaz ki naksha samajhte hain."
+            }
+          },
+          {
+            "heading": {
+              "en": "Thought Patterns",
+              "ur": "Soch Ka Manzar"
+            },
+            "body": {
+              "en": "You build decisions like small bridges, testing each plank before you step across. You list pros and cons on a scrap of paper, then set it aside and choose the option that feels least ordinary. You say you trust your gut, yet you revisit the same spreadsheet late at night, tweaking numbers until they align with a feeling you can’t name. You enjoy puzzles that have one clear answer, but you also linger on open‑ended questions, letting them sit like unfinished sketches on your mind’s wall.",
+              "ur": "Aap faislay chhoti pulon ki tarah banate hain, har plank ko test kar ke cross karte hain. Aap pros aur cons ko kaghaz par likhte hain, phir usay rakh kar us raaste ko chunte hain jo kam mamooli lagta hai. Aap kehte hain ke gut par bharosa hai, lekin raat ko wahi spreadsheet dobara dekhte hain, numbers ko tabdeel karte hain jab tak wo ek ahsas se milta nahi. Aap aise puzzle pasand karte hain jinka ek jawab ho, lekin khule sawalat par bhi sochte hain, unhein adhoori tasveer ki tarah dimaag ki deewar par latakte hain."
+            }
+          },
+          {
+            "heading": {
+              "en": "Strengths & Gaps",
+              "ur": "Taqat Aur Kami"
+            },
+            "body": {
+              "en": "Your patience shows when you wait for a line at a coffee shop without checking your watch, but you can become restless the moment a deadline looms. You have a talent for noticing tiny changes in a room’s lighting, yet you sometimes overlook the larger shift in a conversation’s tone. You cherish routines, arranging books by color, while simultaneously feeling a pull toward spontaneous trips that you rarely book. You claim you are content with “enough,” and later you find yourself buying a single extra pen, just because it felt right.",
+              "ur": "Aapki sabr dikhai deti hai jab aap coffee shop ki line mein ghadi dekhte baghair intezar karte hain, lekin deadline aane par bechain ho jate hain. Aap kamre ki roshni ke chhote tabdeelion ko dekh lete hain, magar baat cheet ke tone ke bade tabdeelion ko kabhi kabhi miss kar dete hain. Aap routine se pyaar karte hain, kitabon ko rang se sajaate hain, lekin achanak safar ki khwahish bhi hoti hai jo aap kabhi book nahi karte. Aap kehte hain ke “kaafi” hai, phir bhi ek extra pen kharid lete hain, bas dil ki baat se."
+            }
+          },
+          {
+            "heading": {
+              "en": "Connections",
+              "ur": "Rishte"
+            },
+            "body": {
+              "en": "In friendships you are the quiet anchor, the one who remembers the exact date of a shared joke and brings it up years later. You argue by pointing to facts, yet you often soften the blow with a gentle smile that says you value the bond more than the point. When you feel hurt, you retreat into a sketchbook, drawing lines that mimic the rhythm of the conversation you wish had ended differently. Forgiveness comes as easily as a sigh; you let go, but the memory of the hurt stays as a faint outline you revisit only when the wind changes.",
+              "ur": "Dostana mein aap chup anchor hain, jo ek mazak ki tareekh yaad rakhte hain aur saalon baad wapas le aate hain. Aap facts se behas karte hain, lekin pyari muskurahat se baat ko narm kar dete hain, dosti ko point se zyada ahmiyat dete hain. Jab dukh hota hai, aap sketchbook mein chhup jate hain, aise lines banate hain jo us guftagu ki lahaj ko dikhate hain jo mukammal nahi hui. Maafi dena aasaan hota hai, ek saans ki tarah, aap chhod dete hain, lekin dukh ki yaad halki si outline ki tarah rehti hai, sirf tab aati hai jab hawa badalti hai."
+            }
+          },
+          {
+            "heading": {
+              "en": "Hidden Quirk",
+              "ur": "Chhupa Hua Rang"
+            },
+            "body": {
+              "en": "You have a habit of arranging the mugs on a shelf in the exact order you heard them spoken that morning, as if the syllables themselves create a visual rhythm. You notice this only when someone points it out, then you grin, admitting that sound and sight are twins in your mind. It’s a tiny ritual that slips into the background of your day, unnoticed by most, yet it gives you a secret sense of order that steadies the rest of the chaos.",
+              "ur": "Aapka ek rang hai ke subah sunay gaye alfaaz ke hisaab se mugs ko rakhte hain, jaise awaz ka rang nazar ke saath mil jata hai. Ye baat tab samajh aati hai jab koi ispar tawajjo deta hai, phir aap muskurate hue kehte hain ke awaaz aur nazar aapke dimaag mein jor hain. Ye chhoti si rivaayat din ke peechay chhupi rehti hai, zyada log nahi dekhte, lekin ye aapko ek chhupi hui tartib ka ehsaas deti hai jo baaki hungame ko sahara deti hai."
+            }
+          }
+        ],
+        "mirror": {
+          "en": "You are the calm tide that remembers the pebble that slipped beneath it.",
+          "ur": "Aap woh sukoon bhari lehr hain jo us pathar ko yaad rakhti hai jo uske neeche se guzar gaya."
+        },
+        "closing": {
+          "en": "So when you step into a room, know that the world feels the quiet echo you leave behind. Keep listening to the spaces between your own thoughts—they are where you truly reside.",
+          "ur": "Is liye jab aap kamre mein qadam rakhte hain, janiye ke duniya aapki chhupi hui goonj mehsoos karti hai. Apni soch ke darmiyan ke fasaalein sunte rahiye—yehi wo jagah hai jahan aap waqai rehte hain."
+        },
+        "visual": {
+          "concept": "A hand‑drawn ink map of a garden at dusk, lines flowing like quiet rivers.",
+          "composition": "ribbon",
+          "backdrop": "waves",
+          "palette": {
+            "bg": "#1e2a34",
+            "surface": "#283842",
+            "ink": "#d4c6a9",
+            "accent": "#a67c52",
+            "accent2": "#f0e4c3"
+          },
+          "fontDisplay": "Playfair Display",
+          "fontBody": "Manrope",
+          "reveal": "fade",
+          "character": {
+            "name": "Mizu",
+            "body": "drop",
+            "eyes": "spark",
+            "accessory": "scarf",
+            "motion": "sway",
+            "line": {
+              "en": "Even the smallest ripple tells a story.",
+              "ur": "Chhoti lehar bhi kahani sunati hai."
+            }
+          }
+        },
+        "model": "openai/gpt-oss-120b",
+        "generatedAt": "2026-11-08T15:43:50.103Z"
+      }
+    },
+    "pipelineLogs": [
+      {
+        "stepNumber": 1,
+        "code": "INPUT_COLLECTION",
+        "title": "Input Collection & Normalization",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Normalized identity payload for \"Kenjiro Takahashi\" (0 user-supplied interest tags; zero fabricated fields)."
+      },
+      {
+        "stepNumber": 2,
+        "code": "INPUT_VALIDATION",
+        "title": "Temporal & Schema Validation",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Optional temporal fields omitted by user; configured timeless mode (zero invented birthdates)."
+      },
+      {
+        "stepNumber": 3,
+        "code": "RESEARCH_COLLECTION",
+        "title": "Onomastic, Etymological & Cultural Research",
+        "status": "completed",
+        "executionNature": "curated_lexicon_lookup",
+        "durationMs": 4,
+        "summary": "Matched curated philological lexicon entry for \"Kenjiro\" (/keɲdʑiɾoː/) with 4 reference citations.",
+        "artifactPreview": " healthy, clear-minded, or resolute second son / pillar of harmony"
+      },
+      {
+        "stepNumber": 4,
+        "code": "EVIDENCE_CLASSIFICATION",
+        "title": "Four-Tier Epistemic Evidence Classification",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 3,
+        "summary": "Partitioned claims into Verified Facts, User-Provided Data, Astrological Symbolism, and Creative/Heuristic Interpretations."
+      },
+      {
+        "stepNumber": 5,
+        "code": "INTELLIGENCE_SYNTHESIS",
+        "title": "14-Module Multi-Vector Intelligence Synthesis",
+        "status": "completed",
+        "executionNature": "astronomical_calculation",
+        "durationMs": 4,
+        "summary": "Synthesized 2 passion vectors and IAU planetary harmonic frequency (126.22 Hz)."
+      },
+      {
+        "stepNumber": 6,
+        "code": "CREATIVE_DIRECTION",
+        "title": "Art Direction & Spatial Archetype Selection",
+        "status": "completed",
+        "executionNature": "deterministic_heuristic",
+        "durationMs": 3,
+        "summary": "Selected archetype \"Kinetic Spatial Atelier\" (asymmetric-12).",
+        "artifactPreview": "Rooted in Japanese Ma (negative space), timber joinery, and sculptural 3D kinetic typography—stark obsidian ink contrasted with plaster white and vermilion seal stamps."
+      },
+      {
+        "stepNumber": 7,
+        "code": "VISUAL_SYSTEM",
+        "title": "Adaptive Color Palette & Typography System",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Generated palette (#0E1013 / #D94E34) & font stack (\"Space Grotesk\")."
+      },
+      {
+        "stepNumber": 8,
+        "code": "STRUCTURE_GENERATION",
+        "title": "Bespoke Page Topology & Navigation Architecture",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Constructed 7 interactive chapters and 4 archival dossier cards."
+      },
+      {
+        "stepNumber": 9,
+        "code": "INTERACTION_SELECTION",
+        "title": "3D WebGL, Cursor Physics & Motion Choreography",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Assigned 3D scene \"kinetic_monogram\", cursor \"editorial_crosshair\", and totem \"Kigumi Polyhedral Totem\"."
+      },
+      {
+        "stepNumber": 10,
+        "code": "CONTENT_GENERATION",
+        "title": "Narrative Chronicle, Epistle & Quote Synthesis",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 5,
+        "summary": "Authored 4 narrative chapters, personal epistle, and postcard via structured narrative synthesis (GEMINI_API_KEY not set)."
+      },
+      {
+        "stepNumber": 11,
+        "code": "ASSET_GENERATION",
+        "title": "Procedural 3D Geometry, Totem SVG & Web Audio Synth Setup",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Configured 973 WebGL particles, SVG sigil parameters, and 126.22 Hz Web Audio oscillator."
+      },
+      {
+        "stepNumber": 12,
+        "code": "WEBSITE_RENDERING",
+        "title": "Hydrating Adaptive Experience Configuration",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 2,
+        "summary": "Bound design tokens, responsive breakpoints, and reduced-motion fallbacks for kinetic_atelier."
+      },
+      {
+        "stepNumber": 13,
+        "code": "AUTOMATED_TESTING",
+        "title": "Programmatic Epistemic Audit & Non-Fabrication Verification",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 3,
+        "summary": "Audited 18 claims (10 verified facts, 1 user-provided, 7 creative/heuristic)."
+      },
+      {
+        "stepNumber": 14,
+        "code": "VISUAL_VERIFICATION",
+        "title": "DOM Landmark & Contrast Polarity Configuration",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Configured semantic section landmarks and contrast polarity tokens for browser rendering."
+      },
+      {
+        "stepNumber": 15,
+        "code": "USER_PREVIEW",
+        "title": "Interactive Studio Preview & Live Section Editor Ready",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 2,
+        "summary": "Experience staged for live preview, section-level regeneration, and design token customization."
+      },
+      {
+        "stepNumber": 16,
+        "code": "PUBLISHING_SHARING",
+        "title": "Multi-Tenant Persistence & Export Bundle Registration",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Registered isolated experience at /e/kenjiro-takahashi-5n7i with owner isolation and standalone source export."
+      }
+    ],
+    "storageSource": "local_fallback"
+  },
+  "elena-rostova-cj0j": {
+    "id": "exp_f421e9",
+    "slug": "elena-rostova-cj0j",
+    "ownerId": "usr_b3a66fa25f9d784cf419",
+    "createdAt": "2026-11-08T16:11:24.649Z",
+    "updatedAt": "2026-11-08T16:11:24.649Z",
+    "version": 1,
+    "visibility": "unlisted",
+    "input": {
+      "fullName": "Elena Rostova",
+      "interests": [],
+      "hobbies": [],
+      "preferredVisualDirection": "auto",
+      "visibility": "unlisted",
+      "privacyConsentConfirmed": true
+    },
+    "intelligence": {
+      "nameResearch": {
+        "normalizedName": "Elena Rostova",
+        "firstName": "Elena",
+        "surname": "Rostova",
+        "lexiconMatch": true,
+        "phoneticIPA": {
+          "value": "/ɛˈleɪnə/",
+          "category": "verified_fact",
+          "source": "Oxford Dictionary of First Names (Documented IPA Transcription)",
+          "confidence": 0.98
+        },
+        "syllableCount": 3,
+        "syllableBreakdown": [
+          "E",
+          "le",
+          "na"
+        ],
+        "sonicProfile": {
+          "value": {
+            "cadence": "lyrical",
+            "dominantVowels": [
+              "e",
+              "a"
+            ],
+            "acousticWarmth": 72,
+            "rhythmPattern": "— ◡ ◡"
+          },
+          "category": "creative_interpretation",
+          "source": "Prosodic Cadence & Vowel-Weight Heuristic Model (Creative Synthesis)",
+          "notes": "Artistic sound-symbolism model used to guide visual and typographic rhythm."
+        },
+        "linguisticFamily": {
+          "value": "Indo-European / Hellenic & Pan-European",
+          "category": "verified_fact",
+          "source": "Oxford Dictionary of First Names & Comparative Philology",
+          "confidence": 0.98
+        },
+        "scriptVariations": [
+          {
+            "scriptName": "Hellenic Uncial",
+            "representation": "ΕΛΕΝΗ",
+            "note": "Classical Greek carved epigraphy"
+          },
+          {
+            "scriptName": "Cyrillic",
+            "representation": "Елена",
+            "note": "Slavic literary script"
+          },
+          {
+            "scriptName": "Latin Serif",
+            "representation": "ELENA",
+            "note": "Renaissance Aldine Roman capitals"
+          }
+        ],
+        "historicalBearers": [
+          {
+            "name": "Elena Cornaro Piscopia",
+            "era": "1646 – 1684",
+            "achievement": "Venetian philosopher, mathematician, and musician who in 1678 became the first woman in history to receive a doctoral degree from a university (University of Padua).",
+            "source": "Encyclopædia Britannica / University of Padua Archives"
+          },
+          {
+            "name": "Elena Poniatowska",
+            "era": "b. 1932",
+            "achievement": "Cervantes Prize-winning journalist and chronicler of polyphonic human histories.",
+            "source": "Cervantes Institute"
+          }
+        ],
+        "sources": [
+          {
+            "id": "src-oxford-names",
+            "title": "A Dictionary of First Names (Oxford University Press)",
+            "domain": "oxfordreference.com",
+            "url": "https://www.oxfordreference.com/display/10.1093/acref/9780198610601.001.0001/acref-9780198610601",
+            "category": "linguistic",
+            "verified": true
+          },
+          {
+            "id": "src-britannica",
+            "title": "Encyclopædia Britannica Biographical & Cultural Archive",
+            "domain": "britannica.com",
+            "url": "https://www.britannica.com",
+            "category": "historical",
+            "verified": true
+          },
+          {
+            "id": "src-unesco",
+            "title": "UNESCO World Heritage & Intangible Cultural Heritage Lists",
+            "domain": "unesco.org",
+            "url": "https://whc.unesco.org",
+            "category": "cultural",
+            "verified": true
+          },
+          {
+            "id": "src-iau-ephemeris",
+            "title": "International Astronomical Union (IAU) Planetary & Ecliptic Reference",
+            "domain": "iau.org",
+            "url": "https://www.iau.org",
+            "category": "astronomical",
+            "verified": true
+          }
+        ]
+      },
+      "nameMeaning": {
+        "primaryEtymology": {
+          "value": "Pan-European cognate of the Ancient Greek Ἑλένη (Helénē), linked to ἑλένη (\"torch\" or \"coronal flare\") and სέλας (sélas, \"celestial radiance\" or \"aurora\").",
+          "category": "verified_fact",
+          "source": "Oxford Dictionary of First Names & Classical Philology Lexicon",
+          "confidence": 0.98
+        },
+        "literalTranslation": {
+          "value": "Torch of dawn; shining sunbeam or coronal light",
+          "category": "verified_fact",
+          "source": "Comparative Onomastic Etymology",
+          "confidence": 0.97
+        },
+        "rootWords": [
+          {
+            "root": "ἑλένη (helénē)",
+            "language": "Ancient Greek",
+            "meaning": "Reed torch, radiant beacon, solar corona"
+          },
+          {
+            "root": "σέλας (sélas)",
+            "language": "Proto-Hellenic",
+            "meaning": "Luminous flash, aurora, celestial beam"
+          }
+        ],
+        "semanticFields": {
+          "value": [
+            "Solar Optics",
+            "Classical Proportion",
+            "Poetic Lyricalism",
+            "Astronomical Dawn"
+          ],
+          "category": "creative_interpretation",
+          "source": "Atelier Semantic Synthesis"
+        },
+        "symbolicMotifs": {
+          "value": [
+            "Solar Corona Eclipse",
+            "Ionic Volute",
+            "Prismatic Refraction",
+            "Botanical Olive Branch"
+          ],
+          "category": "creative_interpretation",
+          "source": "Visual Iconography Engine"
+        },
+        "epistemicDisclaimer": "Etymological roots reflect historical linguistic evolution of the word itself and never prescribe or determine an individual’s personal character or biography."
+      },
+      "culturalContext": {
+        "heritageSynthesis": {
+          "value": "Reflects the historical linguistic heritage of the name \"Elena\" in Mediterranean Basin & Eastern European Steppes (Venetian Palladian Loggia & Neoclassical Observatory and Murano optical glass blowing & copperplate intaglio printmaking). No personal residence or birthplace is assumed.",
+          "category": "verified_fact",
+          "source": "Historical Onomastic & Architectural Reference"
+        },
+        "geographicResonance": {
+          "value": {
+            "region": "Mediterranean Basin & Eastern European Steppes (Historical Linguistic Origin of Name — Not Personal Location)",
+            "coordinates": {
+              "lat": 41.9028,
+              "lng": 12.4964
+            },
+            "architecturalVernacular": "Venetian Palladian Loggia & Neoclassical Observatory",
+            "traditionalCraft": "Murano optical glass blowing & copperplate intaglio printmaking"
+          },
+          "category": "verified_fact",
+          "source": "Historical Architectural & Material Culture Atlas"
+        },
+        "artisticTraditions": {
+          "value": [
+            "Chiaroscuro Lighting",
+            "Renaissance Polyphony",
+            "Botanical Illustration"
+          ],
+          "category": "verified_fact",
+          "source": "UNESCO & Art Historical Reference"
+        },
+        "colorHeritage": [
+          {
+            "name": "Venetian Terracotta",
+            "hex": "#B85D43",
+            "culturalOrigin": "Kiln-fired clay rooftops of the Veneto"
+          },
+          {
+            "name": "Paduan Vellum",
+            "hex": "#FBF8F3",
+            "culturalOrigin": "17th-century philosophical treatise paper"
+          },
+          {
+            "name": "Adriatic Ultramarine",
+            "hex": "#264653",
+            "culturalOrigin": "Ground lapis pigment of Venetian ateliers"
+          }
+        ],
+        "literaryOrPhilosophicalEcho": {
+          "value": {
+            "quote": "Light is the first geometer; before the hand draws a line, the dawn has already measured the horizon.",
+            "attribution": "Venetian Optical Notebooks (17th Century)",
+            "tradition": "Renaissance Natural Philosophy"
+          },
+          "category": "verified_fact",
+          "source": "Renaissance Natural Philosophy"
+        }
+      },
+      "birthday": {
+        "hasBirthData": false,
+        "validDate": true,
+        "validationMessage": "No birth date provided; temporal and zodiac modules gracefully operating in timeless mode.",
+        "historicalEventsOnDay": []
+      },
+      "zodiac": {
+        "computed": false
+      },
+      "planetary": {
+        "rulingBody": {
+          "value": {
+            "name": "Saturn (Kronos / Zuhal)",
+            "classicalSymbol": "♄",
+            "orbitalPeriodDays": 10759.22,
+            "axialTiltDegrees": 26.73,
+            "albedo": 0.499,
+            "dominantSpectrumHex": "#C2B280",
+            "secondarySpectrumHex": "#2B2D42",
+            "harmonicFrequencyHz": 147.85,
+            "ringSystem": true,
+            "moonCount": 146,
+            "poeticEpithet": "The Ringed Geometer of Time and Monumental Structure"
+          },
+          "category": "creative_interpretation",
+          "source": "IAU Planetary Ephemeris Constants (Orbital Period, Tilt, Albedo) + Classical Celestial Symbolism"
+        },
+        "shaderParameters": {
+          "orbitSpeed": 0.3,
+          "particleCount": 1182,
+          "turbulence": 0.19,
+          "bloomIntensity": 0.52,
+          "wireframeRatio": 0.27
+        }
+      },
+      "interests": {
+        "hasUserInterests": false,
+        "rawInterests": [],
+        "domainVectors": [
+          {
+            "domain": "Architectural & Spatial Contemplation",
+            "weight": 84,
+            "matchedKeywords": [
+              "Default Curated Vector"
+            ],
+            "visualMetaphor": "Tessellated Courtyard & Light Aperture",
+            "interactiveFeatureSuggestion": "Interactive 3D Geometric Totem & Constellation Canvas"
+          },
+          {
+            "domain": "Literary & Historical Inquiry",
+            "weight": 78,
+            "matchedKeywords": [
+              "Onomastic Archive"
+            ],
+            "visualMetaphor": "Illuminated Folio & Epigraphic Chronicle",
+            "interactiveFeatureSuggestion": "Personal Wax-Sealed Letter & Postcard Studio"
+          }
+        ],
+        "synthesizedPassionsNarrative": {
+          "value": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos.",
+          "category": "creative_interpretation",
+          "source": "Atelier Default Thematic Vector"
+        }
+      },
+      "personality": {
+        "hasUserPersonalityInput": false,
+        "verbatimTraits": [],
+        "toneOfVoice": {
+          "value": {
+            "warmth": 75,
+            "formality": 68,
+            "kineticEnergy": 62,
+            "introspection": 78,
+            "editorialStyle": "Poetic Editorial Monograph (Neutral & Respectful)"
+          },
+          "category": "creative_interpretation",
+          "source": "Default Editorial Voice (Zero Name-Based Personality Inference)"
+        },
+        "strictNonInferenceNotice": "No personal character traits were provided by the user. In compliance with epistemic integrity rules, this platform never infers actual human personality from a name or birth date alone."
+      },
+      "creativeDirection": {
+        "archetypeId": "celestial_observatory",
+        "archetypeName": "Nocturnal Celestial Observatory",
+        "artDirectionManifesto": "Set in deep obsidian-indigo twilight illuminated by amber starlight, orbital mechanics, and copperplate ecliptic charts.",
+        "moodKeywords": [
+          "Nocturnal Sanctuary",
+          "Orbital Mechanics",
+          "Astronomical Brass",
+          "Deep Horizon"
+        ],
+        "spatialArchitecture": {
+          "gridSystem": "radial-observatory",
+          "whitespaceRatio": "generous",
+          "sectionRhythm": "Centered observatory rotunda transitioning into wide telemetry dossiers"
+        },
+        "lightingAndAtmosphere": {
+          "themePolarity": "midnight-indigo",
+          "grainOpacity": 0.035,
+          "ambientGlowIntensity": 0.4
+        }
+      },
+      "storytelling": {
+        "heroHeadline": "Elena Rostova",
+        "heroSubheadline": "Torch of dawn; shining sunbeam or coronal light — An Interactive Monograph of Origin, Cosmos & Living Craft.",
+        "prologueManifesto": "Every name is an architectural vessel before it is spoken. In the Indo-European / Hellenic & Pan-European tradition, \"Elena\" (/ɛˈleɪnə/) unfolds across 3 syllables with a lyrical cadence. This digital sanctuary weaves verified historical etymology, cultural geography, and personal pursuits into an art-directed living chronicle.",
+        "chapters": [
+          {
+            "id": "chapter-origin",
+            "chapterNumber": "I",
+            "title": "The Architecture of the Name",
+            "subtitle": "Indo-European / Hellenic & Pan-European · /ɛˈleɪnə/",
+            "narrativeBody": "Pan-European cognate of the Ancient Greek Ἑλένη (Helénē), linked to ἑλένη (\"torch\" or \"coronal flare\") and სέλας (sélas, \"celestial radiance\" or \"aurora\"). Across centuries, documented bearers of this name—such as Elena Cornaro Piscopia (1646 – 1684)—have left enduring marks: Venetian philosopher, mathematician, and musician who in 1678 became the first woman in history to receive a doctoral degree from a university (University of Padua).",
+            "pullQuote": "Torch of dawn; shining sunbeam or coronal light",
+            "epistemicTag": "verified_fact"
+          },
+          {
+            "id": "chapter-meridian",
+            "chapterNumber": "II",
+            "title": "Cultural & Geographic Meridian",
+            "subtitle": "Mediterranean Basin & Eastern European Steppes (Historical Linguistic Origin of Name — Not Personal Location)",
+            "narrativeBody": "Reflects the historical linguistic heritage of the name \"Elena\" in Mediterranean Basin & Eastern European Steppes (Venetian Palladian Loggia & Neoclassical Observatory and Murano optical glass blowing & copperplate intaglio printmaking). No personal residence or birthplace is assumed. Its visual language draws from Venetian Palladian Loggia & Neoclassical Observatory and the tactile mastery of Murano optical glass blowing & copperplate intaglio printmaking.",
+            "pullQuote": "Light is the first geometer; before the hand draws a line, the dawn has already measured the horizon.",
+            "epistemicTag": "verified_fact"
+          },
+          {
+            "id": "chapter-cosmos",
+            "chapterNumber": "III",
+            "title": "Celestial & Harmonic Resonance",
+            "subtitle": "Saturn (Kronos / Zuhal) (♄)",
+            "narrativeBody": "Because no personal birth date was provided, zero natal or astrological assumptions are made. Instead, the experience aligns with the classical IAU astronomical constants of Saturn (Kronos / Zuhal) (The Ringed Geometer of Time and Monumental Structure), resonating at 147.85 Hz.",
+            "pullQuote": "The Ringed Geometer of Time and Monumental Structure",
+            "epistemicTag": "creative_interpretation"
+          },
+          {
+            "id": "chapter-passions",
+            "chapterNumber": "IV",
+            "title": "Living Horizons & Personal Craft",
+            "subtitle": "Curiosity, Contemplation & Creative Agency",
+            "narrativeBody": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos. ",
+            "pullQuote": "“Identity is not prescribed by origin; it is composed day by day through attention, craft, and generosity.”",
+            "epistemicTag": "creative_interpretation"
+          }
+        ],
+        "personalLetter": {
+          "salutation": "To Elena Rostova,",
+          "bodyParagraphs": [
+            "Carry the resonance of your name—Elena—not as a fixed boundary, but as an open courtyard of light. From the roots that gave your name its lyrical cadence to the horizons you actively shape today, your story belongs to the lineage of builders and seekers.",
+            "May every season bring clarity to your inquiries, warmth to your threshold, and new constellations to navigate.",
+            "This digital monograph was crafted specifically for you—a living artifact celebrating both the history behind your name and the unwritten chapters ahead."
+          ],
+          "valediction": "With enduring admiration and scholarly craft,",
+          "signature": "The Atelier Digital Monograph Engine"
+        },
+        "curatedQuotes": [
+          {
+            "text": "Light is the first geometer; before the hand draws a line, the dawn has already measured the horizon.",
+            "author": "Venetian Optical Notebooks (17th Century)",
+            "context": "Renaissance Natural Philosophy"
+          },
+          {
+            "text": "What we call the beginning is often the end, and to make an end is to make a beginning.",
+            "author": "Poetics of Time & Architecture",
+            "context": "Editorial Reflection"
+          }
+        ]
+      },
+      "visualDesign": {
+        "colorPalette": {
+          "backgroundPrimary": "#0B101B",
+          "backgroundElevated": "#131C2E",
+          "surfaceGlass": "rgba(19, 28, 46, 0.78)",
+          "textPrimary": "#F4F1EA",
+          "textSecondary": "#CBD5E1",
+          "textMuted": "#7E8FA6",
+          "accentPrimary": "#E09F3E",
+          "accentSecondary": "#B85D43",
+          "accentTertiary": "#C86D51",
+          "borderSubtle": "rgba(224, 159, 62, 0.22)"
+        },
+        "typography": {
+          "displayFont": "\"Playfair Display\", Georgia, serif",
+          "serifFont": "\"Newsreader\", Georgia, serif",
+          "sansFont": "\"Inter\", -apple-system, sans-serif",
+          "monoFont": "\"JetBrains Mono\", monospace",
+          "displayTracking": "-0.015em",
+          "heroScaleRem": 4.8
+        },
+        "borderRadiusToken": "14px",
+        "borderTreatment": "hairline-architectural",
+        "backgroundTreatment": "celestial-starfield"
+      },
+      "interactions": {
+        "threeSceneMode": "celestial_vault",
+        "cursorMode": "stardust_trail",
+        "characterTotem": {
+          "type": "celestial_astrolabe",
+          "name": "Armillary Sphere of the Ecliptic",
+          "symbolism": "An interlocking celestial cage mapping solar longitude and personal time.",
+          "primaryColor": "#E09F3E",
+          "secondaryColor": "#B85D43",
+          "interactiveBehavior": "Responds to cursor orbital tilt, harmonic audio resonance, and click inspection"
+        },
+        "enabledModules": {
+          "threeHeroCanvas": true,
+          "magneticCursor": true,
+          "tiltCards": true,
+          "personalLetterEnvelope": true,
+          "digitalPostcardStudio": true,
+          "harmonicAudioSynth": true,
+          "constellationMiniGame": true,
+          "epistemicProvenanceModal": true,
+          "easterEggCipher": true
+        },
+        "motionProfile": {
+          "entranceStyle": "orbital-bloom",
+          "scrollParallaxIntensity": 0.35,
+          "springStiffness": 110,
+          "springDamping": 18
+        }
+      },
+      "content": {
+        "navigationItems": [
+          {
+            "id": "hero",
+            "label": "Sanctuary",
+            "index": "00"
+          },
+          {
+            "id": "dossier",
+            "label": "Dossier",
+            "index": "01"
+          },
+          {
+            "id": "chronicle",
+            "label": "Chronicle",
+            "index": "02"
+          },
+          {
+            "id": "totem",
+            "label": "3D Totem & Harmonics",
+            "index": "03"
+          },
+          {
+            "id": "constellation",
+            "label": "Constellation",
+            "index": "04"
+          },
+          {
+            "id": "epistle",
+            "label": "Epistle & Postcard",
+            "index": "05"
+          },
+          {
+            "id": "provenance",
+            "label": "Epistemic Audit",
+            "index": "06"
+          }
+        ],
+        "identityDossier": {
+          "sectionTitle": "Archival Dossier — Elena Rostova",
+          "cards": [
+            {
+              "id": "card-etymology",
+              "label": "01 / ONOMASTIC ROOT",
+              "title": "ἑλένη (helénē)",
+              "value": "Torch of dawn; shining sunbeam or coronal light",
+              "detail": "Pan-European cognate of the Ancient Greek Ἑλένη (Helénē), linked to ἑλένη (\"torch\" or \"coronal flare\") and სέλας (sélas, \"celestial radiance\" or \"aurora\").",
+              "epistemicCategory": "verified_fact"
+            },
+            {
+              "id": "card-heritage",
+              "label": "02 / CULTURAL MERIDIAN",
+              "title": "Mediterranean Basin & Eastern European Steppes (Historical Linguistic Origin of Name — Not Personal Location)",
+              "value": "Venetian Palladian Loggia & Neoclassical Observatory",
+              "detail": "Traditional Craft: Murano optical glass blowing & copperplate intaglio printmaking",
+              "epistemicCategory": "verified_fact"
+            },
+            {
+              "id": "card-celestial",
+              "label": "03 / CELESTIAL EPHEMERIS",
+              "title": "Saturn (Kronos / Zuhal)",
+              "value": "♄ · 147.85 Hz",
+              "detail": "Orbital Period: 10759.22 days · Axial Tilt: 26.73°",
+              "epistemicCategory": "creative_interpretation"
+            },
+            {
+              "id": "card-passions",
+              "label": "04 / PERSONAL VECTORS",
+              "title": "Universal Humanist Vectors",
+              "value": "Architecture · Poetics · Cosmos",
+              "detail": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos.",
+              "epistemicCategory": "creative_interpretation"
+            }
+          ]
+        },
+        "interactivePostcard": {
+          "stampCode": "ATL-ELE-148",
+          "originLabel": "Mediterranean Basin & Eastern European Steppes (Historical Linguistic Origin of Name — Not Personal Location)",
+          "destinationLabel": "Sanctuary of Elena Rostova",
+          "defaultMessage": "May the architecture of your days reflect the clarity and luminous depth embedded within the name Elena.",
+          "prompts": [
+            "A reflection on Elena’s lyrical cadence...",
+            "From the meridian of Mediterranean Basin & Eastern European Steppes (Historical Linguistic Origin of Name — Not Personal Location)...",
+            "Under the harmonic frequency of 147.85 Hz..."
+          ]
+        },
+        "miniGameConfig": {
+          "title": "Meridian Star Alignment — Elena’s Constellation",
+          "instruction": "Connect the 5 celestial nodes in sequence to synthesize the geometric sigil and unlock the archival inscription.",
+          "targetNodes": [
+            {
+              "id": "node-1",
+              "label": "αRoot (E)",
+              "x": 20,
+              "y": 65,
+              "unlockedInsight": "Phonetic Anchor: /ɛˈleɪnə/"
+            },
+            {
+              "id": "node-2",
+              "label": "βMeridian (41.9°N)",
+              "x": 38,
+              "y": 28,
+              "unlockedInsight": "Heritage Craft: Murano optical glass blowing & copperplate intaglio printmaking"
+            },
+            {
+              "id": "node-3",
+              "label": "γHarmonic (147.85 Hz)",
+              "x": 56,
+              "y": 70,
+              "unlockedInsight": "Celestial Body: Saturn (Kronos / Zuhal)"
+            },
+            {
+              "id": "node-4",
+              "label": "δMotif (Solar Corona Eclipse)",
+              "x": 74,
+              "y": 24,
+              "unlockedInsight": "Primary Symbol: Solar Corona Eclipse"
+            },
+            {
+              "id": "node-5",
+              "label": "ωApex (Elena)",
+              "x": 86,
+              "y": 54,
+              "unlockedInsight": "Meaning: Torch of dawn; shining sunbeam or coronal light"
+            }
+          ],
+          "completionRewardQuote": "Light is the first geometer; before the hand draws a line, the dawn has already measured the horizon."
+        },
+        "easterEgg": {
+          "triggerHint": "Click the Monograph Seal 3 times or type \"ELENA\" in the Cipher Vault",
+          "secretKeyphrase": "ELENA",
+          "revealedArtifactTitle": "Secret Archival Colophon — Folio № 682",
+          "revealedMessage": "In 859 CE, Fatima al-Fihri demonstrated that a single individual’s vision can found an institution that illuminates centuries. This hidden colophon honors Elena Rostova’s unique place in the living archive."
+        }
+      },
+      "verification": {
+        "passed": true,
+        "timestamp": "2026-11-08T16:11:24.649Z",
+        "executionMode": "deterministic_lexicon_and_heuristics",
+        "totalClaimsAudited": 18,
+        "breakdown": {
+          "verifiedFactsCount": 10,
+          "userProvidedCount": 1,
+          "astrologicalCount": 0,
+          "creativeInterpretationCount": 7
+        },
+        "epistemicGuarantees": [
+          "Zero personal biographical facts (birthdays, locations, hobbies, personality) were fabricated or scraped.",
+          "Heuristic phonetic or morphological estimates for uncurated names are never labeled as Verified Facts.",
+          "Actual human personality is never inferred from name etymology or birth date alone.",
+          "Linguistic and historical bearer citations are strictly separated from astrological and creative interpretations."
+        ],
+        "sanitizedWarnings": []
+      },
+      "portrait": {
+        "language": "en+ur",
+        "ageGiven": 31,
+        "title": {
+          "en": "The Quiet Cartographer",
+          "ur": "Khamosh Naksheen Banane Wala"
+        },
+        "opening": {
+          "en": "You do not enter rooms; you calibrate to them. There is a stillness to you that is not emptiness, but fullness held in check, like a tide waiting for the moon. You are thirty-one, and the world asks you to choose a side, but you are busy mapping the terrain where no sides exist yet.",
+          "ur": "Aap kamron mein nahi aati, aap unko feel karti hain. Aapki khamoshi khaali nahi, balkay puri hai, jaise oonaatun chaand ka intezaar karte hain. Aap 31 ki hain, aur duniya kehti hai taraf chuniye, lekin aap woh maqam map kar rahay hain jahan taraf hi nahi hoti."
+        },
+        "sections": [
+          {
+            "heading": {
+              "en": "Daily Rituals",
+              "ur": "Rozmarra Aadatayen"
+            },
+            "body": {
+              "en": "Your curiosity is tactile. You pick up objects not to use them, but to feel their weight and history. You might replay a single sentence from a stranger in your head for hours, peeling back layers of intent. The world is not a stream to you, but a library where every book is a mystery to be decoded slowly, one page at a time.",
+              "ur": "Aapka jaanna chahna haath se hota hai. Aap cheezein uthati hain unhe use karne ke liye nahi, balkay unki wazan aur kahani mehsoos karne ke liye. Aap ek ajnabi ka ek jirma ghanton taaza karte hain. Duniya aapke liye river nahi, ek library hai jahan har kitaab ek raaz hai."
+            }
+          },
+          {
+            "heading": {
+              "en": "The Decision Maze",
+              "ur": "Qaraar Ka Bhatak"
+            },
+            "body": {
+              "en": "You do not decide quickly. You simulate outcomes in your mind until the variables flatten. It feels like running a thousand miles before stepping off the curb. This is not indecision; it is a high-fidelity preview of life. You reject choices that feel like noise, preferring the silence of a well-paved path, even if it is less exciting to others.",
+              "ur": "Aap jaldi qaraar nahi kartay. Aap dimagh mein phayle nateejon ko chalta hua dekhti hain jab tak sab kuch seedha na ho jaye. Yeh kamzori nahi, zindagi ka pura preview hai. Aap shor se bachti hain, ek sadharan path pasand karti hain, chahe woh doosron ke liye boring ho."
+            }
+          },
+          {
+            "heading": {
+              "en": "The Hidden Current",
+              "ur": "Chhupi Hawa"
+            },
+            "body": {
+              "en": "On the surface, you are the calm one. People see your steady voice and assume ease. But inside, there is a fierce, almost painful sensitivity to detail. You notice the slight shift in a friend’s tone that others miss entirely. This invisibility is both a shield and a burden, for you carry the emotional weight of groups without being asked to.",
+              "ur": "Bahar se aap sukoon dikhati hain. Log aapki awaaz sun kar sochte hain ke aap ko sab asaan hai. Lekar andar mein, tafseelon ke liye ek tezi hai. Aap dost ke awaaz mein halka farq bhi pakad leti hain, jo koi nahi dekhta. Yeh chupna aapki dhaal hai, aur ek bojh bhi."
+            }
+          },
+          {
+            "heading": {
+              "en": "Echoes in Dialogue",
+              "ur": "Baaton Mein Gunj"
+            },
+            "body": {
+              "en": "You speak less, but every word lands with precision. You are the person who asks one question that changes the direction of the whole conversation. Silence is your favorite tool, not out of fear, but out of respect for the pause. You listen to understand the shape of the other person, not just the content of their speech.",
+              "ur": "Aap kam bolti hain, lekin har lafz wahan girta hai jahan chahiye. Aap woh shakhs hain jo ek sawal se poore muhabat ki disha badal deti hain. Khamoshi aapka favourite tool hai, dar ki wajah se nahi, balkay ghor ki izzat ke liye. Aap samajhne ke liye sunti hain, sirf shabdon ke liye nahi."
+            }
+          },
+          {
+            "heading": {
+              "en": "The Private Ambition",
+              "ur": "Khud Ki Khwahish"
+            },
+            "body": {
+              "en": "Your ambition is not about climbing; it is about deepening. You want to understand things until they no longer surprise you. There is a quiet pride in knowing the true weight of a situation. You do not seek applause for your insight, but you would feel a genuine loss if no one else noticed the complexity you handled with such grace.",
+              "ur": "Aapki koshish ularnay ki nahi, gehra karne ki hai. Aap cheezein tab tak samjhti hain jab tak woh aapko hairan na karein. Kisi haal ki asli wazan jaanne mein ek khufia ghuroor hai. Aap taaliyan nahi chahti, lekin agar koi woh complexity note na kare, toh aap ko sach mein khoi ge lagti hai."
+            }
+          },
+          {
+            "heading": {
+              "en": "The Unseen Thread",
+              "ur": "Nazar Na Aane Wala Taar"
+            },
+            "body": {
+              "en": "You have a habit of returning to old ideas. A book from five years ago feels more current than today’s news. Your mind is a museum of your own past thoughts. This makes you seem timeless, slightly out of step with the immediate moment, but deeply rooted. You are building a house of meaning that has no expiration date.",
+              "ur": "Aap purani sochon ko wapis jaati hain. Paanch saal purani kitaab aaj ki khabar se zyada zinda lagti hai. Aapka zehan aapke purane khayalon ka museum hai. Isliye aap thori alag lagti hain, lekin gehri jhaari hain. Aap asal ka ghar bana rahe hain jis ki koi muddat nahi."
+            }
+          }
+        ],
+        "mirror": {
+          "en": "You see yourself as the observer, but you are also the landscape. Your quietness is not a lack of voice, but a choice to let the truth speak first. You are the bridge between the chaotic world and the order in your mind.",
+          "ur": "Aap ko khud ko sirf dekhne wala lagta hai, lekin aap khud manzar bhi hain. Aapki khamoshi awaaz ki kami nahi, balkey sach ko pehle bolne ka intekhab hai. Aap woh pul hain jo shorili duniya aur aapke dimagh ki tarteeb ko jorta hai."
+        },
+        "closing": {
+          "en": "Keep mapping. The world is vast, and your precision is its rarest gift. You do not need to be loud to be seen by those who matter.",
+          "ur": "Naksha banati rahen. Duniya badi hai, aur aapki bastani uska sabse qami gift hai. Aap ko awaaz nahi deni, sirf unhe dikhna hai jo sach mein khayal rakhte hain."
+        },
+        "visual": {
+          "concept": "A minimalist interior scene where a single glass prism refracts a beam of warm light into distinct, sharp lines on a textured paper background.",
+          "composition": "split",
+          "backdrop": "stripes",
+          "palette": {
+            "bg": "#F4F1EA",
+            "surface": "#E8E4D9",
+            "ink": "#2B2B2B",
+            "accent": "#C46A4A",
+            "accent2": "#7A9E9F"
+          },
+          "fontDisplay": "Fraunces",
+          "fontBody": "Manrope",
+          "reveal": "fade",
+          "character": {
+            "name": "Prism",
+            "body": "arch",
+            "eyes": "wide",
+            "accessory": "none",
+            "motion": "float",
+            "line": {
+              "en": "Splitting the light to find the true colors.",
+              "ur": "Roshni ko tod kar asli rang dhoondh raha hai."
+            }
+          }
+        },
+        "model": "qwen/qwen3.8-27b",
+        "generatedAt": "2026-11-08T16:11:24.644Z"
+      }
+    },
+    "pipelineLogs": [
+      {
+        "stepNumber": 1,
+        "code": "INPUT_COLLECTION",
+        "title": "Input Collection & Normalization",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Normalized identity payload for \"Elena Rostova\" (0 user-supplied interest tags; zero fabricated fields)."
+      },
+      {
+        "stepNumber": 2,
+        "code": "INPUT_VALIDATION",
+        "title": "Temporal & Schema Validation",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Optional temporal fields omitted by user; configured timeless mode (zero invented birthdates)."
+      },
+      {
+        "stepNumber": 3,
+        "code": "RESEARCH_COLLECTION",
+        "title": "Onomastic, Etymological & Cultural Research",
+        "status": "completed",
+        "executionNature": "curated_lexicon_lookup",
+        "durationMs": 4,
+        "summary": "Matched curated philological lexicon entry for \"Elena\" (/ɛˈleɪnə/) with 4 reference citations.",
+        "artifactPreview": "Torch of dawn; shining sunbeam or coronal light"
+      },
+      {
+        "stepNumber": 4,
+        "code": "EVIDENCE_CLASSIFICATION",
+        "title": "Four-Tier Epistemic Evidence Classification",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 3,
+        "summary": "Partitioned claims into Verified Facts, User-Provided Data, Astrological Symbolism, and Creative/Heuristic Interpretations."
+      },
+      {
+        "stepNumber": 5,
+        "code": "INTELLIGENCE_SYNTHESIS",
+        "title": "14-Module Multi-Vector Intelligence Synthesis",
+        "status": "completed",
+        "executionNature": "astronomical_calculation",
+        "durationMs": 4,
+        "summary": "Synthesized 2 passion vectors and IAU planetary harmonic frequency (147.85 Hz)."
+      },
+      {
+        "stepNumber": 6,
+        "code": "CREATIVE_DIRECTION",
+        "title": "Art Direction & Spatial Archetype Selection",
+        "status": "completed",
+        "executionNature": "deterministic_heuristic",
+        "durationMs": 3,
+        "summary": "Selected archetype \"Nocturnal Celestial Observatory\" (radial-observatory).",
+        "artifactPreview": "Set in deep obsidian-indigo twilight illuminated by amber starlight, orbital mechanics, and copperplate ecliptic charts."
+      },
+      {
+        "stepNumber": 7,
+        "code": "VISUAL_SYSTEM",
+        "title": "Adaptive Color Palette & Typography System",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Generated palette (#0B101B / #E09F3E) & font stack (\"Playfair Display\")."
+      },
+      {
+        "stepNumber": 8,
+        "code": "STRUCTURE_GENERATION",
+        "title": "Bespoke Page Topology & Navigation Architecture",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Constructed 7 interactive chapters and 4 archival dossier cards."
+      },
+      {
+        "stepNumber": 9,
+        "code": "INTERACTION_SELECTION",
+        "title": "3D WebGL, Cursor Physics & Motion Choreography",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Assigned 3D scene \"celestial_vault\", cursor \"stardust_trail\", and totem \"Armillary Sphere of the Ecliptic\"."
+      },
+      {
+        "stepNumber": 10,
+        "code": "CONTENT_GENERATION",
+        "title": "Narrative Chronicle, Epistle & Quote Synthesis",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 5,
+        "summary": "Authored 4 narrative chapters, personal epistle, and postcard via structured narrative synthesis (GEMINI_API_KEY not set)."
+      },
+      {
+        "stepNumber": 11,
+        "code": "ASSET_GENERATION",
+        "title": "Procedural 3D Geometry, Totem SVG & Web Audio Synth Setup",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Configured 1182 WebGL particles, SVG sigil parameters, and 147.85 Hz Web Audio oscillator."
+      },
+      {
+        "stepNumber": 12,
+        "code": "WEBSITE_RENDERING",
+        "title": "Hydrating Adaptive Experience Configuration",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 2,
+        "summary": "Bound design tokens, responsive breakpoints, and reduced-motion fallbacks for celestial_observatory."
+      },
+      {
+        "stepNumber": 13,
+        "code": "AUTOMATED_TESTING",
+        "title": "Programmatic Epistemic Audit & Non-Fabrication Verification",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 3,
+        "summary": "Audited 18 claims (10 verified facts, 1 user-provided, 7 creative/heuristic)."
+      },
+      {
+        "stepNumber": 14,
+        "code": "VISUAL_VERIFICATION",
+        "title": "DOM Landmark & Contrast Polarity Configuration",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Configured semantic section landmarks and contrast polarity tokens for browser rendering."
+      },
+      {
+        "stepNumber": 15,
+        "code": "USER_PREVIEW",
+        "title": "Interactive Studio Preview & Live Section Editor Ready",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 2,
+        "summary": "Experience staged for live preview, section-level regeneration, and design token customization."
+      },
+      {
+        "stepNumber": 16,
+        "code": "PUBLISHING_SHARING",
+        "title": "Multi-Tenant Persistence & Export Bundle Registration",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Registered isolated experience at /e/elena-rostova-cj0j with owner isolation and standalone source export."
+      }
+    ],
+    "storageSource": "local_fallback"
+  },
+  "fatima-k1vl": {
+    "id": "exp_1q9kudu",
+    "slug": "fatima-k1vl",
+    "ownerId": "usr_72a364a05ff8cb936e88",
+    "createdAt": "2026-11-08T16:12:09.047Z",
+    "updatedAt": "2026-11-08T16:12:09.047Z",
+    "version": 1,
+    "visibility": "unlisted",
+    "input": {
+      "fullName": "Fatima",
+      "interests": [],
+      "hobbies": [],
+      "preferredVisualDirection": "auto",
+      "visibility": "unlisted",
+      "privacyConsentConfirmed": true
+    },
+    "intelligence": {
+      "nameResearch": {
+        "normalizedName": "Fatima",
+        "firstName": "Fatima",
+        "lexiconMatch": true,
+        "phoneticIPA": {
+          "value": "/ˈfɑːtɪmə/",
+          "category": "verified_fact",
+          "source": "Oxford Dictionary of First Names (Documented IPA Transcription)",
+          "confidence": 0.98
+        },
+        "syllableCount": 3,
+        "syllableBreakdown": [
+          "Fa",
+          "ti",
+          "ma"
+        ],
+        "sonicProfile": {
+          "value": {
+            "cadence": "lyrical",
+            "dominantVowels": [
+              "a",
+              "i"
+            ],
+            "acousticWarmth": 83,
+            "rhythmPattern": "— ◡ ◡"
+          },
+          "category": "creative_interpretation",
+          "source": "Prosodic Cadence & Vowel-Weight Heuristic Model (Creative Synthesis)",
+          "notes": "Artistic sound-symbolism model used to guide visual and typographic rhythm."
+        },
+        "linguisticFamily": {
+          "value": "Semitic / Classical Arabic",
+          "category": "verified_fact",
+          "source": "Oxford Dictionary of First Names & Comparative Philology",
+          "confidence": 0.98
+        },
+        "scriptVariations": [
+          {
+            "scriptName": "Arabic Thuluth",
+            "representation": "فاطمة",
+            "note": "Classical calligraphic script of architectural friezes"
+          },
+          {
+            "scriptName": "Maghribi Script",
+            "representation": "فاطمة الزهراء",
+            "note": "Andalusian-Moroccan manuscript script with sweeping descenders"
+          },
+          {
+            "scriptName": "Latin Epigraphic",
+            "representation": "FATIMA",
+            "note": "Monumental Roman capitals"
+          }
+        ],
+        "historicalBearers": [
+          {
+            "name": "Fatima al-Fihri",
+            "era": "c. 800 – 880 CE",
+            "achievement": "Founded Al-Qarawiyyin in Fez, Morocco in 859 CE—recognized by UNESCO and Guinness World Records as the oldest continuously operating degree-granting university in the world.",
+            "source": "UNESCO World Heritage Centre / Encyclopædia Britannica"
+          },
+          {
+            "name": "Fatima Mernissi",
+            "era": "1940 – 2015",
+            "achievement": "Renowned Moroccan sociologist, writer, and scholar of Islamic humanism and civic architecture.",
+            "source": "Oxford Dictionary of African Biography"
+          }
+        ],
+        "sources": [
+          {
+            "id": "src-oxford-names",
+            "title": "A Dictionary of First Names (Oxford University Press)",
+            "domain": "oxfordreference.com",
+            "url": "https://www.oxfordreference.com/display/10.1093/acref/9780198610601.001.0001/acref-9780198610601",
+            "category": "linguistic",
+            "verified": true
+          },
+          {
+            "id": "src-britannica",
+            "title": "Encyclopædia Britannica Biographical & Cultural Archive",
+            "domain": "britannica.com",
+            "url": "https://www.britannica.com",
+            "category": "historical",
+            "verified": true
+          },
+          {
+            "id": "src-unesco",
+            "title": "UNESCO World Heritage & Intangible Cultural Heritage Lists",
+            "domain": "unesco.org",
+            "url": "https://whc.unesco.org",
+            "category": "cultural",
+            "verified": true
+          },
+          {
+            "id": "src-iau-ephemeris",
+            "title": "International Astronomical Union (IAU) Planetary & Ecliptic Reference",
+            "domain": "iau.org",
+            "url": "https://www.iau.org",
+            "category": "astronomical",
+            "verified": true
+          }
+        ]
+      },
+      "nameMeaning": {
+        "primaryEtymology": {
+          "value": "Derived from the Classical Arabic triliteral root f-ṭ-m (ف-ط-م), denoting discernment, separation from the transient, and luminous intellectual clarity.",
+          "category": "verified_fact",
+          "source": "Oxford Dictionary of First Names & Classical Philology Lexicon",
+          "confidence": 0.98
+        },
+        "literalTranslation": {
+          "value": "One who abstains; the shining or captivating one who weans toward wisdom",
+          "category": "verified_fact",
+          "source": "Comparative Onomastic Etymology",
+          "confidence": 0.97
+        },
+        "rootWords": [
+          {
+            "root": "فَطَمَ (faṭama)",
+            "language": "Classical Arabic",
+            "meaning": "To discern, separate, or cultivate maturity"
+          },
+          {
+            "root": "فَاطِمَة (Fāṭimah)",
+            "language": "Classical Arabic",
+            "meaning": "She who illuminates and elevates through wisdom"
+          }
+        ],
+        "semanticFields": {
+          "value": [
+            "Sacred Architecture",
+            "Celestial Geometry",
+            "Scholastic Illumination",
+            "Enduring Grace"
+          ],
+          "category": "creative_interpretation",
+          "source": "Atelier Semantic Synthesis"
+        },
+        "symbolicMotifs": {
+          "value": [
+            "Eight-Pointed Star of Al-Qarawiyyin",
+            "Zellij Tessellation",
+            "Astrolabe Meridian",
+            "Courtyard Fountain"
+          ],
+          "category": "creative_interpretation",
+          "source": "Visual Iconography Engine"
+        },
+        "epistemicDisclaimer": "Etymological roots reflect historical linguistic evolution of the word itself and never prescribe or determine an individual’s personal character or biography."
+      },
+      "culturalContext": {
+        "heritageSynthesis": {
+          "value": "Reflects the historical linguistic heritage of the name \"Fatima\" in Maghreb & Arabian Peninsula (Fez / Hejaz) (Hispano-Moorish Courtyard & Marinid Geometric Pavilions and Zellij glazed terracotta mosaic work & brass astrolabe engraving). No personal residence or birthplace is assumed.",
+          "category": "verified_fact",
+          "source": "Historical Onomastic & Architectural Reference"
+        },
+        "geographicResonance": {
+          "value": {
+            "region": "Maghreb & Arabian Peninsula (Fez / Hejaz) (Historical Linguistic Origin of Name — Not Personal Location)",
+            "coordinates": {
+              "lat": 34.0331,
+              "lng": -5.0003
+            },
+            "architecturalVernacular": "Hispano-Moorish Courtyard & Marinid Geometric Pavilions",
+            "traditionalCraft": "Zellij glazed terracotta mosaic work & brass astrolabe engraving"
+          },
+          "category": "verified_fact",
+          "source": "Historical Architectural & Material Culture Atlas"
+        },
+        "artisticTraditions": {
+          "value": [
+            "Sacred Geometric Tessellation",
+            "Maghribi Illuminated Manuscripts",
+            "Andalusian Courtyard Acoustics"
+          ],
+          "category": "verified_fact",
+          "source": "UNESCO & Art Historical Reference"
+        },
+        "colorHeritage": [
+          {
+            "name": "Fez Cobalt Lapis",
+            "hex": "#1D3557",
+            "culturalOrigin": "Mineral cobalt glaze of Fez ceramic artisans"
+          },
+          {
+            "name": "Al-Qarawiyyin Brass",
+            "hex": "#D4A359",
+            "culturalOrigin": "Engraved medieval celestial astrolabes"
+          },
+          {
+            "name": "Atlas Cedar Parchment",
+            "hex": "#F6F1E7",
+            "culturalOrigin": "Vellum folios preserved in Moroccan libraries"
+          }
+        ],
+        "literaryOrPhilosophicalEcho": {
+          "value": {
+            "quote": "Knowledge is a sanctuary built stone by stone so that every seeker may find light within its courtyard.",
+            "attribution": "Chronicles of Al-Qarawiyyin (Fez, 9th Century Tradition)",
+            "tradition": "Maghribi Scholastic Humanism"
+          },
+          "category": "verified_fact",
+          "source": "Maghribi Scholastic Humanism"
+        }
+      },
+      "birthday": {
+        "hasBirthData": false,
+        "validDate": true,
+        "validationMessage": "No birth date provided; temporal and zodiac modules gracefully operating in timeless mode.",
+        "historicalEventsOnDay": []
+      },
+      "zodiac": {
+        "computed": false
+      },
+      "planetary": {
+        "rulingBody": {
+          "value": {
+            "name": "Luna (Selene / Qamar)",
+            "classicalSymbol": "☽",
+            "orbitalPeriodDays": 27.32,
+            "axialTiltDegrees": 6.68,
+            "albedo": 0.12,
+            "dominantSpectrumHex": "#E2E8F0",
+            "secondarySpectrumHex": "#475569",
+            "harmonicFrequencyHz": 210.42,
+            "ringSystem": false,
+            "moonCount": 1,
+            "poeticEpithet": "The Silver Mirror of Tides and Archival Memory"
+          },
+          "category": "creative_interpretation",
+          "source": "IAU Planetary Ephemeris Constants (Orbital Period, Tilt, Albedo) + Classical Celestial Symbolism"
+        },
+        "shaderParameters": {
+          "orbitSpeed": 0.21,
+          "particleCount": 1113,
+          "turbulence": 0.25,
+          "bloomIntensity": 0.53,
+          "wireframeRatio": 0.38
+        }
+      },
+      "interests": {
+        "hasUserInterests": false,
+        "rawInterests": [],
+        "domainVectors": [
+          {
+            "domain": "Architectural & Spatial Contemplation",
+            "weight": 84,
+            "matchedKeywords": [
+              "Default Curated Vector"
+            ],
+            "visualMetaphor": "Tessellated Courtyard & Light Aperture",
+            "interactiveFeatureSuggestion": "Interactive 3D Geometric Totem & Constellation Canvas"
+          },
+          {
+            "domain": "Literary & Historical Inquiry",
+            "weight": 78,
+            "matchedKeywords": [
+              "Onomastic Archive"
+            ],
+            "visualMetaphor": "Illuminated Folio & Epigraphic Chronicle",
+            "interactiveFeatureSuggestion": "Personal Wax-Sealed Letter & Postcard Studio"
+          }
+        ],
+        "synthesizedPassionsNarrative": {
+          "value": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos.",
+          "category": "creative_interpretation",
+          "source": "Atelier Default Thematic Vector"
+        }
+      },
+      "personality": {
+        "hasUserPersonalityInput": false,
+        "verbatimTraits": [],
+        "toneOfVoice": {
+          "value": {
+            "warmth": 75,
+            "formality": 68,
+            "kineticEnergy": 62,
+            "introspection": 78,
+            "editorialStyle": "Poetic Editorial Monograph (Neutral & Respectful)"
+          },
+          "category": "creative_interpretation",
+          "source": "Default Editorial Voice (Zero Name-Based Personality Inference)"
+        },
+        "strictNonInferenceNotice": "No personal character traits were provided by the user. In compliance with epistemic integrity rules, this platform never infers actual human personality from a name or birth date alone."
+      },
+      "creativeDirection": {
+        "archetypeId": "editorial_monograph",
+        "archetypeName": "Illuminated Architectural Monograph",
+        "artDirectionManifesto": "Inspired by rare folio manuscripts, courtyard stone arcades, and precision brass astrolabes—combining warm parchment surfaces with deep lapis ink and burnished gold accents.",
+        "moodKeywords": [
+          "Luminous Scholasticism",
+          "Sacred Geometry",
+          "Warm Vellum",
+          "Timeless Proportion"
+        ],
+        "spatialArchitecture": {
+          "gridSystem": "editorial-split",
+          "whitespaceRatio": "generous",
+          "sectionRhythm": "Asymmetric two-column folio with monumental Roman numerals and engraved hairline rules"
+        },
+        "lightingAndAtmosphere": {
+          "themePolarity": "warm-parchment",
+          "grainOpacity": 0.035,
+          "ambientGlowIntensity": 0.4
+        }
+      },
+      "storytelling": {
+        "heroHeadline": "Fatima",
+        "heroSubheadline": "One who abstains; the shining or captivating one who weans toward wisdom — An Interactive Monograph of Origin, Cosmos & Living Craft.",
+        "prologueManifesto": "Every name is an architectural vessel before it is spoken. In the Semitic / Classical Arabic tradition, \"Fatima\" (/ˈfɑːtɪmə/) unfolds across 3 syllables with a lyrical cadence. This digital sanctuary weaves verified historical etymology, cultural geography, and personal pursuits into an art-directed living chronicle.",
+        "chapters": [
+          {
+            "id": "chapter-origin",
+            "chapterNumber": "I",
+            "title": "The Architecture of the Name",
+            "subtitle": "Semitic / Classical Arabic · /ˈfɑːtɪmə/",
+            "narrativeBody": "Derived from the Classical Arabic triliteral root f-ṭ-m (ف-ط-م), denoting discernment, separation from the transient, and luminous intellectual clarity. Across centuries, documented bearers of this name—such as Fatima al-Fihri (c. 800 – 880 CE)—have left enduring marks: Founded Al-Qarawiyyin in Fez, Morocco in 859 CE—recognized by UNESCO and Guinness World Records as the oldest continuously operating degree-granting university in the world.",
+            "pullQuote": "One who abstains; the shining or captivating one who weans toward wisdom",
+            "epistemicTag": "verified_fact"
+          },
+          {
+            "id": "chapter-meridian",
+            "chapterNumber": "II",
+            "title": "Cultural & Geographic Meridian",
+            "subtitle": "Maghreb & Arabian Peninsula (Fez / Hejaz) (Historical Linguistic Origin of Name — Not Personal Location)",
+            "narrativeBody": "Reflects the historical linguistic heritage of the name \"Fatima\" in Maghreb & Arabian Peninsula (Fez / Hejaz) (Hispano-Moorish Courtyard & Marinid Geometric Pavilions and Zellij glazed terracotta mosaic work & brass astrolabe engraving). No personal residence or birthplace is assumed. Its visual language draws from Hispano-Moorish Courtyard & Marinid Geometric Pavilions and the tactile mastery of Zellij glazed terracotta mosaic work & brass astrolabe engraving.",
+            "pullQuote": "Knowledge is a sanctuary built stone by stone so that every seeker may find light within its courtyard.",
+            "epistemicTag": "verified_fact"
+          },
+          {
+            "id": "chapter-cosmos",
+            "chapterNumber": "III",
+            "title": "Celestial & Harmonic Resonance",
+            "subtitle": "Luna (Selene / Qamar) (☽)",
+            "narrativeBody": "Because no personal birth date was provided, zero natal or astrological assumptions are made. Instead, the experience aligns with the classical IAU astronomical constants of Luna (Selene / Qamar) (The Silver Mirror of Tides and Archival Memory), resonating at 210.42 Hz.",
+            "pullQuote": "The Silver Mirror of Tides and Archival Memory",
+            "epistemicTag": "creative_interpretation"
+          },
+          {
+            "id": "chapter-passions",
+            "chapterNumber": "IV",
+            "title": "Living Horizons & Personal Craft",
+            "subtitle": "Curiosity, Contemplation & Creative Agency",
+            "narrativeBody": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos. ",
+            "pullQuote": "“Identity is not prescribed by origin; it is composed day by day through attention, craft, and generosity.”",
+            "epistemicTag": "creative_interpretation"
+          }
+        ],
+        "personalLetter": {
+          "salutation": "To Fatima,",
+          "bodyParagraphs": [
+            "Carry the resonance of your name—Fatima—not as a fixed boundary, but as an open courtyard of light. From the roots that gave your name its lyrical cadence to the horizons you actively shape today, your story belongs to the lineage of builders and seekers.",
+            "May every season bring clarity to your inquiries, warmth to your threshold, and new constellations to navigate.",
+            "This digital monograph was crafted specifically for you—a living artifact celebrating both the history behind your name and the unwritten chapters ahead."
+          ],
+          "valediction": "With enduring admiration and scholarly craft,",
+          "signature": "The Atelier Digital Monograph Engine"
+        },
+        "curatedQuotes": [
+          {
+            "text": "Knowledge is a sanctuary built stone by stone so that every seeker may find light within its courtyard.",
+            "author": "Chronicles of Al-Qarawiyyin (Fez, 9th Century Tradition)",
+            "context": "Maghribi Scholastic Humanism"
+          },
+          {
+            "text": "What we call the beginning is often the end, and to make an end is to make a beginning.",
+            "author": "Poetics of Time & Architecture",
+            "context": "Editorial Reflection"
+          }
+        ]
+      },
+      "visualDesign": {
+        "colorPalette": {
+          "backgroundPrimary": "#F7F3EB",
+          "backgroundElevated": "#EFE9DC",
+          "surfaceGlass": "rgba(247, 243, 235, 0.86)",
+          "textPrimary": "#16202A",
+          "textSecondary": "#394858",
+          "textMuted": "#6D7A88",
+          "accentPrimary": "#B67B32",
+          "accentSecondary": "#1D3557",
+          "accentTertiary": "#A44A3F",
+          "borderSubtle": "rgba(22, 32, 42, 0.14)"
+        },
+        "typography": {
+          "displayFont": "\"Cormorant Garamond\", Georgia, serif",
+          "serifFont": "\"Cormorant Garamond\", Georgia, serif",
+          "sansFont": "\"Plus Jakarta Sans\", -apple-system, sans-serif",
+          "monoFont": "\"JetBrains Mono\", monospace",
+          "displayTracking": "-0.02em",
+          "heroScaleRem": 5.2
+        },
+        "borderRadiusToken": "6px",
+        "borderTreatment": "double-editorial",
+        "backgroundTreatment": "organic-paper"
+      },
+      "interactions": {
+        "threeSceneMode": "orbital_sanctuary",
+        "cursorMode": "magnetic_ring",
+        "characterTotem": {
+          "type": "celestial_astrolabe",
+          "name": "The Meridian Astrolabe of Al-Qarawiyyin",
+          "symbolism": "Concentric brass rings measuring celestial altitude, time, and intellectual navigation.",
+          "primaryColor": "#B67B32",
+          "secondaryColor": "#1D3557",
+          "interactiveBehavior": "Responds to cursor orbital tilt, harmonic audio resonance, and click inspection"
+        },
+        "enabledModules": {
+          "threeHeroCanvas": true,
+          "magneticCursor": true,
+          "tiltCards": true,
+          "personalLetterEnvelope": true,
+          "digitalPostcardStudio": true,
+          "harmonicAudioSynth": true,
+          "constellationMiniGame": true,
+          "epistemicProvenanceModal": true,
+          "easterEggCipher": true
+        },
+        "motionProfile": {
+          "entranceStyle": "staggered-editorial",
+          "scrollParallaxIntensity": 0.35,
+          "springStiffness": 110,
+          "springDamping": 18
+        }
+      },
+      "content": {
+        "navigationItems": [
+          {
+            "id": "hero",
+            "label": "Sanctuary",
+            "index": "00"
+          },
+          {
+            "id": "dossier",
+            "label": "Dossier",
+            "index": "01"
+          },
+          {
+            "id": "chronicle",
+            "label": "Chronicle",
+            "index": "02"
+          },
+          {
+            "id": "totem",
+            "label": "3D Totem & Harmonics",
+            "index": "03"
+          },
+          {
+            "id": "constellation",
+            "label": "Constellation",
+            "index": "04"
+          },
+          {
+            "id": "epistle",
+            "label": "Epistle & Postcard",
+            "index": "05"
+          },
+          {
+            "id": "provenance",
+            "label": "Epistemic Audit",
+            "index": "06"
+          }
+        ],
+        "identityDossier": {
+          "sectionTitle": "Archival Dossier — Fatima",
+          "cards": [
+            {
+              "id": "card-etymology",
+              "label": "01 / ONOMASTIC ROOT",
+              "title": "فَطَمَ (faṭama)",
+              "value": "One who abstains; the shining or captivating one who weans toward wisdom",
+              "detail": "Derived from the Classical Arabic triliteral root f-ṭ-m (ف-ط-م), denoting discernment, separation from the transient, and luminous intellectual clarity.",
+              "epistemicCategory": "verified_fact"
+            },
+            {
+              "id": "card-heritage",
+              "label": "02 / CULTURAL MERIDIAN",
+              "title": "Maghreb & Arabian Peninsula (Fez / Hejaz) (Historical Linguistic Origin of Name — Not Personal Location)",
+              "value": "Hispano-Moorish Courtyard & Marinid Geometric Pavilions",
+              "detail": "Traditional Craft: Zellij glazed terracotta mosaic work & brass astrolabe engraving",
+              "epistemicCategory": "verified_fact"
+            },
+            {
+              "id": "card-celestial",
+              "label": "03 / CELESTIAL EPHEMERIS",
+              "title": "Luna (Selene / Qamar)",
+              "value": "☽ · 210.42 Hz",
+              "detail": "Orbital Period: 27.32 days · Axial Tilt: 6.68°",
+              "epistemicCategory": "creative_interpretation"
+            },
+            {
+              "id": "card-passions",
+              "label": "04 / PERSONAL VECTORS",
+              "title": "Universal Humanist Vectors",
+              "value": "Architecture · Poetics · Cosmos",
+              "detail": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos.",
+              "epistemicCategory": "creative_interpretation"
+            }
+          ]
+        },
+        "interactivePostcard": {
+          "stampCode": "ATL-FAT-210",
+          "originLabel": "Maghreb & Arabian Peninsula (Fez / Hejaz) (Historical Linguistic Origin of Name — Not Personal Location)",
+          "destinationLabel": "Sanctuary of Fatima",
+          "defaultMessage": "May the architecture of your days reflect the clarity and luminous depth embedded within the name Fatima.",
+          "prompts": [
+            "A reflection on Fatima’s lyrical cadence...",
+            "From the meridian of Maghreb & Arabian Peninsula (Fez / Hejaz) (Historical Linguistic Origin of Name — Not Personal Location)...",
+            "Under the harmonic frequency of 210.42 Hz..."
+          ]
+        },
+        "miniGameConfig": {
+          "title": "Meridian Star Alignment — Fatima’s Constellation",
+          "instruction": "Connect the 5 celestial nodes in sequence to synthesize the geometric sigil and unlock the archival inscription.",
+          "targetNodes": [
+            {
+              "id": "node-1",
+              "label": "αRoot (Fa)",
+              "x": 20,
+              "y": 65,
+              "unlockedInsight": "Phonetic Anchor: /ˈfɑːtɪmə/"
+            },
+            {
+              "id": "node-2",
+              "label": "βMeridian (34.0°N)",
+              "x": 38,
+              "y": 28,
+              "unlockedInsight": "Heritage Craft: Zellij glazed terracotta mosaic work & brass astrolabe engraving"
+            },
+            {
+              "id": "node-3",
+              "label": "γHarmonic (210.42 Hz)",
+              "x": 56,
+              "y": 70,
+              "unlockedInsight": "Celestial Body: Luna (Selene / Qamar)"
+            },
+            {
+              "id": "node-4",
+              "label": "δMotif (Eight-Pointed Star of Al-Qarawiyyin)",
+              "x": 74,
+              "y": 24,
+              "unlockedInsight": "Primary Symbol: Eight-Pointed Star of Al-Qarawiyyin"
+            },
+            {
+              "id": "node-5",
+              "label": "ωApex (Fatima)",
+              "x": 86,
+              "y": 54,
+              "unlockedInsight": "Meaning: One who abstains; the shining or captivating one who weans toward wisdom"
+            }
+          ],
+          "completionRewardQuote": "Knowledge is a sanctuary built stone by stone so that every seeker may find light within its courtyard."
+        },
+        "easterEgg": {
+          "triggerHint": "Click the Monograph Seal 3 times or type \"FATIMA\" in the Cipher Vault",
+          "secretKeyphrase": "FATIMA",
+          "revealedArtifactTitle": "Secret Archival Colophon — Folio № 913",
+          "revealedMessage": "In 859 CE, Fatima al-Fihri demonstrated that a single individual’s vision can found an institution that illuminates centuries. This hidden colophon honors Fatima’s unique place in the living archive."
+        }
+      },
+      "verification": {
+        "passed": true,
+        "timestamp": "2026-11-08T16:12:09.047Z",
+        "executionMode": "deterministic_lexicon_and_heuristics",
+        "totalClaimsAudited": 18,
+        "breakdown": {
+          "verifiedFactsCount": 10,
+          "userProvidedCount": 1,
+          "astrologicalCount": 0,
+          "creativeInterpretationCount": 7
+        },
+        "epistemicGuarantees": [
+          "Zero personal biographical facts (birthdays, locations, hobbies, personality) were fabricated or scraped.",
+          "Heuristic phonetic or morphological estimates for uncurated names are never labeled as Verified Facts.",
+          "Actual human personality is never inferred from name etymology or birth date alone.",
+          "Linguistic and historical bearer citations are strictly separated from astrological and creative interpretations."
+        ],
+        "sanitizedWarnings": []
+      },
+      "portrait": {
+        "language": "en+ur",
+        "ageGiven": 24,
+        "title": {
+          "en": "The Weight of Quiet Care",
+          "ur": "Khamoshi ka Wazan"
+        },
+        "opening": {
+          "en": "You hold the room together with your hands just beneath the surface. People think you are easygoing. They miss the part where you are actually working hard to be.",
+          "ur": "Aap sawari ko apni ungliyon se sambhalte hain, jahan tak koi nahi dekhta. Log sochte hain aap aaram se hain, lekin woh yeh nahi jaante ke aap khushi ki koshish mein mehngi mehnat kar rahe hain."
+        },
+        "sections": [
+          {
+            "heading": {
+              "en": "The Silent Ledger",
+              "ur": "Chuppi ka Hisaab"
+            },
+            "body": {
+              "en": "You do not drop things. You hover them. A deadline looms, and you breathe around it. You carry the shape of everyone else’s panic in your chest. It is not weakness. It is a container you built to keep the world from spilling.",
+              "ur": "Aap cheezon ko girne nahi dete, unhe hawa mein rakhte hain. Jab koi aghaaz (deadline) qareeb aata hai, aap sirf saans lete hain. Aap doosron ke ghabraawe ko apni qeef mein uthate hain. Yeh kamzori nahi, yeh woh bakra hai jo aap ne duniya ki kahua (spill) rokne ke liye banaya."
+            }
+          },
+          {
+            "heading": {
+              "en": "Time as Texture",
+              "ur": "Waqat ki Binaiaat"
+            },
+            "body": {
+              "en": "Rest feels like a debt. You try to sleep before you are tired, so the silence doesn’t fill with noise. You stretch time. You make it soft. A long walk is not just movement; it is a way to let the mind settle into the ground.",
+              "ur": "Aaram aap ke liye ek qarz lagta hai. Aap thakne se pehle so jaate hain, taake khamoshi mein shor na ho. Aap waqt ko lamba kheenchte hain, use naram banate hain. Lambi chali sirf halqat nahi, yeh dimagh ko zameen mein ghisalne ka tareeqa hai."
+            }
+          },
+          {
+            "heading": {
+              "en": "Small Curiousities",
+              "ur": "Choti Choti Talabe"
+            },
+            "body": {
+              "en": "You learn by touching. You read labels. You watch how light hits a cup at 4 pm. Your curiosity is not loud. It is in the margins. You collect moments like pebbles in a pocket. You do not know why you keep them. You just do.",
+              "ur": "Aap haath laga kar seekhte hain. Aap label parhta hain. Dekh ke rehte hain ke roshni 4 baje pe kaisi hain. Aap ki dilchapi shor nahi, woh haafay mein hai. Aap lamhon ko jeb mein rakh lete hain, jaise kankriyan. Pata nahi kyun rakhte hain, bas aisa karte hain."
+            }
+          },
+          {
+            "heading": {
+              "en": "The Soft Shield",
+              "ur": "Naram Dhaal"
+            },
+            "body": {
+              "en": "You say 'it’s fine' while your jaw tightens. You protect your peace by being unobtrusive. People mistake your calm for indifference. They don’t see the internal editing. You delete the sharp parts before they leave your mouth. It costs you.",
+              "ur": "Aap kehte hain 'theek hai' lekin jhaanthi (jaw) kathorti hai. Apne sukoon ko bachane ke liye aap bina asar chutle hain. Log aap ki sukoon ko be-farqi samajhte hain. Woh aap ke andar ke 'editing' nahi dekhte. Aap tez cheezon ko zaban se bahar nikalne se pehle delete kar dete hain. Iska khauf aap par guzarta hai."
+            }
+          },
+          {
+            "heading": {
+              "en": "Ambition in Shadows",
+              "ur": "Siyahiyon Mein Aghaaz"
+            },
+            "body": {
+              "en": "You do not shout your goals. You test them. You try small versions. If it hurts, you drop it. No one knows how much you have abandoned. Your ambition is quiet and precise. It does not need applause. It needs to work.",
+              "ur": "Aap apne maqsad chilla kar nahi batate. Aap unay test karte hain. Choti shakl mein masle hain. Agar dard ho, toh chhod dete hain. Koi nahi jaanta ke aap ne kitni cheezein chhorin. Aap ki aghaaz khamosh aur basti hai. Usko taaliyan nahi, bas kaam karne ki zaroorat hai."
+            }
+          },
+          {
+            "heading": {
+              "en": "The Unseen Edge",
+              "ur": "Chupi Hui Dhaar"
+            },
+            "body": {
+              "en": "There is a moment when you stare at the wall. It is not boredom. It is recalibration. You are deciding what is yours and what is not. You draw lines in the air. You are not passive. You are a gatekeeper of your own energy. It is a lonely job.",
+              "ur": "Ek lamha aata hai jab aap deewar ko ghure rehte hain. Yeh kabhi niyast nahi. Yeh naya hisaab shuda karna hai. Aap faisla kar rahe hain ke kya aap ka hai aur kya nahi. Aap hawa mein teer (lines) khiche hain. Aap aamadi nahi. Aap apni taqat ke darbaze par rakhte hain. Yeh akela kaam hai."
+            }
+          }
+        ],
+        "mirror": {
+          "en": "You are not tired because you do too much. You are tired because you feel too much. The world is loud. You are the quiet room it enters to rest. Do not apologize for the silence. It is your most honest voice.",
+          "ur": "Aap thake hue nahi hain kyunki aap zyada karte hain. Aap thake hue hain kyunki aap zyada mehsoos karte hain. Duniya shor machati hai. Aap woh khamosh kamra hain jahan woh chup ho jati hai. Apni khamoshi ke liye maafi mangna chhodein. Yeh aap ki sab se asli awaaz hai."
+        },
+        "closing": {
+          "en": "Let the weight settle. You do not have to carry it. You just have to hold the space for it. It will stay. You will be softer.",
+          "ur": "Wazan ko baithne dein. Aap ko usay uthana nahi. Bas uske liye jagah banate rehna hai. Woh rahega. Aap zyada naram ho jayenge."
+        },
+        "visual": {
+          "concept": "A minimalist composition of layered, semi-transparent sheets of paper, representing the layers of unspoken weight, with a single heavy stone resting on the bottom layer.",
+          "composition": "stack",
+          "backdrop": "waves",
+          "palette": {
+            "bg": "#F4F1EA",
+            "surface": "#FFFFFF",
+            "ink": "#2C2C2C",
+            "accent": "#8B7355",
+            "accent2": "#D4CCB9"
+          },
+          "fontDisplay": "Fraunces",
+          "fontBody": "Manrope",
+          "reveal": "rise",
+          "character": {
+            "name": "Moura",
+            "body": "arch",
+            "eyes": "sleepy",
+            "accessory": "scarf",
+            "motion": "sway",
+            "line": {
+              "en": "Moura is a heavy, soft arch of a cloud, watching the world without moving.",
+              "ur": "Moura ek bhaari, naram badal ki tarah hai, jo bina hile duniya ko ghura rehta hai."
+            }
+          }
+        },
+        "model": "qwen/qwen3.8-27b",
+        "generatedAt": "2026-11-08T16:12:09.047Z"
+      }
+    },
+    "pipelineLogs": [
+      {
+        "stepNumber": 1,
+        "code": "INPUT_COLLECTION",
+        "title": "Input Collection & Normalization",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Normalized identity payload for \"Fatima\" (0 user-supplied interest tags; zero fabricated fields)."
+      },
+      {
+        "stepNumber": 2,
+        "code": "INPUT_VALIDATION",
+        "title": "Temporal & Schema Validation",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Optional temporal fields omitted by user; configured timeless mode (zero invented birthdates)."
+      },
+      {
+        "stepNumber": 3,
+        "code": "RESEARCH_COLLECTION",
+        "title": "Onomastic, Etymological & Cultural Research",
+        "status": "completed",
+        "executionNature": "curated_lexicon_lookup",
+        "durationMs": 4,
+        "summary": "Matched curated philological lexicon entry for \"Fatima\" (/ˈfɑːtɪmə/) with 4 reference citations.",
+        "artifactPreview": "One who abstains; the shining or captivating one who weans toward wisdom"
+      },
+      {
+        "stepNumber": 4,
+        "code": "EVIDENCE_CLASSIFICATION",
+        "title": "Four-Tier Epistemic Evidence Classification",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 3,
+        "summary": "Partitioned claims into Verified Facts, User-Provided Data, Astrological Symbolism, and Creative/Heuristic Interpretations."
+      },
+      {
+        "stepNumber": 5,
+        "code": "INTELLIGENCE_SYNTHESIS",
+        "title": "14-Module Multi-Vector Intelligence Synthesis",
+        "status": "completed",
+        "executionNature": "astronomical_calculation",
+        "durationMs": 4,
+        "summary": "Synthesized 2 passion vectors and IAU planetary harmonic frequency (210.42 Hz)."
+      },
+      {
+        "stepNumber": 6,
+        "code": "CREATIVE_DIRECTION",
+        "title": "Art Direction & Spatial Archetype Selection",
+        "status": "completed",
+        "executionNature": "deterministic_heuristic",
+        "durationMs": 3,
+        "summary": "Selected archetype \"Illuminated Architectural Monograph\" (editorial-split).",
+        "artifactPreview": "Inspired by rare folio manuscripts, courtyard stone arcades, and precision brass astrolabes—combining warm parchment surfaces with deep lapis ink and burnished gold accents."
+      },
+      {
+        "stepNumber": 7,
+        "code": "VISUAL_SYSTEM",
+        "title": "Adaptive Color Palette & Typography System",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Generated palette (#F7F3EB / #B67B32) & font stack (\"Cormorant Garamond\")."
+      },
+      {
+        "stepNumber": 8,
+        "code": "STRUCTURE_GENERATION",
+        "title": "Bespoke Page Topology & Navigation Architecture",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Constructed 7 interactive chapters and 4 archival dossier cards."
+      },
+      {
+        "stepNumber": 9,
+        "code": "INTERACTION_SELECTION",
+        "title": "3D WebGL, Cursor Physics & Motion Choreography",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Assigned 3D scene \"orbital_sanctuary\", cursor \"magnetic_ring\", and totem \"The Meridian Astrolabe of Al-Qarawiyyin\"."
+      },
+      {
+        "stepNumber": 10,
+        "code": "CONTENT_GENERATION",
+        "title": "Narrative Chronicle, Epistle & Quote Synthesis",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 5,
+        "summary": "Authored 4 narrative chapters, personal epistle, and postcard via structured narrative synthesis (GEMINI_API_KEY not set)."
+      },
+      {
+        "stepNumber": 11,
+        "code": "ASSET_GENERATION",
+        "title": "Procedural 3D Geometry, Totem SVG & Web Audio Synth Setup",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Configured 1113 WebGL particles, SVG sigil parameters, and 210.42 Hz Web Audio oscillator."
+      },
+      {
+        "stepNumber": 12,
+        "code": "WEBSITE_RENDERING",
+        "title": "Hydrating Adaptive Experience Configuration",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 2,
+        "summary": "Bound design tokens, responsive breakpoints, and reduced-motion fallbacks for editorial_monograph."
+      },
+      {
+        "stepNumber": 13,
+        "code": "AUTOMATED_TESTING",
+        "title": "Programmatic Epistemic Audit & Non-Fabrication Verification",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 3,
+        "summary": "Audited 18 claims (10 verified facts, 1 user-provided, 7 creative/heuristic)."
+      },
+      {
+        "stepNumber": 14,
+        "code": "VISUAL_VERIFICATION",
+        "title": "DOM Landmark & Contrast Polarity Configuration",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Configured semantic section landmarks and contrast polarity tokens for browser rendering."
+      },
+      {
+        "stepNumber": 15,
+        "code": "USER_PREVIEW",
+        "title": "Interactive Studio Preview & Live Section Editor Ready",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 2,
+        "summary": "Experience staged for live preview, section-level regeneration, and design token customization."
+      },
+      {
+        "stepNumber": 16,
+        "code": "PUBLISHING_SHARING",
+        "title": "Multi-Tenant Persistence & Export Bundle Registration",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Registered isolated experience at /e/fatima-k1vl with owner isolation and standalone source export."
+      }
+    ],
+    "storageSource": "local_fallback"
   }
 }

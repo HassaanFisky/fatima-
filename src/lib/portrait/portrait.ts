@@ -138,41 +138,132 @@ ${age ? `AGE: ${age} (use only as life-stage context, never invent events)` : 'A
 Quietly draw on: the name's sound, origins and cultural associations (only what you genuinely know; if unsure, stay soft and never claim facts), life-stage psychology, personality science and behavioural patterns.
 
 VOICE: second person ("you"). Warm, precise, literary, surprising. Each section must contain concrete, relatable behaviours and inner contradictions ("You say you don't mind, and then remember for three years"). Short and long sentences mixed.
-DEPTH: cover nature, emotional patterns, thinking style, strengths, contradictions, relationships, communication, ambitions, and one lesser-obvious trait. 7 sections, 90-140 words each.
+DEPTH: cover nature, emotional patterns, thinking style, strengths, contradictions, relationships, communication, ambitions, and one lesser-obvious trait. 6 sections, 55-80 words each.
 FORBIDDEN: invented memories, events, jobs, family, places, biography; horoscope clichés ("you are a natural leader", "deep down", "sometimes you"); mentioning AI, analysis, methodology, name meaning lookups, psychology jargon, frameworks, or that you only know a name. Do not open sections with the same word. Phrase insights as recognisable tendencies, not facts.
 VARIATION: this is run ${nonce}; take a fresh angle each time. Emphasize: ${lens}.
-LANGUAGES: every text field has "en" (natural English, simple words) and "ur" (natural conversational ROMAN URDU in Latin letters, like a friend would write — not translated word by word, not Hindi-Sanskritised, not Urdu script).
+LANGUAGES: every text field has "en" (natural English, simple words) and "ur" (strictly ROMAN URDU using ENGLISH/LATIN ALPHABET letters like "Aap bohat gehri soch rakhti hain, chup chap sab dekhti hain" — NEVER use Arabic or Urdu script or characters, use Latin/English letters only, natural conversational tone like a close friend texting).
 VISUAL IDENTITY: invent a distinct art direction that visibly expresses THIS portrait's temperament (not generic). Pick a palette with real contrast (bg vs ink readable), avoid default purple gradients. Design a fictional companion character embodying their nature.
 
-Return ONLY JSON:
-{"title":{en,ur} (3-6 words, evocative, includes no more than the first name),
-"opening":{en,ur} (2-3 sentences that make them feel seen),
-"sections":[{"heading":{en,ur} (2-4 words),"body":{en,ur}} x7],
-"mirror":{en,ur} (one memorable sentence to screenshot),
-"closing":{en,ur} (warm, 2 sentences),
+Return ONLY raw JSON without code blocks:
+{"title":{"en":"...","ur":"..."},
+"opening":{"en":"...","ur":"..."},
+"sections":[{"heading":{"en":"...","ur":"..."},"body":{"en":"...","ur":"..."}} x6],
+"mirror":{"en":"...","ur":"..."},
+"closing":{"en":"...","ur":"..."},
 "visual":{"concept":"one sentence art direction","composition":one of ${COMPOSITIONS.join('|')},"backdrop":one of ${BACKDROPS.join('|')},
-"palette":{"bg","surface","ink","accent","accent2"} (hex #rrggbb),"fontDisplay":one of ${FONTS.join('|')},"fontBody":one of ${FONTS.join('|')},"reveal":one of ${REVEALS.join('|')},
-"character":{"name":"invented fictional name","body":one of ${BODIES.join('|')},"eyes":one of ${EYES.join('|')},"accessory":one of ${ACCESSORIES.join('|')},"motion":one of ${MOTIONS.join('|')},"line":{en,ur} (what the character says to them, one short line)}}}`;
+"palette":{"bg":"#hex","surface":"#hex","ink":"#hex","accent":"#hex","accent2":"#hex"},"fontDisplay":one of ${FONTS.join('|')},"fontBody":one of ${FONTS.join('|')},"reveal":one of ${REVEALS.join('|')},
+"character":{"name":"invented fictional name","body":one of ${BODIES.join('|')},"eyes":one of ${EYES.join('|')},"accessory":one of ${ACCESSORIES.join('|')},"motion":one of ${MOTIONS.join('|')},"line":{"en":"...","ur":"..."}}}}`;
+}
+
+async function callGroqAI(prompt: string, modelName: string): Promise<string> {
+  const apiKey = process.env.GROQ_API_KEY;
+  if (!apiKey) throw new Error('GROQ_API_KEY not configured');
+
+  const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${apiKey}`,
+      'Content-Type': 'application/json',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)',
+    },
+    body: JSON.stringify({
+      model: modelName,
+      messages: [
+        {
+          role: 'system',
+          content: 'You are an expert personality writer and art director. Output raw JSON only. Do not include markdown formatting or backticks around the JSON.',
+        },
+        {
+          role: 'user',
+          content: prompt,
+        },
+      ],
+      reasoning_format: 'hidden',
+      max_tokens: 2800,
+      temperature: 0.85,
+    }),
+  });
+
+  if (!res.ok) {
+    const errText = await res.text();
+    throw new Error(`Groq API error (${res.status}): ${errText}`);
+  }
+
+  const json = await res.json();
+  const choice = json.choices?.[0]?.message;
+  let content = '';
+  if (choice?.content && typeof choice.content === 'string' && choice.content.trim().length > 0) {
+    content = choice.content.trim();
+  } else if (choice?.reasoning && typeof choice.reasoning === 'string') {
+    content = choice.reasoning.trim();
+  }
+  if (!content) throw new Error('Empty response from Groq');
+
+  // If text contains a JSON block inside ```json ... ```, extract it
+  const match = content.match(/```(?:json)?\s*([\s\S]*?)```/);
+  if (match) {
+    content = match[1].trim();
+  } else if (content.startsWith('```')) {
+    content = content.replace(/^```[a-z]*\s*/i, '').replace(/```\s*$/, '').trim();
+  }
+
+  // If content has leading thought text (e.g. "We need to... { ... }"), slice from first '{' to last '}'
+  const firstBrace = content.indexOf('{');
+  const lastBrace = content.lastIndexOf('}');
+  if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {
+    content = content.slice(firstBrace, lastBrace + 1);
+  }
+
+  return content;
 }
 
 export async function generatePortrait(name: string, age: number | null): Promise<Portrait> {
-  const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey) throw new PortraitUnavailableError('GEMINI_API_KEY is not configured');
-  const ai = new GoogleGenAI({ apiKey });
+  const geminiKey = process.env.GEMINI_API_KEY;
+  const groqKey = process.env.GROQ_API_KEY;
+
+  if (!geminiKey && !groqKey) {
+    throw new PortraitUnavailableError('AI service is not configured (missing GEMINI_API_KEY or GROQ_API_KEY)');
+  }
+
+  const activeModel = process.env.PORTRAIT_MODEL || (groqKey ? 'qwen/qwen3.8-27b' : 'gemini-2.5-pro');
   let lastErr: unknown;
-  for (let attempt = 0; attempt < 2; attempt++) {
+
+  for (let attempt = 0; attempt < 3; attempt++) {
     try {
-      const res = await ai.models.generateContent({
-        model: PORTRAIT_MODEL,
-        contents: buildPrompt(name, age),
-        config: { responseMimeType: 'application/json', temperature: 1.0 },
-      });
-      const text = res.text;
-      if (!text) throw new Error('Empty model response');
-      return sanitizePortrait(JSON.parse(text), age, PORTRAIT_MODEL);
+      let rawJsonText = '';
+      if (groqKey) {
+        rawJsonText = await callGroqAI(buildPrompt(name, age), activeModel);
+      } else if (geminiKey) {
+        const ai = new GoogleGenAI({ apiKey: geminiKey });
+        const res = await ai.models.generateContent({
+          model: activeModel,
+          contents: buildPrompt(name, age),
+          config: { responseMimeType: 'application/json', temperature: 1.0 },
+        });
+        rawJsonText = res.text || '';
+      }
+
+      if (!rawJsonText) throw new Error('Empty model response');
+      try {
+        const parsed = JSON.parse(rawJsonText);
+        return sanitizePortrait(parsed, age, activeModel);
+      } catch (parseErr) {
+        console.error('[generatePortrait] JSON parse failed on raw text snippet:', rawJsonText.slice(0, 300));
+        throw parseErr;
+      }
     } catch (e) {
       lastErr = e;
+      console.warn(`[generatePortrait] Attempt ${attempt + 1} failed:`, e);
+
+      // If rate limited, back off for 12 seconds before retry
+      const errMsg = e instanceof Error ? e.message : String(e);
+      if (errMsg.includes('429') || errMsg.includes('rate_limit')) {
+        await new Promise((r) => setTimeout(r, 12000));
+      } else {
+        await new Promise((r) => setTimeout(r, 2000));
+      }
     }
   }
+
   throw lastErr instanceof Error ? lastErr : new Error('Portrait generation failed');
 }
