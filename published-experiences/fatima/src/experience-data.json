@@ -3,7 +3,7 @@
   "slug": "fatima",
   "ownerId": "system_public",
   "createdAt": "2026-11-07T06:19:14.692Z",
-  "updatedAt": "2026-11-07T06:19:14.692Z",
+  "updatedAt": "2026-11-07T06:21:28.232Z",
   "version": 1,
   "visibility": "public",
   "input": {
@@ -742,5 +742,10 @@
       "summary": "Registered isolated experience at /e/fatima with owner isolation and standalone source export."
     }
   ],
-  "storageSource": "local_fallback"
+  "storageSource": "local_fallback",
+  "deploymentHistory": {
+    "githubRepoUrl": "https://github.com/HassaanFisky/atelier-exported-persona-demo",
+    "githubLastCommitSha": "54df7c2d99053ba73c4605fdd2fa6deb86aa46cf",
+    "lastPublishedAt": "2026-11-07T06:21:28.232Z"
+  }
 }
