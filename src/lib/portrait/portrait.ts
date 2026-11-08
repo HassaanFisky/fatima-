@@ -217,21 +217,88 @@ async function callGroqAI(prompt: string, modelName: string): Promise<string> {
   return content;
 }
 
-export async function generatePortrait(name: string, age: number | null): Promise<Portrait> {
-  const geminiKey = process.env.GEMINI_API_KEY;
-  const groqKey = process.env.GROQ_API_KEY;
+async function callCerebrasAI(prompt: string, modelName: string = 'qwen-3.8-27b'): Promise<string> {
+  const apiKey = process.env.CEREBRAS_API_KEY;
+  if (!apiKey) throw new Error('CEREBRAS_API_KEY not configured');
 
-  if (!geminiKey && !groqKey) {
-    throw new PortraitUnavailableError('AI service is not configured (missing GEMINI_API_KEY or GROQ_API_KEY)');
+  const res = await fetch('https://api.cerebras.ai/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${apiKey}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      model: modelName,
+      messages: [
+        {
+          role: 'system',
+          content: 'You are an expert personality writer and art director. Output raw JSON only. Do not include markdown formatting or backticks around the JSON.',
+        },
+        {
+          role: 'user',
+          content: prompt,
+        },
+      ],
+      reasoning_effort: 'none',
+      response_format: { type: 'json_object' },
+      temperature: 0.85,
+      max_completion_tokens: 4000,
+    }),
+  });
+
+  if (!res.ok) {
+    const errText = await res.text();
+    throw new Error(`Cerebras API error (${res.status}): ${errText}`);
   }
 
-  const activeModel = process.env.PORTRAIT_MODEL || (groqKey ? 'qwen/qwen3.8-27b' : 'gemini-2.5-pro');
+  const json = await res.json();
+  const choice = json.choices?.[0]?.message;
+  let content = choice?.content?.trim() || '';
+  if (!content) throw new Error('Empty response from Cerebras');
+
+  const match = content.match(/```(?:json)?\s*([\s\S]*?)```/);
+  if (match) {
+    content = match[1].trim();
+  } else if (content.startsWith('```')) {
+    content = content.replace(/^```[a-z]*\s*/i, '').replace(/```\s*$/, '').trim();
+  }
+
+  const firstBrace = content.indexOf('{');
+  const lastBrace = content.lastIndexOf('}');
+  if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {
+    content = content.slice(firstBrace, lastBrace + 1);
+  }
+
+  return content;
+}
+
+export async function generatePortrait(name: string, age: number | null): Promise<Portrait> {
+  const cerebrasKey = process.env.CEREBRAS_API_KEY;
+  const groqKey = process.env.GROQ_API_KEY;
+  const geminiKey = process.env.GEMINI_API_KEY;
+
+  if (!cerebrasKey && !groqKey && !geminiKey) {
+    throw new PortraitUnavailableError('AI service is not configured (missing CEREBRAS_API_KEY, GROQ_API_KEY, or GEMINI_API_KEY)');
+  }
+
+  const activeModel = process.env.PORTRAIT_MODEL || (cerebrasKey ? 'qwen-3.8-27b' : groqKey ? 'qwen/qwen3.8-27b' : 'gemini-2.5-pro');
   let lastErr: unknown;
 
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
       let rawJsonText = '';
-      if (groqKey) {
+      if (cerebrasKey) {
+        try {
+          rawJsonText = await callCerebrasAI(buildPrompt(name, age), activeModel);
+        } catch (cerebrasErr) {
+          console.warn('[generatePortrait] Cerebras call failed, trying Groq fallback:', cerebrasErr);
+          if (groqKey) {
+            rawJsonText = await callGroqAI(buildPrompt(name, age), 'qwen/qwen3.8-27b');
+          } else {
+            throw cerebrasErr;
+          }
+        }
+      } else if (groqKey) {
         rawJsonText = await callGroqAI(buildPrompt(name, age), activeModel);
       } else if (geminiKey) {
         const ai = new GoogleGenAI({ apiKey: geminiKey });
@@ -255,12 +322,12 @@ export async function generatePortrait(name: string, age: number | null): Promis
       lastErr = e;
       console.warn(`[generatePortrait] Attempt ${attempt + 1} failed:`, e);
 
-      // If rate limited, back off for 12 seconds before retry
+      // If rate limited, back off before retry
       const errMsg = e instanceof Error ? e.message : String(e);
       if (errMsg.includes('429') || errMsg.includes('rate_limit')) {
-        await new Promise((r) => setTimeout(r, 12000));
+        await new Promise((r) => setTimeout(r, 6000));
       } else {
-        await new Promise((r) => setTimeout(r, 2000));
+        await new Promise((r) => setTimeout(r, 1500));
       }
     }
   }

@@ -4,7 +4,7 @@
     "slug": "fatima",
     "ownerId": "system_public",
     "createdAt": "2026-11-07T06:19:14.692Z",
-    "updatedAt": "2026-11-07T06:21:28.232Z",
+    "updatedAt": "2026-11-08T18:34:37.228Z",
     "version": 1,
     "visibility": "public",
     "input": {
@@ -745,9 +745,9 @@
     ],
     "storageSource": "local_fallback",
     "deploymentHistory": {
-      "githubRepoUrl": "https://github.com/HassaanFisky/atelier-exported-persona-demo",
-      "githubLastCommitSha": "54df7c2d99053ba73c4605fdd2fa6deb86aa46cf",
-      "lastPublishedAt": "2026-11-07T06:21:28.232Z"
+      "githubRepoUrl": "https://github.com/HassaanFisky/fatima-",
+      "githubLastCommitSha": "22eebff92354802bb9da6917a4926e4ecefb8d5d",
+      "lastPublishedAt": "2026-11-08T18:34:37.228Z"
     }
   },
   "kenjiro": {
@@ -5666,6 +5666,1639 @@
         "executionNature": "system_synthesis",
         "durationMs": 3,
         "summary": "Registered isolated experience at /e/fatima-k1vl with owner isolation and standalone source export."
+      }
+    ],
+    "storageSource": "local_fallback"
+  },
+  "zainab-dkix": {
+    "id": "exp_15eu0ya",
+    "slug": "zainab-dkix",
+    "ownerId": "usr_91500c8632eb2ea16d49",
+    "createdAt": "2026-11-08T18:30:10.587Z",
+    "updatedAt": "2026-11-08T18:30:10.587Z",
+    "version": 1,
+    "visibility": "unlisted",
+    "input": {
+      "fullName": "Zainab",
+      "interests": [],
+      "hobbies": [],
+      "preferredVisualDirection": "auto",
+      "visibility": "unlisted",
+      "privacyConsentConfirmed": true
+    },
+    "intelligence": {
+      "nameResearch": {
+        "normalizedName": "Zainab",
+        "firstName": "Zainab",
+        "lexiconMatch": false,
+        "phoneticIPA": {
+          "value": "/ˈzɑːɪnɑːb/",
+          "category": "creative_interpretation",
+          "source": "Heuristic Grapheme-to-Phoneme Approximation (Unverified)",
+          "confidence": 0.45,
+          "notes": "Algorithmic phonetic approximation; not a verified dictionary transcription."
+        },
+        "syllableCount": 2,
+        "syllableBreakdown": [
+          "Zai",
+          "nab"
+        ],
+        "sonicProfile": {
+          "value": {
+            "cadence": "percussive",
+            "dominantVowels": [
+              "a",
+              "i"
+            ],
+            "acousticWarmth": 83,
+            "rhythmPattern": "— ◡"
+          },
+          "category": "creative_interpretation",
+          "source": "Prosodic Cadence & Vowel-Weight Heuristic Model (Creative Synthesis)",
+          "notes": "Artistic sound-symbolism model used to guide visual and typographic rhythm."
+        },
+        "linguisticFamily": {
+          "value": "Unverified Global Onomastic Stem (Heuristic Classification)",
+          "category": "creative_interpretation",
+          "source": "Heuristic Morphological Pattern Matcher (Unverified)",
+          "confidence": 0.5,
+          "notes": "Name not present in curated verified lexicon; linguistic family is a heuristic estimate and not claimed as verified fact."
+        },
+        "scriptVariations": [
+          {
+            "scriptName": "Monumental Epigraphic Capitals",
+            "representation": "ZAINAB",
+            "note": "Geometric display capitals (Typographic rendering)"
+          },
+          {
+            "scriptName": "Prosodic Syllable Division",
+            "representation": "Zai · nab",
+            "note": "Heuristic syllable segmentation for visual pacing"
+          },
+          {
+            "scriptName": "Monogram Cipher",
+            "representation": "Z",
+            "note": "Typographic seal combining initials"
+          }
+        ],
+        "historicalBearers": [],
+        "sources": [
+          {
+            "id": "src-iau-ephemeris",
+            "title": "International Astronomical Union (IAU) Planetary & Ecliptic Reference",
+            "domain": "iau.org",
+            "url": "https://www.iau.org",
+            "category": "astronomical",
+            "verified": true
+          }
+        ]
+      },
+      "nameMeaning": {
+        "primaryEtymology": {
+          "value": "Heuristic structural analysis: \"Zainab\" unfolds across 2 syllables (/ˈzɑːɪnɑːb/). Because this specific name variant is not in the curated philological database, no unverified dictionary etymology is fabricated.",
+          "category": "creative_interpretation",
+          "source": "Heuristic Prosodic & Morphological Analysis (Non-Factual)",
+          "confidence": 0.5
+        },
+        "literalTranslation": {
+          "value": "Poetic Resonance of Zainab (Creative Typographic Interpretation)",
+          "category": "creative_interpretation",
+          "source": "Poetic Onomastic Synthesis (Creative Interpretation)"
+        },
+        "rootWords": [
+          {
+            "root": "Zai",
+            "language": "Heuristic Phonetic Stem (Unverified)",
+            "meaning": "Primary acoustic anchor used for visual rhythm"
+          }
+        ],
+        "semanticFields": {
+          "value": [
+            "Architectural Clarity",
+            "Harmonic Cadence",
+            "Intellectual Curiosity",
+            "Timeless Craft"
+          ],
+          "category": "creative_interpretation",
+          "source": "Creative Semantic Field Mapping"
+        },
+        "symbolicMotifs": {
+          "value": [
+            "Celestial Meridian",
+            "Precision Compass",
+            "Botanical Specimen",
+            "Monolithic Arch"
+          ],
+          "category": "creative_interpretation",
+          "source": "Visual Motif Synthesis"
+        },
+        "epistemicDisclaimer": "No verified dictionary entry matched this exact name string; all etymological and symbolic themes are explicitly labeled as Creative Interpretations rather than Verified Facts."
+      },
+      "culturalContext": {
+        "heritageSynthesis": {
+          "value": "No geographic location was provided by the user; this experience adopts an open cosmopolitan architectural aesthetic without assuming any personal nationality or birthplace.",
+          "category": "creative_interpretation",
+          "source": "Cosmopolitan Creative Direction (Zero Location Inference)"
+        },
+        "geographicResonance": {
+          "value": {
+            "region": "Unspecified Personal Location (Cosmopolitan Atelier)",
+            "coordinates": {
+              "lat": 0,
+              "lng": 0
+            },
+            "architecturalVernacular": "Modernist Stone Pavilion & Timber Courtyard",
+            "traditionalCraft": "Archival Bookbinding, Precision Cartography & Ceramic Glazing"
+          },
+          "category": "creative_interpretation",
+          "source": "Creative Architectural Direction"
+        },
+        "artisticTraditions": {
+          "value": [
+            "Geometric Abstraction",
+            "Editorial Typography",
+            "Natural Philosophy Illustration"
+          ],
+          "category": "creative_interpretation",
+          "source": "Atelier Creative Synthesis"
+        },
+        "colorHeritage": [
+          {
+            "name": "Obsidian Ink",
+            "hex": "#141619",
+            "culturalOrigin": "Archival carbon ink"
+          },
+          {
+            "name": "Raw Linen Vellum",
+            "hex": "#F5F2EB",
+            "culturalOrigin": "Unbleached cotton rag paper"
+          },
+          {
+            "name": "Ochre Terracotta",
+            "hex": "#C87D55",
+            "culturalOrigin": "Natural earth mineral pigment"
+          }
+        ],
+        "literaryOrPhilosophicalEcho": {
+          "value": {
+            "quote": "Every name is a vessel of memory and an open horizon waiting to be inscribed by lived days.",
+            "attribution": "Archival Notebooks on Poetics & Space",
+            "tradition": "Humanist Literary Tradition"
+          },
+          "category": "creative_interpretation",
+          "source": "Atelier Literary Anthology"
+        }
+      },
+      "birthday": {
+        "hasBirthData": false,
+        "validDate": true,
+        "validationMessage": "No birth date provided; temporal and zodiac modules gracefully operating in timeless mode.",
+        "historicalEventsOnDay": []
+      },
+      "zodiac": {
+        "computed": false
+      },
+      "planetary": {
+        "rulingBody": {
+          "value": {
+            "name": "Luna (Selene / Qamar)",
+            "classicalSymbol": "☽",
+            "orbitalPeriodDays": 27.32,
+            "axialTiltDegrees": 6.68,
+            "albedo": 0.12,
+            "dominantSpectrumHex": "#E2E8F0",
+            "secondarySpectrumHex": "#475569",
+            "harmonicFrequencyHz": 210.42,
+            "ringSystem": false,
+            "moonCount": 1,
+            "poeticEpithet": "The Silver Mirror of Tides and Archival Memory"
+          },
+          "category": "creative_interpretation",
+          "source": "IAU Planetary Ephemeris Constants (Orbital Period, Tilt, Albedo) + Classical Celestial Symbolism"
+        },
+        "shaderParameters": {
+          "orbitSpeed": 0.44,
+          "particleCount": 1496,
+          "turbulence": 0.33,
+          "bloomIntensity": 0.56,
+          "wireframeRatio": 0.61
+        }
+      },
+      "interests": {
+        "hasUserInterests": false,
+        "rawInterests": [],
+        "domainVectors": [
+          {
+            "domain": "Architectural & Spatial Contemplation",
+            "weight": 84,
+            "matchedKeywords": [
+              "Default Curated Vector"
+            ],
+            "visualMetaphor": "Tessellated Courtyard & Light Aperture",
+            "interactiveFeatureSuggestion": "Interactive 3D Geometric Totem & Constellation Canvas"
+          },
+          {
+            "domain": "Literary & Historical Inquiry",
+            "weight": 78,
+            "matchedKeywords": [
+              "Onomastic Archive"
+            ],
+            "visualMetaphor": "Illuminated Folio & Epigraphic Chronicle",
+            "interactiveFeatureSuggestion": "Personal Wax-Sealed Letter & Postcard Studio"
+          }
+        ],
+        "synthesizedPassionsNarrative": {
+          "value": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos.",
+          "category": "creative_interpretation",
+          "source": "Atelier Default Thematic Vector"
+        }
+      },
+      "personality": {
+        "hasUserPersonalityInput": false,
+        "verbatimTraits": [],
+        "toneOfVoice": {
+          "value": {
+            "warmth": 75,
+            "formality": 68,
+            "kineticEnergy": 62,
+            "introspection": 78,
+            "editorialStyle": "Poetic Editorial Monograph (Neutral & Respectful)"
+          },
+          "category": "creative_interpretation",
+          "source": "Default Editorial Voice (Zero Name-Based Personality Inference)"
+        },
+        "strictNonInferenceNotice": "No personal character traits were provided by the user. In compliance with epistemic integrity rules, this platform never infers actual human personality from a name or birth date alone."
+      },
+      "creativeDirection": {
+        "archetypeId": "editorial_monograph",
+        "archetypeName": "Illuminated Architectural Monograph",
+        "artDirectionManifesto": "Inspired by rare folio manuscripts, courtyard stone arcades, and precision brass astrolabes—combining warm parchment surfaces with deep lapis ink and burnished gold accents.",
+        "moodKeywords": [
+          "Luminous Scholasticism",
+          "Sacred Geometry",
+          "Warm Vellum",
+          "Timeless Proportion"
+        ],
+        "spatialArchitecture": {
+          "gridSystem": "editorial-split",
+          "whitespaceRatio": "generous",
+          "sectionRhythm": "Asymmetric two-column folio with monumental Roman numerals and engraved hairline rules"
+        },
+        "lightingAndAtmosphere": {
+          "themePolarity": "warm-parchment",
+          "grainOpacity": 0.035,
+          "ambientGlowIntensity": 0.4
+        }
+      },
+      "storytelling": {
+        "heroHeadline": "Zainab",
+        "heroSubheadline": "Poetic Resonance of Zainab (Creative Typographic Interpretation) — An Interactive Monograph of Origin, Cosmos & Living Craft.",
+        "prologueManifesto": "Every name is an architectural vessel before it is spoken. In the Unverified Global Onomastic Stem (Heuristic Classification) tradition, \"Zainab\" (/ˈzɑːɪnɑːb/) unfolds across 2 syllables with a percussive cadence. This digital sanctuary weaves verified historical etymology, cultural geography, and personal pursuits into an art-directed living chronicle.",
+        "chapters": [
+          {
+            "id": "chapter-origin",
+            "chapterNumber": "I",
+            "title": "The Architecture of the Name",
+            "subtitle": "Unverified Global Onomastic Stem (Heuristic Classification) · /ˈzɑːɪnɑːb/",
+            "narrativeBody": "Heuristic structural analysis: \"Zainab\" unfolds across 2 syllables (/ˈzɑːɪnɑːb/). Because this specific name variant is not in the curated philological database, no unverified dictionary etymology is fabricated. While this specific name variant is analyzed through phonological cadence rather than a static lexicon entry, its syllabic structure (Zai · nab) establishes the typographic and spatial rhythm of this monograph.",
+            "pullQuote": "Poetic Resonance of Zainab (Creative Typographic Interpretation)",
+            "epistemicTag": "creative_interpretation"
+          },
+          {
+            "id": "chapter-meridian",
+            "chapterNumber": "II",
+            "title": "Cultural & Geographic Meridian",
+            "subtitle": "Unspecified Personal Location (Cosmopolitan Atelier)",
+            "narrativeBody": "No geographic location was provided by the user; this experience adopts an open cosmopolitan architectural aesthetic without assuming any personal nationality or birthplace. Its visual language draws from Modernist Stone Pavilion & Timber Courtyard and the tactile mastery of Archival Bookbinding, Precision Cartography & Ceramic Glazing.",
+            "pullQuote": "Every name is a vessel of memory and an open horizon waiting to be inscribed by lived days.",
+            "epistemicTag": "creative_interpretation"
+          },
+          {
+            "id": "chapter-cosmos",
+            "chapterNumber": "III",
+            "title": "Celestial & Harmonic Resonance",
+            "subtitle": "Luna (Selene / Qamar) (☽)",
+            "narrativeBody": "Because no personal birth date was provided, zero natal or astrological assumptions are made. Instead, the experience aligns with the classical IAU astronomical constants of Luna (Selene / Qamar) (The Silver Mirror of Tides and Archival Memory), resonating at 210.42 Hz.",
+            "pullQuote": "The Silver Mirror of Tides and Archival Memory",
+            "epistemicTag": "creative_interpretation"
+          },
+          {
+            "id": "chapter-passions",
+            "chapterNumber": "IV",
+            "title": "Living Horizons & Personal Craft",
+            "subtitle": "Curiosity, Contemplation & Creative Agency",
+            "narrativeBody": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos. ",
+            "pullQuote": "“Identity is not prescribed by origin; it is composed day by day through attention, craft, and generosity.”",
+            "epistemicTag": "creative_interpretation"
+          }
+        ],
+        "personalLetter": {
+          "salutation": "To Zainab,",
+          "bodyParagraphs": [
+            "Carry the resonance of your name—Zainab—not as a fixed boundary, but as an open courtyard of light. From the roots that gave your name its percussive cadence to the horizons you actively shape today, your story belongs to the lineage of builders and seekers.",
+            "May every season bring clarity to your inquiries, warmth to your threshold, and new constellations to navigate.",
+            "This digital monograph was crafted specifically for you—a living artifact celebrating both the history behind your name and the unwritten chapters ahead."
+          ],
+          "valediction": "With enduring admiration and scholarly craft,",
+          "signature": "The Atelier Digital Monograph Engine"
+        },
+        "curatedQuotes": [
+          {
+            "text": "Every name is a vessel of memory and an open horizon waiting to be inscribed by lived days.",
+            "author": "Archival Notebooks on Poetics & Space",
+            "context": "Humanist Literary Tradition"
+          },
+          {
+            "text": "What we call the beginning is often the end, and to make an end is to make a beginning.",
+            "author": "Poetics of Time & Architecture",
+            "context": "Editorial Reflection"
+          }
+        ]
+      },
+      "visualDesign": {
+        "colorPalette": {
+          "backgroundPrimary": "#F7F3EB",
+          "backgroundElevated": "#EFE9DC",
+          "surfaceGlass": "rgba(247, 243, 235, 0.86)",
+          "textPrimary": "#16202A",
+          "textSecondary": "#394858",
+          "textMuted": "#6D7A88",
+          "accentPrimary": "#B67B32",
+          "accentSecondary": "#141619",
+          "accentTertiary": "#A44A3F",
+          "borderSubtle": "rgba(22, 32, 42, 0.14)"
+        },
+        "typography": {
+          "displayFont": "\"Cormorant Garamond\", Georgia, serif",
+          "serifFont": "\"Cormorant Garamond\", Georgia, serif",
+          "sansFont": "\"Plus Jakarta Sans\", -apple-system, sans-serif",
+          "monoFont": "\"JetBrains Mono\", monospace",
+          "displayTracking": "-0.02em",
+          "heroScaleRem": 5.2
+        },
+        "borderRadiusToken": "6px",
+        "borderTreatment": "double-editorial",
+        "backgroundTreatment": "organic-paper"
+      },
+      "interactions": {
+        "threeSceneMode": "orbital_sanctuary",
+        "cursorMode": "magnetic_ring",
+        "characterTotem": {
+          "type": "celestial_astrolabe",
+          "name": "The Meridian Astrolabe of Al-Qarawiyyin",
+          "symbolism": "Concentric brass rings measuring celestial altitude, time, and intellectual navigation.",
+          "primaryColor": "#B67B32",
+          "secondaryColor": "#141619",
+          "interactiveBehavior": "Responds to cursor orbital tilt, harmonic audio resonance, and click inspection"
+        },
+        "enabledModules": {
+          "threeHeroCanvas": true,
+          "magneticCursor": true,
+          "tiltCards": true,
+          "personalLetterEnvelope": true,
+          "digitalPostcardStudio": true,
+          "harmonicAudioSynth": true,
+          "constellationMiniGame": true,
+          "epistemicProvenanceModal": true,
+          "easterEggCipher": true
+        },
+        "motionProfile": {
+          "entranceStyle": "staggered-editorial",
+          "scrollParallaxIntensity": 0.35,
+          "springStiffness": 110,
+          "springDamping": 18
+        }
+      },
+      "content": {
+        "navigationItems": [
+          {
+            "id": "hero",
+            "label": "Sanctuary",
+            "index": "00"
+          },
+          {
+            "id": "dossier",
+            "label": "Dossier",
+            "index": "01"
+          },
+          {
+            "id": "chronicle",
+            "label": "Chronicle",
+            "index": "02"
+          },
+          {
+            "id": "totem",
+            "label": "3D Totem & Harmonics",
+            "index": "03"
+          },
+          {
+            "id": "constellation",
+            "label": "Constellation",
+            "index": "04"
+          },
+          {
+            "id": "epistle",
+            "label": "Epistle & Postcard",
+            "index": "05"
+          },
+          {
+            "id": "provenance",
+            "label": "Epistemic Audit",
+            "index": "06"
+          }
+        ],
+        "identityDossier": {
+          "sectionTitle": "Archival Dossier — Zainab",
+          "cards": [
+            {
+              "id": "card-etymology",
+              "label": "01 / ONOMASTIC ROOT",
+              "title": "Zai",
+              "value": "Poetic Resonance of Zainab (Creative Typographic Interpretation)",
+              "detail": "Heuristic structural analysis: \"Zainab\" unfolds across 2 syllables (/ˈzɑːɪnɑːb/). Because this specific name variant is not in the curated philological database, no unverified dictionary etymology is fabricated.",
+              "epistemicCategory": "creative_interpretation"
+            },
+            {
+              "id": "card-heritage",
+              "label": "02 / CULTURAL MERIDIAN",
+              "title": "Unspecified Personal Location (Cosmopolitan Atelier)",
+              "value": "Modernist Stone Pavilion & Timber Courtyard",
+              "detail": "Traditional Craft: Archival Bookbinding, Precision Cartography & Ceramic Glazing",
+              "epistemicCategory": "creative_interpretation"
+            },
+            {
+              "id": "card-celestial",
+              "label": "03 / CELESTIAL EPHEMERIS",
+              "title": "Luna (Selene / Qamar)",
+              "value": "☽ · 210.42 Hz",
+              "detail": "Orbital Period: 27.32 days · Axial Tilt: 6.68°",
+              "epistemicCategory": "creative_interpretation"
+            },
+            {
+              "id": "card-passions",
+              "label": "04 / PERSONAL VECTORS",
+              "title": "Universal Humanist Vectors",
+              "value": "Architecture · Poetics · Cosmos",
+              "detail": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos.",
+              "epistemicCategory": "creative_interpretation"
+            }
+          ]
+        },
+        "interactivePostcard": {
+          "stampCode": "ATL-ZAI-210",
+          "originLabel": "Unspecified Personal Location (Cosmopolitan Atelier)",
+          "destinationLabel": "Sanctuary of Zainab",
+          "defaultMessage": "May the architecture of your days reflect the clarity and luminous depth embedded within the name Zainab.",
+          "prompts": [
+            "A reflection on Zainab’s percussive cadence...",
+            "From the meridian of Unspecified Personal Location (Cosmopolitan Atelier)...",
+            "Under the harmonic frequency of 210.42 Hz..."
+          ]
+        },
+        "miniGameConfig": {
+          "title": "Meridian Star Alignment — Zainab’s Constellation",
+          "instruction": "Connect the 5 celestial nodes in sequence to synthesize the geometric sigil and unlock the archival inscription.",
+          "targetNodes": [
+            {
+              "id": "node-1",
+              "label": "αRoot (Zai)",
+              "x": 20,
+              "y": 65,
+              "unlockedInsight": "Phonetic Anchor: /ˈzɑːɪnɑːb/"
+            },
+            {
+              "id": "node-2",
+              "label": "βMeridian (0.0°N)",
+              "x": 38,
+              "y": 28,
+              "unlockedInsight": "Heritage Craft: Archival Bookbinding, Precision Cartography & Ceramic Glazing"
+            },
+            {
+              "id": "node-3",
+              "label": "γHarmonic (210.42 Hz)",
+              "x": 56,
+              "y": 70,
+              "unlockedInsight": "Celestial Body: Luna (Selene / Qamar)"
+            },
+            {
+              "id": "node-4",
+              "label": "δMotif (Celestial Meridian)",
+              "x": 74,
+              "y": 24,
+              "unlockedInsight": "Primary Symbol: Celestial Meridian"
+            },
+            {
+              "id": "node-5",
+              "label": "ωApex (Zainab)",
+              "x": 86,
+              "y": 54,
+              "unlockedInsight": "Meaning: Poetic Resonance of Zainab (Creative Typographic Interpretation)"
+            }
+          ],
+          "completionRewardQuote": "Every name is a vessel of memory and an open horizon waiting to be inscribed by lived days."
+        },
+        "easterEgg": {
+          "triggerHint": "Click the Monograph Seal 3 times or type \"ZAINAB\" in the Cipher Vault",
+          "secretKeyphrase": "ZAINAB",
+          "revealedArtifactTitle": "Secret Archival Colophon — Folio № 396",
+          "revealedMessage": "In 859 CE, Fatima al-Fihri demonstrated that a single individual’s vision can found an institution that illuminates centuries. This hidden colophon honors Zainab’s unique place in the living archive."
+        }
+      },
+      "verification": {
+        "passed": true,
+        "timestamp": "2026-11-08T18:30:10.587Z",
+        "executionMode": "deterministic_lexicon_and_heuristics",
+        "totalClaimsAudited": 18,
+        "breakdown": {
+          "verifiedFactsCount": 0,
+          "userProvidedCount": 1,
+          "astrologicalCount": 0,
+          "creativeInterpretationCount": 17
+        },
+        "epistemicGuarantees": [
+          "Zero personal biographical facts (birthdays, locations, hobbies, personality) were fabricated or scraped.",
+          "Heuristic phonetic or morphological estimates for uncurated names are never labeled as Verified Facts.",
+          "Actual human personality is never inferred from name etymology or birth date alone.",
+          "Linguistic and historical bearer citations are strictly separated from astrological and creative interpretations."
+        ],
+        "sanitizedWarnings": [
+          "Name \"Zainab\" is not in the curated philological lexicon; phonetic and etymological outputs are strictly classified as Creative/Heuristic Interpretations rather than Verified Facts."
+        ]
+      },
+      "portrait": {
+        "language": "en+ur",
+        "ageGiven": 22,
+        "title": {
+          "en": "The Unspoken Keeper",
+          "ur": "Chup Se Rakhsora"
+        },
+        "opening": {
+          "en": "You carry a silence that is not empty, but full. It is a container, carefully sealed. People mistake it for calm, but you know it is vigilance.",
+          "ur": "Aapki khamoshi khali nahi, balki bharpoor hai. Yeh ek darpan hai, kaaydat se band kiya gaya. Log isse sukoon samajhte hain, lekin aap jaanti hain ke yeh mehfoozi hai."
+        },
+        "sections": [
+          {
+            "heading": {
+              "en": "The Inner Vault",
+              "ur": "Androoni Khazana"
+            },
+            "body": {
+              "en": "You guard your inner world with a ferocity that surprises even you. Not everything is shared. Some thoughts are anchors, kept heavy in the chest. You do not hide out of fear, but to ensure that what remains is untouched. This selectivity is your power.",
+              "ur": "Aap apne andar ke dunya ke liye ek ajeeb se himmat se rakhne wali hain. Har baat share nahi hoti. Kuch khayal kachow jaise hain, seene mein bhari hote hain. Aap darr ke maamne nahi chupati, balki isliye ke jo bacha hai, o waisa hi rahe. Yeh hi aapki taqat hai."
+            }
+          },
+          {
+            "heading": {
+              "en": "Love as Diligence",
+              "ur": "Mauq par Mohabbat"
+            },
+            "body": {
+              "en": "You do not love loudly; you love meticulously. You remember the small things others overlook. When you care, you are present in the details. Yet, you rarely say the word. Your affection is shown in acts, in the warmth of a hand, in the patience of waiting. It is quiet, but it is constant.",
+              "ur": "Aap shor macha kar mohabbat nahi karti, balke taqad se karti hain. Aap un choti baaton yaad rakhti hain jo doosrein bhool jate hain. Jab aap ko kisi ki parwah hoti hai, aap har tafseel mein maujood hoti hain. Halan ke aam tor par aap woh lafzz nahi bolti. Aapki mohabbat amal mein hai, haath ki garmahat mein, intezaar ke sabr mein. Yeh chup hai, lekin hamesha sabit hai."
+            }
+          },
+          {
+            "heading": {
+              "en": "The Argument's Edge",
+              "ur": "Jhagde Ki Sawar"
+            },
+            "body": {
+              "en": "When conflict arises, you do not explode. You withdraw, or you become surgical. You pick your words like sharp instruments. You want to be understood, not just heard. If you feel cornered, you shut down completely. You need space to process before you can engage again. Your silence in the heat is not agreement; it is protection.",
+              "ur": "Jab munasibat mein tangi aati hai, aap phat-nahi karti. Aap peeche hat ti hain, ya phir bohat zyada dhyan se baat karti hain. Aap apne lafzon ko tez chaku ki tarah chuntti hain. Aap chahti hain ke samjhi jayein, sirf suni jayein nahi. Agar aap ko lagta hai ke aap ghayab ho rahi hain, to aap bilkul band ho jati hain. Aap ko phir se shamil hone se pehle khamoshi chahiye. Aapki garmahat ki khamoshi manzoori nahi; yeh mehfoozi hai."
+            }
+          },
+          {
+            "heading": {
+              "en": "Forgiveness as Letting Go",
+              "ur": "Maaf Karna aur Chhodna"
+            },
+            "body": {
+              "en": "Forgiving you is not about erasing the past. It is about deciding the past no longer directs your steps. It takes time. You do not rush it. You may smile at the person who hurt you, but the weight lingers in your gut. You forgive to free yourself, not to restore the old dynamic. It is a slow, deliberate release.",
+              "ur": "Aap maaf karna hawa mein nahi. Yeh us baat ka faisla hai ke gustish aap ke qadamon ko nahi chala sakti. Isme waqt lagta hai. Aap tezi nahi karti. Aap us shaks se has kar baat kar sakti hain jo neeli chhoda hai, lekin woh bhari pan pet mein reh jata hai. Aap khud ko azad karne ke liye maaf karti hain, purani huwi dobara laane ke liye nahi. Yeh dheeman aur soch samajh ka chhootna hai."
+            }
+          },
+          {
+            "heading": {
+              "en": "The Visible Mask",
+              "ur": "Zahiri Chara"
+            },
+            "body": {
+              "en": "Exteriorly, you seem composed, perhaps even detached. People think you are easygoing. You are not. You are merely efficient with your energy. You observe more than you participate. This gap between the calm surface and the turbulent depth is where your identity lives. You are a bridge between two worlds.",
+              "ur": "Bahar se aap sukoon se bhri lagti hain, shayad thori alag bhi. Log sochte hain aap aasan hain. Aap nahi hain. Aap sirf apni energy ka behtar istimaal karti hain. Aap zyada dekhne wali hain, shamil hone wali nahi. Yeh fasla, sukoon se sapne ke beech, aapki pehchan ki yahan hai. Aap do duniyon ke beech ka pul hain."
+            }
+          },
+          {
+            "heading": {
+              "en": "The Hidden Ambition",
+              "ur": "Chupi Hui Kaamna"
+            },
+            "body": {
+              "en": "You do not chase fame. You chase autonomy. You want a life where you are not dependent on others' validation. You build your skills in the dark. You are preparing for a future where you stand alone, but not lonely. This quiet drive is the engine beneath your stillness. It is persistent and unyielding.",
+              "ur": "Aap sha'oori ke peeche nahi bhagti. Aap apni azadi ke peeche bhagti hain. Aap ek aisi zindagi chahti hain jahan aap doosron ki taqdeer par muntaqil na hon. Aap apne maharaton ko andhere mein banta hai. Aap woh mustaqbil tayyar kar rahi hain jahan aap akeli khadi ho, leka ya'ni thakay rahi nahi. Yeh chupi hui himmat aapki khamoshi ke neeche hai. Yeh baqaa aur qayam hai."
+            }
+          }
+        ],
+        "mirror": {
+          "en": "You are the one who observes the water but never jumps in until the depth is known.",
+          "ur": "Aap woh hain jo paani ko dekhti hain, lekin gehraai pata chalne tak koodti nahi."
+        },
+        "closing": {
+          "en": "Your silence is a language. Speak it, and be heard.",
+          "ur": "Aapki khamoshi ek zabaan hai. Isse bole, aur sune jai."
+        },
+        "visual": {
+          "concept": "A sealed glass vessel floating in a deep, textured void, containing a slow-moving, glowing ink cloud.",
+          "composition": "split",
+          "backdrop": "dots",
+          "palette": {
+            "bg": "#0F172A",
+            "surface": "#1E293B",
+            "ink": "#F8FAFC",
+            "accent": "#6366F1",
+            "accent2": "#94A3B8"
+          },
+          "fontDisplay": "Instrument Serif",
+          "fontBody": "Manrope",
+          "reveal": "fade",
+          "character": {
+            "name": "Noor",
+            "body": "drop",
+            "eyes": "sleepy",
+            "accessory": "halo",
+            "motion": "float",
+            "line": {
+              "en": "I hold your secrets like warm water in my hands.",
+              "ur": "Main aap ke raaz ko apno haathon mein garam paani ki tarah pakde rakhti hoon."
+            }
+          }
+        },
+        "model": "qwen-3.8-27b",
+        "generatedAt": "2026-11-08T18:30:10.581Z"
+      }
+    },
+    "pipelineLogs": [
+      {
+        "stepNumber": 1,
+        "code": "INPUT_COLLECTION",
+        "title": "Input Collection & Normalization",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Normalized identity payload for \"Zainab\" (0 user-supplied interest tags; zero fabricated fields)."
+      },
+      {
+        "stepNumber": 2,
+        "code": "INPUT_VALIDATION",
+        "title": "Temporal & Schema Validation",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Optional temporal fields omitted by user; configured timeless mode (zero invented birthdates)."
+      },
+      {
+        "stepNumber": 3,
+        "code": "RESEARCH_COLLECTION",
+        "title": "Onomastic, Etymological & Cultural Research",
+        "status": "completed",
+        "executionNature": "deterministic_heuristic",
+        "durationMs": 4,
+        "summary": "Executed phonological & syllable heuristic analysis for \"Zainab\" (/ˈzɑːɪnɑːb/); classified as Creative/Heuristic Interpretation.",
+        "artifactPreview": "Poetic Resonance of Zainab (Creative Typographic Interpretation)"
+      },
+      {
+        "stepNumber": 4,
+        "code": "EVIDENCE_CLASSIFICATION",
+        "title": "Four-Tier Epistemic Evidence Classification",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 3,
+        "summary": "Partitioned claims into Verified Facts, User-Provided Data, Astrological Symbolism, and Creative/Heuristic Interpretations."
+      },
+      {
+        "stepNumber": 5,
+        "code": "INTELLIGENCE_SYNTHESIS",
+        "title": "14-Module Multi-Vector Intelligence Synthesis",
+        "status": "completed",
+        "executionNature": "astronomical_calculation",
+        "durationMs": 4,
+        "summary": "Synthesized 2 passion vectors and IAU planetary harmonic frequency (210.42 Hz)."
+      },
+      {
+        "stepNumber": 6,
+        "code": "CREATIVE_DIRECTION",
+        "title": "Art Direction & Spatial Archetype Selection",
+        "status": "completed",
+        "executionNature": "deterministic_heuristic",
+        "durationMs": 3,
+        "summary": "Selected archetype \"Illuminated Architectural Monograph\" (editorial-split).",
+        "artifactPreview": "Inspired by rare folio manuscripts, courtyard stone arcades, and precision brass astrolabes—combining warm parchment surfaces with deep lapis ink and burnished gold accents."
+      },
+      {
+        "stepNumber": 7,
+        "code": "VISUAL_SYSTEM",
+        "title": "Adaptive Color Palette & Typography System",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Generated palette (#F7F3EB / #B67B32) & font stack (\"Cormorant Garamond\")."
+      },
+      {
+        "stepNumber": 8,
+        "code": "STRUCTURE_GENERATION",
+        "title": "Bespoke Page Topology & Navigation Architecture",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Constructed 7 interactive chapters and 4 archival dossier cards."
+      },
+      {
+        "stepNumber": 9,
+        "code": "INTERACTION_SELECTION",
+        "title": "3D WebGL, Cursor Physics & Motion Choreography",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Assigned 3D scene \"orbital_sanctuary\", cursor \"magnetic_ring\", and totem \"The Meridian Astrolabe of Al-Qarawiyyin\"."
+      },
+      {
+        "stepNumber": 10,
+        "code": "CONTENT_GENERATION",
+        "title": "Narrative Chronicle, Epistle & Quote Synthesis",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 5,
+        "summary": "Authored 4 narrative chapters, personal epistle, and postcard via structured narrative synthesis (GEMINI_API_KEY not set)."
+      },
+      {
+        "stepNumber": 11,
+        "code": "ASSET_GENERATION",
+        "title": "Procedural 3D Geometry, Totem SVG & Web Audio Synth Setup",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Configured 1496 WebGL particles, SVG sigil parameters, and 210.42 Hz Web Audio oscillator."
+      },
+      {
+        "stepNumber": 12,
+        "code": "WEBSITE_RENDERING",
+        "title": "Hydrating Adaptive Experience Configuration",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 2,
+        "summary": "Bound design tokens, responsive breakpoints, and reduced-motion fallbacks for editorial_monograph."
+      },
+      {
+        "stepNumber": 13,
+        "code": "AUTOMATED_TESTING",
+        "title": "Programmatic Epistemic Audit & Non-Fabrication Verification",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 3,
+        "summary": "Audited 18 claims (0 verified facts, 1 user-provided, 17 creative/heuristic)."
+      },
+      {
+        "stepNumber": 14,
+        "code": "VISUAL_VERIFICATION",
+        "title": "DOM Landmark & Contrast Polarity Configuration",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Configured semantic section landmarks and contrast polarity tokens for browser rendering."
+      },
+      {
+        "stepNumber": 15,
+        "code": "USER_PREVIEW",
+        "title": "Interactive Studio Preview & Live Section Editor Ready",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 2,
+        "summary": "Experience staged for live preview, section-level regeneration, and design token customization."
+      },
+      {
+        "stepNumber": 16,
+        "code": "PUBLISHING_SHARING",
+        "title": "Multi-Tenant Persistence & Export Bundle Registration",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Registered isolated experience at /e/zainab-dkix with owner isolation and standalone source export."
+      }
+    ],
+    "storageSource": "local_fallback"
+  },
+  "ayesha-zk5v": {
+    "id": "exp_wkof7e",
+    "slug": "ayesha-zk5v",
+    "ownerId": "usr_3f9fb3457c2ea481ac54",
+    "createdAt": "2026-11-08T18:33:32.121Z",
+    "updatedAt": "2026-11-08T18:33:32.121Z",
+    "version": 1,
+    "visibility": "unlisted",
+    "input": {
+      "fullName": "Ayesha",
+      "interests": [],
+      "hobbies": [],
+      "preferredVisualDirection": "auto",
+      "visibility": "unlisted",
+      "privacyConsentConfirmed": true
+    },
+    "intelligence": {
+      "nameResearch": {
+        "normalizedName": "Ayesha",
+        "firstName": "Ayesha",
+        "lexiconMatch": false,
+        "phoneticIPA": {
+          "value": "/ˈɑːiɛʃɑː/",
+          "category": "creative_interpretation",
+          "source": "Heuristic Grapheme-to-Phoneme Approximation (Unverified)",
+          "confidence": 0.45,
+          "notes": "Algorithmic phonetic approximation; not a verified dictionary transcription."
+        },
+        "syllableCount": 2,
+        "syllableBreakdown": [
+          "Ayes",
+          "ha"
+        ],
+        "sonicProfile": {
+          "value": {
+            "cadence": "resonant",
+            "dominantVowels": [
+              "a",
+              "y",
+              "e"
+            ],
+            "acousticWarmth": 83,
+            "rhythmPattern": "— ◡"
+          },
+          "category": "creative_interpretation",
+          "source": "Prosodic Cadence & Vowel-Weight Heuristic Model (Creative Synthesis)",
+          "notes": "Artistic sound-symbolism model used to guide visual and typographic rhythm."
+        },
+        "linguisticFamily": {
+          "value": "Semitic / Classical Arabic & Persianate (Heuristic Pattern Match)",
+          "category": "creative_interpretation",
+          "source": "Heuristic Morphological Pattern Matcher (Unverified)",
+          "confidence": 0.5,
+          "notes": "Name not present in curated verified lexicon; linguistic family is a heuristic estimate and not claimed as verified fact."
+        },
+        "scriptVariations": [
+          {
+            "scriptName": "Monumental Epigraphic Capitals",
+            "representation": "AYESHA",
+            "note": "Geometric display capitals (Typographic rendering)"
+          },
+          {
+            "scriptName": "Prosodic Syllable Division",
+            "representation": "Ayes · ha",
+            "note": "Heuristic syllable segmentation for visual pacing"
+          },
+          {
+            "scriptName": "Monogram Cipher",
+            "representation": "A",
+            "note": "Typographic seal combining initials"
+          }
+        ],
+        "historicalBearers": [],
+        "sources": [
+          {
+            "id": "src-iau-ephemeris",
+            "title": "International Astronomical Union (IAU) Planetary & Ecliptic Reference",
+            "domain": "iau.org",
+            "url": "https://www.iau.org",
+            "category": "astronomical",
+            "verified": true
+          }
+        ]
+      },
+      "nameMeaning": {
+        "primaryEtymology": {
+          "value": "Heuristic phonological match suggesting Classical Arabic or Persianate onomastic morphology. Note: This is an algorithmic pattern estimate, not a verified dictionary entry.",
+          "category": "creative_interpretation",
+          "source": "Heuristic Prosodic & Morphological Analysis (Non-Factual)",
+          "confidence": 0.5
+        },
+        "literalTranslation": {
+          "value": "Poetic Resonance of Ayesha (Creative Typographic Interpretation)",
+          "category": "creative_interpretation",
+          "source": "Poetic Onomastic Synthesis (Creative Interpretation)"
+        },
+        "rootWords": [
+          {
+            "root": "Ayes",
+            "language": "Heuristic Phonetic Stem (Unverified)",
+            "meaning": "Primary acoustic anchor used for visual rhythm"
+          }
+        ],
+        "semanticFields": {
+          "value": [
+            "Architectural Clarity",
+            "Harmonic Cadence",
+            "Intellectual Curiosity",
+            "Timeless Craft"
+          ],
+          "category": "creative_interpretation",
+          "source": "Creative Semantic Field Mapping"
+        },
+        "symbolicMotifs": {
+          "value": [
+            "Octagonal Star Tessellation",
+            "Calligraphic Reed Pen Trajectory",
+            "Courtyard Astrolabe",
+            "Muqarnas Vault"
+          ],
+          "category": "creative_interpretation",
+          "source": "Visual Motif Synthesis"
+        },
+        "epistemicDisclaimer": "No verified dictionary entry matched this exact name string; all etymological and symbolic themes are explicitly labeled as Creative Interpretations rather than Verified Facts."
+      },
+      "culturalContext": {
+        "heritageSynthesis": {
+          "value": "No geographic location was provided by the user; this experience adopts an open cosmopolitan architectural aesthetic without assuming any personal nationality or birthplace.",
+          "category": "creative_interpretation",
+          "source": "Cosmopolitan Creative Direction (Zero Location Inference)"
+        },
+        "geographicResonance": {
+          "value": {
+            "region": "Unspecified Personal Location (Cosmopolitan Atelier)",
+            "coordinates": {
+              "lat": 0,
+              "lng": 0
+            },
+            "architecturalVernacular": "Modernist Stone Pavilion & Timber Courtyard",
+            "traditionalCraft": "Archival Bookbinding, Precision Cartography & Ceramic Glazing"
+          },
+          "category": "creative_interpretation",
+          "source": "Creative Architectural Direction"
+        },
+        "artisticTraditions": {
+          "value": [
+            "Geometric Abstraction",
+            "Editorial Typography",
+            "Natural Philosophy Illustration"
+          ],
+          "category": "creative_interpretation",
+          "source": "Atelier Creative Synthesis"
+        },
+        "colorHeritage": [
+          {
+            "name": "Obsidian Ink",
+            "hex": "#141619",
+            "culturalOrigin": "Archival carbon ink"
+          },
+          {
+            "name": "Raw Linen Vellum",
+            "hex": "#F5F2EB",
+            "culturalOrigin": "Unbleached cotton rag paper"
+          },
+          {
+            "name": "Ochre Terracotta",
+            "hex": "#C87D55",
+            "culturalOrigin": "Natural earth mineral pigment"
+          }
+        ],
+        "literaryOrPhilosophicalEcho": {
+          "value": {
+            "quote": "Every name is a vessel of memory and an open horizon waiting to be inscribed by lived days.",
+            "attribution": "Archival Notebooks on Poetics & Space",
+            "tradition": "Humanist Literary Tradition"
+          },
+          "category": "creative_interpretation",
+          "source": "Atelier Literary Anthology"
+        }
+      },
+      "birthday": {
+        "hasBirthData": false,
+        "validDate": true,
+        "validationMessage": "No birth date provided; temporal and zodiac modules gracefully operating in timeless mode.",
+        "historicalEventsOnDay": []
+      },
+      "zodiac": {
+        "computed": false
+      },
+      "planetary": {
+        "rulingBody": {
+          "value": {
+            "name": "Saturn (Kronos / Zuhal)",
+            "classicalSymbol": "♄",
+            "orbitalPeriodDays": 10759.22,
+            "axialTiltDegrees": 26.73,
+            "albedo": 0.499,
+            "dominantSpectrumHex": "#C2B280",
+            "secondarySpectrumHex": "#2B2D42",
+            "harmonicFrequencyHz": 147.85,
+            "ringSystem": true,
+            "moonCount": 146,
+            "poeticEpithet": "The Ringed Geometer of Time and Monumental Structure"
+          },
+          "category": "creative_interpretation",
+          "source": "IAU Planetary Ephemeris Constants (Orbital Period, Tilt, Albedo) + Classical Celestial Symbolism"
+        },
+        "shaderParameters": {
+          "orbitSpeed": 0.2,
+          "particleCount": 992,
+          "turbulence": 0.29,
+          "bloomIntensity": 0.57,
+          "wireframeRatio": 0.37
+        }
+      },
+      "interests": {
+        "hasUserInterests": false,
+        "rawInterests": [],
+        "domainVectors": [
+          {
+            "domain": "Architectural & Spatial Contemplation",
+            "weight": 84,
+            "matchedKeywords": [
+              "Default Curated Vector"
+            ],
+            "visualMetaphor": "Tessellated Courtyard & Light Aperture",
+            "interactiveFeatureSuggestion": "Interactive 3D Geometric Totem & Constellation Canvas"
+          },
+          {
+            "domain": "Literary & Historical Inquiry",
+            "weight": 78,
+            "matchedKeywords": [
+              "Onomastic Archive"
+            ],
+            "visualMetaphor": "Illuminated Folio & Epigraphic Chronicle",
+            "interactiveFeatureSuggestion": "Personal Wax-Sealed Letter & Postcard Studio"
+          }
+        ],
+        "synthesizedPassionsNarrative": {
+          "value": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos.",
+          "category": "creative_interpretation",
+          "source": "Atelier Default Thematic Vector"
+        }
+      },
+      "personality": {
+        "hasUserPersonalityInput": false,
+        "verbatimTraits": [],
+        "toneOfVoice": {
+          "value": {
+            "warmth": 75,
+            "formality": 68,
+            "kineticEnergy": 62,
+            "introspection": 78,
+            "editorialStyle": "Poetic Editorial Monograph (Neutral & Respectful)"
+          },
+          "category": "creative_interpretation",
+          "source": "Default Editorial Voice (Zero Name-Based Personality Inference)"
+        },
+        "strictNonInferenceNotice": "No personal character traits were provided by the user. In compliance with epistemic integrity rules, this platform never infers actual human personality from a name or birth date alone."
+      },
+      "creativeDirection": {
+        "archetypeId": "swiss_brutalist_grid",
+        "archetypeName": "Neo-Swiss Architectural Grid",
+        "artDirectionManifesto": "Inspired by Basel and Zurich typographic posters, exposed structural grids, and Bauhaus constructive geometry.",
+        "moodKeywords": [
+          "Constructive Clarity",
+          "Modular Grid",
+          "Objective Typography",
+          "Tectonic Form"
+        ],
+        "spatialArchitecture": {
+          "gridSystem": "swiss-modular",
+          "whitespaceRatio": "dense-architectural",
+          "sectionRhythm": "Visible structural grid cells with crisp mathematical ratios and Bauhaus 3D primitives"
+        },
+        "lightingAndAtmosphere": {
+          "themePolarity": "stark-monochrome",
+          "grainOpacity": 0.035,
+          "ambientGlowIntensity": 0.4
+        }
+      },
+      "storytelling": {
+        "heroHeadline": "Ayesha",
+        "heroSubheadline": "Poetic Resonance of Ayesha (Creative Typographic Interpretation) — An Interactive Monograph of Origin, Cosmos & Living Craft.",
+        "prologueManifesto": "Every name is an architectural vessel before it is spoken. In the Semitic / Classical Arabic & Persianate (Heuristic Pattern Match) tradition, \"Ayesha\" (/ˈɑːiɛʃɑː/) unfolds across 2 syllables with a resonant cadence. This digital sanctuary weaves verified historical etymology, cultural geography, and personal pursuits into an art-directed living chronicle.",
+        "chapters": [
+          {
+            "id": "chapter-origin",
+            "chapterNumber": "I",
+            "title": "The Architecture of the Name",
+            "subtitle": "Semitic / Classical Arabic & Persianate (Heuristic Pattern Match) · /ˈɑːiɛʃɑː/",
+            "narrativeBody": "Heuristic phonological match suggesting Classical Arabic or Persianate onomastic morphology. Note: This is an algorithmic pattern estimate, not a verified dictionary entry. While this specific name variant is analyzed through phonological cadence rather than a static lexicon entry, its syllabic structure (Ayes · ha) establishes the typographic and spatial rhythm of this monograph.",
+            "pullQuote": "Poetic Resonance of Ayesha (Creative Typographic Interpretation)",
+            "epistemicTag": "creative_interpretation"
+          },
+          {
+            "id": "chapter-meridian",
+            "chapterNumber": "II",
+            "title": "Cultural & Geographic Meridian",
+            "subtitle": "Unspecified Personal Location (Cosmopolitan Atelier)",
+            "narrativeBody": "No geographic location was provided by the user; this experience adopts an open cosmopolitan architectural aesthetic without assuming any personal nationality or birthplace. Its visual language draws from Modernist Stone Pavilion & Timber Courtyard and the tactile mastery of Archival Bookbinding, Precision Cartography & Ceramic Glazing.",
+            "pullQuote": "Every name is a vessel of memory and an open horizon waiting to be inscribed by lived days.",
+            "epistemicTag": "creative_interpretation"
+          },
+          {
+            "id": "chapter-cosmos",
+            "chapterNumber": "III",
+            "title": "Celestial & Harmonic Resonance",
+            "subtitle": "Saturn (Kronos / Zuhal) (♄)",
+            "narrativeBody": "Because no personal birth date was provided, zero natal or astrological assumptions are made. Instead, the experience aligns with the classical IAU astronomical constants of Saturn (Kronos / Zuhal) (The Ringed Geometer of Time and Monumental Structure), resonating at 147.85 Hz.",
+            "pullQuote": "The Ringed Geometer of Time and Monumental Structure",
+            "epistemicTag": "creative_interpretation"
+          },
+          {
+            "id": "chapter-passions",
+            "chapterNumber": "IV",
+            "title": "Living Horizons & Personal Craft",
+            "subtitle": "Curiosity, Contemplation & Creative Agency",
+            "narrativeBody": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos. ",
+            "pullQuote": "“Identity is not prescribed by origin; it is composed day by day through attention, craft, and generosity.”",
+            "epistemicTag": "creative_interpretation"
+          }
+        ],
+        "personalLetter": {
+          "salutation": "To Ayesha,",
+          "bodyParagraphs": [
+            "Carry the resonance of your name—Ayesha—not as a fixed boundary, but as an open courtyard of light. From the roots that gave your name its resonant cadence to the horizons you actively shape today, your story belongs to the lineage of builders and seekers.",
+            "May every season bring clarity to your inquiries, warmth to your threshold, and new constellations to navigate.",
+            "This digital monograph was crafted specifically for you—a living artifact celebrating both the history behind your name and the unwritten chapters ahead."
+          ],
+          "valediction": "With enduring admiration and scholarly craft,",
+          "signature": "The Atelier Digital Monograph Engine"
+        },
+        "curatedQuotes": [
+          {
+            "text": "Every name is a vessel of memory and an open horizon waiting to be inscribed by lived days.",
+            "author": "Archival Notebooks on Poetics & Space",
+            "context": "Humanist Literary Tradition"
+          },
+          {
+            "text": "What we call the beginning is often the end, and to make an end is to make a beginning.",
+            "author": "Poetics of Time & Architecture",
+            "context": "Editorial Reflection"
+          }
+        ]
+      },
+      "visualDesign": {
+        "colorPalette": {
+          "backgroundPrimary": "#F2F0EC",
+          "backgroundElevated": "#E5E2DC",
+          "surfaceGlass": "rgba(242, 240, 236, 0.9)",
+          "textPrimary": "#111215",
+          "textSecondary": "#32353D",
+          "textMuted": "#686D78",
+          "accentPrimary": "#C83E2B",
+          "accentSecondary": "#141619",
+          "accentTertiary": "#D49A2A",
+          "borderSubtle": "rgba(17, 18, 21, 0.2)"
+        },
+        "typography": {
+          "displayFont": "\"Space Grotesk\", -apple-system, sans-serif",
+          "serifFont": "\"Cormorant Garamond\", Georgia, serif",
+          "sansFont": "\"Inter\", -apple-system, sans-serif",
+          "monoFont": "\"JetBrains Mono\", monospace",
+          "displayTracking": "-0.04em",
+          "heroScaleRem": 5.4
+        },
+        "borderRadiusToken": "0px",
+        "borderTreatment": "hairline-architectural",
+        "backgroundTreatment": "architectural-draft"
+      },
+      "interactions": {
+        "threeSceneMode": "bauhaus_totem",
+        "cursorMode": "editorial_crosshair",
+        "characterTotem": {
+          "type": "architectural_monolith",
+          "name": "Constructivist Axonometric Monolith",
+          "symbolism": "Primary geometric solids balanced in dynamic equilibrium.",
+          "primaryColor": "#C83E2B",
+          "secondaryColor": "#141619",
+          "interactiveBehavior": "Responds to cursor orbital tilt, harmonic audio resonance, and click inspection"
+        },
+        "enabledModules": {
+          "threeHeroCanvas": true,
+          "magneticCursor": true,
+          "tiltCards": true,
+          "personalLetterEnvelope": true,
+          "digitalPostcardStudio": true,
+          "harmonicAudioSynth": true,
+          "constellationMiniGame": true,
+          "epistemicProvenanceModal": true,
+          "easterEggCipher": true
+        },
+        "motionProfile": {
+          "entranceStyle": "precision-snap",
+          "scrollParallaxIntensity": 0.35,
+          "springStiffness": 110,
+          "springDamping": 18
+        }
+      },
+      "content": {
+        "navigationItems": [
+          {
+            "id": "hero",
+            "label": "Sanctuary",
+            "index": "00"
+          },
+          {
+            "id": "dossier",
+            "label": "Dossier",
+            "index": "01"
+          },
+          {
+            "id": "chronicle",
+            "label": "Chronicle",
+            "index": "02"
+          },
+          {
+            "id": "totem",
+            "label": "3D Totem & Harmonics",
+            "index": "03"
+          },
+          {
+            "id": "constellation",
+            "label": "Constellation",
+            "index": "04"
+          },
+          {
+            "id": "epistle",
+            "label": "Epistle & Postcard",
+            "index": "05"
+          },
+          {
+            "id": "provenance",
+            "label": "Epistemic Audit",
+            "index": "06"
+          }
+        ],
+        "identityDossier": {
+          "sectionTitle": "Archival Dossier — Ayesha",
+          "cards": [
+            {
+              "id": "card-etymology",
+              "label": "01 / ONOMASTIC ROOT",
+              "title": "Ayes",
+              "value": "Poetic Resonance of Ayesha (Creative Typographic Interpretation)",
+              "detail": "Heuristic phonological match suggesting Classical Arabic or Persianate onomastic morphology. Note: This is an algorithmic pattern estimate, not a verified dictionary entry.",
+              "epistemicCategory": "creative_interpretation"
+            },
+            {
+              "id": "card-heritage",
+              "label": "02 / CULTURAL MERIDIAN",
+              "title": "Unspecified Personal Location (Cosmopolitan Atelier)",
+              "value": "Modernist Stone Pavilion & Timber Courtyard",
+              "detail": "Traditional Craft: Archival Bookbinding, Precision Cartography & Ceramic Glazing",
+              "epistemicCategory": "creative_interpretation"
+            },
+            {
+              "id": "card-celestial",
+              "label": "03 / CELESTIAL EPHEMERIS",
+              "title": "Saturn (Kronos / Zuhal)",
+              "value": "♄ · 147.85 Hz",
+              "detail": "Orbital Period: 10759.22 days · Axial Tilt: 26.73°",
+              "epistemicCategory": "creative_interpretation"
+            },
+            {
+              "id": "card-passions",
+              "label": "04 / PERSONAL VECTORS",
+              "title": "Universal Humanist Vectors",
+              "value": "Architecture · Poetics · Cosmos",
+              "detail": "When specific personal hobbies are left open, the experience centers on universal human pursuits: architectural light, acoustic harmony, and the quiet contemplation of history and cosmos.",
+              "epistemicCategory": "creative_interpretation"
+            }
+          ]
+        },
+        "interactivePostcard": {
+          "stampCode": "ATL-AYE-148",
+          "originLabel": "Unspecified Personal Location (Cosmopolitan Atelier)",
+          "destinationLabel": "Sanctuary of Ayesha",
+          "defaultMessage": "May the architecture of your days reflect the clarity and luminous depth embedded within the name Ayesha.",
+          "prompts": [
+            "A reflection on Ayesha’s resonant cadence...",
+            "From the meridian of Unspecified Personal Location (Cosmopolitan Atelier)...",
+            "Under the harmonic frequency of 147.85 Hz..."
+          ]
+        },
+        "miniGameConfig": {
+          "title": "Meridian Star Alignment — Ayesha’s Constellation",
+          "instruction": "Connect the 5 celestial nodes in sequence to synthesize the geometric sigil and unlock the archival inscription.",
+          "targetNodes": [
+            {
+              "id": "node-1",
+              "label": "αRoot (Ayes)",
+              "x": 20,
+              "y": 65,
+              "unlockedInsight": "Phonetic Anchor: /ˈɑːiɛʃɑː/"
+            },
+            {
+              "id": "node-2",
+              "label": "βMeridian (0.0°N)",
+              "x": 38,
+              "y": 28,
+              "unlockedInsight": "Heritage Craft: Archival Bookbinding, Precision Cartography & Ceramic Glazing"
+            },
+            {
+              "id": "node-3",
+              "label": "γHarmonic (147.85 Hz)",
+              "x": 56,
+              "y": 70,
+              "unlockedInsight": "Celestial Body: Saturn (Kronos / Zuhal)"
+            },
+            {
+              "id": "node-4",
+              "label": "δMotif (Octagonal Star Tessellation)",
+              "x": 74,
+              "y": 24,
+              "unlockedInsight": "Primary Symbol: Octagonal Star Tessellation"
+            },
+            {
+              "id": "node-5",
+              "label": "ωApex (Ayesha)",
+              "x": 86,
+              "y": 54,
+              "unlockedInsight": "Meaning: Poetic Resonance of Ayesha (Creative Typographic Interpretation)"
+            }
+          ],
+          "completionRewardQuote": "Every name is a vessel of memory and an open horizon waiting to be inscribed by lived days."
+        },
+        "easterEgg": {
+          "triggerHint": "Click the Monograph Seal 3 times or type \"AYESHA\" in the Cipher Vault",
+          "secretKeyphrase": "AYESHA",
+          "revealedArtifactTitle": "Secret Archival Colophon — Folio № 492",
+          "revealedMessage": "In 859 CE, Fatima al-Fihri demonstrated that a single individual’s vision can found an institution that illuminates centuries. This hidden colophon honors Ayesha’s unique place in the living archive."
+        }
+      },
+      "verification": {
+        "passed": true,
+        "timestamp": "2026-11-08T18:33:32.120Z",
+        "executionMode": "deterministic_lexicon_and_heuristics",
+        "totalClaimsAudited": 18,
+        "breakdown": {
+          "verifiedFactsCount": 0,
+          "userProvidedCount": 1,
+          "astrologicalCount": 0,
+          "creativeInterpretationCount": 17
+        },
+        "epistemicGuarantees": [
+          "Zero personal biographical facts (birthdays, locations, hobbies, personality) were fabricated or scraped.",
+          "Heuristic phonetic or morphological estimates for uncurated names are never labeled as Verified Facts.",
+          "Actual human personality is never inferred from name etymology or birth date alone.",
+          "Linguistic and historical bearer citations are strictly separated from astrological and creative interpretations."
+        ],
+        "sanitizedWarnings": [
+          "Name \"Ayesha\" is not in the curated philological lexicon; phonetic and etymological outputs are strictly classified as Creative/Heuristic Interpretations rather than Verified Facts."
+        ]
+      },
+      "portrait": {
+        "language": "en+ur",
+        "ageGiven": 20,
+        "title": {
+          "en": "The Cartographer of Silence",
+          "ur": "Khudi ka Nakaar Nakaar"
+        },
+        "opening": {
+          "en": "You do not rush to fill the room. You measure the space between words before you speak, ensuring your presence is a choice, not a habit.",
+          "ur": "Aap kamra bharnay ke liye jaldi nahi kartay. Baaton ke beech khali jagah ko pehle nasbatay hain, taake aapki haziri ek ikhtiar ho, aadat nahi."
+        },
+        "sections": [
+          {
+            "heading": {
+              "en": "The Weight of Choice",
+              "ur": "Fasl ka Buzoor"
+            },
+            "body": {
+              "en": "Decisions are not made in bursts here. You simulate outcomes until the noise fades, leaving only the path that feels aligned. It can look like hesitation to others, but it is actually a high-resolution scan of the terrain. You protect your energy by excluding options that do not serve your core rhythm, often deleting plans hours before they begin.",
+              "ur": "Faslay yahan achanak nahi hotay. Aap natijon ko simulate kartay hain jab tak shor na ghat jaye, sirf safara qayam rehta hai. Log ise teras samajhte hain, magar ye ek gehra scan hai. Apni energy bachanay ke liye wo raaste chhor detay hain jo aapke ritam ke khilaf hon, aksar plan start hone se ghanton pehle rakhtay hain."
+            }
+          },
+          {
+            "heading": {
+              "en": "Curiosity as Routine",
+              "ur": "Jioskay Mein Hawa"
+            },
+            "body": {
+              "en": "Your curiosity is tactile, not loud. It shows up in the way you organize your digital notes or arrange objects on a desk. You seek order as a way of understanding chaos, grouping disparate ideas until they form a coherent whole. This is not control; it is a desire to see the skeleton beneath the skin. You spend time on small details others ignore, finding the pattern hidden in the mundane.",
+              "ur": "Aapki jioskay jharoori hai, awaazdar nahi. Ye aapke digital notes ya desk par cheezon ke tarteeb mein dikh jata hai. Aap chaos ko samajhne ke liye order dhoondte hain, alag alag ideas ko jorta hain jab tak wo ek mukammal shakl na lein. Ye control nahi, balki jism ke neeche khopdi dekhne ki koshish hai."
+            }
+          },
+          {
+            "heading": {
+              "en": "Carrying the Invisible",
+              "ur": "Namrooz Ka Bojh"
+            },
+            "body": {
+              "en": "Responsibility is a quiet anchor for you. You do not seek credit, yet you are the one who notices when a thread is loose in the group’s fabric. You absorb the emotional temperature of others, often regulating your own output to keep the atmosphere stable. This can be draining, leading to a silent withdrawal where you disappear to recharge. You carry the weight because you believe in the integrity of the connection.",
+              "ur": "Zimmedarish aap ke liye ek chup chap lakir hai. Aap tareef nahi dhoondte, magar group ki tukay mein koi dhaga khula ho toh sirf aap ko pata hota hai. Aap doosron ke mohabbat ka mausam girtay hain, kabhi kabhi khud ko wapsi mein le jaatay hain taake mausam stable rahe. Iska bojh halka nahi, magar aap connection ki safai ke liye uthatay hain."
+            }
+          },
+          {
+            "heading": {
+              "en": "The Logic of Care",
+              "ur": "Mehnat Ka Logic"
+            },
+            "body": {
+              "en": "Affection is shown through action, not declaration. You remember small preferences, adjusting your behavior to fit the person you are with. It is a precise form of love, one that requires energy to maintain. You are not always available, and when you are absent, it is a boundary, not a rejection. Your care is a crafted object, built with intentional time and attention, rather than being thrown around like loose change.",
+              "ur": "Mohabbat aap action se dikhati hai, shabdon se nahi. Aap choti choti pasand yaad rakhte hain, aur us shakhs ke mutabiq apni soorat badalte hain. Ye mohabbat ki ek makhsoos qisam hai, isay banane mein energy lagti hai. Aap hamesha maujood nahi hotay, aur jab aap gayab hon, ye koi nafrat nahi, sirf ek hadd hai. Aapki dekhbhal ek banaya hua shayar hai, jo waqt aur dhyan se bana hai."
+            }
+          },
+          {
+            "heading": {
+              "en": "The Inner Editor",
+              "ur": "Andar Ka Sanchit"
+            },
+            "body": {
+              "en": "You speak less to be heard more. Every sentence is filtered through an internal editor that checks for clarity and impact. This creates a gap between what you feel and what you say, which can feel isolating at times. You trust your intuition over external validation, often deciding how to act based on a gut feeling that defies logical explanation. Your silence is not empty; it is full of unspoken data points.",
+              "ur": "Aap kam bolate hain taake zyada sune jayen. Har jumla aapke andar ke editor se guzarta hai, jo saafai aur asar ko check karta hai. Isse aapke feel aur sayne ke beech ek faasla paida hota hai, jo kabhi kabhi akelepan jaisa lagta hai. Aap gumrahon par external validation se zyada bharosa kartay hain, aksar gut feeling ke basis par faisla kartay hain. Aapki khamoshi khali nahi, ye un baton se bari hai jo boli nahi gayin."
+            }
+          },
+          {
+            "heading": {
+              "en": "The Unseen Map",
+              "ur": "Chupchap Nashi"
+            },
+            "body": {
+              "en": "Beneath the calm surface, there is a fierce dedication to authenticity. You resist being categorized, preferring to exist in the grey areas where complexity lives. This makes you difficult to pin down, but also deeply magnetic. You are drawn to things that are unfinished, seeing potential in the rough edges. Your ambition is not to be famous, but to be understood by a select few who can read the map you have drawn for them alone.",
+              "ur": "Wafat ke neeche, aapki sachai ke liye ek tez lagn hai. Aap khud ko kisi category mein fit karne se gairat kartay hain, aur grey areas mein rehte hain jahan ghewari hoti hai. Isse aap ko faisla karne mein mushkil hota hai, magar aap bohat attractive bhi lagte hain. Aap aisi cheezon ki taraf khinchay jate hain jo mukammal nahi hain, chote motay kaanton mein potential dekhte hain. Aapki koshish mashhoor hone ki nahi, balki un few logon tak phanchna hai jo aapke banaye map ko parh sakein."
+            }
+          }
+        ],
+        "mirror": {
+          "en": "You see the world as a series of patterns to be respected, not just experienced.",
+          "ur": "Aap duniya ko sirf zinda nahi, balki ek tarteeb ki line ke roop mein dekhte hain."
+        },
+        "closing": {
+          "en": "Your strength lies in your stillness. Trust the pause.",
+          "ur": "Aapki taqat aap ki sukoon mein hai. Us khamoshi par bharosa rakhein."
+        },
+        "visual": {
+          "concept": "A minimalist interface resembling a quiet library archive, with soft shadows and precise typography.",
+          "composition": "stack",
+          "backdrop": "stripes",
+          "palette": {
+            "bg": "#F5F2EB",
+            "surface": "#FFFFFF",
+            "ink": "#2C2C2C",
+            "accent": "#8C7B6B",
+            "accent2": "#D3C5B3"
+          },
+          "fontDisplay": "Fraunces",
+          "fontBody": "Manrope",
+          "reveal": "fade",
+          "character": {
+            "name": "Elara",
+            "body": "arch",
+            "eyes": "sleepy",
+            "accessory": "scarf",
+            "motion": "sway",
+            "line": {
+              "en": "Elara is a quiet guardian of the space, always observing.",
+              "ur": "Elara jagah ki khamosh mehram hai, hamesha dikh rahi hai."
+            }
+          }
+        },
+        "model": "qwen-3.8-27b",
+        "generatedAt": "2026-11-08T18:33:32.114Z"
+      }
+    },
+    "pipelineLogs": [
+      {
+        "stepNumber": 1,
+        "code": "INPUT_COLLECTION",
+        "title": "Input Collection & Normalization",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Normalized identity payload for \"Ayesha\" (0 user-supplied interest tags; zero fabricated fields)."
+      },
+      {
+        "stepNumber": 2,
+        "code": "INPUT_VALIDATION",
+        "title": "Temporal & Schema Validation",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Optional temporal fields omitted by user; configured timeless mode (zero invented birthdates)."
+      },
+      {
+        "stepNumber": 3,
+        "code": "RESEARCH_COLLECTION",
+        "title": "Onomastic, Etymological & Cultural Research",
+        "status": "completed",
+        "executionNature": "deterministic_heuristic",
+        "durationMs": 4,
+        "summary": "Executed phonological & syllable heuristic analysis for \"Ayesha\" (/ˈɑːiɛʃɑː/); classified as Creative/Heuristic Interpretation.",
+        "artifactPreview": "Poetic Resonance of Ayesha (Creative Typographic Interpretation)"
+      },
+      {
+        "stepNumber": 4,
+        "code": "EVIDENCE_CLASSIFICATION",
+        "title": "Four-Tier Epistemic Evidence Classification",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 3,
+        "summary": "Partitioned claims into Verified Facts, User-Provided Data, Astrological Symbolism, and Creative/Heuristic Interpretations."
+      },
+      {
+        "stepNumber": 5,
+        "code": "INTELLIGENCE_SYNTHESIS",
+        "title": "14-Module Multi-Vector Intelligence Synthesis",
+        "status": "completed",
+        "executionNature": "astronomical_calculation",
+        "durationMs": 4,
+        "summary": "Synthesized 2 passion vectors and IAU planetary harmonic frequency (147.85 Hz)."
+      },
+      {
+        "stepNumber": 6,
+        "code": "CREATIVE_DIRECTION",
+        "title": "Art Direction & Spatial Archetype Selection",
+        "status": "completed",
+        "executionNature": "deterministic_heuristic",
+        "durationMs": 3,
+        "summary": "Selected archetype \"Neo-Swiss Architectural Grid\" (swiss-modular).",
+        "artifactPreview": "Inspired by Basel and Zurich typographic posters, exposed structural grids, and Bauhaus constructive geometry."
+      },
+      {
+        "stepNumber": 7,
+        "code": "VISUAL_SYSTEM",
+        "title": "Adaptive Color Palette & Typography System",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Generated palette (#F2F0EC / #C83E2B) & font stack (\"Space Grotesk\")."
+      },
+      {
+        "stepNumber": 8,
+        "code": "STRUCTURE_GENERATION",
+        "title": "Bespoke Page Topology & Navigation Architecture",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Constructed 7 interactive chapters and 4 archival dossier cards."
+      },
+      {
+        "stepNumber": 9,
+        "code": "INTERACTION_SELECTION",
+        "title": "3D WebGL, Cursor Physics & Motion Choreography",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Assigned 3D scene \"bauhaus_totem\", cursor \"editorial_crosshair\", and totem \"Constructivist Axonometric Monolith\"."
+      },
+      {
+        "stepNumber": 10,
+        "code": "CONTENT_GENERATION",
+        "title": "Narrative Chronicle, Epistle & Quote Synthesis",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 5,
+        "summary": "Authored 4 narrative chapters, personal epistle, and postcard via structured narrative synthesis (GEMINI_API_KEY not set)."
+      },
+      {
+        "stepNumber": 11,
+        "code": "ASSET_GENERATION",
+        "title": "Procedural 3D Geometry, Totem SVG & Web Audio Synth Setup",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Configured 992 WebGL particles, SVG sigil parameters, and 147.85 Hz Web Audio oscillator."
+      },
+      {
+        "stepNumber": 12,
+        "code": "WEBSITE_RENDERING",
+        "title": "Hydrating Adaptive Experience Configuration",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 2,
+        "summary": "Bound design tokens, responsive breakpoints, and reduced-motion fallbacks for swiss_brutalist_grid."
+      },
+      {
+        "stepNumber": 13,
+        "code": "AUTOMATED_TESTING",
+        "title": "Programmatic Epistemic Audit & Non-Fabrication Verification",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 3,
+        "summary": "Audited 18 claims (0 verified facts, 1 user-provided, 17 creative/heuristic)."
+      },
+      {
+        "stepNumber": 14,
+        "code": "VISUAL_VERIFICATION",
+        "title": "DOM Landmark & Contrast Polarity Configuration",
+        "status": "completed",
+        "executionNature": "real_validation",
+        "durationMs": 2,
+        "summary": "Configured semantic section landmarks and contrast polarity tokens for browser rendering."
+      },
+      {
+        "stepNumber": 15,
+        "code": "USER_PREVIEW",
+        "title": "Interactive Studio Preview & Live Section Editor Ready",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 2,
+        "summary": "Experience staged for live preview, section-level regeneration, and design token customization."
+      },
+      {
+        "stepNumber": 16,
+        "code": "PUBLISHING_SHARING",
+        "title": "Multi-Tenant Persistence & Export Bundle Registration",
+        "status": "completed",
+        "executionNature": "system_synthesis",
+        "durationMs": 3,
+        "summary": "Registered isolated experience at /e/ayesha-zk5v with owner isolation and standalone source export."
       }
     ],
     "storageSource": "local_fallback"
