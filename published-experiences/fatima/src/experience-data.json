@@ -3,7 +3,7 @@
   "slug": "fatima",
   "ownerId": "system_public",
   "createdAt": "2026-11-07T06:19:14.692Z",
-  "updatedAt": "2026-11-07T06:21:28.232Z",
+  "updatedAt": "2026-11-08T18:23:09.689Z",
   "version": 1,
   "visibility": "public",
   "input": {
@@ -744,8 +744,8 @@
   ],
   "storageSource": "local_fallback",
   "deploymentHistory": {
-    "githubRepoUrl": "https://github.com/HassaanFisky/atelier-exported-persona-demo",
-    "githubLastCommitSha": "54df7c2d99053ba73c4605fdd2fa6deb86aa46cf",
-    "lastPublishedAt": "2026-11-07T06:21:28.232Z"
+    "githubRepoUrl": "https://github.com/HassaanFisky/fatima-",
+    "githubLastCommitSha": "4bcb2d2b1d511702963e98e6ee0ae0a19fc53aa8",
+    "lastPublishedAt": "2026-11-08T18:23:09.689Z"
   }
 }
